@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>나스닥 주가 예측 시스템 — 아키텍처</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #0f1117; color: #e0e0e0; font-family: 'Segoe UI', sans-serif; padding: 40px; }
+  h1 { text-align: center; font-size: 1.4rem; color: #7dd3fc; margin-bottom: 8px; }
+  .subtitle { text-align: center; color: #64748b; font-size: 0.9rem; margin-bottom: 40px; }
+
+  .diagram { display: flex; flex-direction: column; gap: 24px; max-width: 900px; margin: 0 auto; }
+
+  .layer { border: 1px solid #1e293b; border-radius: 12px; padding: 20px 24px; background: #131720; }
+  .layer-title { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; color: #475569; margin-bottom: 14px; }
+
+  .boxes { display: flex; gap: 12px; flex-wrap: wrap; }
+  .box { border-radius: 8px; padding: 12px 16px; flex: 1; min-width: 140px; }
+  .box h3 { font-size: 0.85rem; margin-bottom: 4px; }
+  .box p { font-size: 0.75rem; color: #94a3b8; line-height: 1.4; }
+
+  .blue { background: #0c2340; border: 1px solid #1d4ed8; }
+  .blue h3 { color: #60a5fa; }
+  .green { background: #0a2318; border: 1px solid #15803d; }
+  .green h3 { color: #4ade80; }
+  .purple { background: #1a0a2e; border: 1px solid #7c3aed; }
+  .purple h3 { color: #a78bfa; }
+  .orange { background: #1f1208; border: 1px solid #c2410c; }
+  .orange h3 { color: #fb923c; }
+  .pink { background: #1f0a1a; border: 1px solid #be185d; }
+  .pink h3 { color: #f472b6; }
+
+  .arrow { text-align: center; color: #334155; font-size: 1.4rem; line-height: 1; }
+
+  .stack { display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+  .tag { background: #1e293b; border: 1px solid #334155; border-radius: 4px; padding: 2px 8px; font-size: 0.7rem; color: #94a3b8; }
+
+  /* Debate Engine */
+  .debate { max-width: 900px; margin: 48px auto 0; }
+  .debate-title { text-align: center; font-size: 1.1rem; color: #7dd3fc; margin-bottom: 6px; }
+  .debate-sub { text-align: center; font-size: 0.8rem; color: #475569; margin-bottom: 28px; }
+  .debate-grid { display: grid; grid-template-columns: 1fr 60px 1fr; gap: 0; align-items: start; }
+  .debate-col { display: flex; flex-direction: column; gap: 10px; }
+  .debate-center { display: flex; flex-direction: column; align-items: center; gap: 10px; padding-top: 10px; }
+  .persona { border-radius: 8px; padding: 10px 14px; }
+  .persona h4 { font-size: 0.8rem; margin-bottom: 2px; }
+  .persona p { font-size: 0.7rem; color: #94a3b8; }
+  .bull { background: #0a2318; border: 1px solid #15803d; }
+  .bull h4 { color: #4ade80; }
+  .bear { background: #1f0a0a; border: 1px solid #991b1b; }
+  .bear h4 { color: #f87171; }
+  .vs { color: #475569; font-size: 0.75rem; font-weight: bold; writing-mode: vertical-rl; letter-spacing: 3px; }
+  .orch-wrap { margin-top: 20px; }
+  .orch { background: #1a1208; border: 1px solid #b45309; border-radius: 10px; padding: 14px 18px; text-align: center; }
+  .orch h4 { color: #fbbf24; font-size: 0.85rem; margin-bottom: 4px; }
+  .orch p { font-size: 0.72rem; color: #94a3b8; line-height: 1.5; }
+  .judge { background: #0c1a2e; border: 2px solid #1d4ed8; border-radius: 10px; padding: 14px 18px; text-align: center; margin-top: 12px; }
+  .judge h4 { color: #60a5fa; font-size: 0.9rem; margin-bottom: 4px; }
+  .judge p { font-size: 0.72rem; color: #94a3b8; line-height: 1.5; }
+  .output { background: #131720; border: 1px solid #1e293b; border-radius: 10px; padding: 14px 18px; margin-top: 12px; font-size: 0.78rem; line-height: 1.8; color: #cbd5e1; }
+  .output .up { color: #4ade80; }
+  .output .down { color: #f87171; }
+  .output strong { color: #e0e0e0; }
+</style>
+</head>
+<body>
+
+<h1>나스닥 대형주 주가 예측 시스템</h1>
+<p class="subtitle">1주 / 2주 / 3주 / 4주 후 가격 예측 · Next.js + FastAPI + XGBoost</p>
+
+<div class="diagram">
+
+  <!-- Data Layer -->
+  <div class="layer">
+    <div class="layer-title">Data Layer</div>
+    <div class="boxes">
+      <div class="box green">
+        <h3>yfinance</h3>
+        <p>나스닥100 + 커스텀 종목<br>OHLCV 히스토리 수집</p>
+      </div>
+      <div class="box green">
+        <h3>Feature Engineering</h3>
+        <p>RSI, MACD, 이평선(5/20/60)<br>볼린저밴드, 거래량 변화율</p>
+      </div>
+      <div class="box green">
+        <h3>Scheduler</h3>
+        <p>매일 장 마감 후 자동 수집<br>APScheduler 기반</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="arrow">↓</div>
+
+  <!-- ML Layer -->
+  <div class="layer">
+    <div class="layer-title">ML Layer</div>
+    <div class="boxes">
+      <div class="box purple">
+        <h3>XGBoost Models</h3>
+        <p>종목별 × 4개 모델<br>(1주/2주/3주/4주 각각 학습)</p>
+      </div>
+      <div class="box purple">
+        <h3>Prediction Engine</h3>
+        <p>최신 피처 → 4주치 예측가<br>신뢰구간 포함</p>
+      </div>
+      <div class="box purple">
+        <h3>Model Store</h3>
+        <p>학습된 모델 로컬 저장<br>주기적 재학습</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="arrow">↓</div>
+
+  <!-- Backend Layer -->
+  <div class="layer">
+    <div class="layer-title">Backend — FastAPI</div>
+    <div class="boxes">
+      <div class="box blue">
+        <h3>REST API</h3>
+        <p>GET /predict/{ticker}<br>GET /stocks/list<br>GET /history/{ticker}</p>
+      </div>
+      <div class="box blue">
+        <h3>Alert Engine</h3>
+        <p>예측 변동 X% 이상 감지<br>주간 리포트 생성</p>
+      </div>
+      <div class="box pink">
+        <h3>Discord Webhook</h3>
+        <p>급등/급락 즉시 알림<br>매주 월요일 요약 리포트</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="arrow">↓</div>
+
+  <!-- Frontend Layer -->
+  <div class="layer">
+    <div class="layer-title">Frontend — Next.js</div>
+    <div class="boxes">
+      <div class="box orange">
+        <h3>대시보드</h3>
+        <p>종목 카드 · 2주/4주 예측<br>방향 + 예상가 + 근거 요약</p>
+      </div>
+      <div class="box orange">
+        <h3>차트 뷰</h3>
+        <p>과거 가격 + 예측 오버레이<br>1개월 매수/매도 흐름 차트</p>
+      </div>
+      <div class="box orange">
+        <h3>설정</h3>
+        <p>커스텀 종목 추가/제거<br>알림 임계값 설정</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="arrow">↓</div>
+
+  <!-- Infra -->
+  <div class="layer">
+    <div class="layer-title">Infra</div>
+    <div class="boxes">
+      <div class="box blue">
+        <h3>Docker Compose</h3>
+        <p>frontend / backend / scheduler<br>3개 컨테이너 구성</p>
+      </div>
+      <div class="box blue">
+        <h3>로컬 스토리지</h3>
+        <p>SQLite or JSON 파일<br>예측 결과 캐시</p>
+      </div>
+    </div>
+    <div class="stack">
+      <span class="tag">docker-compose up 한 방</span>
+      <span class="tag">localhost:3000 대시보드</span>
+      <span class="tag">localhost:8000 API</span>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- 1개월 매수/매도 흐름 차트 목업 -->
+<div class="debate" style="margin-top:48px;">
+  <div class="debate-title">1개월 매수/매도 누적 흐름 차트 (대시보드 예시)</div>
+  <div class="debate-sub">일별 매수/매도 거래량 · OBV 추세 · 조용한 매집 구간 하이라이트</div>
+  <div style="background:#131720;border:1px solid #1e293b;border-radius:12px;padding:24px;">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+      <span style="color:#7dd3fc;font-size:0.85rem;font-weight:600;">NVDA — 최근 1개월</span>
+      <div style="display:flex;gap:16px;font-size:0.72rem;">
+        <span style="color:#4ade80;">■ 매수</span>
+        <span style="color:#f87171;">■ 매도</span>
+        <span style="color:#fbbf24;">— OBV</span>
+      </div>
+    </div>
+    <!-- 바 차트 목업 -->
+    <div style="display:flex;align-items:flex-end;gap:3px;height:100px;margin-bottom:8px;">
+      <!-- 20개 바 (매수/매도 시뮬레이션) -->
+      <div style="flex:1;display:flex;flex-direction:column;gap:1px;align-items:center;">
+        <div style="width:100%;background:#4ade80;height:45px;border-radius:2px 2px 0 0;opacity:0.8;"></div>
+        <div style="width:100%;background:#f87171;height:30px;border-radius:0 0 2px 2px;opacity:0.8;"></div>
+      </div>
+      <div style="flex:1;display:flex;flex-direction:column;gap:1px;align-items:center;">
+        <div style="width:100%;background:#4ade80;height:35px;border-radius:2px 2px 0 0;opacity:0.8;"></div>
+        <div style="width:100%;background:#f87171;height:40px;border-radius:0 0 2px 2px;opacity:0.8;"></div>
+      </div>
+      <div style="flex:1;display:flex;flex-direction:column;gap:1px;align-items:center;">
+        <div style="width:100%;background:#4ade80;height:30px;border-radius:2px 2px 0 0;opacity:0.8;"></div>
+        <div style="width:100%;background:#f87171;height:50px;border-radius:0 0 2px 2px;opacity:0.8;"></div>
+      </div>
+      <div style="flex:1;display:flex;flex-direction:column;gap:1px;align-items:center;">
+        <div style="width:100%;background:#4ade80;height:55px;border-radius:2px 2px 0 0;opacity:0.8;"></div>
+        <div style="width:100%;background:#f87171;height:25px;border-radius:0 0 2px 2px;opacity:0.8;"></div>
+      </div>
+      <!-- 매집 구간 하이라이트 -->
+      <div style="flex:1;display:flex;flex-direction:column;gap:1px;align-items:center;background:rgba(251,191,36,0.08);border-radius:4px;padding:2px;">
+        <div style="width:100%;background:#4ade80;height:70px;border-radius:2px 2px 0 0;opacity:1;"></div>
+        <div style="width:100%;background:#f87171;height:20px;border-radius:0 0 2px 2px;opacity:0.8;"></div>
+      </div>
+      <div style="flex:1;display:flex;flex-direction:column;gap:1px;align-items:center;background:rgba(251,191,36,0.08);border-radius:4px;padding:2px;">
+        <div style="width:100%;background:#4ade80;height:75px;border-radius:2px 2px 0 0;opacity:1;"></div>
+        <div style="width:100%;background:#f87171;height:18px;border-radius:0 0 2px 2px;opacity:0.8;"></div>
+      </div>
+      <div style="flex:1;display:flex;flex-direction:column;gap:1px;align-items:center;background:rgba(251,191,36,0.08);border-radius:4px;padding:2px;">
+        <div style="width:100%;background:#4ade80;height:80px;border-radius:2px 2px 0 0;opacity:1;"></div>
+        <div style="width:100%;background:#f87171;height:15px;border-radius:0 0 2px 2px;opacity:0.8;"></div>
+      </div>
+      <div style="flex:1;display:flex;flex-direction:column;gap:1px;align-items:center;">
+        <div style="width:100%;background:#4ade80;height:50px;border-radius:2px 2px 0 0;opacity:0.8;"></div>
+        <div style="width:100%;background:#f87171;height:35px;border-radius:0 0 2px 2px;opacity:0.8;"></div>
+      </div>
+      <div style="flex:1;display:flex;flex-direction:column;gap:1px;align-items:center;">
+        <div style="width:100%;background:#4ade80;height:60px;border-radius:2px 2px 0 0;opacity:0.8;"></div>
+        <div style="width:100%;background:#f87171;height:28px;border-radius:0 0 2px 2px;opacity:0.8;"></div>
+      </div>
+      <div style="flex:1;display:flex;flex-direction:column;gap:1px;align-items:center;">
+        <div style="width:100%;background:#4ade80;height:65px;border-radius:2px 2px 0 0;opacity:0.8;"></div>
+        <div style="width:100%;background:#f87171;height:22px;border-radius:0 0 2px 2px;opacity:0.8;"></div>
+      </div>
+    </div>
+    <!-- 매집 구간 라벨 -->
+    <div style="display:flex;justify-content:center;margin-top:4px;">
+      <span style="background:rgba(251,191,36,0.15);border:1px solid #b45309;border-radius:4px;padding:2px 10px;font-size:0.68rem;color:#fbbf24;">⚡ 조용한 매집 구간 감지 (3일)</span>
+    </div>
+    <!-- OBV 요약 -->
+    <div style="margin-top:14px;padding-top:14px;border-top:1px solid #1e293b;display:flex;gap:24px;font-size:0.75rem;">
+      <div><span style="color:#475569;">1주 누적 매수 우위</span><br><span style="color:#4ade80;font-weight:600;">+68%</span></div>
+      <div><span style="color:#475569;">OBV 추세</span><br><span style="color:#4ade80;font-weight:600;">↑ 상승</span></div>
+      <div><span style="color:#475569;">매집 시그널</span><br><span style="color:#fbbf24;font-weight:600;">감지됨</span></div>
+      <div><span style="color:#475569;">예측 반영</span><br><span style="color:#60a5fa;font-weight:600;">2주/4주 피처 ✓</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- AI Debate Engine 시각화 -->
+<div class="debate">
+  <div class="debate-title">AI Debate Engine</div>
+  <div class="debate-sub">강세 vs 약세 페르소나 → Orchestrator 조율 → Judge 최종 판정</div>
+
+  <div class="debate-grid">
+    <!-- 강세 컬럼 -->
+    <div class="debate-col">
+      <div class="persona bull">
+        <h4>📈 뉴스 애널리스트 (강세)</h4>
+        <p>긍정적 기사 · 호실적 · 업황 개선</p>
+      </div>
+      <div class="persona bull">
+        <h4>📈 기술적 분석가 (강세)</h4>
+        <p>골든크로스 · RSI 회복 · 지지선 확인</p>
+      </div>
+      <div class="persona bull">
+        <h4>📈 공매도 전문가 (강세)</h4>
+        <p>숏스퀴즈 가능성 · 공매도 감소 추세</p>
+      </div>
+      <div class="persona bull">
+        <h4>📈 주문 흐름 분석가 (강세)</h4>
+        <p>매수 우세 · OBV 상승 · 조용한 기관 매집</p>
+      </div>
+    </div>
+
+    <!-- 가운데 VS -->
+    <div class="debate-center">
+      <div class="vs">VS</div>
+    </div>
+
+    <!-- 약세 컬럼 -->
+    <div class="debate-col">
+      <div class="persona bear">
+        <h4>📉 뉴스 애널리스트 (약세)</h4>
+        <p>부정적 기사 · 실적 우려 · 매크로 리스크</p>
+      </div>
+      <div class="persona bear">
+        <h4>📉 기술적 분석가 (약세)</h4>
+        <p>데드크로스 · RSI 과매수 · 저항선 근접</p>
+      </div>
+      <div class="persona bear">
+        <h4>📉 공매도 전문가 (약세)</h4>
+        <p>공매도 급증 · Short Float % 상승</p>
+      </div>
+      <div class="persona bear">
+        <h4>📉 주문 흐름 분석가 (약세)</h4>
+        <p>매도 우세 · OBV 하락 · 대량 매도 감지</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Orchestrator -->
+  <div class="orch-wrap">
+    <div class="orch">
+      <h4>⚖️ Orchestrator</h4>
+      <p>
+        균형 체크 · 한쪽 압도 시 반대측 재호출 · 최대 3라운드<br>
+        어닝시즌 → 뉴스 비중 ↑ &nbsp;|&nbsp; 공매도 급변 → 공매도 비중 ↑ &nbsp;|&nbsp; 변곡점 → 기술적 비중 ↑
+      </p>
+    </div>
+
+    <div class="judge">
+      <h4>🧑‍⚖️ Judge AI — 최종 판정</h4>
+      <p>6개 페르소나 논거 종합 · 신뢰도 산출 · 요약 1~2줄 생성</p>
+    </div>
+
+    <div class="output">
+      <strong>NVDA 2주 후 예측 결과 예시</strong><br>
+      방향: <span class="up">📈 상승 (신뢰도 73%)</span><br>
+      예상 가격: <strong>$891 ~ $924</strong><br>
+      근거: <span style="color:#94a3b8">실적 호조 기사가 공매도 우려를 상회 · RSI 과매도 탈출 확인</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
