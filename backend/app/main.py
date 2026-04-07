@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.database import init_db
-from app.routers import stocks, predict, settings as settings_router
+from app.routers import stocks, predict, settings as settings_router, history
 from app.scheduler import start_scheduler
 
 app = FastAPI(title="Nasdaq Predictor API")
@@ -21,6 +21,7 @@ def startup():
 app.include_router(stocks.router, prefix="/stocks", tags=["stocks"])
 app.include_router(predict.router, prefix="/predict", tags=["predict"])
 app.include_router(settings_router.router, prefix="/settings", tags=["settings"])
+app.include_router(history.router, prefix="/history", tags=["history"])
 
 @app.get("/health")
 def health():
