@@ -26,3 +26,19 @@ def test_build_technical_features_no_nan_after_warmup():
     }, index=dates)
     result = build_technical_features(df).dropna()
     assert len(result) > 0
+
+from unittest.mock import patch, MagicMock
+from app.features.sentiment import score_articles
+
+def test_score_articles_returns_float():
+    mock_completion = MagicMock()
+    mock_completion.choices[0].message.content = "0.65"
+    with patch("app.features.sentiment.OpenAI") as MockClient:
+        MockClient.return_value.chat.completions.create.return_value = mock_completion
+        score = score_articles("AAPL", ["Apple reports record earnings", "iPhone sales surge"])
+    assert isinstance(score, float)
+    assert -1.0 <= score <= 1.0
+
+def test_score_articles_empty_returns_zero():
+    score = score_articles("AAPL", [])
+    assert score == 0.0
