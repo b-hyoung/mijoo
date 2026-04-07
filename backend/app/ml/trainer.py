@@ -1,3 +1,5 @@
+import os
+import time
 import numpy as np
 import pandas as pd
 import xgboost as xgb
@@ -37,3 +39,20 @@ def load_models(ticker: str):
     m2.load_model(str(MODEL_DIR / f"{ticker}_week2.json"))
     m4.load_model(str(MODEL_DIR / f"{ticker}_week4.json"))
     return m2, m4
+
+def get_or_train_model(ticker: str, df):
+    """Load cached model if fresh (< 7 days), otherwise train and save."""
+    model2_path = MODEL_DIR / f"{ticker}_week2.json"
+    model4_path = MODEL_DIR / f"{ticker}_week4.json"
+
+    seven_days = 7 * 24 * 3600
+    now = time.time()
+
+    if (model2_path.exists() and model4_path.exists() and
+            (now - model2_path.stat().st_mtime) < seven_days):
+        model2, model4 = load_models(ticker)
+        return model2, model4
+
+    model2, model4 = train_model(df)
+    save_models(ticker, model2, model4)
+    return model2, model4

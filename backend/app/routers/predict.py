@@ -1,15 +1,60 @@
+import json
+from datetime import datetime, timezone
 from fastapi import APIRouter, HTTPException
 from app.collectors.price_collector import fetch_price_history
 from app.collectors.news_collector import fetch_news
 from app.collectors.short_collector import fetch_short_interest
 from app.features.technical import build_technical_features
 from app.features.sentiment import score_articles
-from app.ml.trainer import train_model
 from app.ml.predictor import predict
 from app.debate.engine import run_debate
 import ta
 
 router = APIRouter()
+
+def _get_cached_prediction(ticker: str):
+    """Return cached prediction if less than 1 hour old."""
+    from app.database import get_db
+    conn = get_db()
+    row = conn.execute("""
+        SELECT * FROM predictions
+        WHERE ticker = ?
+        ORDER BY predicted_at DESC
+        LIMIT 1
+    """, (ticker,)).fetchone()
+    conn.close()
+    if not row:
+        return None
+    predicted_at = datetime.fromisoformat(row["predicted_at"]).replace(tzinfo=timezone.utc)
+    age_seconds = (datetime.now(timezone.utc) - predicted_at).total_seconds()
+    if age_seconds > 3600:
+        return None
+    return json.loads(row["summary"]) if row["summary"] and row["summary"].startswith("{") else None
+
+def _save_prediction_cache(ticker: str, result: dict):
+    """Save full prediction result as JSON in summary field."""
+    from app.database import get_db
+    conn = get_db()
+    conn.execute("""
+        INSERT INTO predictions
+        (ticker, predicted_at, week2_direction, week2_confidence, week2_price_low, week2_price_high,
+         week4_direction, week4_confidence, week4_price_low, week4_price_high, summary)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    """, (
+        ticker,
+        datetime.now(timezone.utc).isoformat(),
+        result["prediction"]["week2"]["direction"],
+        result["prediction"]["week2"]["confidence"],
+        result["prediction"]["week2"]["price_low"],
+        result["prediction"]["week2"]["price_high"],
+        result["prediction"]["week4"]["direction"],
+        result["prediction"]["week4"]["confidence"],
+        result["prediction"]["week4"]["price_low"],
+        result["prediction"]["week4"]["price_high"],
+        json.dumps(result)
+    ))
+    conn.commit()
+    conn.close()
 
 def _get_order_flow(df) -> dict:
     """Compute 1-month order flow summary from price dataframe."""
@@ -36,6 +81,11 @@ def _get_order_flow(df) -> dict:
 @router.get("/{ticker}")
 def get_prediction(ticker: str):
     ticker = ticker.upper()
+
+    # Check cache first
+    cached = _get_cached_prediction(ticker)
+    if cached:
+        return cached
 
     # Fetch price data
     df = fetch_price_history(ticker, period="5y")
@@ -80,13 +130,14 @@ def get_prediction(ticker: str):
     df_clean["sentiment"] = sentiment
 
     # XGBoost price prediction
-    model2, model4 = train_model(df_clean)
+    from app.ml.trainer import get_or_train_model
+    model2, model4 = get_or_train_model(ticker, df_clean)
     ml_result = predict(model2, model4, df_clean.iloc[[-1]])
 
     # AI Debate Engine
     debate_result = run_debate(ticker, technical_data, headlines, short_data, order_flow)
 
-    return {
+    result = {
         "ticker": ticker,
         "current_price": round(float(latest["close"]), 2),
         "sentiment_score": round(sentiment, 3),
@@ -95,3 +146,5 @@ def get_prediction(ticker: str):
         "prediction": ml_result,
         "debate": debate_result
     }
+    _save_prediction_cache(ticker, result)
+    return result
