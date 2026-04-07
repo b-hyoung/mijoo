@@ -8,14 +8,30 @@ export interface WeekPrediction {
   price_target: number;
 }
 
+export interface DebateResult {
+  direction: "UP" | "DOWN";
+  confidence: number;
+  summary: string;
+  debate_rounds: number;
+}
+
+export interface OrderFlow {
+  buy_dominance_pct: number;
+  obv_trend: "UP" | "DOWN";
+  is_accumulation: boolean;
+}
+
 export interface PredictionResult {
   ticker: string;
   current_price: number;
   sentiment_score: number;
+  short_float_pct?: number;
+  order_flow?: OrderFlow;
   prediction: {
     week2: WeekPrediction;
     week4: WeekPrediction;
   };
+  debate?: DebateResult;
 }
 
 export interface StockList {
