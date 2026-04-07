@@ -41,3 +41,28 @@ export async function addCustomTicker(ticker: string): Promise<void> {
 export async function removeCustomTicker(ticker: string): Promise<void> {
   await fetch(`${API_BASE}/stocks/custom/${ticker}`, { method: "DELETE" });
 }
+
+export interface DayFlow {
+  date: string;
+  buy_volume: number;
+  sell_volume: number;
+  obv: number;
+  is_accumulation: boolean;
+}
+
+export async function fetchHistory(ticker: string, days: number = 30): Promise<DayFlow[]> {
+  try {
+    const res = await fetch(`${API_BASE}/history/${ticker}?days=${days}`, { next: { revalidate: 3600 } });
+    if (!res.ok) return [];
+    const data = await res.json();
+    return data.history.map((d: any) => ({
+      date: d.date.slice(5), // "MM-DD" format
+      buy_volume: d.buy_volume,
+      sell_volume: d.sell_volume,
+      obv: d.obv,
+      is_accumulation: d.is_accumulation
+    }));
+  } catch {
+    return [];
+  }
+}

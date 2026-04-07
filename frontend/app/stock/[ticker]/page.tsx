@@ -1,29 +1,14 @@
-import { fetchPrediction } from "@/lib/api";
+import { fetchPrediction, fetchHistory } from "@/lib/api";
 import PredictionBadge from "@/components/PredictionBadge";
 import OrderFlowChart from "@/components/OrderFlowChart";
 
-function generateMockOrderFlow(days: number = 20) {
-  return Array.from({ length: days }, (_, i) => {
-    const buy = Math.random() * 5e6 + 2e6;
-    const sell = Math.random() * 5e6 + 2e6;
-    const is_accumulation = buy > sell * 1.4;
-    return {
-      date: new Date(Date.now() - (days - i) * 86400000).toLocaleDateString("ko-KR", { month: "numeric", day: "numeric" }),
-      buy_volume: Math.round(buy),
-      sell_volume: Math.round(sell),
-      obv: i * 1e6 + Math.random() * 5e5,
-      is_accumulation,
-    };
-  });
-}
-
 export default async function StockDetailPage({ params }: { params: { ticker: string } }) {
   const ticker = params.ticker.toUpperCase();
-  let data: any = null;
-  try {
-    data = await fetchPrediction(ticker);
-  } catch {}
-  const orderFlow = generateMockOrderFlow(20);
+
+  const [data, orderFlow] = await Promise.all([
+    fetchPrediction(ticker).catch(() => null),
+    fetchHistory(ticker, 30)
+  ]);
 
   if (!data) {
     return (
@@ -47,7 +32,8 @@ export default async function StockDetailPage({ params }: { params: { ticker: st
         </div>
         <div className="mt-4 pt-4 border-t border-slate-800">
           <p className="text-xs text-slate-500">
-            뉴스 감성 점수: <span className={data.sentiment_score > 0 ? "text-emerald-400" : "text-red-400"}>
+            뉴스 감성 점수:{" "}
+            <span className={data.sentiment_score > 0 ? "text-emerald-400" : "text-red-400"}>
               {data.sentiment_score > 0 ? "+" : ""}{data.sentiment_score.toFixed(2)}
             </span>
           </p>

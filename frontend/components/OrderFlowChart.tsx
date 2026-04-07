@@ -1,17 +1,10 @@
 "use client";
 
+import { DayFlow } from "@/lib/api";
 import {
   ComposedChart, Bar, Line, XAxis, YAxis, Tooltip,
   ResponsiveContainer, Cell
 } from "recharts";
-
-interface DayFlow {
-  date: string;
-  buy_volume: number;
-  sell_volume: number;
-  obv: number;
-  is_accumulation: boolean;
-}
 
 interface Props {
   data: DayFlow[];
