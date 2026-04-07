@@ -1,0 +1,9 @@
+.env
+*.db
+data/
+backend/app/ml/saved/
+__pycache__/
+*.pyc
+.next/
+node_modules/
+.superpowers/
