@@ -313,6 +313,40 @@ export async function fetchPredictionHistory(ticker: string, limit: number = 10)
   }
 }
 
+export interface AccuracyRecent {
+  date: string;
+  predicted_direction: "UP" | "DOWN";
+  actual_direction: "UP" | "DOWN";
+  price_at_prediction: number;
+  current_price: number;
+  correct: boolean;
+}
+
+export interface AccuracyTickerStat {
+  ticker: string;
+  total: number;
+  correct: number;
+  hit_rate: number;
+  current_price: number | null;
+  recent: AccuracyRecent[];
+}
+
+export interface AccuracyResult {
+  window_days: number;
+  overall: { total: number; correct: number; hit_rate: number };
+  tickers: AccuracyTickerStat[];
+}
+
+export async function fetchAccuracy(): Promise<AccuracyResult | null> {
+  try {
+    const res = await fetch(`${API_BASE}/stats/accuracy`, { cache: "no-store" });
+    if (!res.ok) return null;
+    return res.json();
+  } catch {
+    return null;
+  }
+}
+
 export async function fetchStatus(): Promise<WarmingStatus> {
   try {
     const res = await fetch(`${API_BASE}/status`, { cache: "no-store" });
