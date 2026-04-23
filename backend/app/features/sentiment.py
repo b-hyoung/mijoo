@@ -1,24 +1,19 @@
-from openai import OpenAI
-from app.config import settings
+from app.llm import chat
 
 def score_articles(ticker: str, headlines: list[str]) -> float:
     if not headlines:
         return 0.0
-    client = OpenAI(api_key=settings.openai_api_key)
-    joined = "\n".join(f"- {h}" for h in headlines[:10])
-    prompt = f"""You are a financial analyst. Given these news headlines about {ticker},
-rate the overall sentiment on a scale from -1.0 (very bearish) to 1.0 (very bullish).
-Return ONLY a number between -1.0 and 1.0, nothing else.
-
-Headlines:
-{joined}"""
+    text = "\n".join(headlines[:15])
+    prompt = f"Rate the overall sentiment for {ticker} stock based on these headlines:\n{text}\n\nRespond with ONLY a number between -1.0 (very bearish) and 1.0 (very bullish)."
     try:
-        response = client.chat.completions.create(
-            model="gpt-4o-mini",
-            messages=[{"role": "user", "content": prompt}],
-            temperature=0
+        result = chat(
+            system="You are a financial sentiment analyzer. Respond with only a decimal number between -1.0 and 1.0.",
+            user=prompt,
+            tier="fast",
+            temperature=0,
+            max_tokens=10,
         )
-        score = float(response.choices[0].message.content.strip())
+        score = float(result.strip())
         return max(-1.0, min(1.0, score))
     except Exception:
         return 0.0
