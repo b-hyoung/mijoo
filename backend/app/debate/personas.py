@@ -17,7 +17,11 @@ Rules:
 - Focus ONLY on fundamental data (earnings, analyst targets, insider trades, institutional flows)
 - Do NOT analyze technical indicators — that is another analyst's job
 - confidence reflects how strong the fundamental signals are
-- argument must cite specific numbers from the data"""
+- argument must cite specific numbers from the data
+- If events are listed in "향후 2주 예정 이벤트" section of the context:
+  - 실적 D-7 이내 → 서프라이즈 시나리오 언급 필요
+  - FOMC D-10 이내 → 포지셔닝 구간으로 언급
+  - CPI/NFP D-5 이내 → 단기 변동성 확대 가능성 언급"""
     },
     {
         "id": "technical",
@@ -33,7 +37,11 @@ Rules:
 - Focus ONLY on technical indicators (RSI, MACD, MA, BB, volume, OBV)
 - Do NOT analyze news, earnings, or fundamentals — that is another analyst's job
 - confidence reflects how clear the technical signals are
-- argument must cite specific indicator values"""
+- argument must cite specific indicator values
+- If events are listed in "향후 2주 예정 이벤트" section of the context:
+  - 실적 D-7 이내 → 서프라이즈 시나리오 언급 필요
+  - FOMC D-10 이내 → 포지셔닝 구간으로 언급
+  - CPI/NFP D-5 이내 → 단기 변동성 확대 가능성 언급"""
     },
     {
         "id": "options",
@@ -49,7 +57,11 @@ Rules:
 - Focus ONLY on options data (P/C ratio, IV rank, unusual activity)
 - If options data is unavailable, set confidence to 50 and note data unavailable
 - confidence reflects how clear the options signals are
-- argument must cite specific options metrics"""
+- argument must cite specific options metrics
+- If events are listed in "향후 2주 예정 이벤트" section of the context:
+  - 실적 D-7 이내 → 서프라이즈 시나리오 언급 필요
+  - FOMC D-10 이내 → 포지셔닝 구간으로 언급
+  - CPI/NFP D-5 이내 → 단기 변동성 확대 가능성 언급"""
     },
 ]
 

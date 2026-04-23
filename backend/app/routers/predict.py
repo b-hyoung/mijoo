@@ -19,6 +19,7 @@ from app.ml.predictor import apply_fundamental_adjustment
 from app.ml.trainer import get_or_train_model
 from app.debate.engine import run_debate
 from app.debate.orchestrator import get_confluence_explanation
+from app.collectors.event_calendar import upcoming_events
 from app.features.structural import (
     weekly_trend, range_position, mid_momentum, macro_regime,
     analyst_consensus_score, institutional_flow_score,
@@ -532,6 +533,19 @@ def get_prediction(ticker: str):
         signals, fund, anomaly, ml_result, debate_result,
     )
     result["confluence"] = confluence
+
+    # Expose upcoming events at top level (for UI badges)
+    earnings_obj = fund.get("earnings") or {}
+    events_out = list(upcoming_events(days_ahead=14))
+    if earnings_obj.get("days_until") is not None and 0 <= earnings_obj["days_until"] <= 14:
+        events_out.append({
+            "type": "earnings",
+            "date": earnings_obj.get("next_date"),
+            "days_until": earnings_obj["days_until"],
+            "ticker": ticker,
+        })
+    events_out.sort(key=lambda e: e.get("days_until", 999))
+    result["upcoming_events"] = events_out
 
     has_analyst = fund["analyst"].get("target_mean") is not None
     has_debate = debate_result.get("confidence", 0) > 0 and debate_result.get("summary", "")
