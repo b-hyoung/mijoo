@@ -48,6 +48,17 @@ function Section({ label, children, noBorder }: { label: string; children: React
   );
 }
 
+/* ─── Static params (for output: 'export') ────────────────────────── */
+export async function generateStaticParams() {
+  try {
+    const { fetchStockList } = await import("@/lib/api");
+    const list = await fetchStockList();
+    return list.tickers.map((ticker) => ({ ticker }));
+  } catch {
+    return [{ ticker: "AAPL" }];
+  }
+}
+
 /* ─── Page ────────────────────────────────────────────────────────── */
 export default async function StockDetailPage({ params }: { params: Promise<{ ticker: string }> }) {
   const { ticker: rawTicker } = await params;

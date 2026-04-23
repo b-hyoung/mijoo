@@ -1,0 +1,319 @@
+{
+  "ticker": "AVGO",
+  "current_price": 426.89,
+  "sentiment_score": 0.6,
+  "short_float_pct": 1.15,
+  "short_change": "N/A",
+  "order_flow": {
+    "buy_dominance_pct": 81.8,
+    "obv_trend": "UP",
+    "is_accumulation": false
+  },
+  "news_headlines": [
+    {
+      "title": "Marvell’s AI Story Just Got Stronger With Google — But Is it Too Late to Buy?",
+      "url": "https://247wallst.com/investing/2026/04/23/marvells-ai-story-just-got-stronger-with-google-but-is-it-too-late-to-buy/"
+    },
+    {
+      "title": "Hedge Fund Takes New Position in Chinese Data Center Stock, According to Latest SEC Filing",
+      "url": "https://www.fool.com/coverage/filings/2026/04/23/hedge-fund-takes-new-position-in-chinese-data-center-stock-according-to-latest-sec-filing/"
+    },
+    {
+      "title": "Broadcom (AVGO) and Meta Announce Multi-Year AI Infrastructure Partnership",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/broadcom-avgo-meta-announce-multi-133355191.html"
+    },
+    {
+      "title": "Invesco Large Cap ETF (PWB) Touches Fresh 52-Week High",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/invesco-large-cap-etf-pwb-131500156.html"
+    },
+    {
+      "title": "Dow Jones Futures Fall; Tesla Stock Sinks On Elon Musk Comments",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nasdaq-hits-high-tesla-earnings-elon-musk/?src=A00220&yptr=yahoo"
+    },
+    {
+      "title": "Here's Why Nvidia and Broadcom Are Still Leading the Pack for AI Investing",
+      "url": "https://www.fool.com/investing/2026/04/23/heres-why-nvidia-and-broadcom-are-still-leading-th/"
+    },
+    {
+      "title": "TSMC Says ASML’s Latest Chipmaking Gear Is Too Pricey to Use",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/tsmc-says-asml-latest-chipmaking-095255944.html"
+    },
+    {
+      "title": "Why Broadcom (AVGO) Stock Is Trading Up Today",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-broadcom-avgo-stock-trading-070123250.html"
+    },
+    {
+      "title": "The Highest-Paid CEO of 2025 Is a Furniture Salesman",
+      "url": "https://www.barrons.com/articles/highest-paid-ceo-d72581df?siteid=yhoof2&yptr=yahoo"
+    },
+    {
+      "title": "Meta Faces New ESG Pressures As Board Shifts And Shares Screen Undervalued",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/meta-faces-esg-pressures-board-030835758.html"
+    }
+  ],
+  "signals": {
+    "rsi": 79.9,
+    "macd_cross": "BULLISH",
+    "ma_trend": "BULLISH",
+    "bb_position": 89,
+    "volume_ratio": 0.35
+  },
+  "analyst": {
+    "target_mean": 475.49,
+    "target_high": 630.0,
+    "target_low": 360.0,
+    "upside_pct": 11.4,
+    "num_analysts": 42,
+    "recommendation": "strong_buy"
+  },
+  "insider": {
+    "recent": [],
+    "net_shares_90d": 0
+  },
+  "institutional": {
+    "top_holders": [],
+    "total_pct": null,
+    "change_pct": null
+  },
+  "macro": {
+    "vix": 19.05,
+    "vix_20d_change": -24.8,
+    "treasury_10y": 4.29,
+    "treasury_10y_20d_change": -0.8,
+    "dxy": 98.59,
+    "dxy_20d_change": -1.0
+  },
+  "options": {
+    "pc_ratio": 0.7,
+    "iv_rank": 100,
+    "unusual_activity": 15.5,
+    "unusual_side": "PUT",
+    "data_source": "nearest+monthly",
+    "expiry_used": "2026-04-24"
+  },
+  "earnings": {
+    "next_date": "2026-06-04",
+    "days_until": null,
+    "history": []
+  },
+  "anomaly": {
+    "score": 40,
+    "direction": null,
+    "level": "관심",
+    "signals": [
+      {
+        "name": "거래량 급증 + 횡보",
+        "score": 0,
+        "direction": null,
+        "detail": "거래량 0.7x, 가격변동 38.0%"
+      },
+      {
+        "name": "IV 급등",
+        "score": 20,
+        "direction": "UP",
+        "detail": "IV rank 100%"
+      },
+      {
+        "name": "옵션 이상 거래",
+        "score": 20,
+        "direction": "DOWN",
+        "detail": "평소 대비 15.5x (PUT)"
+      },
+      {
+        "name": "내부자 방향 전환",
+        "score": 0,
+        "direction": null,
+        "detail": "거래 부족"
+      },
+      {
+        "name": "P/C ratio 극단",
+        "score": 0,
+        "direction": null,
+        "detail": "P/C 0.70"
+      }
+    ]
+  },
+  "prediction": {
+    "week1": {
+      "direction": "DOWN",
+      "confidence": 90.3,
+      "price_low": 361.01,
+      "price_high": 378.09,
+      "price_target": 369.55
+    },
+    "week2": {
+      "direction": "DOWN",
+      "confidence": 95,
+      "price_low": 339.27,
+      "price_high": 364.89,
+      "price_target": 352.08
+    },
+    "week3": {
+      "direction": "UP",
+      "up_probability": 59.9,
+      "range_low": 401.28,
+      "range_high": 452.5
+    },
+    "week4": {
+      "direction": "UP",
+      "up_probability": 59.9,
+      "range_low": 392.74,
+      "range_high": 461.04
+    }
+  },
+  "debate": {
+    "direction": "DOWN",
+    "confidence": 55,
+    "verdict": "관망",
+    "summary": "AVGO 주식은 과매수 상태와 비정상적인 풋 거래량 증가로 인해 하락 압력이 높아지고 있습니다. FOMC 발표를 앞두고 단기 변동성이 확대될 가능성이 큽니다.",
+    "stock_bull": [
+      "애널리스트 목표 주가 평균이 $475.49로 현재 주가 대비 11.4% 상승 여력이 있습니다.",
+      "Broadcom과 Meta의 AI 인프라 파트너십 발표로 긍정적인 실적 개선 기대가 있습니다.",
+      "기관 투자자들의 지속적인 매수세와 낮은 공매도 비율(1.15%)은 주가 상승에 긍정적입니다."
+    ],
+    "stock_bear": [
+      "RSI(14)가 79.9로 과매수 구간에 위치해 조정 가능성이 높습니다.",
+      "옵션의 Put/Call 비율이 0.7로 콜 옵션이 우세하지만, 비정상적인 풋 거래량이 15.5배로 급증하여 하락 압력을 시사합니다.",
+      "IV Rank가 100%로 매우 높아, 큰 가격 변동이 예상되며 이는 하락 방향으로의 포지셔닝 가능성을 강화합니다."
+    ],
+    "market_bull": [
+      "VIX가 19.04로 20일 동안 24.8% 하락하여 시장의 두려움이 감소하고 있습니다.",
+      "10년 만기 국채 수익률이 4.29%로 20일 동안 0.8% 하락하여 금리 부담이 완화되고 있습니다.",
+      "달러 인덱스가 98.6으로 20일 동안 1.0% 하락하여 미국 달러의 상대적 약세가 나타나고 있습니다."
+    ],
+    "market_bear": [],
+    "bull_points": [
+      "애널리스트 목표 주가 평균이 $475.49로 현재 주가 대비 11.4% 상승 여력이 있습니다.",
+      "Broadcom과 Meta의 AI 인프라 파트너십 발표로 긍정적인 실적 개선 기대가 있습니다.",
+      "기관 투자자들의 지속적인 매수세와 낮은 공매도 비율(1.15%)은 주가 상승에 긍정적입니다.",
+      "VIX가 19.04로 20일 동안 24.8% 하락하여 시장의 두려움이 감소하고 있습니다.",
+      "10년 만기 국채 수익률이 4.29%로 20일 동안 0.8% 하락하여 금리 부담이 완화되고 있습니다.",
+      "달러 인덱스가 98.6으로 20일 동안 1.0% 하락하여 미국 달러의 상대적 약세가 나타나고 있습니다."
+    ],
+    "bear_points": [
+      "RSI(14)가 79.9로 과매수 구간에 위치해 조정 가능성이 높습니다.",
+      "옵션의 Put/Call 비율이 0.7로 콜 옵션이 우세하지만, 비정상적인 풋 거래량이 15.5배로 급증하여 하락 압력을 시사합니다.",
+      "IV Rank가 100%로 매우 높아, 큰 가격 변동이 예상되며 이는 하락 방향으로의 포지셔닝 가능성을 강화합니다."
+    ],
+    "weekly_outlook": {
+      "week1": "[RSI 79.9 과매수 상태이나 MACD 0.5로 상승세 지속 중.]",
+      "week2": "[기관 투자자 매수세 +1.2%이나 옵션 풋 거래량 15.5배 급증.]",
+      "week3": "[애널리스트 목표가 $475.49 상승 여력 있으나 FOMC 발표 D-6로 변동성 확대 가능.]",
+      "week4": "[VIX 19.04로 두려움 감소하나 IV Rank 100%로 큰 가격 변동 예상.]"
+    },
+    "key_news": [
+      {
+        "headline": "Broadcom (AVGO) and Meta Announce Multi-Year AI Infrastructure Partnership",
+        "summary": "브로드컴과 메타의 AI 인프라 파트너십은 장기적인 수익 증가를 기대하게 하여 주가에 긍정적인 영향을 미칠 수 있습니다."
+      },
+      {
+        "headline": "Why Broadcom (AVGO) Stock Is Trading Up Today",
+        "summary": "브로드컴 주가 상승의 이유는 긍정적인 뉴스와 투자자 신뢰 증가로, 이는 주가에 직접적인 긍정적 영향을 미칩니다."
+      }
+    ],
+    "personas": [
+      {
+        "id": "technical",
+        "role": "테크니컬 분석가",
+        "direction": "DOWN",
+        "confidence": 80,
+        "argument": "• RSI(14)가 79.9로 과매수 구간에 위치해 조정 가능성이 높습니다.\n• MACD가 시그널 라인보다 높지만, 과매수 상태에서 하락 전환 가능성이 있습니다.\n• FOMC 발표가 D-6으로 단기 변동성 확대 가능성이 있어 포지셔닝 구간입니다."
+      },
+      {
+        "id": "options",
+        "role": "옵션 트레이더",
+        "direction": "DOWN",
+        "confidence": 80,
+        "argument": "• 옵션의 Put/Call 비율이 0.7로 콜 옵션이 우세하지만, 비정상적인 풋 거래량이 15.5배로 급증하여 하락 압력을 시사합니다.\n• IV Rank가 100%로 매우 높아, 큰 가격 변동이 예상되며 이는 하락 방향으로의 포지셔닝 가능성을 강화합니다.\n• FOMC 발표가 D-6으로 다가오면서 포지셔닝 구간에 진입, 단기적으로 변동성이 확대될 가능성이 높습니다."
+      },
+      {
+        "id": "fundamental",
+        "role": "펀더멘털 분석가",
+        "direction": "UP",
+        "confidence": 85,
+        "argument": "• 애널리스트 목표 주가 평균이 $475.49로 현재 주가 대비 11.4% 상승 여력이 있으며, 추천은 STRONG BUY입니다. \n• 최근 Broadcom과 Meta의 AI 인프라 파트너십 발표는 긍정적인 실적 개선 기대를 높입니다. \n• 기관 투자자들의 지속적인 매수세와 낮은 공매도 비율(1.15%)은 주가 상승에 긍정적인 신호입니다."
+      },
+      {
+        "id": "macro",
+        "role": "매크로 전략가",
+        "direction": "UP",
+        "confidence": 75,
+        "argument": "• VIX가 19.04로 20일 동안 24.8% 하락하여 시장의 두려움이 감소하고 있음을 나타냅니다. \n• 10년 만기 국채 수익률이 4.29%로 20일 동안 0.8% 하락하여 금리 부담이 완화되고 있습니다. \n• 달러 인덱스가 98.6으로 20일 동안 1.0% 하락하여 미국 달러의 상대적 약세가 나타나고 있습니다."
+      }
+    ]
+  },
+  "confluence": {
+    "aligned_count": 2,
+    "total": 4,
+    "majority_direction": "UP",
+    "badge": "혼조 — 되돌림 경계",
+    "tone": "mixed",
+    "per_week": [
+      "DOWN",
+      "DOWN",
+      "UP",
+      "UP"
+    ],
+    "structural_signals": {
+      "rows": [
+        {
+          "key": "weekly_trend",
+          "label": "주간 추세",
+          "value": 1.0,
+          "weight": 0.25,
+          "contribution": 0.25
+        },
+        {
+          "key": "range_position",
+          "label": "52주 위치",
+          "value": 1.0,
+          "weight": -0.15,
+          "contribution": -0.15
+        },
+        {
+          "key": "mid_momentum",
+          "label": "중기 모멘텀",
+          "value": 0.757,
+          "weight": 0.2,
+          "contribution": 0.151
+        },
+        {
+          "key": "macro_regime",
+          "label": "매크로 레짐",
+          "value": 0.196,
+          "weight": 0.2,
+          "contribution": 0.039
+        },
+        {
+          "key": "analyst_consensus",
+          "label": "애널리스트 컨센서스",
+          "value": 0.38,
+          "weight": 0.1,
+          "contribution": 0.038
+        },
+        {
+          "key": "institutional_flow",
+          "label": "스마트머니 흐름",
+          "value": 0.0,
+          "weight": 0.1,
+          "contribution": 0.0
+        }
+      ],
+      "score": 0.329
+    },
+    "explanation": "단기적으로는 기술적 지표와 옵션 시장의 신호가 하락을 지지하고 있습니다. RSI가 과매수 구간에 위치하고, 비정상적인 풋 거래량이 급증하여 조정 가능성이 높습니다. 그러나 장기적으로는 펀더멘털과 매크로 지표가 상승을 지지하고 있습니다. 애널리스트의 목표 주가와 시장의 두려움 감소가 긍정적 전망을 뒷받침하며, 단기 조정 후 장기 추세 재개 가능성이 있습니다."
+  },
+  "upcoming_events": [
+    {
+      "type": "FOMC",
+      "date": "2026-04-29",
+      "days_until": 6
+    },
+    {
+      "type": "NFP",
+      "date": "2026-05-01",
+      "days_until": 8
+    }
+  ],
+  "predicted_at": "2026-04-23T14:57:55.182703+00:00"
+}

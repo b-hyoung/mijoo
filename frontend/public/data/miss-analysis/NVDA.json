@@ -1,0 +1,41 @@
+{
+  "ticker": "NVDA",
+  "analyzed_at": "2026-04-23T16:05:58.683610+00:00",
+  "miss_count": 1,
+  "predicted_direction": "UP",
+  "actual_direction": "DOWN",
+  "drivers": [
+    "가능성: 주요 경제 지표 발표로 인해 시장의 전반적인 하락 압력이 증가했을 수 있음",
+    "가능성: 예상치 못한 기업 실적 발표가 시장 심리에 부정적인 영향을 미쳤을 수 있음",
+    "가능성: 지정학적 긴장이나 정책 변화로 인해 투자자들의 불안감이 증가했을 수 있음"
+  ],
+  "advice": "다음 예측에서는 경제 지표 발표 일정과 기업 실적 발표, 그리고 지정학적 상황을 더욱 면밀히 모니터링해야 합니다.",
+  "summary": "예측이 빗나간 주요 원인은 경제 지표 발표나 기업 실적 발표, 지정학적 긴장과 같은 외부 요인일 가능성이 큽니다. 이러한 요인들은 시장의 심리에 큰 영향을 미칠 수 있으며, 다음 예측에서는 이러한 요소들을 더욱 주의 깊게 고려해야 합니다.",
+  "misses": [
+    {
+      "predicted_at": "2026-04-23T14:55:53.187660+00:00",
+      "predicted_direction": "UP",
+      "actual_direction": "DOWN",
+      "price_at": 202.39,
+      "current_price": 201.5399932861328,
+      "change_pct": -0.42,
+      "reasoning": "  - 테크니컬 분석가: UP — • RSI(14)가 69.6으로 과매수 구간에 근접해 상승 모멘텀이 강함을 시사합니다.\n  - 옵션 트레이더: UP — • 옵션의 Put/Call 비율이 0.56로 콜 옵션 수요가 높아 상승 기대가 큽니다.\n  - 펀더멘털 분석가: UP — • 애널리스트 목표 주가는 평균 $268.61로 현재 가격 대비 32.7%의 상승 여력이 있으며, 강력 매수 추천을 받고 있습니다. \n  - 매크로 전략가: UP — • VIX가 19.04로 20일 동안 24.8% 하락하여 시장의 두려움이 감소하고 있음을 나타냅니다. ",
+      "summary": "NVDA는 기술적, 옵션, 펀더멘털 분석에서 모두 긍정적인 신호를 보이며 상승 가능성이 높습니다. 시장의 두려움 감소와 금리 부담 완화도 상승을 지원합니다.",
+      "signals_at_time": {
+        "pc_ratio": 0.56,
+        "iv_rank": 100,
+        "unusual_activity": 5.0,
+        "unusual_side": "CALL",
+        "short_float_pct": 1.2,
+        "short_change": "N/A",
+        "insider_net_90d": 0,
+        "anomaly_score": 30,
+        "anomaly_direction": "UP",
+        "buy_dominance": 77.4,
+        "obv_trend": "UP",
+        "is_accumulation": false
+      }
+    }
+  ],
+  "cached": true
+}

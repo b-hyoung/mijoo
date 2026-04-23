@@ -1,8 +1,23 @@
-// Server-side: INTERNAL_API_URL (Docker internal, read at runtime)
-// Client-side: http://localhost:8000 (browser → exposed port)
-const API_BASE = typeof window === "undefined"
-  ? (process.env.INTERNAL_API_URL ?? "http://localhost:8000")
-  : "http://localhost:8000";
+import { dataUrl, USE_SNAPSHOT, readSnapshotOnServer } from "./dataSource";
+
+export { USE_SNAPSHOT };
+
+// Server-side (including build time) fetch helper. In snapshot mode we
+// read the JSON off disk so static export works without a running server.
+async function getJSON<T>(snapshotRel: string, apiPath: string, cache: "no-store" | { next?: { revalidate: number } } = "no-store"): Promise<T | null> {
+  if (USE_SNAPSHOT && typeof window === "undefined") {
+    return readSnapshotOnServer<T>(snapshotRel);
+  }
+  const url = USE_SNAPSHOT ? `/data/${snapshotRel}` : `${apiPath}`;
+  const opts = typeof cache === "string" ? { cache } : cache;
+  try {
+    const res = await fetch(url, opts as RequestInit);
+    if (!res.ok) return null;
+    return (await res.json()) as T;
+  } catch {
+    return null;
+  }
+}
 
 export interface WeekPredictionPoint {
   direction: "UP" | "DOWN";
@@ -206,23 +221,28 @@ export interface StockList {
 }
 
 export async function fetchPrediction(ticker: string): Promise<PredictionResult> {
-  const res = await fetch(`${API_BASE}/predict/${ticker}`, { cache: "no-store" });
-  if (!res.ok) throw new Error(`Failed to fetch prediction for ${ticker}`);
-  return res.json();
+  const data = await getJSON<PredictionResult>(
+    `predict/${ticker}.json`,
+    `http://localhost:8000/predict/${ticker}`,
+  );
+  if (!data) throw new Error(`Failed to fetch prediction for ${ticker}`);
+  return data;
 }
 
 export async function fetchStockList(): Promise<StockList> {
-  const res = await fetch(`${API_BASE}/stocks/list`, { cache: "no-store" });
-  if (!res.ok) throw new Error("Failed to fetch stock list");
-  return res.json();
+  const data = await getJSON<StockList>("stocks.json", "http://localhost:8000/stocks/list");
+  if (!data) throw new Error("Failed to fetch stock list");
+  return data;
 }
 
 export async function addCustomTicker(ticker: string): Promise<void> {
-  await fetch(`${API_BASE}/stocks/custom/${ticker}`, { method: "POST" });
+  if (USE_SNAPSHOT) return; // write ops disabled in snapshot mode
+  await fetch(dataUrl(`stocks/custom/${ticker}`), { method: "POST" });
 }
 
 export async function removeCustomTicker(ticker: string): Promise<void> {
-  await fetch(`${API_BASE}/stocks/custom/${ticker}`, { method: "DELETE" });
+  if (USE_SNAPSHOT) return;
+  await fetch(dataUrl(`stocks/custom/${ticker}`), { method: "DELETE" });
 }
 
 export interface DayFlow {
@@ -234,20 +254,20 @@ export interface DayFlow {
 }
 
 export async function fetchHistory(ticker: string, days: number = 30): Promise<DayFlow[]> {
-  try {
-    const res = await fetch(`${API_BASE}/history/${ticker}?days=${days}`, { next: { revalidate: 3600 } });
-    if (!res.ok) return [];
-    const data = await res.json();
-    return data.history.map((d: any) => ({
-      date: d.date.slice(5), // "MM-DD" format
-      buy_volume: d.buy_volume,
-      sell_volume: d.sell_volume,
-      obv: d.obv,
-      is_accumulation: d.is_accumulation
-    }));
-  } catch {
-    return [];
-  }
+  const data = await getJSON<{ history: any[] }>(
+    `history/${ticker}.json`,
+    `http://localhost:8000/history/${ticker}?days=${days}`,
+    { next: { revalidate: 3600 } },
+  );
+  if (!data?.history) return [];
+  const rows = USE_SNAPSHOT ? data.history.slice(-days) : data.history;
+  return rows.map((d: any) => ({
+    date: d.date.slice(5),
+    buy_volume: d.buy_volume,
+    sell_volume: d.sell_volume,
+    obv: d.obv,
+    is_accumulation: d.is_accumulation,
+  }));
 }
 
 export interface WarmingStatus {
@@ -258,22 +278,19 @@ export interface WarmingStatus {
 }
 
 export async function fetchCurrentPrice(ticker: string): Promise<number | null> {
-  try {
-    const res = await fetch(`${API_BASE}/history/${ticker}?days=1`, {
-      cache: "no-store"
-    });
-    if (!res.ok) return null;
-    const data = await res.json();
-    const last = data.history?.[data.history.length - 1];
-    return last?.close ?? null;
-  } catch {
-    return null;
-  }
+  const data = await getJSON<{ history: any[] }>(
+    `history/${ticker}.json`,
+    `http://localhost:8000/history/${ticker}?days=1`,
+  );
+  if (!data?.history) return null;
+  const last = data.history[data.history.length - 1];
+  return last?.close ?? null;
 }
 
 export async function translateTexts(texts: string[]): Promise<string[]> {
+  if (USE_SNAPSHOT) return texts; // no server to translate on; pass through
   try {
-    const res = await fetch(`http://localhost:8000/translate/`, {
+    const res = await fetch(dataUrl("translate/"), {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ texts }),
@@ -303,14 +320,12 @@ export interface PredictionHistoryEntry {
 }
 
 export async function fetchPredictionHistory(ticker: string, limit: number = 10): Promise<PredictionHistoryEntry[]> {
-  try {
-    const res = await fetch(`http://localhost:8000/prediction-history/${ticker}?limit=${limit}`, { cache: "no-store" });
-    if (!res.ok) return [];
-    const data = await res.json();
-    return data.history ?? [];
-  } catch {
-    return [];
-  }
+  const data = await getJSON<{ history: PredictionHistoryEntry[] }>(
+    `prediction-history/${ticker}.json`,
+    `http://localhost:8000/prediction-history/${ticker}?limit=${limit}`,
+  );
+  const rows = data?.history ?? [];
+  return USE_SNAPSHOT ? rows.slice(0, limit) : rows;
 }
 
 export interface AccuracyRecent {
@@ -342,13 +357,7 @@ export interface AccuracyResult {
 }
 
 export async function fetchAccuracy(): Promise<AccuracyResult | null> {
-  try {
-    const res = await fetch(`${API_BASE}/stats/accuracy`, { cache: "no-store" });
-    if (!res.ok) return null;
-    return res.json();
-  } catch {
-    return null;
-  }
+  return getJSON<AccuracyResult>("accuracy.json", "http://localhost:8000/stats/accuracy");
 }
 
 export interface MissAnalysis {
@@ -374,19 +383,16 @@ export interface MissAnalysis {
 }
 
 export async function fetchMissAnalysis(ticker: string, force = false): Promise<MissAnalysis | null> {
-  try {
-    const qs = force ? "?force=true" : "";
-    const res = await fetch(`${API_BASE}/stats/miss-analysis/${ticker}${qs}`, { cache: "no-store" });
-    if (!res.ok) return null;
-    return res.json();
-  } catch {
-    return null;
-  }
+  // Snapshot mode: force is ignored (no server to regenerate)
+  const apiPath = `http://localhost:8000/stats/miss-analysis/${ticker}${force ? "?force=true" : ""}`;
+  return getJSON<MissAnalysis>(`miss-analysis/${ticker}.json`, apiPath);
 }
 
 export async function fetchStatus(): Promise<WarmingStatus> {
+  // Status (warming progress) is meaningless in snapshot mode — no live server.
+  if (USE_SNAPSHOT) return { warming: false, cached_count: 0, total: 0, last_warmed_at: null };
   try {
-    const res = await fetch(`${API_BASE}/status`, { cache: "no-store" });
+    const res = await fetch(dataUrl("status"), { cache: "no-store" });
     if (!res.ok) return { warming: false, cached_count: 0, total: 0, last_warmed_at: null };
     return res.json();
   } catch {

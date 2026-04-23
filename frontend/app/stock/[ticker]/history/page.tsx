@@ -31,6 +31,16 @@ function getRelevantWeek(entry: PredictionHistoryEntry, ageDays: number): {
 
 const COL = "110px 72px 60px 80px 100px 100px 100px 1fr";
 
+export async function generateStaticParams() {
+  try {
+    const { fetchStockList } = await import("@/lib/api");
+    const list = await fetchStockList();
+    return list.tickers.map((ticker) => ({ ticker }));
+  } catch {
+    return [{ ticker: "AAPL" }];
+  }
+}
+
 export default async function HistoryPage({ params }: { params: Promise<{ ticker: string }> }) {
   const { ticker: rawTicker } = await params;
   const ticker = rawTicker.toUpperCase();

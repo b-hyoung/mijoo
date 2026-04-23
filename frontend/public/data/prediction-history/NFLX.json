@@ -1,0 +1,179 @@
+{
+  "ticker": "NFLX",
+  "history": [
+    {
+      "id": 548,
+      "predicted_at": "2026-04-23T14:58:45.986697+00:00",
+      "age_hours": 1.6,
+      "current_price_at_prediction": 93.63,
+      "verdict": "관망",
+      "direction": "DOWN",
+      "confidence": 55,
+      "summary": "넷플릭스는 자사주 매입과 기관 투자자들의 매수 추천으로 긍정적인 펀더멘털 신호를 보이고 있습니다. 그러나 옵션 시장의 이상 거래와 기술적 지표는 단기 하락 가능성을 시사하고 있습니다.",
+      "week1": {
+        "direction": "UP",
+        "confidence": 56.2,
+        "price_low": 93.68,
+        "price_high": 97.43,
+        "price_target": 95.56
+      },
+      "week2": {
+        "direction": "UP",
+        "confidence": 62.7,
+        "price_low": 94.79,
+        "price_high": 100.41,
+        "price_target": 97.6
+      },
+      "week3": {
+        "direction": "UP",
+        "up_probability": 61.8,
+        "range_low": 88.01,
+        "range_high": 99.25
+      },
+      "week4": {
+        "direction": "UP",
+        "up_probability": 61.8,
+        "range_low": 86.14,
+        "range_high": 101.12
+      },
+      "weekly_outlook": {
+        "week1": "[RSI 43으로 약세 신호이나 MACD가 -1.5로 하락세 지속 중.]",
+        "week2": "[기관 투자자 매수 추천 유지하나 옵션의 Put/Call 비율 0.35로 하방 압력 존재.]",
+        "week3": "[자사주 매입 승인으로 주주 가치 증가 기대하나 10년 만기 국채 수익률 4.29%로 금리 부담 여전.]",
+        "week4": "[VIX 19.04로 두려움 감소하나 IV Rank 100%로 큰 변동성 예상.]"
+      }
+    },
+    {
+      "id": 536,
+      "predicted_at": "2026-04-13T14:55:04.367158+00:00",
+      "age_hours": 241.7,
+      "current_price_at_prediction": 102.86,
+      "verdict": "관망",
+      "direction": "UP",
+      "confidence": 62,
+      "summary": "넷플릭스 주식은 기술적 지표와 펀더멘털 측면에서 상승 모멘텀이 있으나, 옵션 시장의 하락 압력도 무시할 수 없습니다. 시장 전반의 불안감 감소는 긍정적이지만, 확실한 매수 신호로 보기에는 다소 부족합니다.",
+      "week1": {
+        "direction": "DOWN",
+        "confidence": 51.4,
+        "price_low": 100.32,
+        "price_high": 104.43,
+        "price_target": 102.37
+      },
+      "week2": {
+        "direction": "DOWN",
+        "confidence": 68.1,
+        "price_low": 93.58,
+        "price_high": 99.75,
+        "price_target": 96.67
+      },
+      "week3": {
+        "direction": "DOWN",
+        "confidence": 62.0,
+        "price_low": 94.63,
+        "price_high": 102.86,
+        "price_target": 98.75
+      },
+      "week4": {
+        "direction": "UP",
+        "confidence": 61.8,
+        "price_low": 101.76,
+        "price_high": 112.05,
+        "price_target": 106.91
+      },
+      "weekly_outlook": {
+        "week1": "RSI 72.1로 과매수 신호이나 MACD 2.920으로 상승세 지속 중.",
+        "week2": "골드만 삭스 중립에서 매수로 상향 조정했으나 Put/Call Ratio 0.93으로 하락 압력 존재.",
+        "week3": "넷플릭스 수익이 예상치를 초과했으나 IV Rank 100%로 큰 변동성 우려.",
+        "week4": "기관 투자자 보유량 증가하나 풋 옵션 거래량 4.5배 증가로 하락 베팅 강해."
+      }
+    },
+    {
+      "id": 523,
+      "predicted_at": "2026-04-09T06:43:54.511309+00:00",
+      "age_hours": 345.9,
+      "current_price_at_prediction": 98.82,
+      "verdict": "관망",
+      "direction": "UP",
+      "confidence": 57,
+      "summary": "넷플릭스 주식은 기술적 및 펀더멘털 분석에서 긍정적인 신호를 보이고 있지만, 옵션 시장의 불확실성과 매크로 경제적 악재로 인해 관망이 권장됩니다. 시장의 변동성과 금리 상승 압력이 주식의 상승을 제한할 수 있습니다.",
+      "week1": {
+        "direction": "DOWN",
+        "confidence": 56.0,
+        "price_low": 94.88,
+        "price_high": 98.83,
+        "price_target": 96.85
+      },
+      "week2": {
+        "direction": "DOWN",
+        "confidence": 55.3,
+        "price_low": 94.12,
+        "price_high": 100.05,
+        "price_target": 97.08
+      },
+      "week3": {
+        "direction": "DOWN",
+        "confidence": 50.7,
+        "price_low": 94.63,
+        "price_high": 102.54,
+        "price_target": 98.58
+      },
+      "week4": {
+        "direction": "DOWN",
+        "confidence": 53.5,
+        "price_low": 92.72,
+        "price_high": 102.6,
+        "price_target": 97.66
+      },
+      "weekly_outlook": {
+        "week1": "RSI 66.4로 과매수 접근이나 MACD 2.175로 상승 모멘텀 지속 중.",
+        "week2": "애널리스트 45명 중 30명이 '매수' 추천이나 IV 랭크 100%로 변동성 우려.",
+        "week3": "목표가 $113.9로 상승 여력 있으나 10년 국채 수익률 4.34%로 금리 압박 존재.",
+        "week4": "OBV 65.6%로 매수 우위이나 VIX 25.78로 시장 불안감 증가."
+      }
+    },
+    {
+      "id": 522,
+      "predicted_at": "2026-04-09T06:43:54.509335+00:00",
+      "age_hours": 345.9,
+      "current_price_at_prediction": 98.82,
+      "verdict": "관망",
+      "direction": "UP",
+      "confidence": 57,
+      "summary": "넷플릭스 주식은 기술적 및 펀더멘털 분석에서 긍정적인 신호를 보이고 있지만, 옵션 시장의 불확실성과 매크로 경제적 악재로 인해 관망이 권장됩니다. 시장의 변동성과 금리 상승 압력이 주식의 상승을 제한할 수 있습니다.",
+      "week1": {
+        "direction": "DOWN",
+        "confidence": 56.0,
+        "price_low": 94.88,
+        "price_high": 98.83,
+        "price_target": 96.85
+      },
+      "week2": {
+        "direction": "DOWN",
+        "confidence": 55.3,
+        "price_low": 94.12,
+        "price_high": 100.05,
+        "price_target": 97.08
+      },
+      "week3": {
+        "direction": "DOWN",
+        "confidence": 50.7,
+        "price_low": 94.63,
+        "price_high": 102.54,
+        "price_target": 98.58
+      },
+      "week4": {
+        "direction": "DOWN",
+        "confidence": 53.5,
+        "price_low": 92.72,
+        "price_high": 102.6,
+        "price_target": 97.66
+      },
+      "weekly_outlook": {
+        "week1": "RSI 66.4로 과매수 접근이나 MACD 2.175로 상승 모멘텀 지속 중.",
+        "week2": "애널리스트 45명 중 30명이 '매수' 추천이나 IV 랭크 100%로 변동성 우려.",
+        "week3": "목표가 $113.9로 상승 여력 있으나 10년 국채 수익률 4.34%로 금리 압박 존재.",
+        "week4": "OBV 65.6%로 매수 우위이나 VIX 25.78로 시장 불안감 증가."
+      }
+    }
+  ]
+}

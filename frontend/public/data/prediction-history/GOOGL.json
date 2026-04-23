@@ -1,0 +1,179 @@
+{
+  "ticker": "GOOGL",
+  "history": [
+    {
+      "id": 543,
+      "predicted_at": "2026-04-23T14:56:44.345820+00:00",
+      "age_hours": 1.7,
+      "current_price_at_prediction": 340.23,
+      "verdict": "매수",
+      "direction": "UP",
+      "confidence": 88,
+      "summary": "GOOGL은 기술적 지표와 옵션 거래에서 강한 상승 신호를 보이고 있으며, 펀더멘털 측면에서도 긍정적인 평가를 받고 있습니다. 시장 전반적으로도 두려움이 감소하고 금리 부담이 완화되면서 주가 상승에 유리한 환경이 조성되고 있습니다.",
+      "week1": {
+        "direction": "UP",
+        "confidence": 56.2,
+        "price_low": 340.43,
+        "price_high": 354.04,
+        "price_target": 347.24
+      },
+      "week2": {
+        "direction": "UP",
+        "confidence": 56.1,
+        "price_low": 336.89,
+        "price_high": 357.3,
+        "price_target": 347.1
+      },
+      "week3": {
+        "direction": "UP",
+        "up_probability": 50.9,
+        "range_low": 319.82,
+        "range_high": 360.64
+      },
+      "week4": {
+        "direction": "UP",
+        "up_probability": 50.9,
+        "range_low": 313.01,
+        "range_high": 367.45
+      },
+      "weekly_outlook": {
+        "week1": "MACD가 시그널 라인보다 높아 강한 상승 모멘텀을 나타냅니다.",
+        "week2": "옵션의 P/C 비율이 0.18로 극단적인 낙관적 신호를 보이고 있습니다.",
+        "week3": "56명의 애널리스트가 GOOGL에 대해 강력한 매수 추천을 하고 있으며, 평균 목표가는 10.7% 상승 여력입니다.",
+        "week4": "VIX가 19.04로 20일 동안 24.8% 하락하여 시장의 두려움이 감소하고 있습니다."
+      }
+    },
+    {
+      "id": 535,
+      "predicted_at": "2026-04-13T14:55:03.869411+00:00",
+      "age_hours": 241.7,
+      "current_price_at_prediction": 318.35,
+      "verdict": "관망",
+      "direction": "UP",
+      "confidence": 63,
+      "summary": "GOOGL 주식은 기술적 및 펀더멘털 측면에서 상승 가능성이 있으나 옵션 시장의 비정상적인 풋 활동이 하락 위험을 시사합니다. 시장 전반적으로는 불안감이 감소하고 리스크 선호가 증가하고 있습니다.",
+      "week1": {
+        "direction": "DOWN",
+        "confidence": 57.1,
+        "price_low": 304.42,
+        "price_high": 317.16,
+        "price_target": 310.79
+      },
+      "week2": {
+        "direction": "DOWN",
+        "confidence": 69.2,
+        "price_low": 288.46,
+        "price_high": 307.56,
+        "price_target": 298.01
+      },
+      "week3": {
+        "direction": "DOWN",
+        "confidence": 65.5,
+        "price_low": 289.17,
+        "price_high": 314.64,
+        "price_target": 301.9
+      },
+      "week4": {
+        "direction": "DOWN",
+        "confidence": 60.2,
+        "price_low": 291.57,
+        "price_high": 323.41,
+        "price_target": 307.49
+      },
+      "weekly_outlook": {
+        "week1": "[RSI 62.2로 강세 전환 가능성] vs [IV Rank 96%로 큰 변동성 예상]",
+        "week2": "[애널리스트 56명 STRONG BUY 의견] vs [풋 옵션 비정상적 활동 2.7배 증가]",
+        "week3": "[애널리스트 목표가 $375.93로 18.1% 상승 여력] vs [10년 만기 국채 수익률 4.32%로 상승]",
+        "week4": "[VIX 19.93로 불안감 감소] vs [옵션 풋/콜 비율 0.42로 비정상적 풋 활동 관찰]"
+      }
+    },
+    {
+      "id": 513,
+      "predicted_at": "2026-04-09T06:41:46.718797+00:00",
+      "age_hours": 345.9,
+      "current_price_at_prediction": 305.46,
+      "verdict": "관망",
+      "direction": "UP",
+      "confidence": 62,
+      "summary": "GOOGL 주식은 애널리스트들의 긍정적인 평가와 옵션 시장의 수요 증가로 인해 상승 가능성이 높습니다. 그러나 시장의 불안감과 금리 상승은 주의가 필요합니다.",
+      "week1": {
+        "direction": "UP",
+        "confidence": 52.6,
+        "price_low": 302.02,
+        "price_high": 314.24,
+        "price_target": 308.13
+      },
+      "week2": {
+        "direction": "UP",
+        "confidence": 56.5,
+        "price_low": 302.9,
+        "price_high": 321.24,
+        "price_target": 312.07
+      },
+      "week3": {
+        "direction": "UP",
+        "confidence": 53.2,
+        "price_low": 296.48,
+        "price_high": 320.91,
+        "price_target": 308.69
+      },
+      "week4": {
+        "direction": "UP",
+        "confidence": 52.8,
+        "price_low": 293.0,
+        "price_high": 323.54,
+        "price_target": 308.27
+      },
+      "weekly_outlook": {
+        "week1": "RSI 62로 상승 여력 있으나 MACD가 시그널 라인 아래로 하락세 지속 중.",
+        "week2": "애널리스트 56명 중 70%가 STRONG BUY 추천하나 VIX 25.78로 시장 불안감 증가.",
+        "week3": "목표가 $376.29로 상승 여력 있으나 10년 만기 국채 수익률 4.34%로 금리 압박 존재.",
+        "week4": "OBV 상승세로 매수 압력 증가하나 달러 지수 99.11로 강세 지속해 시장 부담."
+      }
+    },
+    {
+      "id": 512,
+      "predicted_at": "2026-04-09T06:41:44.540156+00:00",
+      "age_hours": 345.9,
+      "current_price_at_prediction": 305.46,
+      "verdict": "관망",
+      "direction": "UP",
+      "confidence": 62,
+      "summary": "GOOGL 주식은 애널리스트들의 긍정적인 평가와 옵션 시장의 수요 증가로 인해 상승 가능성이 높습니다. 그러나 시장의 불안감과 금리 상승은 주의가 필요합니다.",
+      "week1": {
+        "direction": "UP",
+        "confidence": 52.6,
+        "price_low": 302.02,
+        "price_high": 314.24,
+        "price_target": 308.13
+      },
+      "week2": {
+        "direction": "UP",
+        "confidence": 56.5,
+        "price_low": 302.9,
+        "price_high": 321.24,
+        "price_target": 312.07
+      },
+      "week3": {
+        "direction": "UP",
+        "confidence": 53.2,
+        "price_low": 296.48,
+        "price_high": 320.91,
+        "price_target": 308.69
+      },
+      "week4": {
+        "direction": "UP",
+        "confidence": 52.8,
+        "price_low": 293.0,
+        "price_high": 323.54,
+        "price_target": 308.27
+      },
+      "weekly_outlook": {
+        "week1": "RSI 62로 상승 여력 있으나 MACD가 시그널 라인 아래로 하락세 지속 중.",
+        "week2": "애널리스트 56명 중 70%가 STRONG BUY 추천하나 VIX 25.78로 시장 불안감 증가.",
+        "week3": "목표가 $376.29로 상승 여력 있으나 10년 만기 국채 수익률 4.34%로 금리 압박 존재.",
+        "week4": "OBV 상승세로 매수 압력 증가하나 달러 지수 99.11로 강세 지속해 시장 부담."
+      }
+    }
+  ]
+}

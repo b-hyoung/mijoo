@@ -1,0 +1,179 @@
+{
+  "ticker": "NVDA",
+  "history": [
+    {
+      "id": 541,
+      "predicted_at": "2026-04-23T14:55:53.187660+00:00",
+      "age_hours": 1.7,
+      "current_price_at_prediction": 202.39,
+      "verdict": "매수",
+      "direction": "UP",
+      "confidence": 86,
+      "summary": "NVDA는 기술적, 옵션, 펀더멘털 분석에서 모두 긍정적인 신호를 보이며 상승 가능성이 높습니다. 시장의 두려움 감소와 금리 부담 완화도 상승을 지원합니다.",
+      "week1": {
+        "direction": "UP",
+        "confidence": 58.4,
+        "price_low": 203.98,
+        "price_high": 212.08,
+        "price_target": 208.03
+      },
+      "week2": {
+        "direction": "UP",
+        "confidence": 61.5,
+        "price_low": 204.09,
+        "price_high": 216.23,
+        "price_target": 210.16
+      },
+      "week3": {
+        "direction": "UP",
+        "up_probability": 53.4,
+        "range_low": 190.25,
+        "range_high": 214.53
+      },
+      "week4": {
+        "direction": "UP",
+        "up_probability": 53.4,
+        "range_low": 186.2,
+        "range_high": 218.58
+      },
+      "weekly_outlook": {
+        "week1": "RSI가 69.6으로 과매수 구간에 근접해 상승 모멘텀 강함.",
+        "week2": "MACD가 시그널 라인보다 높아 강한 매수 신호를 나타냄.",
+        "week3": "애널리스트 목표 주가 평균 $268.61로 32.7% 상승 여력.",
+        "week4": "VIX가 19.04로 하락, 시장 두려움 감소로 상승 기대감 증가."
+      }
+    },
+    {
+      "id": 531,
+      "predicted_at": "2026-04-13T14:55:00.817847+00:00",
+      "age_hours": 241.7,
+      "current_price_at_prediction": 189.3,
+      "verdict": "매수",
+      "direction": "UP",
+      "confidence": 86,
+      "summary": "NVDA는 기술적 지표와 옵션 거래에서 긍정적인 신호를 보이며, 애널리스트의 강력한 매수 추천을 받고 있습니다. 시장 불안감이 감소하고 글로벌 유동성이 개선되면서 상승 가능성이 높아지고 있습니다.",
+      "week1": {
+        "direction": "UP",
+        "confidence": 53.3,
+        "price_low": 187.57,
+        "price_high": 195.15,
+        "price_target": 191.36
+      },
+      "week2": {
+        "direction": "UP",
+        "confidence": 55.5,
+        "price_low": 187.1,
+        "price_high": 198.46,
+        "price_target": 192.78
+      },
+      "week3": {
+        "direction": "UP",
+        "confidence": 51.2,
+        "price_low": 182.51,
+        "price_high": 197.65,
+        "price_target": 190.08
+      },
+      "week4": {
+        "direction": "UP",
+        "confidence": 54.5,
+        "price_low": 182.71,
+        "price_high": 201.64,
+        "price_target": 192.17
+      },
+      "weekly_outlook": {
+        "week1": "MACD가 시그널 라인을 상향 돌파하여 긍정적인 모멘텀을 시사합니다.",
+        "week2": "옵션 콜/풋 비율이 0.74로 콜 옵션 수요가 높습니다.",
+        "week3": "애널리스트 목표가 평균 $268.22로 상승 여력이 41.7%입니다.",
+        "week4": "VIX가 19.93으로 26.7% 하락하여 시장 불안감이 감소했습니다."
+      }
+    },
+    {
+      "id": 509,
+      "predicted_at": "2026-04-09T06:41:06.616934+00:00",
+      "age_hours": 345.9,
+      "current_price_at_prediction": 178.1,
+      "verdict": "관망",
+      "direction": "UP",
+      "confidence": 49,
+      "summary": "Nvidia는 최근 실적 호조와 옵션 시장의 긍정적 신호로 상승 가능성이 있습니다. 그러나 기술적 지표와 매크로 환경의 불확실성으로 인해 관망이 권장됩니다.",
+      "week1": {
+        "direction": "DOWN",
+        "confidence": 50.1,
+        "price_low": 174.49,
+        "price_high": 181.61,
+        "price_target": 178.05
+      },
+      "week2": {
+        "direction": "UP",
+        "confidence": 53.1,
+        "price_low": 174.6,
+        "price_high": 185.29,
+        "price_target": 179.95
+      },
+      "week3": {
+        "direction": "UP",
+        "confidence": 64.7,
+        "price_low": 179.71,
+        "price_high": 193.96,
+        "price_target": 186.84
+      },
+      "week4": {
+        "direction": "UP",
+        "confidence": 53.1,
+        "price_low": 171.04,
+        "price_high": 188.85,
+        "price_target": 179.95
+      },
+      "weekly_outlook": {
+        "week1": "RSI 54.6으로 중립적이나 MACD -1.451로 약세 신호 지속 중.",
+        "week2": "기관 투자자 3개월간 5% 순매수이나 VIX 25.78로 불안감 증가.",
+        "week3": "분기 실적 매출 50% 증가하였으나 10년 국채 수익률 4.34%로 상승 압력 존재.",
+        "week4": "옵션 Put/Call 비율 0.67로 상승 신호이나 OBV 하락세로 매수 압력 부족."
+      }
+    },
+    {
+      "id": 508,
+      "predicted_at": "2026-04-09T06:40:50.361250+00:00",
+      "age_hours": 345.9,
+      "current_price_at_prediction": 178.1,
+      "verdict": "관망",
+      "direction": "UP",
+      "confidence": 49,
+      "summary": "Nvidia는 최근 실적 호조와 옵션 시장의 긍정적 신호로 상승 가능성이 있습니다. 그러나 기술적 지표와 매크로 환경의 불확실성으로 인해 관망이 권장됩니다.",
+      "week1": {
+        "direction": "DOWN",
+        "confidence": 50.1,
+        "price_low": 174.49,
+        "price_high": 181.61,
+        "price_target": 178.05
+      },
+      "week2": {
+        "direction": "UP",
+        "confidence": 53.1,
+        "price_low": 174.6,
+        "price_high": 185.29,
+        "price_target": 179.95
+      },
+      "week3": {
+        "direction": "UP",
+        "confidence": 64.7,
+        "price_low": 179.71,
+        "price_high": 193.96,
+        "price_target": 186.84
+      },
+      "week4": {
+        "direction": "UP",
+        "confidence": 53.1,
+        "price_low": 171.04,
+        "price_high": 188.85,
+        "price_target": 179.95
+      },
+      "weekly_outlook": {
+        "week1": "RSI 54.6으로 중립적이나 MACD -1.451로 약세 신호 지속 중.",
+        "week2": "기관 투자자 3개월간 5% 순매수이나 VIX 25.78로 불안감 증가.",
+        "week3": "분기 실적 매출 50% 증가하였으나 10년 국채 수익률 4.34%로 상승 압력 존재.",
+        "week4": "옵션 Put/Call 비율 0.67로 상승 신호이나 OBV 하락세로 매수 압력 부족."
+      }
+    }
+  ]
+}

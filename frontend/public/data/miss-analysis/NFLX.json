@@ -1,0 +1,89 @@
+{
+  "ticker": "NFLX",
+  "analyzed_at": "2026-04-23T16:05:50.404876+00:00",
+  "miss_count": 3,
+  "predicted_direction": "UP",
+  "actual_direction": "DOWN",
+  "drivers": [
+    "가능성: 넷플릭스의 예상치 못한 실적 발표로 인한 투자자 신뢰 감소",
+    "가능성: 경쟁사들의 강력한 시장 진입으로 인한 시장 점유율 감소 우려",
+    "가능성: 글로벌 경제 불확실성 증가로 인한 투자 심리 악화"
+  ],
+  "advice": "향후 예측에서는 넷플릭스의 실적 발표 및 경쟁사 동향을 주의 깊게 모니터링해야 합니다.",
+  "summary": "넷플릭스의 주가 하락은 예상치 못한 실적 발표와 경쟁사의 강력한 시장 진입, 그리고 글로벌 경제 불확실성 증가로 인한 투자 심리 악화가 주요 요인일 가능성이 큽니다. 이러한 요소들은 기술적 분석이나 펀더멘털 분석에서 포착되지 않았을 수 있으며, 향후 예측에서는 이러한 외부 요인들을 더욱 주의 깊게 고려해야 합니다.",
+  "misses": [
+    {
+      "predicted_at": "2026-04-13T14:55:04.367158+00:00",
+      "predicted_direction": "UP",
+      "actual_direction": "DOWN",
+      "price_at": 102.86,
+      "current_price": 92.6500015258789,
+      "change_pct": -9.93,
+      "reasoning": "  - 테크니컬 분석가: UP — • RSI(14)가 72.1로 과매수 영역에 진입했으나 상승 모멘텀을 시사합니다.\n  - 옵션 트레이더: DOWN — • Put/Call Ratio가 0.93으로 콜 옵션보다 풋 옵션이 더 많이 거래되고 있어 하락 압력을 시사합니다.\n  - 펀더멘털 분석가: UP — • 최근 골드만 삭스가 넷플릭스 주식을 중립에서 매수로 상향 조정했습니다. 이는 긍정적인 신호로 해석될 수 있습니다.\n  - 매크로 전략가: UP — • VIX가 19.93으로 20일 동안 26.7% 하락하여 시장의 불안감이 감소하고 있음을 나타냅니다. ",
+      "summary": "넷플릭스 주식은 기술적 지표와 펀더멘털 측면에서 상승 모멘텀이 있으나, 옵션 시장의 하락 압력도 무시할 수 없습니다. 시장 전반의 불안감 감소는 긍정적이지만, 확실한 매수 신호로 보기에는 다소 부족합니다.",
+      "signals_at_time": {
+        "pc_ratio": 0.93,
+        "iv_rank": 100,
+        "unusual_activity": 4.5,
+        "unusual_side": "PUT",
+        "short_float_pct": 1.92,
+        "short_change": "N/A",
+        "insider_net_90d": 0,
+        "anomaly_score": 20,
+        "anomaly_direction": "UP",
+        "buy_dominance": 72.9,
+        "obv_trend": "UP",
+        "is_accumulation": false
+      }
+    },
+    {
+      "predicted_at": "2026-04-09T06:43:54.511309+00:00",
+      "predicted_direction": "UP",
+      "actual_direction": "DOWN",
+      "price_at": 98.82,
+      "current_price": 92.6500015258789,
+      "change_pct": -6.24,
+      "reasoning": "  - 테크니컬 분석가: UP — • RSI(14)가 66.4로 과매수 영역에 근접했지만 아직 상승 여력이 있습니다.\n  - 펀더멘털 분석가: UP — • 애널리스트 평균 목표가는 $113.9로 현재 가격 대비 14.6% 상승 여력이 있습니다.\n  - 옵션 트레이더: DOWN — • 옵션의 풋/콜 비율이 0.4로 콜 옵션이 우세하지만, 이는 일반적으로 강세 신호로 해석될 수 있습니다. 그러나 이 경우 높은 IV 랭크와 결합되어 주의가 필요합니다.\n  - 매크로 전략가: DOWN — • VIX가 25.78로 20일 동안 3.4% 상승하여 시장의 불안감이 증가하고 있습니다. ",
+      "summary": "넷플릭스 주식은 기술적 및 펀더멘털 분석에서 긍정적인 신호를 보이고 있지만, 옵션 시장의 불확실성과 매크로 경제적 악재로 인해 관망이 권장됩니다. 시장의 변동성과 금리 상승 압력이 주식의 상승을 제한할 수 있습니다.",
+      "signals_at_time": {
+        "pc_ratio": 0.4,
+        "iv_rank": 100,
+        "unusual_activity": 4.5,
+        "unusual_side": "PUT",
+        "short_float_pct": 1.93,
+        "short_change": "N/A",
+        "insider_net_90d": 0,
+        "anomaly_score": 20,
+        "anomaly_direction": "UP",
+        "buy_dominance": 61.5,
+        "obv_trend": "UP",
+        "is_accumulation": true
+      }
+    },
+    {
+      "predicted_at": "2026-04-09T06:43:54.509335+00:00",
+      "predicted_direction": "UP",
+      "actual_direction": "DOWN",
+      "price_at": 98.82,
+      "current_price": 92.6500015258789,
+      "change_pct": -6.24,
+      "reasoning": "  - 테크니컬 분석가: UP — • RSI(14)가 66.4로 과매수 영역에 근접했지만 아직 상승 여력이 있습니다.\n  - 펀더멘털 분석가: UP — • 애널리스트 평균 목표가는 $113.9로 현재 가격 대비 14.6% 상승 여력이 있습니다.\n  - 옵션 트레이더: DOWN — • 옵션의 풋/콜 비율이 0.4로 콜 옵션이 우세하지만, 이는 일반적으로 강세 신호로 해석될 수 있습니다. 그러나 이 경우 높은 IV 랭크와 결합되어 주의가 필요합니다.\n  - 매크로 전략가: DOWN — • VIX가 25.78로 20일 동안 3.4% 상승하여 시장의 불안감이 증가하고 있습니다. ",
+      "summary": "넷플릭스 주식은 기술적 및 펀더멘털 분석에서 긍정적인 신호를 보이고 있지만, 옵션 시장의 불확실성과 매크로 경제적 악재로 인해 관망이 권장됩니다. 시장의 변동성과 금리 상승 압력이 주식의 상승을 제한할 수 있습니다.",
+      "signals_at_time": {
+        "pc_ratio": 0.4,
+        "iv_rank": 100,
+        "unusual_activity": 4.5,
+        "unusual_side": "PUT",
+        "short_float_pct": 1.93,
+        "short_change": "N/A",
+        "insider_net_90d": 0,
+        "anomaly_score": 20,
+        "anomaly_direction": "UP",
+        "buy_dominance": 61.5,
+        "obv_trend": "UP",
+        "is_accumulation": true
+      }
+    }
+  ],
+  "cached": true
+}

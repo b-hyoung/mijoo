@@ -1,0 +1,179 @@
+{
+  "ticker": "TSLA",
+  "history": [
+    {
+      "id": 545,
+      "predicted_at": "2026-04-23T14:57:31.641499+00:00",
+      "age_hours": 1.7,
+      "current_price_at_prediction": 375.98,
+      "verdict": "관망",
+      "direction": "DOWN",
+      "confidence": 52,
+      "summary": "옵션 시장의 하락 신호와 기술적 지표의 혼조세로 인해 테슬라 주가는 하락 압력을 받고 있습니다. 그러나 매크로 환경의 개선은 긍정적 영향을 미칠 수 있습니다.",
+      "week1": {
+        "direction": "DOWN",
+        "confidence": 50.5,
+        "price_low": 367.78,
+        "price_high": 382.82,
+        "price_target": 375.3
+      },
+      "week2": {
+        "direction": "UP",
+        "confidence": 82.9,
+        "price_low": 405.95,
+        "price_high": 428.51,
+        "price_target": 417.23
+      },
+      "week3": {
+        "direction": "DOWN",
+        "up_probability": 40.6,
+        "range_low": 353.43,
+        "range_high": 398.54
+      },
+      "week4": {
+        "direction": "DOWN",
+        "up_probability": 40.6,
+        "range_low": 345.91,
+        "range_high": 406.06
+      },
+      "weekly_outlook": {
+        "week1": "[RSI 48.7로 중립적이나 MACD가 시그널 라인 아래에서 약간 상승 중.] vs [MACD가 강한 상승 모멘텀을 나타내지 않으며, 혼조세 지속 중.]",
+        "week2": "[VIX 19.04로 24.8% 하락, 시장 두려움 감소 시사.] vs [PUT 옵션 거래가 17배 증가, 하락 압력 우려.]",
+        "week3": "[10년 만기 국채 수익률 4.29%로 하락, 금리 부담 완화.] vs [FOMC 발표 D-6, 단기 변동성 확대 가능성.]",
+        "week4": "[기관 투자자들의 매수세가 강하게 나타나 긍정적.] vs [IV Rank 100%로 큰 가격 변동 예상, 하락 가능성.]"
+      }
+    },
+    {
+      "id": 533,
+      "predicted_at": "2026-04-13T14:55:02.317604+00:00",
+      "age_hours": 241.7,
+      "current_price_at_prediction": 352.26,
+      "verdict": "관망",
+      "direction": "DOWN",
+      "confidence": 50,
+      "summary": "옵션 거래와 기술적 지표에서 하락 신호가 강하게 나타나고 있습니다. 시장 불안감은 감소했으나, TSLA에 대한 하방 압력이 더 큽니다.",
+      "week1": {
+        "direction": "DOWN",
+        "confidence": 74.3,
+        "price_low": 316.71,
+        "price_high": 330.8,
+        "price_target": 323.75
+      },
+      "week2": {
+        "direction": "DOWN",
+        "confidence": 73.4,
+        "price_low": 314.22,
+        "price_high": 335.36,
+        "price_target": 324.79
+      },
+      "week3": {
+        "direction": "DOWN",
+        "confidence": 77.6,
+        "price_low": 305.72,
+        "price_high": 333.9,
+        "price_target": 319.81
+      },
+      "week4": {
+        "direction": "DOWN",
+        "confidence": 86.7,
+        "price_low": 291.55,
+        "price_high": 326.77,
+        "price_target": 309.16
+      },
+      "weekly_outlook": {
+        "week1": "[RSI 39.1 과매도 접근이나 MACD -13.966로 하락세 지속 중.] vs [IV Rank 100%로 큰 변동성 예상, 하락 가능성 시사.]",
+        "week2": "[애널리스트 평균 목표가 $415.3로 17.9% 상승 여력 존재.] vs [Put/Call 비율 0.69로 하락 예상, 풋 옵션 비중 높음.]",
+        "week3": "[유럽 자율주행 관련 긍정적 뉴스로 매출 증가 가능성 있음.] vs [풋 옵션 이상 거래 33.1배 증가, 하방 압력 강함.]",
+        "week4": "[VIX 19.93로 불안감 감소, 시장 안정성 증가.] vs [OBV 하락세로 매수세 부족, 하락 압력 지속.]"
+      }
+    },
+    {
+      "id": 517,
+      "predicted_at": "2026-04-09T06:42:43.712095+00:00",
+      "age_hours": 345.9,
+      "current_price_at_prediction": 346.65,
+      "verdict": "관망",
+      "direction": "DOWN",
+      "confidence": 45,
+      "summary": "기술적 분석과 매크로 요인들이 하락을 지지하고 있습니다. 시장 불안감과 금리 상승이 TSLA에 부정적 영향을 미칠 수 있습니다.",
+      "week1": {
+        "direction": "DOWN",
+        "confidence": 75.2,
+        "price_low": 310.61,
+        "price_high": 324.48,
+        "price_target": 317.55
+      },
+      "week2": {
+        "direction": "DOWN",
+        "confidence": 72.7,
+        "price_low": 309.99,
+        "price_high": 330.79,
+        "price_target": 320.39
+      },
+      "week3": {
+        "direction": "DOWN",
+        "confidence": 60.1,
+        "price_low": 321.07,
+        "price_high": 348.8,
+        "price_target": 334.94
+      },
+      "week4": {
+        "direction": "DOWN",
+        "confidence": 72.4,
+        "price_low": 303.43,
+        "price_high": 338.09,
+        "price_target": 320.76
+      },
+      "weekly_outlook": {
+        "week1": "[RSI 33.7 과매도 접근이나 MACD -14.151로 하락세 지속 중.] vs [옵션 풋/콜 비율 0.52로 상승 기대감 높음.]",
+        "week2": "[41명의 애널리스트가 '매수' 추천하며 긍정적 전망을 나타냄.] vs [VIX 25.78로 시장 불안감 증가 중.]",
+        "week3": "[애널리스트 평균 목표가 $416.15로 21.2% 상승 여력 존재.] vs [10년 만기 국채 수익률 4.34%로 금리 상승 압력 존재.]",
+        "week4": "[내부자 순매도 53,804주로 큰 규모는 아니나 부정적 요소 존재.] vs [OBV 하락세로 매수세 부족 시사.]"
+      }
+    },
+    {
+      "id": 516,
+      "predicted_at": "2026-04-09T06:42:38.979407+00:00",
+      "age_hours": 345.9,
+      "current_price_at_prediction": 346.65,
+      "verdict": "관망",
+      "direction": "DOWN",
+      "confidence": 45,
+      "summary": "기술적 분석과 매크로 요인들이 하락을 지지하고 있습니다. 시장 불안감과 금리 상승이 TSLA에 부정적 영향을 미칠 수 있습니다.",
+      "week1": {
+        "direction": "DOWN",
+        "confidence": 75.2,
+        "price_low": 310.61,
+        "price_high": 324.48,
+        "price_target": 317.55
+      },
+      "week2": {
+        "direction": "DOWN",
+        "confidence": 72.7,
+        "price_low": 309.99,
+        "price_high": 330.79,
+        "price_target": 320.39
+      },
+      "week3": {
+        "direction": "DOWN",
+        "confidence": 60.1,
+        "price_low": 321.07,
+        "price_high": 348.8,
+        "price_target": 334.94
+      },
+      "week4": {
+        "direction": "DOWN",
+        "confidence": 72.4,
+        "price_low": 303.43,
+        "price_high": 338.09,
+        "price_target": 320.76
+      },
+      "weekly_outlook": {
+        "week1": "[RSI 33.7 과매도 접근이나 MACD -14.151로 하락세 지속 중.] vs [옵션 풋/콜 비율 0.52로 상승 기대감 높음.]",
+        "week2": "[41명의 애널리스트가 '매수' 추천하며 긍정적 전망을 나타냄.] vs [VIX 25.78로 시장 불안감 증가 중.]",
+        "week3": "[애널리스트 평균 목표가 $416.15로 21.2% 상승 여력 존재.] vs [10년 만기 국채 수익률 4.34%로 금리 상승 압력 존재.]",
+        "week4": "[내부자 순매도 53,804주로 큰 규모는 아니나 부정적 요소 존재.] vs [OBV 하락세로 매수세 부족 시사.]"
+      }
+    }
+  ]
+}

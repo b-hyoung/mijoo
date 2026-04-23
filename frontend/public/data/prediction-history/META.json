@@ -1,0 +1,179 @@
+{
+  "ticker": "META",
+  "history": [
+    {
+      "id": 544,
+      "predicted_at": "2026-04-23T14:57:07.073710+00:00",
+      "age_hours": 1.7,
+      "current_price_at_prediction": 665.0,
+      "verdict": "매수",
+      "direction": "UP",
+      "confidence": 65,
+      "summary": "대부분의 분석가들이 META의 상승을 예상하며, 기술적 및 펀더멘털 지표가 긍정적입니다. 시장 환경도 안정적이며, 금리와 달러 약세가 긍정적으로 작용하고 있습니다.",
+      "week1": {
+        "direction": "UP",
+        "confidence": 51.0,
+        "price_low": 653.99,
+        "price_high": 680.59,
+        "price_target": 667.29
+      },
+      "week2": {
+        "direction": "UP",
+        "confidence": 50.0,
+        "price_low": 645.09,
+        "price_high": 684.99,
+        "price_target": 665.04
+      },
+      "week3": {
+        "direction": "DOWN",
+        "up_probability": 46.4,
+        "range_low": 625.1,
+        "range_high": 704.9
+      },
+      "week4": {
+        "direction": "DOWN",
+        "up_probability": 46.4,
+        "range_low": 611.8,
+        "range_high": 718.2
+      },
+      "weekly_outlook": {
+        "week1": "RSI가 59.7로 상승 여력이 있어 기술적 반등 예상.",
+        "week2": "MACD가 시그널 라인보다 높아 상승 모멘텀 지속.",
+        "week3": "애널리스트 목표 주가 평균이 $855.11로 상승 여력 28.6%.",
+        "week4": "10년 만기 국채 수익률 4.29%로 금리 부담 완화, 긍정적 전망."
+      }
+    },
+    {
+      "id": 528,
+      "predicted_at": "2026-04-13T14:54:59.928361+00:00",
+      "age_hours": 241.7,
+      "current_price_at_prediction": 626.65,
+      "verdict": "매수",
+      "direction": "UP",
+      "confidence": 82,
+      "summary": "META 주식은 기술적, 펀더멘털, 옵션 분석에서 모두 긍정적인 신호를 보이고 있습니다. 시장의 불안감 감소와 글로벌 유동성 개선도 상승에 기여하고 있습니다.",
+      "week1": {
+        "direction": "UP",
+        "confidence": 59.5,
+        "price_low": 633.92,
+        "price_high": 658.99,
+        "price_target": 646.46
+      },
+      "week2": {
+        "direction": "UP",
+        "confidence": 51.4,
+        "price_low": 610.72,
+        "price_high": 648.32,
+        "price_target": 629.52
+      },
+      "week3": {
+        "direction": "UP",
+        "confidence": 56.2,
+        "price_low": 614.63,
+        "price_high": 664.76,
+        "price_target": 639.69
+      },
+      "week4": {
+        "direction": "UP",
+        "confidence": 67.0,
+        "price_low": 630.74,
+        "price_high": 693.41,
+        "price_target": 662.07
+      },
+      "weekly_outlook": {
+        "week1": "MACD가 시그널선 위로 향해 상승 모멘텀을 시사합니다.",
+        "week2": "최근 실적 발표에서 META의 수익이 예상치를 초과했습니다.",
+        "week3": "분석가 목표 주가가 평균 $680로 상승 여력이 큽니다.",
+        "week4": "기관 투자자들이 META 주식을 대량 매입하여 긍정적 신호입니다."
+      }
+    },
+    {
+      "id": 515,
+      "predicted_at": "2026-04-09T06:42:24.237075+00:00",
+      "age_hours": 345.9,
+      "current_price_at_prediction": 575.05,
+      "verdict": "관망",
+      "direction": "UP",
+      "confidence": 54,
+      "summary": "Meta는 펀더멘털과 옵션 측면에서 긍정적인 신호가 있지만, 매크로 환경의 불확실성이 존재합니다. 따라서 신중한 접근이 필요합니다.",
+      "week1": {
+        "direction": "DOWN",
+        "confidence": 59.0,
+        "price_low": 546.24,
+        "price_high": 569.24,
+        "price_target": 557.74
+      },
+      "week2": {
+        "direction": "UP",
+        "confidence": 64.7,
+        "price_low": 585.97,
+        "price_high": 620.47,
+        "price_target": 603.22
+      },
+      "week3": {
+        "direction": "UP",
+        "confidence": 83.0,
+        "price_low": 615.27,
+        "price_high": 661.27,
+        "price_target": 638.27
+      },
+      "week4": {
+        "direction": "UP",
+        "confidence": 84.8,
+        "price_low": 613.03,
+        "price_high": 670.53,
+        "price_target": 641.78
+      },
+      "weekly_outlook": {
+        "week1": "RSI 53.3으로 중립이나 MACD -16.261로 하락세 지속 중.",
+        "week2": "애널리스트 60명 중 40%가 '강력 매수' 추천하나 VIX 25.78로 불안감 증가.",
+        "week3": "AI 클라우드 계약으로 수익성 개선 기대되나 10년 만기 국채 수익률 4.34%로 금리 상승 압력 존재.",
+        "week4": "콜 옵션 풋/콜 비율 0.59로 상승 기대하나 OBV 하락세로 매수세 약함."
+      }
+    },
+    {
+      "id": 514,
+      "predicted_at": "2026-04-09T06:42:10.925494+00:00",
+      "age_hours": 345.9,
+      "current_price_at_prediction": 575.05,
+      "verdict": "관망",
+      "direction": "UP",
+      "confidence": 54,
+      "summary": "Meta는 펀더멘털과 옵션 측면에서 긍정적인 신호가 있지만, 매크로 환경의 불확실성이 존재합니다. 따라서 신중한 접근이 필요합니다.",
+      "week1": {
+        "direction": "DOWN",
+        "confidence": 59.0,
+        "price_low": 546.24,
+        "price_high": 569.24,
+        "price_target": 557.74
+      },
+      "week2": {
+        "direction": "UP",
+        "confidence": 64.7,
+        "price_low": 585.97,
+        "price_high": 620.47,
+        "price_target": 603.22
+      },
+      "week3": {
+        "direction": "UP",
+        "confidence": 83.0,
+        "price_low": 615.27,
+        "price_high": 661.27,
+        "price_target": 638.27
+      },
+      "week4": {
+        "direction": "UP",
+        "confidence": 84.8,
+        "price_low": 613.03,
+        "price_high": 670.53,
+        "price_target": 641.78
+      },
+      "weekly_outlook": {
+        "week1": "RSI 53.3으로 중립이나 MACD -16.261로 하락세 지속 중.",
+        "week2": "애널리스트 60명 중 40%가 '강력 매수' 추천하나 VIX 25.78로 불안감 증가.",
+        "week3": "AI 클라우드 계약으로 수익성 개선 기대되나 10년 만기 국채 수익률 4.34%로 금리 상승 압력 존재.",
+        "week4": "콜 옵션 풋/콜 비율 0.59로 상승 기대하나 OBV 하락세로 매수세 약함."
+      }
+    }
+  ]
+}

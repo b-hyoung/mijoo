@@ -1,0 +1,37 @@
+{
+  "ticker": "AVGO",
+  "analyzed_at": "2026-04-23T16:37:48.153206+00:00",
+  "miss_count": 1,
+  "predicted_direction": "DOWN",
+  "actual_direction": "UP",
+  "drivers": [],
+  "advice": "",
+  "summary": "분석 실패: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************ji0A. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+  "misses": [
+    {
+      "predicted_at": "2026-04-23T14:57:55.182703+00:00",
+      "predicted_direction": "DOWN",
+      "actual_direction": "UP",
+      "price_at": 426.89,
+      "current_price": 427.1099853515625,
+      "change_pct": 0.05,
+      "reasoning": "  - 테크니컬 분석가: DOWN — • RSI(14)가 79.9로 과매수 구간에 위치해 조정 가능성이 높습니다.\n  - 옵션 트레이더: DOWN — • 옵션의 Put/Call 비율이 0.7로 콜 옵션이 우세하지만, 비정상적인 풋 거래량이 15.5배로 급증하여 하락 압력을 시사합니다.\n  - 펀더멘털 분석가: UP — • 애널리스트 목표 주가 평균이 $475.49로 현재 주가 대비 11.4% 상승 여력이 있으며, 추천은 STRONG BUY입니다. \n  - 매크로 전략가: UP — • VIX가 19.04로 20일 동안 24.8% 하락하여 시장의 두려움이 감소하고 있음을 나타냅니다. ",
+      "summary": "AVGO 주식은 과매수 상태와 비정상적인 풋 거래량 증가로 인해 하락 압력이 높아지고 있습니다. FOMC 발표를 앞두고 단기 변동성이 확대될 가능성이 큽니다.",
+      "signals_at_time": {
+        "pc_ratio": 0.7,
+        "iv_rank": 100,
+        "unusual_activity": 15.5,
+        "unusual_side": "PUT",
+        "short_float_pct": 1.15,
+        "short_change": "N/A",
+        "insider_net_90d": 0,
+        "anomaly_score": 40,
+        "anomaly_direction": null,
+        "buy_dominance": 81.8,
+        "obv_trend": "UP",
+        "is_accumulation": false
+      }
+    }
+  ],
+  "cached": false
+}

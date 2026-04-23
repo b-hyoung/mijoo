@@ -1,0 +1,179 @@
+{
+  "ticker": "COST",
+  "history": [
+    {
+      "id": 547,
+      "predicted_at": "2026-04-23T14:58:22.954563+00:00",
+      "age_hours": 1.7,
+      "current_price_at_prediction": 1010.68,
+      "verdict": "매수",
+      "direction": "UP",
+      "confidence": 66,
+      "summary": "COST 주식은 기술적 및 펀더멘털 분석에서 긍정적인 신호를 보이고 있으며, 시장 환경도 우호적입니다. 옵션 시장의 하락 압력에도 불구하고, 전반적인 상승 모멘텀이 강합니다.",
+      "week1": {
+        "direction": "UP",
+        "confidence": 51.5,
+        "price_low": 995.47,
+        "price_high": 1035.9,
+        "price_target": 1015.69
+      },
+      "week2": {
+        "direction": "UP",
+        "confidence": 51.8,
+        "price_low": 986.3,
+        "price_high": 1046.94,
+        "price_target": 1016.62
+      },
+      "week3": {
+        "direction": "UP",
+        "up_probability": 57.2,
+        "range_low": 950.04,
+        "range_high": 1071.32
+      },
+      "week4": {
+        "direction": "UP",
+        "up_probability": 57.2,
+        "range_low": 929.83,
+        "range_high": 1091.53
+      },
+      "weekly_outlook": {
+        "week1": "RSI 56.3으로 상승 여력 존재, 기술적 반등 기대.",
+        "week2": "OBV가 최근 1주간 62% 매수 우위로 강한 매수세 확인.",
+        "week3": "분석가 평균 목표가 $1072.16로 6.1% 상승 여력 보유.",
+        "week4": "VIX 19.04로 24.8% 하락, 시장 두려움 감소로 긍정적 환경."
+      }
+    },
+    {
+      "id": 527,
+      "predicted_at": "2026-04-13T14:54:59.620379+00:00",
+      "age_hours": 241.7,
+      "current_price_at_prediction": 989.55,
+      "verdict": "관망",
+      "direction": "DOWN",
+      "confidence": 52,
+      "summary": "옵션 시장과 기술적 지표는 코스트코의 하락 가능성을 시사합니다. 시장의 전반적인 안정에도 불구하고, 주식 자체의 약세 신호가 더 강합니다.",
+      "week1": {
+        "direction": "UP",
+        "confidence": 53.9,
+        "price_low": 982.73,
+        "price_high": 1022.31,
+        "price_target": 1002.52
+      },
+      "week2": {
+        "direction": "DOWN",
+        "confidence": 52.1,
+        "price_low": 952.97,
+        "price_high": 1012.34,
+        "price_target": 982.66
+      },
+      "week3": {
+        "direction": "DOWN",
+        "confidence": 58.4,
+        "price_low": 922.34,
+        "price_high": 1001.5,
+        "price_target": 961.92
+      },
+      "week4": {
+        "direction": "DOWN",
+        "confidence": 51.9,
+        "price_low": 933.94,
+        "price_high": 1032.89,
+        "price_target": 983.42
+      },
+      "weekly_outlook": {
+        "week1": "RSI 46.8로 중립적이나 MACD가 시그널 라인보다 약간 높음.",
+        "week2": "애널리스트 32명 중 20명이 매수 추천하나 Put/Call 비율 1.57로 약세 신호.",
+        "week3": "목표가 $1067.94로 상승 여력 있으나 IV Rank 100%로 변동성 우려.",
+        "week4": "VIX 19.93으로 불안감 감소하나 OBV 하락세로 매수 압력 부족."
+      }
+    },
+    {
+      "id": 521,
+      "predicted_at": "2026-04-09T06:43:37.090108+00:00",
+      "age_hours": 345.9,
+      "current_price_at_prediction": 1013.21,
+      "verdict": "관망",
+      "direction": "UP",
+      "confidence": 56,
+      "summary": "기술적 분석과 펀더멘털 분석에서 COST의 상승 가능성을 지지하고 있습니다. 그러나 시장 불안 요소로 인해 관망이 권장됩니다.",
+      "week1": {
+        "direction": "DOWN",
+        "confidence": 50.2,
+        "price_low": 992.25,
+        "price_high": 1032.77,
+        "price_target": 1012.51
+      },
+      "week2": {
+        "direction": "DOWN",
+        "confidence": 52.3,
+        "price_low": 974.94,
+        "price_high": 1035.73,
+        "price_target": 1005.33
+      },
+      "week3": {
+        "direction": "DOWN",
+        "confidence": 51.5,
+        "price_low": 967.54,
+        "price_high": 1048.6,
+        "price_target": 1008.07
+      },
+      "week4": {
+        "direction": "DOWN",
+        "confidence": 55.3,
+        "price_low": 944.56,
+        "price_high": 1045.89,
+        "price_target": 995.23
+      },
+      "weekly_outlook": {
+        "week1": "RSI 66.8로 과매수 접근이나 MACD가 시그널 라인 아래로 하락세 지속 중.",
+        "week2": "애널리스트 32명 중 20명이 '매수' 추천이나 풋/콜 비율 1.16로 하락 예상.",
+        "week3": "애널리스트 목표가 $1067.59로 상승 여력 있으나 10년 만기 국채 수익률 4.34%로 금리 압력 존재.",
+        "week4": "OBV가 상승 추세이나 VIX 25.78로 시장 불안감 증가."
+      }
+    },
+    {
+      "id": 520,
+      "predicted_at": "2026-04-09T06:43:29.510763+00:00",
+      "age_hours": 345.9,
+      "current_price_at_prediction": 1013.21,
+      "verdict": "관망",
+      "direction": "UP",
+      "confidence": 56,
+      "summary": "기술적 분석과 펀더멘털 분석에서 COST의 상승 가능성을 지지하고 있습니다. 그러나 시장 불안 요소로 인해 관망이 권장됩니다.",
+      "week1": {
+        "direction": "DOWN",
+        "confidence": 50.2,
+        "price_low": 992.25,
+        "price_high": 1032.77,
+        "price_target": 1012.51
+      },
+      "week2": {
+        "direction": "DOWN",
+        "confidence": 52.3,
+        "price_low": 974.94,
+        "price_high": 1035.73,
+        "price_target": 1005.33
+      },
+      "week3": {
+        "direction": "DOWN",
+        "confidence": 51.5,
+        "price_low": 967.54,
+        "price_high": 1048.6,
+        "price_target": 1008.07
+      },
+      "week4": {
+        "direction": "DOWN",
+        "confidence": 55.3,
+        "price_low": 944.56,
+        "price_high": 1045.89,
+        "price_target": 995.23
+      },
+      "weekly_outlook": {
+        "week1": "RSI 66.8로 과매수 접근이나 MACD가 시그널 라인 아래로 하락세 지속 중.",
+        "week2": "애널리스트 32명 중 20명이 '매수' 추천이나 풋/콜 비율 1.16로 하락 예상.",
+        "week3": "애널리스트 목표가 $1067.59로 상승 여력 있으나 10년 만기 국채 수익률 4.34%로 금리 압력 존재.",
+        "week4": "OBV가 상승 추세이나 VIX 25.78로 시장 불안감 증가."
+      }
+    }
+  ]
+}

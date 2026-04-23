@@ -1,0 +1,313 @@
+{
+  "ticker": "GOOGL",
+  "current_price": 340.23,
+  "sentiment_score": 0.3,
+  "short_float_pct": 1.37,
+  "short_change": "N/A",
+  "order_flow": {
+    "buy_dominance_pct": 66.1,
+    "obv_trend": "UP",
+    "is_accumulation": false
+  },
+  "news_headlines": [
+    {
+      "title": "Tesla earnings: Do investors need more guidance on timelines?",
+      "url": "https://finance.yahoo.com/video/tesla-earnings-do-investors-need-more-guidance-on-timelines-140741387.html"
+    },
+    {
+      "title": "Best Buy's incoming CEO lays out his top 3 AI priorities",
+      "url": "https://finance.yahoo.com/video/best-buys-incoming-ceo-lays-out-his-top-3-ai-priorities-152050032.html"
+    },
+    {
+      "title": "Google takes on Nvidia, announces 2 new AI chips",
+      "url": "https://finance.yahoo.com/video/google-takes-on-nvidia-announces-2-new-ai-chips-145915437.html"
+    },
+    {
+      "title": "Market Chatter: Alphabet Pressured by EU to Grant Android Access to Gemini Rivals",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/market-chatter-alphabet-pressured-eu-143428714.html"
+    },
+    {
+      "title": "Marvell’s AI Story Just Got Stronger With Google — But Is it Too Late to Buy?",
+      "url": "https://247wallst.com/investing/2026/04/23/marvells-ai-story-just-got-stronger-with-google-but-is-it-too-late-to-buy/"
+    },
+    {
+      "title": "IBM Is America’s Worst Big Tech Company",
+      "url": "https://247wallst.com/investing/2026/04/23/ibm-is-americas-worst-big-tech-company-4/"
+    },
+    {
+      "title": "Why I Keep Buying This Stock Every Month",
+      "url": "https://247wallst.com/investing/2026/04/23/why-i-keep-buying-this-stock-every-month/"
+    },
+    {
+      "title": "Wall Street Pro Thinks Google’s AI Chip Edge Is Getting Harder to Ignore",
+      "url": "https://247wallst.com/investing/2026/04/23/wall-street-pro-thinks-googles-ai-chip-edge-is-getting-harder-to-ignore/"
+    },
+    {
+      "title": "Meta's latest AI move is raising questions among employees",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/metas-latest-ai-move-raising-134929979.html"
+    },
+    {
+      "title": "Microsoft ramps up AI push with record Australia investment",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/microsoft-ramps-ai-push-record-134820653.html"
+    }
+  ],
+  "signals": {
+    "rsi": 67.1,
+    "macd_cross": "BULLISH",
+    "ma_trend": "BULLISH",
+    "bb_position": 79,
+    "volume_ratio": 0.25
+  },
+  "analyst": {
+    "target_mean": 376.68,
+    "target_high": 443.0,
+    "target_low": 185.0,
+    "upside_pct": 10.7,
+    "num_analysts": 56,
+    "recommendation": "strong_buy"
+  },
+  "insider": {
+    "recent": [],
+    "net_shares_90d": 0
+  },
+  "institutional": {
+    "top_holders": [],
+    "total_pct": null,
+    "change_pct": null
+  },
+  "macro": {
+    "vix": 19.03,
+    "vix_20d_change": -24.9,
+    "treasury_10y": 4.29,
+    "treasury_10y_20d_change": -0.8,
+    "dxy": 98.57,
+    "dxy_20d_change": -1.0
+  },
+  "options": {
+    "pc_ratio": 0.18,
+    "iv_rank": 100,
+    "unusual_activity": 8.4,
+    "unusual_side": "CALL",
+    "data_source": "earnings",
+    "expiry_used": "2026-05-01"
+  },
+  "earnings": {
+    "next_date": "2026-04-30",
+    "days_until": null,
+    "history": []
+  },
+  "anomaly": {
+    "score": 46,
+    "direction": "UP",
+    "level": "관심",
+    "signals": [
+      {
+        "name": "거래량 급증 + 횡보",
+        "score": 0,
+        "direction": null,
+        "detail": "거래량 0.5x, 가격변동 21.1%"
+      },
+      {
+        "name": "IV 급등",
+        "score": 20,
+        "direction": "UP",
+        "detail": "IV rank 100%"
+      },
+      {
+        "name": "옵션 이상 거래",
+        "score": 16,
+        "direction": "UP",
+        "detail": "평소 대비 8.4x (CALL)"
+      },
+      {
+        "name": "내부자 방향 전환",
+        "score": 0,
+        "direction": null,
+        "detail": "거래 부족"
+      },
+      {
+        "name": "P/C ratio 극단",
+        "score": 10,
+        "direction": "UP",
+        "detail": "P/C 0.18 (극단적 낙관)"
+      }
+    ]
+  },
+  "prediction": {
+    "week1": {
+      "direction": "UP",
+      "confidence": 56.2,
+      "price_low": 340.43,
+      "price_high": 354.04,
+      "price_target": 347.24
+    },
+    "week2": {
+      "direction": "UP",
+      "confidence": 56.1,
+      "price_low": 336.89,
+      "price_high": 357.3,
+      "price_target": 347.1
+    },
+    "week3": {
+      "direction": "UP",
+      "up_probability": 50.9,
+      "range_low": 319.82,
+      "range_high": 360.64
+    },
+    "week4": {
+      "direction": "UP",
+      "up_probability": 50.9,
+      "range_low": 313.01,
+      "range_high": 367.45
+    }
+  },
+  "debate": {
+    "direction": "UP",
+    "confidence": 88,
+    "verdict": "매수",
+    "summary": "GOOGL은 기술적 지표와 옵션 거래에서 강한 상승 신호를 보이고 있으며, 펀더멘털 측면에서도 긍정적인 평가를 받고 있습니다. 시장 전반적으로도 두려움이 감소하고 금리 부담이 완화되면서 주가 상승에 유리한 환경이 조성되고 있습니다.",
+    "stock_bull": [
+      "RSI가 과매수 구간에 근접해 있지만 상승 여력이 있음",
+      "MACD가 시그널 라인보다 높아 강한 상승 모멘텀",
+      "옵션의 P/C 비율이 0.18로 극단적인 낙관적 신호",
+      "IV Rank가 100%로 높아 큰 움직임 예상",
+      "콜 옵션의 비정상적인 거래 활동 증가",
+      "애널리스트의 강력한 매수 추천과 평균 목표가 10.7% 상승 여력"
+    ],
+    "stock_bear": [],
+    "market_bull": [
+      "VIX가 24.8% 하락하여 시장의 두려움 감소",
+      "10년 만기 국채 수익률이 0.8% 하락하여 금리 부담 완화",
+      "달러 인덱스가 1.0% 하락하여 미국 달러의 상대적 약세"
+    ],
+    "market_bear": [],
+    "bull_points": [
+      "RSI가 과매수 구간에 근접해 있지만 상승 여력이 있음",
+      "MACD가 시그널 라인보다 높아 강한 상승 모멘텀",
+      "옵션의 P/C 비율이 0.18로 극단적인 낙관적 신호",
+      "IV Rank가 100%로 높아 큰 움직임 예상",
+      "콜 옵션의 비정상적인 거래 활동 증가",
+      "애널리스트의 강력한 매수 추천과 평균 목표가 10.7% 상승 여력",
+      "VIX가 24.8% 하락하여 시장의 두려움 감소",
+      "10년 만기 국채 수익률이 0.8% 하락하여 금리 부담 완화",
+      "달러 인덱스가 1.0% 하락하여 미국 달러의 상대적 약세"
+    ],
+    "bear_points": [],
+    "weekly_outlook": {
+      "week1": "MACD가 시그널 라인보다 높아 강한 상승 모멘텀을 나타냅니다.",
+      "week2": "옵션의 P/C 비율이 0.18로 극단적인 낙관적 신호를 보이고 있습니다.",
+      "week3": "56명의 애널리스트가 GOOGL에 대해 강력한 매수 추천을 하고 있으며, 평균 목표가는 10.7% 상승 여력입니다.",
+      "week4": "VIX가 19.04로 20일 동안 24.8% 하락하여 시장의 두려움이 감소하고 있습니다."
+    },
+    "key_news": [
+      {
+        "headline": "Google takes on Nvidia, announces 2 new AI chips",
+        "summary": "구글이 새로운 AI 칩을 발표하며 엔비디아와 경쟁에 나섰습니다. 이는 AI 시장에서의 점유율 확대와 수익성 향상에 긍정적인 영향을 미칠 것으로 예상됩니다."
+      }
+    ],
+    "personas": [
+      {
+        "id": "technical",
+        "role": "테크니컬 분석가",
+        "direction": "UP",
+        "confidence": 75,
+        "argument": "• RSI가 67.1로 과매수 구간에 근접해 있지만 아직 상승 여력이 있습니다.\n• MACD가 시그널 라인보다 높아 강한 상승 모멘텀을 나타내고 있습니다.\n• FOMC 발표가 D-6으로 포지셔닝 구간이며, 단기 변동성 확대 가능성이 있습니다."
+      },
+      {
+        "id": "options",
+        "role": "옵션 트레이더",
+        "direction": "UP",
+        "confidence": 85,
+        "argument": "• 옵션의 P/C 비율이 0.18로 극단적인 낙관적 신호를 보이고 있습니다.\n• IV Rank가 100%로 높아 큰 움직임이 예상되며, 이는 강한 포지셔닝을 시사합니다.\n• 콜 옵션의 비정상적인 거래 활동이 8.4배로 증가하여 상승 압력을 나타냅니다."
+      },
+      {
+        "id": "fundamental",
+        "role": "펀더멘털 분석가",
+        "direction": "UP",
+        "confidence": 85,
+        "argument": "• 56명의 애널리스트가 GOOGL에 대해 강력한 매수 추천을 하고 있으며, 평균 목표가는 현재 가격 대비 10.7% 상승 여력이 있습니다. \n• 내부자 거래 정보는 제공되지 않았으나, 기관 투자자들의 보유 비율이 높아지는 추세라면 긍정적인 신호로 해석될 수 있습니다.\n• FOMC 발표가 6일 남았으므로 포지셔닝 구간으로 볼 수 있으며, 이는 단기적으로 주가에 긍정적인 영향을 미칠 수 있습니다."
+      },
+      {
+        "id": "macro",
+        "role": "매크로 전략가",
+        "direction": "UP",
+        "confidence": 75,
+        "argument": "• VIX가 19.04로 20일 동안 24.8% 하락하여 시장의 두려움이 감소하고 있음을 나타냅니다. \n• 10년 만기 국채 수익률이 4.29%로 20일 동안 0.8% 하락하여 금리 부담이 완화되고 있습니다. \n• 달러 인덱스가 98.6으로 20일 동안 1.0% 하락하여 미국 달러의 상대적 약세가 나타나고 있습니다."
+      }
+    ]
+  },
+  "confluence": {
+    "aligned_count": 4,
+    "total": 4,
+    "majority_direction": "UP",
+    "badge": "강한 확증",
+    "tone": "strong",
+    "per_week": [
+      "UP",
+      "UP",
+      "UP",
+      "UP"
+    ],
+    "structural_signals": {
+      "rows": [
+        {
+          "key": "weekly_trend",
+          "label": "주간 추세",
+          "value": -0.051,
+          "weight": 0.25,
+          "contribution": -0.013
+        },
+        {
+          "key": "range_position",
+          "label": "52주 위치",
+          "value": 0.967,
+          "weight": -0.15,
+          "contribution": -0.145
+        },
+        {
+          "key": "mid_momentum",
+          "label": "중기 모멘텀",
+          "value": 0.569,
+          "weight": 0.2,
+          "contribution": 0.114
+        },
+        {
+          "key": "macro_regime",
+          "label": "매크로 레짐",
+          "value": 0.197,
+          "weight": 0.2,
+          "contribution": 0.039
+        },
+        {
+          "key": "analyst_consensus",
+          "label": "애널리스트 컨센서스",
+          "value": 0.357,
+          "weight": 0.1,
+          "contribution": 0.036
+        },
+        {
+          "key": "institutional_flow",
+          "label": "스마트머니 흐름",
+          "value": 0.0,
+          "weight": 0.1,
+          "contribution": 0.0
+        }
+      ],
+      "score": 0.031
+    },
+    "explanation": "GOOGL의 단기 상승은 옵션 시장의 극단적인 낙관적 신호와 기술적 지표의 상승 여력에 의해 주도되고 있습니다. 이와 동시에, 펀더멘털 분석가들의 강력한 매수 추천과 목표가 상승 여력, 그리고 매크로 환경에서의 시장 안정성은 구조적으로 이 상승을 뒷받침하고 있습니다. 이러한 요인들이 결합되어 GOOGL의 지속적인 상승 가능성을 강하게 지지하고 있습니다."
+  },
+  "upcoming_events": [
+    {
+      "type": "FOMC",
+      "date": "2026-04-29",
+      "days_until": 6
+    },
+    {
+      "type": "NFP",
+      "date": "2026-05-01",
+      "days_until": 8
+    }
+  ],
+  "predicted_at": "2026-04-23T14:56:44.345820+00:00"
+}

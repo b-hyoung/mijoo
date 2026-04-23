@@ -1,0 +1,41 @@
+{
+  "ticker": "AMZN",
+  "analyzed_at": "2026-04-23T16:04:39.398327+00:00",
+  "miss_count": 1,
+  "predicted_direction": "UP",
+  "actual_direction": "DOWN",
+  "drivers": [
+    "가능성: 주요 경제 지표 발표로 인해 시장 심리가 급변했을 수 있습니다.",
+    "가능성: 예상치 못한 기업 실적 발표로 인해 투자자들이 실망했을 수 있습니다.",
+    "가능성: 지정학적 불확실성 증가로 인해 시장 전반에 걸쳐 매도 압력이 있었을 수 있습니다."
+  ],
+  "advice": "다음 예측에서는 경제 지표 발표 일정과 기업 실적 발표 일정을 더욱 면밀히 모니터링해야 합니다.",
+  "summary": "예측이 빗나간 주요 요인은 경제 지표 발표나 기업 실적 발표와 같은 외부 요인일 가능성이 큽니다. 이러한 요소들이 시장 심리에 큰 영향을 미쳐 예측과 반대 방향으로 주가가 움직였을 수 있습니다. 따라서 향후 예측에서는 이러한 외부 요인들을 더욱 주의 깊게 고려해야 합니다.",
+  "misses": [
+    {
+      "predicted_at": "2026-04-23T14:56:20.563154+00:00",
+      "predicted_direction": "UP",
+      "actual_direction": "DOWN",
+      "price_at": 257.36,
+      "current_price": 256.93060302734375,
+      "change_pct": -0.17,
+      "reasoning": "  - 테크니컬 분석가: DOWN — • RSI(14)가 77.8로 과매수 구간에 진입하여 조정 가능성이 있습니다. \n  - 옵션 트레이더: UP — • 옵션의 Put/Call 비율이 0.64로 콜 옵션에 대한 수요가 높음을 시사합니다.\n  - 펀더멘털 분석가: UP — • 애널리스트 목표 주가 평균은 $282.63로 현재 가격 대비 9.8%의 상승 여력이 있으며, 추천은 STRONG BUY입니다.\n  - 매크로 전략가: UP — • VIX가 19.04로 20일 동안 24.8% 하락하여 시장의 두려움이 감소하고 있음을 나타냅니다. ",
+      "summary": "AMZN 주식은 옵션 시장의 강한 수요와 긍정적인 펀더멘털 전망으로 상승 가능성이 높습니다. 시장의 두려움 감소와 금리 부담 완화도 긍정적인 영향을 미치고 있습니다.",
+      "signals_at_time": {
+        "pc_ratio": 0.64,
+        "iv_rank": 79,
+        "unusual_activity": 4.8,
+        "unusual_side": "CALL",
+        "short_float_pct": 0.9,
+        "short_change": "N/A",
+        "insider_net_90d": 0,
+        "anomaly_score": 0,
+        "anomaly_direction": null,
+        "buy_dominance": 81.0,
+        "obv_trend": "UP",
+        "is_accumulation": false
+      }
+    }
+  ],
+  "cached": true
+}

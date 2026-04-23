@@ -1,0 +1,321 @@
+{
+  "ticker": "NFLX",
+  "current_price": 93.63,
+  "sentiment_score": 0.2,
+  "short_float_pct": 1.92,
+  "short_change": "N/A",
+  "order_flow": {
+    "buy_dominance_pct": 61.4,
+    "obv_trend": "UP",
+    "is_accumulation": true
+  },
+  "news_headlines": [
+    {
+      "title": "Netflix (NFLX) Is Down 13.4% After Soft Q2 Guide And Reed Hastings’ Exit - Has The Bull Case Changed?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/netflix-nflx-down-13-4-140522791.html"
+    },
+    {
+      "title": "Nasdaq Composite Succumbs to Selling Pressure amid Netflix and Tesla Tug-of-War",
+      "url": "https://247wallst.com/investing/2026/04/23/nasdaq-composite-succumbs-to-selling-pressure-amid-netflix-and-tesla-tug-of-war/"
+    },
+    {
+      "title": "S&P 500 Retreats but Holds 7100 on Fresh Mideast Escalation as Earnings Kick Off",
+      "url": "https://247wallst.com/investing/2026/04/23/sp-500-retreats-but-holds-7100-on-fresh-mideast-escalation-as-earnings-kick-off/"
+    },
+    {
+      "title": "US Equity Futures Decline Pre-Bell as Investors Turned Wary Amid Stalled US-Iran Peace Talks",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/us-equity-futures-decline-pre-130411126.html"
+    },
+    {
+      "title": "Netflix authorizes $25 billion share buyback after stock drop",
+      "url": "https://qz.com/netflix-25-billion-share-buyback-stock-repurchase-042326"
+    },
+    {
+      "title": "Netflix Supercharges Buybacks",
+      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-04-23-2026/card/netflix-supercharges-buybacks-Qqeu1AWMrArocsQYPN3J?siteid=yhoof2&yptr=yahoo"
+    },
+    {
+      "title": "5 Insightful Analyst Questions From Netflix’s Q1 Earnings Call",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/5-insightful-analyst-questions-netflix-115723953.html"
+    },
+    {
+      "title": "Netflix Buying Back $25 Billion in Stock After Share Decline",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/netflix-buying-back-25-billion-105556691.html"
+    },
+    {
+      "title": "Tesla, ServiceNow Show Risks of Relying on Big Tech Earnings. Here’s the Silver Lining.",
+      "url": "https://www.barrons.com/articles/tesla-servicenow-big-tech-earnings-things-to-know-today-f9da40b4?siteid=yhoof2&yptr=yahoo"
+    },
+    {
+      "title": "Netflix Boosts Stock-Buyback Program by $25 Billion",
+      "url": "https://www.wsj.com/business/media/netflix-boosts-stock-buyback-program-by-25-billion-b8a66c9e"
+    }
+  ],
+  "signals": {
+    "rsi": 43.0,
+    "macd_cross": "BEARISH",
+    "ma_trend": "BEARISH",
+    "bb_position": 26,
+    "volume_ratio": 0.19
+  },
+  "analyst": {
+    "target_mean": 114.02,
+    "target_high": 151.4,
+    "target_low": 80.0,
+    "upside_pct": 21.8,
+    "num_analysts": 44,
+    "recommendation": "buy"
+  },
+  "insider": {
+    "recent": [],
+    "net_shares_90d": 0
+  },
+  "institutional": {
+    "top_holders": [],
+    "total_pct": null,
+    "change_pct": null
+  },
+  "macro": {
+    "vix": 19.04,
+    "vix_20d_change": -24.8,
+    "treasury_10y": 4.29,
+    "treasury_10y_20d_change": -0.8,
+    "dxy": 98.58,
+    "dxy_20d_change": -1.0
+  },
+  "options": {
+    "pc_ratio": 0.35,
+    "iv_rank": 100,
+    "unusual_activity": 6.7,
+    "unusual_side": "PUT",
+    "data_source": "nearest+monthly",
+    "expiry_used": "2026-04-24"
+  },
+  "earnings": {
+    "next_date": "2026-07-17",
+    "days_until": null,
+    "history": []
+  },
+  "anomaly": {
+    "score": 33,
+    "direction": "UP",
+    "level": "관심",
+    "signals": [
+      {
+        "name": "거래량 급증 + 횡보",
+        "score": 0,
+        "direction": null,
+        "detail": "거래량 1.3x, 가격변동 0.3%"
+      },
+      {
+        "name": "IV 급등",
+        "score": 20,
+        "direction": "UP",
+        "detail": "IV rank 100%"
+      },
+      {
+        "name": "옵션 이상 거래",
+        "score": 13,
+        "direction": "DOWN",
+        "detail": "평소 대비 6.7x (PUT)"
+      },
+      {
+        "name": "내부자 방향 전환",
+        "score": 0,
+        "direction": null,
+        "detail": "거래 부족"
+      },
+      {
+        "name": "P/C ratio 극단",
+        "score": 0,
+        "direction": null,
+        "detail": "P/C 0.35"
+      }
+    ]
+  },
+  "prediction": {
+    "week1": {
+      "direction": "UP",
+      "confidence": 56.2,
+      "price_low": 93.68,
+      "price_high": 97.43,
+      "price_target": 95.56
+    },
+    "week2": {
+      "direction": "UP",
+      "confidence": 62.7,
+      "price_low": 94.79,
+      "price_high": 100.41,
+      "price_target": 97.6
+    },
+    "week3": {
+      "direction": "UP",
+      "up_probability": 61.8,
+      "range_low": 88.01,
+      "range_high": 99.25
+    },
+    "week4": {
+      "direction": "UP",
+      "up_probability": 61.8,
+      "range_low": 86.14,
+      "range_high": 101.12
+    }
+  },
+  "debate": {
+    "direction": "DOWN",
+    "confidence": 55,
+    "verdict": "관망",
+    "summary": "넷플릭스는 자사주 매입과 기관 투자자들의 매수 추천으로 긍정적인 펀더멘털 신호를 보이고 있습니다. 그러나 옵션 시장의 이상 거래와 기술적 지표는 단기 하락 가능성을 시사하고 있습니다.",
+    "stock_bull": [
+      "애널리스트 목표 주가 평균이 $114.02로 현재 주가 대비 21.8% 상승 여력이 있습니다.",
+      "넷플릭스는 $250억 규모의 자사주 매입을 승인하여 주주 가치를 높이고자 하고 있습니다.",
+      "기관 투자자들의 매수 추천이 유지되고 있습니다."
+    ],
+    "stock_bear": [
+      "RSI(14)가 43으로 약세를 시사합니다.",
+      "MACD가 시그널선 아래로 하락하여 약세 신호를 보이고 있습니다.",
+      "옵션의 Put/Call 비율과 이상 거래가 하방 압력을 높이고 있습니다.",
+      "IV Rank가 100%로 매우 높아 큰 변동성이 예상됩니다."
+    ],
+    "market_bull": [
+      "VIX가 19.04로 20일 동안 24.8% 하락하여 시장의 두려움이 감소하고 있습니다.",
+      "10년 만기 국채 수익률이 4.29%로 20일 동안 0.8% 하락하여 금리 부담이 완화되고 있습니다.",
+      "달러 인덱스가 98.6으로 20일 동안 1.0% 하락하여 미국 달러의 상대적 약세가 나타나고 있습니다."
+    ],
+    "market_bear": [],
+    "bull_points": [
+      "애널리스트 목표 주가 평균이 $114.02로 현재 주가 대비 21.8% 상승 여력이 있습니다.",
+      "넷플릭스는 $250억 규모의 자사주 매입을 승인하여 주주 가치를 높이고자 하고 있습니다.",
+      "기관 투자자들의 매수 추천이 유지되고 있습니다.",
+      "VIX가 19.04로 20일 동안 24.8% 하락하여 시장의 두려움이 감소하고 있습니다.",
+      "10년 만기 국채 수익률이 4.29%로 20일 동안 0.8% 하락하여 금리 부담이 완화되고 있습니다.",
+      "달러 인덱스가 98.6으로 20일 동안 1.0% 하락하여 미국 달러의 상대적 약세가 나타나고 있습니다."
+    ],
+    "bear_points": [
+      "RSI(14)가 43으로 약세를 시사합니다.",
+      "MACD가 시그널선 아래로 하락하여 약세 신호를 보이고 있습니다.",
+      "옵션의 Put/Call 비율과 이상 거래가 하방 압력을 높이고 있습니다.",
+      "IV Rank가 100%로 매우 높아 큰 변동성이 예상됩니다."
+    ],
+    "weekly_outlook": {
+      "week1": "[RSI 43으로 약세 신호이나 MACD가 -1.5로 하락세 지속 중.]",
+      "week2": "[기관 투자자 매수 추천 유지하나 옵션의 Put/Call 비율 0.35로 하방 압력 존재.]",
+      "week3": "[자사주 매입 승인으로 주주 가치 증가 기대하나 10년 만기 국채 수익률 4.29%로 금리 부담 여전.]",
+      "week4": "[VIX 19.04로 두려움 감소하나 IV Rank 100%로 큰 변동성 예상.]"
+    },
+    "key_news": [
+      {
+        "headline": "Netflix (NFLX) Is Down 13.4% After Soft Q2 Guide And Reed Hastings’ Exit - Has The Bull Case Changed?",
+        "summary": "부진한 2분기 전망과 CEO의 퇴임으로 주가가 13.4% 하락했습니다."
+      },
+      {
+        "headline": "Netflix authorizes $25 billion share buyback after stock drop",
+        "summary": "주가 하락 후 250억 달러 규모의 자사주 매입을 승인하여 주가 회복 기대를 높입니다."
+      }
+    ],
+    "personas": [
+      {
+        "id": "fundamental",
+        "role": "펀더멘털 분석가",
+        "direction": "UP",
+        "confidence": 85,
+        "argument": "• 애널리스트 목표 주가 평균이 $114.02로 현재 주가 대비 21.8% 상승 여력이 있습니다.\n• 넷플릭스는 최근 주가 하락 후 $250억 규모의 자사주 매입을 승인하여 주주 가치를 높이고자 하고 있습니다.\n• 기관 투자자들의 매수 추천이 유지되고 있으며, 이는 긍정적인 펀더멘털 신호로 해석됩니다."
+      },
+      {
+        "id": "technical",
+        "role": "테크니컬 분석가",
+        "direction": "DOWN",
+        "confidence": 60,
+        "argument": "• RSI(14)가 43으로 과매도 구간에 진입하지 않았으나 약세를 시사합니다.\n• MACD가 시그널선 아래로 하락하여 약세 신호를 보이고 있습니다.\n• FOMC 발표가 D-6으로 포지셔닝 구간에 있으며, 단기 변동성 확대 가능성이 있습니다."
+      },
+      {
+        "id": "options",
+        "role": "옵션 트레이더",
+        "direction": "DOWN",
+        "confidence": 80,
+        "argument": "• 옵션의 Put/Call 비율이 0.35로 콜 옵션에 비해 풋 옵션이 적지만, 풋 옵션의 이상 거래가 6.7배로 급증하여 하방 압력이 높아 보입니다.\n• IV Rank가 100%로 매우 높아, 큰 변동성이 예상되며, 이는 단기적으로 주가 하락을 시사할 수 있습니다.\n• FOMC 발표가 D-6으로 포지셔닝 구간에 해당하며, 단기적으로 변동성이 확대될 가능성이 있습니다."
+      },
+      {
+        "id": "macro",
+        "role": "매크로 전략가",
+        "direction": "UP",
+        "confidence": 75,
+        "argument": "• VIX가 19.04로 20일 동안 24.8% 하락하여 시장의 두려움이 감소하고 있음을 나타냅니다. \n• 10년 만기 국채 수익률이 4.29%로 20일 동안 0.8% 하락하여 금리 부담이 완화되고 있습니다. \n• 달러 인덱스가 98.6으로 20일 동안 1.0% 하락하여 미국 달러의 상대적 약세가 나타나고 있습니다."
+      }
+    ]
+  },
+  "confluence": {
+    "aligned_count": 4,
+    "total": 4,
+    "majority_direction": "UP",
+    "badge": "강한 확증",
+    "tone": "strong",
+    "per_week": [
+      "UP",
+      "UP",
+      "UP",
+      "UP"
+    ],
+    "structural_signals": {
+      "rows": [
+        {
+          "key": "weekly_trend",
+          "label": "주간 추세",
+          "value": 1.0,
+          "weight": 0.25,
+          "contribution": 0.25
+        },
+        {
+          "key": "range_position",
+          "label": "52주 위치",
+          "value": -0.388,
+          "weight": -0.15,
+          "contribution": 0.058
+        },
+        {
+          "key": "mid_momentum",
+          "label": "중기 모멘텀",
+          "value": -0.137,
+          "weight": 0.2,
+          "contribution": -0.027
+        },
+        {
+          "key": "macro_regime",
+          "label": "매크로 레짐",
+          "value": 0.196,
+          "weight": 0.2,
+          "contribution": 0.039
+        },
+        {
+          "key": "analyst_consensus",
+          "label": "애널리스트 컨센서스",
+          "value": 0.727,
+          "weight": 0.1,
+          "contribution": 0.073
+        },
+        {
+          "key": "institutional_flow",
+          "label": "스마트머니 흐름",
+          "value": 0.0,
+          "weight": 0.1,
+          "contribution": 0.0
+        }
+      ],
+      "score": 0.393
+    },
+    "explanation": "펀더멘털 분석가와 매크로 전략가의 의견이 일치하여 강한 확증을 보입니다. 펀더멘털 측면에서는 애널리스트 목표 주가가 현재 주가 대비 상승 여력을 나타내고 있으며, 매크로 환경에서는 VIX의 하락으로 시장의 두려움이 감소하고 있어 긍정적인 시장 심리를 지원합니다. 이러한 요인들이 단기적으로 주가 상승을 주도할 가능성이 높습니다."
+  },
+  "upcoming_events": [
+    {
+      "type": "FOMC",
+      "date": "2026-04-29",
+      "days_until": 6
+    },
+    {
+      "type": "NFP",
+      "date": "2026-05-01",
+      "days_until": 8
+    }
+  ],
+  "predicted_at": "2026-04-23T14:58:45.986697+00:00"
+}

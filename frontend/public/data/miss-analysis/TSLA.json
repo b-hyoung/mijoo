@@ -1,0 +1,113 @@
+{
+  "ticker": "TSLA",
+  "analyzed_at": "2026-04-23T16:13:02.083695+00:00",
+  "miss_count": 4,
+  "predicted_direction": "DOWN",
+  "actual_direction": "UP",
+  "drivers": [
+    "신호 미반영: 2026-04-13, 애널리스트의 평균 목표 주가가 현재 가격 대비 17.9% 상승 여력이 있었음에도 DOWN 예측.",
+    "신호 미반영: 2026-04-09, 옵션의 풋/콜 비율이 0.52로 콜 옵션이 더 많이 거래되고 있어 상승 기대가 높았음.",
+    "신호 미반영: 2026-04-23, VIX가 19.04로 20일 동안 24.8% 하락하여 시장의 두려움이 감소하고 있었음."
+  ],
+  "advice": "다음 예측에서 애널리스트 목표 주가와 옵션 거래 비율을 더 면밀히 검토해야 합니다.",
+  "summary": "예측 실패의 주요 원인은 미리 볼 수 있었던 시그널을 반영하지 못한 데 있습니다. 4월 13일과 9일의 경우, 애널리스트 목표 주가와 옵션 거래 비율이 상승을 시사했으나 무시되었습니다. 또한, 4월 23일에는 VIX 하락이 시장의 긍정적 분위기를 나타냈지만 반영되지 않았습니다.",
+  "misses": [
+    {
+      "predicted_at": "2026-04-23T14:57:31.641499+00:00",
+      "predicted_direction": "DOWN",
+      "actual_direction": "UP",
+      "price_at": 375.98,
+      "current_price": 380.7099914550781,
+      "change_pct": 1.26,
+      "reasoning": "  - 옵션 트레이더: DOWN — • 옵션 거래에서 PUT 옵션의 비정상적 활동이 17배 증가하여 하락 압력을 시사합니다.\n  - 펀더멘털 분석가: UP — • 최근 실적 발표에서 테슬라는 224억 달러의 매출을 기록하며 월가의 예상을 상회하였습니다. 이는 강력한 펀더멘털을 시사합니다.\n  - 테크니컬 분석가: DOWN — • RSI가 48.7로 중립 영역에 위치해 있으며, 강한 매수 또는 매도 신호를 제공하지 않습니다.\n  - 매크로 전략가: UP — • VIX가 19.04로 20일 동안 24.8% 하락하여 시장의 두려움이 감소하고 있음을 나타냅니다. ",
+      "summary": "옵션 시장의 하락 신호와 기술적 지표의 혼조세로 인해 테슬라 주가는 하락 압력을 받고 있습니다. 그러나 매크로 환경의 개선은 긍정적 영향을 미칠 수 있습니다.",
+      "signals_at_time": {
+        "pc_ratio": 0.81,
+        "iv_rank": 100,
+        "unusual_activity": 17.0,
+        "unusual_side": "PUT",
+        "short_float_pct": 2.43,
+        "short_change": "N/A",
+        "insider_net_90d": 0,
+        "anomaly_score": 40,
+        "anomaly_direction": null,
+        "buy_dominance": 50.5,
+        "obv_trend": "UP",
+        "is_accumulation": false
+      }
+    },
+    {
+      "predicted_at": "2026-04-13T14:55:02.317604+00:00",
+      "predicted_direction": "DOWN",
+      "actual_direction": "UP",
+      "price_at": 352.26,
+      "current_price": 380.7099914550781,
+      "change_pct": 8.08,
+      "reasoning": "  - 펀더멘털 분석가: UP — • 애널리스트의 평균 목표 주가는 $415.3로 현재 가격 대비 17.9% 상승 여력이 있습니다.\n  - 옵션 트레이더: DOWN — • 옵션의 Put/Call 비율이 0.69로 콜 옵션보다 풋 옵션의 비중이 높아 하락을 예상합니다.\n  - 테크니컬 분석가: DOWN — • RSI가 39.1로 과매도 구간에 근접하여 하락 압력이 지속될 가능성이 있습니다.\n  - 매크로 전략가: UP — • VIX가 19.93으로 20일 동안 26.7% 하락하여 시장의 불안감이 감소하고 있음을 나타냅니다. ",
+      "summary": "옵션 거래와 기술적 지표에서 하락 신호가 강하게 나타나고 있습니다. 시장 불안감은 감소했으나, TSLA에 대한 하방 압력이 더 큽니다.",
+      "signals_at_time": {
+        "pc_ratio": 0.69,
+        "iv_rank": 100,
+        "unusual_activity": 33.1,
+        "unusual_side": "PUT",
+        "short_float_pct": 2.43,
+        "short_change": "N/A",
+        "insider_net_90d": 0,
+        "anomaly_score": 40,
+        "anomaly_direction": null,
+        "buy_dominance": 44.7,
+        "obv_trend": "DOWN",
+        "is_accumulation": false
+      }
+    },
+    {
+      "predicted_at": "2026-04-09T06:42:43.712095+00:00",
+      "predicted_direction": "DOWN",
+      "actual_direction": "UP",
+      "price_at": 346.65,
+      "current_price": 380.7099914550781,
+      "change_pct": 9.83,
+      "reasoning": "  - 테크니컬 분석가: DOWN — • RSI(14)가 33.7로 과매도 영역에 근접하여 하락 압력을 시사합니다.\n  - 펀더멘털 분석가: UP — • 애널리스트의 평균 목표 주가는 $416.15로 현재 주가 대비 21.2% 상승 여력이 있습니다. \n  - 옵션 트레이더: UP — • 옵션의 풋/콜 비율이 0.52로, 콜 옵션이 더 많이 거래되고 있어 상승에 대한 기대가 높음을 시사합니다.\n  - 매크로 전략가: DOWN — • VIX가 25.78로 20일 동안 3.4% 상승하여 시장의 불안감이 증가하고 있습니다. ",
+      "summary": "기술적 분석과 매크로 요인들이 하락을 지지하고 있습니다. 시장 불안감과 금리 상승이 TSLA에 부정적 영향을 미칠 수 있습니다.",
+      "signals_at_time": {
+        "pc_ratio": 0.52,
+        "iv_rank": 0,
+        "unusual_activity": null,
+        "unusual_side": null,
+        "short_float_pct": 2.26,
+        "short_change": "N/A",
+        "insider_net_90d": -53804,
+        "anomaly_score": 0,
+        "anomaly_direction": null,
+        "buy_dominance": 42.8,
+        "obv_trend": "DOWN",
+        "is_accumulation": false
+      }
+    },
+    {
+      "predicted_at": "2026-04-09T06:42:38.979407+00:00",
+      "predicted_direction": "DOWN",
+      "actual_direction": "UP",
+      "price_at": 346.65,
+      "current_price": 380.7099914550781,
+      "change_pct": 9.83,
+      "reasoning": "  - 테크니컬 분석가: DOWN — • RSI(14)가 33.7로 과매도 영역에 근접하여 하락 압력을 시사합니다.\n  - 펀더멘털 분석가: UP — • 애널리스트의 평균 목표 주가는 $416.15로 현재 주가 대비 21.2% 상승 여력이 있습니다. \n  - 옵션 트레이더: UP — • 옵션의 풋/콜 비율이 0.52로, 콜 옵션이 더 많이 거래되고 있어 상승에 대한 기대가 높음을 시사합니다.\n  - 매크로 전략가: DOWN — • VIX가 25.78로 20일 동안 3.4% 상승하여 시장의 불안감이 증가하고 있습니다. ",
+      "summary": "기술적 분석과 매크로 요인들이 하락을 지지하고 있습니다. 시장 불안감과 금리 상승이 TSLA에 부정적 영향을 미칠 수 있습니다.",
+      "signals_at_time": {
+        "pc_ratio": 0.52,
+        "iv_rank": 0,
+        "unusual_activity": null,
+        "unusual_side": null,
+        "short_float_pct": 2.26,
+        "short_change": "N/A",
+        "insider_net_90d": -53804,
+        "anomaly_score": 0,
+        "anomaly_direction": null,
+        "buy_dominance": 42.8,
+        "obv_trend": "DOWN",
+        "is_accumulation": false
+      }
+    }
+  ],
+  "cached": true
+}

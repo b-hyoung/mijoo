@@ -1,0 +1,177 @@
+{
+  "ticker": "KO",
+  "history": [
+    {
+      "id": 550,
+      "predicted_at": "2026-04-23T15:12:58.816726+00:00",
+      "age_hours": 1.4,
+      "current_price_at_prediction": 75.91,
+      "verdict": "매수",
+      "direction": "UP",
+      "confidence": 65,
+      "summary": "옵션과 펀더멘털 분석에서 상승 신호가 강하게 나타나고 있습니다. 매크로 환경도 긍정적이며 시장의 두려움이 감소하고 있습니다.",
+      "week1": {
+        "direction": "UP",
+        "confidence": 50.2,
+        "price_low": 74.44,
+        "price_high": 77.48,
+        "price_target": 75.96
+      },
+      "week2": {
+        "direction": "UP",
+        "confidence": 50.4,
+        "price_low": 73.73,
+        "price_high": 78.28,
+        "price_target": 76.0
+      },
+      "week3": {
+        "direction": "UP",
+        "up_probability": 56.5,
+        "range_low": 71.35,
+        "range_high": 80.46
+      },
+      "week4": {
+        "direction": "UP",
+        "up_probability": 56.5,
+        "range_low": 69.84,
+        "range_high": 81.98
+      },
+      "weekly_outlook": {
+        "week1": "옵션의 Put/Call 비율이 0.41로 콜 수요가 높음.",
+        "week2": "IV Rank가 100%로 큰 가격 변동 예상됨.",
+        "week3": "분석가 평균 목표 주가 $83.67로 상승 여지 존재.",
+        "week4": "VIX가 19.04로 24.8% 하락, 시장 두려움 감소."
+      }
+    },
+    {
+      "id": 549,
+      "predicted_at": "2026-04-23T15:12:43.248261+00:00",
+      "age_hours": 1.4,
+      "current_price_at_prediction": 75.9,
+      "verdict": "매수",
+      "direction": "UP",
+      "confidence": 67,
+      "summary": "KO 주식은 분석가들의 긍정적인 전망과 옵션 시장의 매수 압력으로 인해 상승할 가능성이 높습니다. 또한, 매크로 환경도 시장의 두려움 감소와 금리 부담 완화로 주식 상승에 우호적입니다.",
+      "week1": {
+        "direction": "UP",
+        "confidence": 50.2,
+        "price_low": 74.44,
+        "price_high": 77.48,
+        "price_target": 75.96
+      },
+      "week2": {
+        "direction": "UP",
+        "confidence": 50.4,
+        "price_low": 73.72,
+        "price_high": 78.27,
+        "price_target": 76.0
+      },
+      "week3": {
+        "direction": "UP",
+        "up_probability": 56.5,
+        "range_low": 71.35,
+        "range_high": 80.46
+      },
+      "week4": {
+        "direction": "UP",
+        "up_probability": 56.5,
+        "range_low": 69.83,
+        "range_high": 81.98
+      },
+      "weekly_outlook": {
+        "week1": "옵션 흐름에서 콜 옵션 비율이 4.0배로 높아, 매수 압력이 강함을 나타냅니다.",
+        "week2": "분석가 평균 목표 주가가 $83.67로, 현재 주가 대비 10.2% 상승 여력이 있습니다.",
+        "week3": "기관 투자자들의 보유 비율이 높아, 긍정적인 시장 신뢰를 반영합니다.",
+        "week4": "VIX가 19.04로 하락하여 시장의 두려움이 감소하고, 주가 상승에 우호적입니다."
+      }
+    },
+    {
+      "id": 534,
+      "predicted_at": "2026-04-13T14:55:02.745067+00:00",
+      "age_hours": 241.7,
+      "current_price_at_prediction": 76.46,
+      "verdict": "관망",
+      "direction": "DOWN",
+      "confidence": 49,
+      "summary": "옵션 거래와 기술적 지표가 KO의 하락을 지지하고 있습니다. 시장의 변동성 감소에도 불구하고, 비정상적인 풋 옵션 거래가 하락 압력을 가중시키고 있습니다.",
+      "week1": {
+        "direction": "DOWN",
+        "confidence": 50.4,
+        "price_low": 74.82,
+        "price_high": 77.88,
+        "price_target": 76.35
+      },
+      "week2": {
+        "direction": "UP",
+        "confidence": 51.3,
+        "price_low": 74.48,
+        "price_high": 79.07,
+        "price_target": 76.78
+      },
+      "week3": {
+        "direction": "DOWN",
+        "confidence": 52.2,
+        "price_low": 72.83,
+        "price_high": 78.95,
+        "price_target": 75.89
+      },
+      "week4": {
+        "direction": "DOWN",
+        "confidence": 56.1,
+        "price_low": 71.07,
+        "price_high": 78.72,
+        "price_target": 74.9
+      },
+      "weekly_outlook": {
+        "week1": "[RSI 49.2로 중립적이나 MACD가 시그널 라인 위에 있어 상승 가능성 존재] vs [OBV 하락세로 매수 압력 부족, 강한 방향성 없음]",
+        "week2": "[VIX 19.93으로 불안감 감소, 기관 투자자 보유 비율 증가] vs [Put/Call 비율 0.56로 비정상적인 풋 옵션 거래 10배 증가]",
+        "week3": "[최근 분기 실적이 예상치를 초과하며 긍정적 신호] vs [10년 만기 국채 수익률 4.32%로 상승, 리스크 증가 가능성]",
+        "week4": "[기관 투자자 증가와 VIX 하락으로 긍정적 신호] vs [IV Rank 100%로 큰 변동성 예상, 불확실성 증가]"
+      }
+    },
+    {
+      "id": 524,
+      "predicted_at": "2026-04-09T06:44:19.395441+00:00",
+      "age_hours": 345.9,
+      "current_price_at_prediction": 75.91,
+      "verdict": "관망",
+      "direction": "UP",
+      "confidence": 60,
+      "summary": "KO 주식에 대한 분석가들의 의견은 대체로 긍정적이며, 상승 모멘텀이 관찰됩니다. 시장의 불안감이 존재하나, 주식 자체의 긍정적인 신호가 더 강력합니다.",
+      "week1": {
+        "direction": "UP",
+        "confidence": 51.7,
+        "price_low": 74.83,
+        "price_high": 77.86,
+        "price_target": 76.34
+      },
+      "week2": {
+        "direction": "UP",
+        "confidence": 52.7,
+        "price_low": 74.32,
+        "price_high": 78.87,
+        "price_target": 76.6
+      },
+      "week3": {
+        "direction": "UP",
+        "confidence": 51.4,
+        "price_low": 73.23,
+        "price_high": 79.3,
+        "price_target": 76.26
+      },
+      "week4": {
+        "direction": "UP",
+        "confidence": 50.8,
+        "price_low": 72.31,
+        "price_high": 79.9,
+        "price_target": 76.11
+      },
+      "weekly_outlook": {
+        "week1": "RSI 55로 중립적이나 MACD가 시그널 라인 위에 있어 상승 모멘텀 신호.",
+        "week2": "분석가 23명 중 15명이 '매수' 추천하나 VIX 25.78로 불안감 증가.",
+        "week3": "목표가 $83.67로 상승 여력 있으나 10년 만기 국채 수익률 4.34%로 금리 압력 존재.",
+        "week4": "옵션 풋/콜 비율 0.49로 긍정적이나 달러 지수 99.11로 강세 지속."
+      }
+    }
+  ]
+}

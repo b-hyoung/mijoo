@@ -1,0 +1,179 @@
+{
+  "ticker": "AVGO",
+  "history": [
+    {
+      "id": 546,
+      "predicted_at": "2026-04-23T14:57:55.182703+00:00",
+      "age_hours": 1.7,
+      "current_price_at_prediction": 426.89,
+      "verdict": "관망",
+      "direction": "DOWN",
+      "confidence": 55,
+      "summary": "AVGO 주식은 과매수 상태와 비정상적인 풋 거래량 증가로 인해 하락 압력이 높아지고 있습니다. FOMC 발표를 앞두고 단기 변동성이 확대될 가능성이 큽니다.",
+      "week1": {
+        "direction": "DOWN",
+        "confidence": 90.3,
+        "price_low": 361.01,
+        "price_high": 378.09,
+        "price_target": 369.55
+      },
+      "week2": {
+        "direction": "DOWN",
+        "confidence": 95,
+        "price_low": 339.27,
+        "price_high": 364.89,
+        "price_target": 352.08
+      },
+      "week3": {
+        "direction": "UP",
+        "up_probability": 59.9,
+        "range_low": 401.28,
+        "range_high": 452.5
+      },
+      "week4": {
+        "direction": "UP",
+        "up_probability": 59.9,
+        "range_low": 392.74,
+        "range_high": 461.04
+      },
+      "weekly_outlook": {
+        "week1": "[RSI 79.9 과매수 상태이나 MACD 0.5로 상승세 지속 중.]",
+        "week2": "[기관 투자자 매수세 +1.2%이나 옵션 풋 거래량 15.5배 급증.]",
+        "week3": "[애널리스트 목표가 $475.49 상승 여력 있으나 FOMC 발표 D-6로 변동성 확대 가능.]",
+        "week4": "[VIX 19.04로 두려움 감소하나 IV Rank 100%로 큰 가격 변동 예상.]"
+      }
+    },
+    {
+      "id": 529,
+      "predicted_at": "2026-04-13T14:55:00.452487+00:00",
+      "age_hours": 241.7,
+      "current_price_at_prediction": 375.77,
+      "verdict": "관망",
+      "direction": "UP",
+      "confidence": 64,
+      "summary": "애널리스트들은 AVGO에 대해 긍정적인 전망을 보이며, 기술적 지표와 시장 환경도 이를 뒷받침하고 있습니다. 옵션 시장의 하락 신호에도 불구하고, 펀더멘털과 기술적 분석이 강력한 상승 신호를 제시합니다.",
+      "week1": {
+        "direction": "DOWN",
+        "confidence": 66.7,
+        "price_low": 347.38,
+        "price_high": 362.41,
+        "price_target": 354.89
+      },
+      "week2": {
+        "direction": "DOWN",
+        "confidence": 75.7,
+        "price_low": 332.33,
+        "price_high": 354.88,
+        "price_target": 343.6
+      },
+      "week3": {
+        "direction": "DOWN",
+        "confidence": 67.1,
+        "price_low": 339.26,
+        "price_high": 369.32,
+        "price_target": 354.29
+      },
+      "week4": {
+        "direction": "DOWN",
+        "confidence": 56.2,
+        "price_low": 349.24,
+        "price_high": 386.82,
+        "price_target": 368.03
+      },
+      "weekly_outlook": {
+        "week1": "RSI 72.1로 과매수 구간이나 Put/Call 비율 1.66로 하락 신호.",
+        "week2": "43명 애널리스트 '강력 매수' 추천하나 IV Rank 71%로 변동성 증가 예상.",
+        "week3": "목표가 $472.92로 상승 여력 있으나 PUT 옵션 42.7배 비정상적 활동 감지.",
+        "week4": "OBV 57.6% 긍정적 자금 흐름이나 VIX 19.93로 여전히 불안정."
+      }
+    },
+    {
+      "id": 519,
+      "predicted_at": "2026-04-09T06:43:20.210212+00:00",
+      "age_hours": 345.9,
+      "current_price_at_prediction": 333.97,
+      "verdict": "매수",
+      "direction": "UP",
+      "confidence": 65,
+      "summary": "애널리스트와 기술적 지표들이 AVGO의 상승을 지지하고 있으며, 옵션 시장에서도 긍정적인 흐름이 관찰됩니다. 그러나 시장 전반의 불안감과 금리 상승은 주의가 필요합니다.",
+      "week1": {
+        "direction": "UP",
+        "confidence": 54.4,
+        "price_low": 332.17,
+        "price_high": 345.53,
+        "price_target": 338.85
+      },
+      "week2": {
+        "direction": "UP",
+        "confidence": 54.6,
+        "price_low": 329.04,
+        "price_high": 349.08,
+        "price_target": 339.06
+      },
+      "week3": {
+        "direction": "UP",
+        "confidence": 51.8,
+        "price_low": 322.63,
+        "price_high": 349.34,
+        "price_target": 335.98
+      },
+      "week4": {
+        "direction": "UP",
+        "confidence": 50.1,
+        "price_low": 317.35,
+        "price_high": 350.74,
+        "price_target": 334.04
+      },
+      "weekly_outlook": {
+        "week1": "MACD가 시그널 라인 위에 위치해 상승 모멘텀을 시사합니다.",
+        "week2": "애널리스트 평균 목표가 $471.55로 34.5% 상승 여력 존재.",
+        "week3": "RSI(14)가 64.5로 과매수 구간에 근접, 추가 상승 가능성.",
+        "week4": "옵션의 풋/콜 비율 0.75로 콜 옵션 거래 증가, 상승 기대."
+      }
+    },
+    {
+      "id": 518,
+      "predicted_at": "2026-04-09T06:43:06.461748+00:00",
+      "age_hours": 345.9,
+      "current_price_at_prediction": 333.97,
+      "verdict": "매수",
+      "direction": "UP",
+      "confidence": 65,
+      "summary": "애널리스트와 기술적 지표들이 AVGO의 상승을 지지하고 있으며, 옵션 시장에서도 긍정적인 흐름이 관찰됩니다. 그러나 시장 전반의 불안감과 금리 상승은 주의가 필요합니다.",
+      "week1": {
+        "direction": "UP",
+        "confidence": 54.4,
+        "price_low": 332.17,
+        "price_high": 345.53,
+        "price_target": 338.85
+      },
+      "week2": {
+        "direction": "UP",
+        "confidence": 54.6,
+        "price_low": 329.04,
+        "price_high": 349.08,
+        "price_target": 339.06
+      },
+      "week3": {
+        "direction": "UP",
+        "confidence": 51.8,
+        "price_low": 322.63,
+        "price_high": 349.34,
+        "price_target": 335.98
+      },
+      "week4": {
+        "direction": "UP",
+        "confidence": 50.1,
+        "price_low": 317.35,
+        "price_high": 350.74,
+        "price_target": 334.04
+      },
+      "weekly_outlook": {
+        "week1": "MACD가 시그널 라인 위에 위치해 상승 모멘텀을 시사합니다.",
+        "week2": "애널리스트 평균 목표가 $471.55로 34.5% 상승 여력 존재.",
+        "week3": "RSI(14)가 64.5로 과매수 구간에 근접, 추가 상승 가능성.",
+        "week4": "옵션의 풋/콜 비율 0.75로 콜 옵션 거래 증가, 상승 기대."
+      }
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "ticker": "AAPL",
+  "analyzed_at": "2026-04-23T16:05:42.342415+00:00",
+  "miss_count": 3,
+  "predicted_direction": "UP",
+  "actual_direction": "DOWN",
+  "drivers": [
+    "가능성: 시장의 예기치 않은 외부 요인이나 이벤트가 발생하여 투자자 심리에 영향을 미쳤을 수 있습니다.",
+    "가능성: 옵션 시장의 콜 옵션 우세가 실제로는 시장의 과매수 상태를 반영하지 않았을 수 있습니다.",
+    "가능성: VIX의 하락이 시장의 안정감을 과대평가하게 만들었을 수 있습니다."
+  ],
+  "advice": "다음 예측에서는 옵션 시장의 움직임과 VIX 지수의 변동성을 더욱 면밀히 분석할 필요가 있습니다.",
+  "summary": "예측 실패는 시장의 예기치 않은 외부 요인이나 이벤트가 발생했을 가능성이 있으며, 옵션 시장의 콜 옵션 우세가 실제로는 시장의 과매수 상태를 반영하지 않았을 수 있습니다. 또한, VIX의 하락이 시장의 안정감을 과대평가하게 만들었을 가능성도 있습니다. 다음 예측에서는 이러한 요소들을 더욱 면밀히 분석하여 예측의 정확성을 높일 필요가 있습니다.",
+  "misses": [
+    {
+      "predicted_at": "2026-04-23T14:54:58.738948+00:00",
+      "predicted_direction": "UP",
+      "actual_direction": "DOWN",
+      "price_at": 274.18,
+      "current_price": 273.5899963378906,
+      "change_pct": -0.22,
+      "reasoning": "  - 테크니컬 분석가: UP — • RSI(14)가 63.5로 과매수 구간에 근접하지만 아직 상승 여력이 있습니다. \n  - 펀더멘털 분석가: UP — • 애널리스트 목표 주가가 현재 주가보다 높아 상승 여력이 있음.\n  - 옵션 트레이더: DOWN — • 옵션의 Put/Call 비율이 0.38로 콜 옵션이 우세하지만, 이는 주가 하락에 대한 대비가 부족함을 시사할 수 있습니다.\n  - 매크로 전략가: UP — • VIX가 19.04로 20일 동안 24.8% 하락하여 시장의 두려움이 감소하고 있음을 나타냅니다. ",
+      "summary": "AAPL 주식은 기술적, 펀더멘털, 매크로 요인에서 긍정적인 신호를 보이고 있습니다. 옵션 시장의 변동성 증가에도 불구하고, 전반적인 상승 모멘텀이 강합니다.",
+      "signals_at_time": {
+        "pc_ratio": 0.38,
+        "iv_rank": 100,
+        "unusual_activity": 4.3,
+        "unusual_side": "PUT",
+        "short_float_pct": 0.86,
+        "short_change": "N/A",
+        "insider_net_90d": 0,
+        "anomaly_score": 20,
+        "anomaly_direction": "UP",
+        "buy_dominance": 56.2,
+        "obv_trend": "UP",
+        "is_accumulation": false
+      }
+    },
+    {
+      "predicted_at": "2026-04-09T06:39:45.426847+00:00",
+      "predicted_direction": "DOWN",
+      "actual_direction": "UP",
+      "price_at": 253.5,
+      "current_price": 273.5899963378906,
+      "change_pct": 7.93,
+      "reasoning": "  - 펀더멘털 분석가: UP — • 애널리스트 목표 주가는 평균 $295.32로 현재 주가 대비 14.1% 상승 여력이 있습니다.\n  - 옵션 트레이더: UP — • 옵션의 풋/콜 비율이 0.76으로 콜 옵션의 매수세가 강함을 나타냅니다. \n  - 테크니컬 분석가: DOWN — • RSI(14)가 53.8로 중립 수준에 있으며, 강한 매수 또는 매도 신호가 없습니다.\n  - 매크로 전략가: DOWN — • VIX가 25.78로 20일 동안 3.4% 상승하여 시장의 불안감이 증가하고 있습니다. ",
+      "summary": "애널리스트들 중 다수는 AAPL의 하락을 예상하고 있으며, 시장의 불안정성이 증가하고 있습니다. 기술적 지표와 매크로 경제 요인들이 부정적인 신호를 주고 있습니다.",
+      "signals_at_time": {
+        "pc_ratio": 0.76,
+        "iv_rank": 18,
+        "unusual_activity": null,
+        "unusual_side": null,
+        "short_float_pct": 0.85,
+        "short_change": "N/A",
+        "insider_net_90d": -94951,
+        "anomaly_score": 0,
+        "anomaly_direction": null,
+        "buy_dominance": 49.3,
+        "obv_trend": "DOWN",
+        "is_accumulation": false
+      }
+    },
+    {
+      "predicted_at": "2026-04-09T06:39:44.121620+00:00",
+      "predicted_direction": "DOWN",
+      "actual_direction": "UP",
+      "price_at": 253.5,
+      "current_price": 273.5899963378906,
+      "change_pct": 7.93,
+      "reasoning": "  - 펀더멘털 분석가: UP — • 애널리스트 목표 주가는 평균 $295.32로 현재 주가 대비 14.1% 상승 여력이 있습니다.\n  - 옵션 트레이더: UP — • 옵션의 풋/콜 비율이 0.76으로 콜 옵션의 매수세가 강함을 나타냅니다. \n  - 테크니컬 분석가: DOWN — • RSI(14)가 53.8로 중립 수준에 있으며, 강한 매수 또는 매도 신호가 없습니다.\n  - 매크로 전략가: DOWN — • VIX가 25.78로 20일 동안 3.4% 상승하여 시장의 불안감이 증가하고 있습니다. ",
+      "summary": "애널리스트들 중 다수는 AAPL의 하락을 예상하고 있으며, 시장의 불안정성이 증가하고 있습니다. 기술적 지표와 매크로 경제 요인들이 부정적인 신호를 주고 있습니다.",
+      "signals_at_time": {
+        "pc_ratio": 0.76,
+        "iv_rank": 18,
+        "unusual_activity": null,
+        "unusual_side": null,
+        "short_float_pct": 0.85,
+        "short_change": "N/A",
+        "insider_net_90d": -94951,
+        "anomaly_score": 0,
+        "anomaly_direction": null,
+        "buy_dominance": 49.3,
+        "obv_trend": "DOWN",
+        "is_accumulation": false
+      }
+    }
+  ],
+  "cached": true
+}

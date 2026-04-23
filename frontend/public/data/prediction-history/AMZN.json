@@ -1,0 +1,179 @@
+{
+  "ticker": "AMZN",
+  "history": [
+    {
+      "id": 542,
+      "predicted_at": "2026-04-23T14:56:20.563154+00:00",
+      "age_hours": 1.7,
+      "current_price_at_prediction": 257.36,
+      "verdict": "매수",
+      "direction": "UP",
+      "confidence": 67,
+      "summary": "AMZN 주식은 옵션 시장의 강한 수요와 긍정적인 펀더멘털 전망으로 상승 가능성이 높습니다. 시장의 두려움 감소와 금리 부담 완화도 긍정적인 영향을 미치고 있습니다.",
+      "week1": {
+        "direction": "UP",
+        "confidence": 61.1,
+        "price_low": 261.74,
+        "price_high": 272.04,
+        "price_target": 266.89
+      },
+      "week2": {
+        "direction": "UP",
+        "confidence": 67.8,
+        "price_low": 264.89,
+        "price_high": 280.33,
+        "price_target": 272.61
+      },
+      "week3": {
+        "direction": "UP",
+        "up_probability": 54.5,
+        "range_low": 241.92,
+        "range_high": 272.8
+      },
+      "week4": {
+        "direction": "UP",
+        "up_probability": 54.5,
+        "range_low": 236.77,
+        "range_high": 277.95
+      },
+      "weekly_outlook": {
+        "week1": "옵션의 Put/Call 비율이 0.64로 콜 옵션 수요 증가.",
+        "week2": "IV Rank 79%로 옵션 시장 변동성 기대감 높음.",
+        "week3": "애널리스트 목표 주가 평균 $282.63로 상승 여력 존재.",
+        "week4": "10년 만기 국채 수익률 4.29%로 금리 부담 완화."
+      }
+    },
+    {
+      "id": 526,
+      "predicted_at": "2026-04-13T14:54:59.066345+00:00",
+      "age_hours": 241.7,
+      "current_price_at_prediction": 236.96,
+      "verdict": "매수",
+      "direction": "UP",
+      "confidence": 86,
+      "summary": "AMZN 주식은 여러 분석가들의 긍정적인 평가와 함께 상승세를 보이고 있습니다. 옵션 거래와 기술적 지표 모두 주가 상승을 지지하고 있습니다.",
+      "week1": {
+        "direction": "UP",
+        "confidence": 51.5,
+        "price_low": 233.44,
+        "price_high": 242.92,
+        "price_target": 238.18
+      },
+      "week2": {
+        "direction": "UP",
+        "confidence": 56.7,
+        "price_low": 235.1,
+        "price_high": 249.32,
+        "price_target": 242.21
+      },
+      "week3": {
+        "direction": "UP",
+        "confidence": 56.9,
+        "price_low": 232.92,
+        "price_high": 251.88,
+        "price_target": 242.4
+      },
+      "week4": {
+        "direction": "UP",
+        "confidence": 57.2,
+        "price_low": 230.79,
+        "price_high": 254.48,
+        "price_target": 242.64
+      },
+      "weekly_outlook": {
+        "week1": "콜 옵션의 이상 거래가 평소 대비 19.0배로 급증하여 상승 압력이 큽니다.",
+        "week2": "애널리스트의 평균 목표가는 $281.18로 18.7% 상승 여력이 있습니다.",
+        "week3": "MACD가 시그널 라인보다 높아 강한 상승 모멘텀을 보여줍니다.",
+        "week4": "VIX가 19.93으로 20일 동안 26.7% 하락하여 시장의 불안감이 감소했습니다."
+      }
+    },
+    {
+      "id": 511,
+      "predicted_at": "2026-04-09T06:41:25.667044+00:00",
+      "age_hours": 345.9,
+      "current_price_at_prediction": 213.77,
+      "verdict": "매수",
+      "direction": "UP",
+      "confidence": 65,
+      "summary": "AMZN은 기술적 지표와 옵션 시장의 긍정적인 신호로 인해 상승세가 예상됩니다. 그러나 시장의 불안정성 증가와 금리 상승은 주의가 필요합니다.",
+      "week1": {
+        "direction": "UP",
+        "confidence": 56.9,
+        "price_low": 214.42,
+        "price_high": 222.97,
+        "price_target": 218.7
+      },
+      "week2": {
+        "direction": "UP",
+        "confidence": 56.8,
+        "price_low": 212.23,
+        "price_high": 225.06,
+        "price_target": 218.64
+      },
+      "week3": {
+        "direction": "UP",
+        "confidence": 79.3,
+        "price_low": 226.09,
+        "price_high": 243.19,
+        "price_target": 234.64
+      },
+      "week4": {
+        "direction": "UP",
+        "confidence": 63.4,
+        "price_low": 212.65,
+        "price_high": 234.03,
+        "price_target": 223.34
+      },
+      "weekly_outlook": {
+        "week1": "RSI가 60.7로 중립에서 강세로 전환 중입니다.",
+        "week2": "애널리스트 목표 주가 평균이 $281.27로 27.1% 상승 여력이 있습니다.",
+        "week3": "MACD가 양수로 전환되어 상승 모멘텀을 시사합니다.",
+        "week4": "옵션의 풋/콜 비율이 0.42로 콜 옵션 거래가 우세합니다."
+      }
+    },
+    {
+      "id": 510,
+      "predicted_at": "2026-04-09T06:41:17.526129+00:00",
+      "age_hours": 345.9,
+      "current_price_at_prediction": 213.77,
+      "verdict": "매수",
+      "direction": "UP",
+      "confidence": 65,
+      "summary": "AMZN은 기술적 지표와 옵션 시장의 긍정적인 신호로 인해 상승세가 예상됩니다. 그러나 시장의 불안정성 증가와 금리 상승은 주의가 필요합니다.",
+      "week1": {
+        "direction": "UP",
+        "confidence": 56.9,
+        "price_low": 214.42,
+        "price_high": 222.97,
+        "price_target": 218.7
+      },
+      "week2": {
+        "direction": "UP",
+        "confidence": 56.8,
+        "price_low": 212.23,
+        "price_high": 225.06,
+        "price_target": 218.64
+      },
+      "week3": {
+        "direction": "UP",
+        "confidence": 79.3,
+        "price_low": 226.09,
+        "price_high": 243.19,
+        "price_target": 234.64
+      },
+      "week4": {
+        "direction": "UP",
+        "confidence": 63.4,
+        "price_low": 212.65,
+        "price_high": 234.03,
+        "price_target": 223.34
+      },
+      "weekly_outlook": {
+        "week1": "RSI가 60.7로 중립에서 강세로 전환 중입니다.",
+        "week2": "애널리스트 목표 주가 평균이 $281.27로 27.1% 상승 여력이 있습니다.",
+        "week3": "MACD가 양수로 전환되어 상승 모멘텀을 시사합니다.",
+        "week4": "옵션의 풋/콜 비율이 0.42로 콜 옵션 거래가 우세합니다."
+      }
+    }
+  ]
+}

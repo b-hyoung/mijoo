@@ -1,0 +1,265 @@
+{
+  "ticker": "MSFT",
+  "history": [
+    {
+      "id": 540,
+      "predicted_at": "2026-04-23T14:55:26.380398+00:00",
+      "age_hours": 1.7,
+      "current_price_at_prediction": 420.96,
+      "verdict": "매수",
+      "direction": "UP",
+      "confidence": 88,
+      "summary": "MSFT 주식은 기술적 지표와 옵션 시장에서 강한 상승 신호를 보이고 있으며, 펀더멘털 측면에서도 긍정적인 평가를 받고 있습니다. 시장 전반의 두려움 감소와 금리 부담 완화도 상승에 기여할 수 있습니다.",
+      "week1": {
+        "direction": "UP",
+        "confidence": 61.0,
+        "price_low": 427.99,
+        "price_high": 444.83,
+        "price_target": 436.41
+      },
+      "week2": {
+        "direction": "UP",
+        "confidence": 62.2,
+        "price_low": 425.42,
+        "price_high": 450.68,
+        "price_target": 438.05
+      },
+      "week3": {
+        "direction": "DOWN",
+        "up_probability": 43.9,
+        "range_low": 395.7,
+        "range_high": 446.22
+      },
+      "week4": {
+        "direction": "DOWN",
+        "up_probability": 43.9,
+        "range_low": 387.28,
+        "range_high": 454.64
+      },
+      "weekly_outlook": {
+        "week1": "RSI가 63.3으로 과매수 구간에 진입하지 않아 상승 여력이 있습니다.",
+        "week2": "MACD가 시그널 라인보다 높아 강한 상승 모멘텀을 나타냅니다.",
+        "week3": "애널리스트의 평균 목표 주가는 $579.57로 37.7% 상승 여력이 있습니다.",
+        "week4": "10년 만기 국채 수익률이 4.29%로 하락하여 금리 부담이 완화되고 있습니다."
+      }
+    },
+    {
+      "id": 539,
+      "predicted_at": "2026-04-23T14:55:13.293363+00:00",
+      "age_hours": 1.7,
+      "current_price_at_prediction": 420.85,
+      "verdict": "매수",
+      "direction": "UP",
+      "confidence": 87,
+      "summary": "MSFT는 기술적 지표와 옵션 시장에서 강한 상승 신호를 보이고 있으며, 펀더멘털 측면에서도 긍정적인 평가를 받고 있습니다. 시장 전반적으로도 금리 부담이 완화되고, 달러 약세가 나타나면서 상승에 유리한 환경이 조성되고 있습니다.",
+      "week1": {
+        "direction": "UP",
+        "confidence": 61.0,
+        "price_low": 427.9,
+        "price_high": 444.74,
+        "price_target": 436.32
+      },
+      "week2": {
+        "direction": "UP",
+        "confidence": 62.2,
+        "price_low": 425.33,
+        "price_high": 450.58,
+        "price_target": 437.96
+      },
+      "week3": {
+        "direction": "DOWN",
+        "up_probability": 43.8,
+        "range_low": 395.6,
+        "range_high": 446.1
+      },
+      "week4": {
+        "direction": "DOWN",
+        "up_probability": 43.8,
+        "range_low": 387.18,
+        "range_high": 454.52
+      },
+      "weekly_outlook": {
+        "week1": "MACD가 시그널 라인을 상회하며 강한 상승 모멘텀을 시사합니다.",
+        "week2": "옵션의 Put/Call 비율이 0.43으로, 콜 옵션에 대한 강한 수요를 나타냅니다.",
+        "week3": "애널리스트 목표 주가 평균이 $579.57로, 현재 주가 대비 37.7% 상승 여력이 있습니다.",
+        "week4": "10년 만기 국채 수익률이 4.29%로 20일 동안 0.8% 하락하여 금리 부담이 완화되고 있습니다."
+      }
+    },
+    {
+      "id": 537,
+      "predicted_at": "2026-04-13T14:55:14.808837+00:00",
+      "age_hours": 241.7,
+      "current_price_at_prediction": 378.41,
+      "verdict": "관망",
+      "direction": "DOWN",
+      "confidence": 53,
+      "summary": "MSFT에 대한 분석가들의 의견은 엇갈리지만, 옵션 트레이더와 기술적 분석가의 하락 전망이 우세합니다. 시장의 불안감이 감소하고 있지만, MSFT의 기술적 지표와 옵션 거래는 하락을 시사합니다.",
+      "week1": {
+        "direction": "UP",
+        "confidence": 50.6,
+        "price_low": 371.55,
+        "price_high": 386.69,
+        "price_target": 379.12
+      },
+      "week2": {
+        "direction": "UP",
+        "confidence": 72.7,
+        "price_low": 395.65,
+        "price_high": 418.36,
+        "price_target": 407.01
+      },
+      "week3": {
+        "direction": "UP",
+        "confidence": 90.4,
+        "price_low": 414.25,
+        "price_high": 444.53,
+        "price_target": 429.39
+      },
+      "week4": {
+        "direction": "UP",
+        "confidence": 95,
+        "price_low": 421.07,
+        "price_high": 458.91,
+        "price_target": 439.99
+      },
+      "weekly_outlook": {
+        "week1": "RSI 46.5로 중립적이나 MACD -7.305로 하락세 지속 중.",
+        "week2": "VIX 19.93로 불안감 감소하나 PUT 거래 7.5배 증가로 하락 압력 존재.",
+        "week3": "애널리스트 목표가 $585.41로 상승 여력 있으나 10년 만기 국채 수익률 4.32%로 리스크 증가.",
+        "week4": "내부자 거래 정보 없음이나 옵션 IV Rank 100%로 변동성 높아 위험 증가."
+      }
+    },
+    {
+      "id": 532,
+      "predicted_at": "2026-04-13T14:55:01.343820+00:00",
+      "age_hours": 241.7,
+      "current_price_at_prediction": 378.7,
+      "verdict": "매수",
+      "direction": "UP",
+      "confidence": 67,
+      "summary": "Microsoft는 옵션 시장에서의 강한 매수 압력과 최근 실적 발표에서의 긍정적인 결과로 인해 상승세를 보일 가능성이 높습니다. 또한, 시장의 불안감 감소와 글로벌 유동성 개선이 긍정적인 영향을 미칠 수 있습니다.",
+      "week1": {
+        "direction": "UP",
+        "confidence": 57.9,
+        "price_low": 381.08,
+        "price_high": 396.23,
+        "price_target": 388.65
+      },
+      "week2": {
+        "direction": "UP",
+        "confidence": 73.4,
+        "price_low": 396.84,
+        "price_high": 419.57,
+        "price_target": 408.2
+      },
+      "week3": {
+        "direction": "UP",
+        "confidence": 92.7,
+        "price_low": 417.41,
+        "price_high": 447.71,
+        "price_target": 432.56
+      },
+      "week4": {
+        "direction": "UP",
+        "confidence": 95,
+        "price_low": 420.36,
+        "price_high": 458.23,
+        "price_target": 439.3
+      },
+      "weekly_outlook": {
+        "week1": "옵션의 Put/Call 비율이 0.34로 콜 옵션 수요가 높음.",
+        "week2": "IV Rank가 94%로 큰 가격 변동 예상, 상승 가능성 높음.",
+        "week3": "최근 실적 발표에서 예상치를 초과한 수익 기록, 긍정적 신호.",
+        "week4": "분석가 목표 주가 평균 $400 이상, 상승 여력 존재."
+      }
+    },
+    {
+      "id": 507,
+      "predicted_at": "2026-04-09T06:40:21.642097+00:00",
+      "age_hours": 346.0,
+      "current_price_at_prediction": 372.29,
+      "verdict": "관망",
+      "direction": "UP",
+      "confidence": 57,
+      "summary": "애널리스트들의 긍정적인 전망과 옵션 데이터는 MSFT의 상승 가능성을 지지합니다. 시장 불안감과 금리 상승 압력에도 불구하고, 종목 자체의 강력한 상승 근거가 더 우세합니다.",
+      "week1": {
+        "direction": "UP",
+        "confidence": 60.6,
+        "price_low": 377.99,
+        "price_high": 392.88,
+        "price_target": 385.44
+      },
+      "week2": {
+        "direction": "UP",
+        "confidence": 76.7,
+        "price_low": 394.3,
+        "price_high": 416.63,
+        "price_target": 405.47
+      },
+      "week3": {
+        "direction": "UP",
+        "confidence": 91.2,
+        "price_low": 408.55,
+        "price_high": 438.34,
+        "price_target": 423.44
+      },
+      "week4": {
+        "direction": "UP",
+        "confidence": 95,
+        "price_low": 421.36,
+        "price_high": 458.59,
+        "price_target": 439.97
+      },
+      "weekly_outlook": {
+        "week1": "RSI 40.9로 과매도 접근이나 MACD -9.326으로 하락세 지속 중.",
+        "week2": "애널리스트 평균 목표가 $587.31로 상승 여력 있으나 VIX 25.78로 불안감 증가.",
+        "week3": "54명의 애널리스트가 강력 매수 추천하나 10년 만기 국채 수익률 4.34%로 금리 상승 압력 존재.",
+        "week4": "옵션 풋/콜 비율 0.35로 콜 수요 높으나 OBV 하락세로 매수세 약함."
+      }
+    },
+    {
+      "id": 506,
+      "predicted_at": "2026-04-09T06:40:21.224790+00:00",
+      "age_hours": 346.0,
+      "current_price_at_prediction": 372.29,
+      "verdict": "관망",
+      "direction": "UP",
+      "confidence": 57,
+      "summary": "애널리스트들의 긍정적인 전망과 옵션 데이터는 MSFT의 상승 가능성을 지지합니다. 시장 불안감과 금리 상승 압력에도 불구하고, 종목 자체의 강력한 상승 근거가 더 우세합니다.",
+      "week1": {
+        "direction": "UP",
+        "confidence": 60.6,
+        "price_low": 377.99,
+        "price_high": 392.88,
+        "price_target": 385.44
+      },
+      "week2": {
+        "direction": "UP",
+        "confidence": 76.7,
+        "price_low": 394.3,
+        "price_high": 416.63,
+        "price_target": 405.47
+      },
+      "week3": {
+        "direction": "UP",
+        "confidence": 91.2,
+        "price_low": 408.55,
+        "price_high": 438.34,
+        "price_target": 423.44
+      },
+      "week4": {
+        "direction": "UP",
+        "confidence": 95,
+        "price_low": 421.36,
+        "price_high": 458.59,
+        "price_target": 439.97
+      },
+      "weekly_outlook": {
+        "week1": "RSI 40.9로 과매도 접근이나 MACD -9.326으로 하락세 지속 중.",
+        "week2": "애널리스트 평균 목표가 $587.31로 상승 여력 있으나 VIX 25.78로 불안감 증가.",
+        "week3": "54명의 애널리스트가 강력 매수 추천하나 10년 만기 국채 수익률 4.34%로 금리 상승 압력 존재.",
+        "week4": "옵션 풋/콜 비율 0.35로 콜 수요 높으나 OBV 하락세로 매수세 약함."
+      }
+    }
+  ]
+}

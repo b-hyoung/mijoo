@@ -17,6 +17,14 @@ data/
 backend/app/ml/saved/
 backend/stocks.db
 
+# Next.js build output
+frontend/out/
+frontend/.next/
+
+# Re-include frontend snapshot data (it's the deploy payload)
+!frontend/public/data/
+!frontend/public/data/**
+
 # Python
 __pycache__/
 *.pyc

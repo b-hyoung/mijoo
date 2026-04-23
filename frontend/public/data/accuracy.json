@@ -1,0 +1,627 @@
+{
+  "window_days": 28,
+  "overall": {
+    "total": 47,
+    "correct": 30,
+    "exceed": 23,
+    "hit_rate": 0.6382978723404256
+  },
+  "tickers": [
+    {
+      "ticker": "AAPL",
+      "total": 5,
+      "correct": 2,
+      "exceed": 2,
+      "hit_rate": 0.4,
+      "current_price": 273.5899963378906,
+      "recent": [
+        {
+          "date": "2026-04-23",
+          "predicted_direction": "UP",
+          "actual_direction": "DOWN",
+          "price_at_prediction": 274.18,
+          "current_price": 273.5899963378906,
+          "actual_pct": -0.22,
+          "expected_pct": -1.22,
+          "status": "miss",
+          "correct": false
+        },
+        {
+          "date": "2026-04-13",
+          "predicted_direction": "UP",
+          "actual_direction": "UP",
+          "price_at_prediction": 257.45,
+          "current_price": 273.5899963378906,
+          "actual_pct": 6.27,
+          "expected_pct": -0.07,
+          "status": "exceed",
+          "correct": true
+        },
+        {
+          "date": "2026-04-13",
+          "predicted_direction": "UP",
+          "actual_direction": "UP",
+          "price_at_prediction": 257.46,
+          "current_price": 273.5899963378906,
+          "actual_pct": 6.27,
+          "expected_pct": 0.11,
+          "status": "exceed",
+          "correct": true
+        },
+        {
+          "date": "2026-04-09",
+          "predicted_direction": "DOWN",
+          "actual_direction": "UP",
+          "price_at_prediction": 253.5,
+          "current_price": 273.5899963378906,
+          "actual_pct": 7.93,
+          "expected_pct": 1.01,
+          "status": "miss",
+          "correct": false
+        },
+        {
+          "date": "2026-04-09",
+          "predicted_direction": "DOWN",
+          "actual_direction": "UP",
+          "price_at_prediction": 253.5,
+          "current_price": 273.5899963378906,
+          "actual_pct": 7.93,
+          "expected_pct": 1.01,
+          "status": "miss",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "ticker": "AMZN",
+      "total": 4,
+      "correct": 3,
+      "exceed": 3,
+      "hit_rate": 0.75,
+      "current_price": 256.93060302734375,
+      "recent": [
+        {
+          "date": "2026-04-23",
+          "predicted_direction": "UP",
+          "actual_direction": "DOWN",
+          "price_at_prediction": 257.36,
+          "current_price": 256.93060302734375,
+          "actual_pct": -0.17,
+          "expected_pct": 3.7,
+          "status": "miss",
+          "correct": false
+        },
+        {
+          "date": "2026-04-13",
+          "predicted_direction": "UP",
+          "actual_direction": "UP",
+          "price_at_prediction": 236.96,
+          "current_price": 256.93060302734375,
+          "actual_pct": 8.43,
+          "expected_pct": 0.51,
+          "status": "exceed",
+          "correct": true
+        },
+        {
+          "date": "2026-04-09",
+          "predicted_direction": "UP",
+          "actual_direction": "UP",
+          "price_at_prediction": 213.77,
+          "current_price": 256.93060302734375,
+          "actual_pct": 20.19,
+          "expected_pct": 2.31,
+          "status": "exceed",
+          "correct": true
+        },
+        {
+          "date": "2026-04-09",
+          "predicted_direction": "UP",
+          "actual_direction": "UP",
+          "price_at_prediction": 213.77,
+          "current_price": 256.93060302734375,
+          "actual_pct": 20.19,
+          "expected_pct": 2.31,
+          "status": "exceed",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "ticker": "AVGO",
+      "total": 4,
+      "correct": 3,
+      "exceed": 3,
+      "hit_rate": 0.75,
+      "current_price": 427.1099853515625,
+      "recent": [
+        {
+          "date": "2026-04-23",
+          "predicted_direction": "DOWN",
+          "actual_direction": "UP",
+          "price_at_prediction": 426.89,
+          "current_price": 427.1099853515625,
+          "actual_pct": 0.05,
+          "expected_pct": -13.43,
+          "status": "miss",
+          "correct": false
+        },
+        {
+          "date": "2026-04-13",
+          "predicted_direction": "UP",
+          "actual_direction": "UP",
+          "price_at_prediction": 375.77,
+          "current_price": 427.1099853515625,
+          "actual_pct": 13.66,
+          "expected_pct": -5.56,
+          "status": "exceed",
+          "correct": true
+        },
+        {
+          "date": "2026-04-09",
+          "predicted_direction": "UP",
+          "actual_direction": "UP",
+          "price_at_prediction": 333.97,
+          "current_price": 427.1099853515625,
+          "actual_pct": 27.89,
+          "expected_pct": 1.46,
+          "status": "exceed",
+          "correct": true
+        },
+        {
+          "date": "2026-04-09",
+          "predicted_direction": "UP",
+          "actual_direction": "UP",
+          "price_at_prediction": 333.97,
+          "current_price": 427.1099853515625,
+          "actual_pct": 27.89,
+          "expected_pct": 1.46,
+          "status": "exceed",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "ticker": "COST",
+      "total": 4,
+      "correct": 3,
+      "exceed": 0,
+      "hit_rate": 0.75,
+      "current_price": 1013.2849731445312,
+      "recent": [
+        {
+          "date": "2026-04-23",
+          "predicted_direction": "UP",
+          "actual_direction": "UP",
+          "price_at_prediction": 1010.68,
+          "current_price": 1013.2849731445312,
+          "actual_pct": 0.26,
+          "expected_pct": 0.5,
+          "status": "hit",
+          "correct": true
+        },
+        {
+          "date": "2026-04-13",
+          "predicted_direction": "DOWN",
+          "actual_direction": "UP",
+          "price_at_prediction": 989.55,
+          "current_price": 1013.2849731445312,
+          "actual_pct": 2.4,
+          "expected_pct": 1.31,
+          "status": "miss",
+          "correct": false
+        },
+        {
+          "date": "2026-04-09",
+          "predicted_direction": "UP",
+          "actual_direction": "UP",
+          "price_at_prediction": 1013.21,
+          "current_price": 1013.2849731445312,
+          "actual_pct": 0.01,
+          "expected_pct": -0.07,
+          "status": "hit",
+          "correct": true
+        },
+        {
+          "date": "2026-04-09",
+          "predicted_direction": "UP",
+          "actual_direction": "UP",
+          "price_at_prediction": 1013.21,
+          "current_price": 1013.2849731445312,
+          "actual_pct": 0.01,
+          "expected_pct": -0.07,
+          "status": "hit",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "ticker": "GOOGL",
+      "total": 4,
+      "correct": 4,
+      "exceed": 3,
+      "hit_rate": 1.0,
+      "current_price": 340.5249938964844,
+      "recent": [
+        {
+          "date": "2026-04-23",
+          "predicted_direction": "UP",
+          "actual_direction": "UP",
+          "price_at_prediction": 340.23,
+          "current_price": 340.5249938964844,
+          "actual_pct": 0.09,
+          "expected_pct": 2.06,
+          "status": "hit",
+          "correct": true
+        },
+        {
+          "date": "2026-04-13",
+          "predicted_direction": "UP",
+          "actual_direction": "UP",
+          "price_at_prediction": 318.35,
+          "current_price": 340.5249938964844,
+          "actual_pct": 6.97,
+          "expected_pct": -2.37,
+          "status": "exceed",
+          "correct": true
+        },
+        {
+          "date": "2026-04-09",
+          "predicted_direction": "UP",
+          "actual_direction": "UP",
+          "price_at_prediction": 305.46,
+          "current_price": 340.5249938964844,
+          "actual_pct": 11.48,
+          "expected_pct": 0.87,
+          "status": "exceed",
+          "correct": true
+        },
+        {
+          "date": "2026-04-09",
+          "predicted_direction": "UP",
+          "actual_direction": "UP",
+          "price_at_prediction": 305.46,
+          "current_price": 340.5249938964844,
+          "actual_pct": 11.48,
+          "expected_pct": 0.87,
+          "status": "exceed",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "ticker": "KO",
+      "total": 4,
+      "correct": 4,
+      "exceed": 3,
+      "hit_rate": 1.0,
+      "current_price": 76.38500213623047,
+      "recent": [
+        {
+          "date": "2026-04-23",
+          "predicted_direction": "UP",
+          "actual_direction": "UP",
+          "price_at_prediction": 75.91,
+          "current_price": 76.38500213623047,
+          "actual_pct": 0.63,
+          "expected_pct": 0.07,
+          "status": "exceed",
+          "correct": true
+        },
+        {
+          "date": "2026-04-23",
+          "predicted_direction": "UP",
+          "actual_direction": "UP",
+          "price_at_prediction": 75.9,
+          "current_price": 76.38500213623047,
+          "actual_pct": 0.64,
+          "expected_pct": 0.08,
+          "status": "exceed",
+          "correct": true
+        },
+        {
+          "date": "2026-04-13",
+          "predicted_direction": "DOWN",
+          "actual_direction": "DOWN",
+          "price_at_prediction": 76.46,
+          "current_price": 76.38500213623047,
+          "actual_pct": -0.1,
+          "expected_pct": -0.14,
+          "status": "hit",
+          "correct": true
+        },
+        {
+          "date": "2026-04-09",
+          "predicted_direction": "UP",
+          "actual_direction": "UP",
+          "price_at_prediction": 75.91,
+          "current_price": 76.38500213623047,
+          "actual_pct": 0.63,
+          "expected_pct": 0.57,
+          "status": "exceed",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "ticker": "META",
+      "total": 4,
+      "correct": 4,
+      "exceed": 3,
+      "hit_rate": 1.0,
+      "current_price": 665.27001953125,
+      "recent": [
+        {
+          "date": "2026-04-23",
+          "predicted_direction": "UP",
+          "actual_direction": "UP",
+          "price_at_prediction": 665.0,
+          "current_price": 665.27001953125,
+          "actual_pct": 0.04,
+          "expected_pct": 0.34,
+          "status": "hit",
+          "correct": true
+        },
+        {
+          "date": "2026-04-13",
+          "predicted_direction": "UP",
+          "actual_direction": "UP",
+          "price_at_prediction": 626.65,
+          "current_price": 665.27001953125,
+          "actual_pct": 6.16,
+          "expected_pct": 3.16,
+          "status": "exceed",
+          "correct": true
+        },
+        {
+          "date": "2026-04-09",
+          "predicted_direction": "UP",
+          "actual_direction": "UP",
+          "price_at_prediction": 575.05,
+          "current_price": 665.27001953125,
+          "actual_pct": 15.69,
+          "expected_pct": -3.01,
+          "status": "exceed",
+          "correct": true
+        },
+        {
+          "date": "2026-04-09",
+          "predicted_direction": "UP",
+          "actual_direction": "UP",
+          "price_at_prediction": 575.05,
+          "current_price": 665.27001953125,
+          "actual_pct": 15.69,
+          "expected_pct": -3.01,
+          "status": "exceed",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "ticker": "MSFT",
+      "total": 6,
+      "correct": 3,
+      "exceed": 3,
+      "hit_rate": 0.5,
+      "current_price": 417.1236877441406,
+      "recent": [
+        {
+          "date": "2026-04-23",
+          "predicted_direction": "UP",
+          "actual_direction": "DOWN",
+          "price_at_prediction": 420.96,
+          "current_price": 417.1236877441406,
+          "actual_pct": -0.91,
+          "expected_pct": 3.67,
+          "status": "miss",
+          "correct": false
+        },
+        {
+          "date": "2026-04-23",
+          "predicted_direction": "UP",
+          "actual_direction": "DOWN",
+          "price_at_prediction": 420.85,
+          "current_price": 417.1236877441406,
+          "actual_pct": -0.89,
+          "expected_pct": 3.68,
+          "status": "miss",
+          "correct": false
+        },
+        {
+          "date": "2026-04-13",
+          "predicted_direction": "DOWN",
+          "actual_direction": "UP",
+          "price_at_prediction": 378.41,
+          "current_price": 417.1236877441406,
+          "actual_pct": 10.23,
+          "expected_pct": 0.19,
+          "status": "miss",
+          "correct": false
+        },
+        {
+          "date": "2026-04-13",
+          "predicted_direction": "UP",
+          "actual_direction": "UP",
+          "price_at_prediction": 378.7,
+          "current_price": 417.1236877441406,
+          "actual_pct": 10.15,
+          "expected_pct": 2.63,
+          "status": "exceed",
+          "correct": true
+        },
+        {
+          "date": "2026-04-09",
+          "predicted_direction": "UP",
+          "actual_direction": "UP",
+          "price_at_prediction": 372.29,
+          "current_price": 417.1236877441406,
+          "actual_pct": 12.04,
+          "expected_pct": 3.53,
+          "status": "exceed",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "ticker": "NFLX",
+      "total": 4,
+      "correct": 1,
+      "exceed": 0,
+      "hit_rate": 0.25,
+      "current_price": 92.64009857177734,
+      "recent": [
+        {
+          "date": "2026-04-23",
+          "predicted_direction": "DOWN",
+          "actual_direction": "DOWN",
+          "price_at_prediction": 93.63,
+          "current_price": 92.64009857177734,
+          "actual_pct": -1.06,
+          "expected_pct": 2.06,
+          "status": "hit",
+          "correct": true
+        },
+        {
+          "date": "2026-04-13",
+          "predicted_direction": "UP",
+          "actual_direction": "DOWN",
+          "price_at_prediction": 102.86,
+          "current_price": 92.64009857177734,
+          "actual_pct": -9.94,
+          "expected_pct": -0.48,
+          "status": "miss",
+          "correct": false
+        },
+        {
+          "date": "2026-04-09",
+          "predicted_direction": "UP",
+          "actual_direction": "DOWN",
+          "price_at_prediction": 98.82,
+          "current_price": 92.64009857177734,
+          "actual_pct": -6.25,
+          "expected_pct": -1.99,
+          "status": "miss",
+          "correct": false
+        },
+        {
+          "date": "2026-04-09",
+          "predicted_direction": "UP",
+          "actual_direction": "DOWN",
+          "price_at_prediction": 98.82,
+          "current_price": 92.64009857177734,
+          "actual_pct": -6.25,
+          "expected_pct": -1.99,
+          "status": "miss",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "ticker": "NVDA",
+      "total": 4,
+      "correct": 3,
+      "exceed": 3,
+      "hit_rate": 0.75,
+      "current_price": 201.51499938964844,
+      "recent": [
+        {
+          "date": "2026-04-23",
+          "predicted_direction": "UP",
+          "actual_direction": "DOWN",
+          "price_at_prediction": 202.39,
+          "current_price": 201.51499938964844,
+          "actual_pct": -0.43,
+          "expected_pct": 2.79,
+          "status": "miss",
+          "correct": false
+        },
+        {
+          "date": "2026-04-13",
+          "predicted_direction": "UP",
+          "actual_direction": "UP",
+          "price_at_prediction": 189.3,
+          "current_price": 201.51499938964844,
+          "actual_pct": 6.45,
+          "expected_pct": 1.09,
+          "status": "exceed",
+          "correct": true
+        },
+        {
+          "date": "2026-04-09",
+          "predicted_direction": "UP",
+          "actual_direction": "UP",
+          "price_at_prediction": 178.1,
+          "current_price": 201.51499938964844,
+          "actual_pct": 13.15,
+          "expected_pct": -0.03,
+          "status": "exceed",
+          "correct": true
+        },
+        {
+          "date": "2026-04-09",
+          "predicted_direction": "UP",
+          "actual_direction": "UP",
+          "price_at_prediction": 178.1,
+          "current_price": 201.51499938964844,
+          "actual_pct": 13.15,
+          "expected_pct": -0.03,
+          "status": "exceed",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "ticker": "TSLA",
+      "total": 4,
+      "correct": 0,
+      "exceed": 0,
+      "hit_rate": 0.0,
+      "current_price": 380.6000061035156,
+      "recent": [
+        {
+          "date": "2026-04-23",
+          "predicted_direction": "DOWN",
+          "actual_direction": "UP",
+          "price_at_prediction": 375.98,
+          "current_price": 380.6000061035156,
+          "actual_pct": 1.23,
+          "expected_pct": -0.18,
+          "status": "miss",
+          "correct": false
+        },
+        {
+          "date": "2026-04-13",
+          "predicted_direction": "DOWN",
+          "actual_direction": "UP",
+          "price_at_prediction": 352.26,
+          "current_price": 380.6000061035156,
+          "actual_pct": 8.05,
+          "expected_pct": -8.09,
+          "status": "miss",
+          "correct": false
+        },
+        {
+          "date": "2026-04-09",
+          "predicted_direction": "DOWN",
+          "actual_direction": "UP",
+          "price_at_prediction": 346.65,
+          "current_price": 380.6000061035156,
+          "actual_pct": 9.79,
+          "expected_pct": -8.39,
+          "status": "miss",
+          "correct": false
+        },
+        {
+          "date": "2026-04-09",
+          "predicted_direction": "DOWN",
+          "actual_direction": "UP",
+          "price_at_prediction": 346.65,
+          "current_price": 380.6000061035156,
+          "actual_pct": 9.79,
+          "expected_pct": -8.39,
+          "status": "miss",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

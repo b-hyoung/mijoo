@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { fetchMissAnalysis, MissAnalysis } from "@/lib/api";
+import { fetchMissAnalysis, MissAnalysis, USE_SNAPSHOT } from "@/lib/api";
 
 interface Props {
   ticker: string;
@@ -74,14 +74,16 @@ export default function MissAnalysisButton({ ticker, missCount }: Props) {
                   📉 {ticker} · {data.miss_count}회 연속 빗나감
                   {" "}({data.predicted_direction} 예측 → 실제 {data.actual_direction})
                 </span>
-                <button onClick={handleRefresh}
-                  style={{
-                    fontSize: 10, color: "var(--text-3)",
-                    background: "transparent", border: "none",
-                    cursor: "pointer", padding: 0,
-                  }}>
-                  {data.cached ? "재분석" : "최신"}
-                </button>
+                {!USE_SNAPSHOT && (
+                  <button onClick={handleRefresh}
+                    style={{
+                      fontSize: 10, color: "var(--text-3)",
+                      background: "transparent", border: "none",
+                      cursor: "pointer", padding: 0,
+                    }}>
+                    {data.cached ? "재분석" : "최신"}
+                  </button>
+                )}
               </div>
 
               {data.summary && (
