@@ -66,6 +66,32 @@ def _gather_misses(ticker: str) -> list[dict]:
             arg = (p.get("argument") or "").splitlines()[0][:140]
             reasoning_lines.append(f"  - {p.get('role', p.get('id'))}: {p.get('direction')} — {arg}")
 
+        # Extract signals that were visible at prediction time but may have
+        # been under-weighted. GPT gets to see them so it can call out
+        # "you had warning signs X, Y and missed them".
+        opts = data.get("options") or {}
+        short_info = {
+            "short_float_pct": data.get("short_float_pct"),
+            "short_change": data.get("short_change"),
+        }
+        anom = data.get("anomaly") or {}
+        insider_info = data.get("insider") or {}
+        order_flow = data.get("order_flow") or {}
+        signals_at_time = {
+            "pc_ratio": opts.get("pc_ratio"),
+            "iv_rank": opts.get("iv_rank"),
+            "unusual_activity": opts.get("unusual_activity"),
+            "unusual_side": opts.get("unusual_side"),
+            "short_float_pct": short_info.get("short_float_pct"),
+            "short_change": short_info.get("short_change"),
+            "insider_net_90d": insider_info.get("net_shares_90d"),
+            "anomaly_score": anom.get("score"),
+            "anomaly_direction": anom.get("direction"),
+            "buy_dominance": order_flow.get("buy_dominance_pct"),
+            "obv_trend": order_flow.get("obv_trend"),
+            "is_accumulation": order_flow.get("is_accumulation"),
+        }
+
         misses.append({
             "predicted_at": row["predicted_at"],
             "predicted_direction": predicted,
@@ -75,6 +101,7 @@ def _gather_misses(ticker: str) -> list[dict]:
             "change_pct": round((current_price - price_at) / price_at * 100, 2),
             "reasoning": "\n".join(reasoning_lines) or "(페르소나 미수집)",
             "summary": debate.get("summary", ""),
+            "signals_at_time": signals_at_time,
         })
 
     return misses
@@ -247,28 +274,61 @@ def generate_miss_analysis(ticker: str, force: bool = False) -> dict | None:
     price_path = _gather_price_path(ticker, earliest)
     macro_now = _gather_macro_snapshot()
 
-    # Build reasoning block
-    reasoning_block = "\n\n".join(
-        f"[{m['predicted_at'][:10]}] {m['predicted_direction']} 예측, 실제 {m['actual_direction']} ({m['change_pct']:+.1f}%)\n{m['reasoning']}"
-        for m in misses[:5]
-    )
+    # Build reasoning block + signals-at-time block
+    reasoning_parts: list[str] = []
+    for m in misses[:5]:
+        s = m.get("signals_at_time") or {}
+        sig_lines = []
+        if s.get("pc_ratio") is not None:
+            sig_lines.append(f"P/C {s['pc_ratio']}")
+        if s.get("iv_rank") is not None:
+            sig_lines.append(f"IV rank {s['iv_rank']}%")
+        if s.get("unusual_activity") is not None:
+            sig_lines.append(f"비정상 옵션 {s['unusual_activity']}x ({s.get('unusual_side') or '?'} side)")
+        if s.get("short_float_pct") is not None:
+            sig_lines.append(f"공매도 {s['short_float_pct']:.1f}%")
+        if s.get("short_change") and s.get("short_change") != "N/A":
+            sig_lines.append(f"숏 변화 {s['short_change']}")
+        if s.get("insider_net_90d") is not None:
+            sig_lines.append(f"내부자 순 {s['insider_net_90d']:+,}주")
+        if s.get("anomaly_score") is not None and s.get("anomaly_score", 0) > 0:
+            sig_lines.append(f"이상징후 {s['anomaly_score']}/100 {s.get('anomaly_direction') or ''}")
+        if s.get("buy_dominance") is not None:
+            sig_lines.append(f"매수비중 {s['buy_dominance']:.0f}% (OBV {s.get('obv_trend') or '?'})")
+        if s.get("is_accumulation"):
+            sig_lines.append("매집 감지")
+        sig_str = ", ".join(sig_lines) if sig_lines else "(시그널 미수집)"
+
+        reasoning_parts.append(
+            f"[{m['predicted_at'][:10]}] {m['predicted_direction']} 예측, "
+            f"실제 {m['actual_direction']} ({m['change_pct']:+.1f}%)\n"
+            f"  당시 시그널: {sig_str}\n"
+            f"{m['reasoning']}"
+        )
+    reasoning_block = "\n\n".join(reasoning_parts)
     headlines_block = "\n".join(f"- {h}" for h in headlines[:20]) or "(수집된 헤드라인 없음)"
 
     system = """You are a financial post-mortem analyst. Given a ticker's wrong directional
 predictions, identify what SPECIFIC real-world factors overrode our reasoning.
 
-Requirements for every driver you list:
-- Cite a concrete event, date, or number when possible (e.g., "4/15 Robotaxi 발표", "Q1 EPS +12%", "Cybertruck 유럽 출시")
-- Avoid generic phrases like "실적 발표가 예상 상회" without a date/number.
-- If the exact event is not in the provided data, clearly prefix with "가능성:" and
-  name the most likely catalyst category (섹터 로테이션, 숏커버, 거시 전환 등).
-- Prefer NAMING specific products / policies / people rather than abstract trends.
+Two categories of drivers to look for:
+(a) **미리 볼 수 있었던 시그널** — at prediction time the data ALREADY pointed
+    the other way (e.g., "P/C 0.35로 콜 치우침인데 DOWN 예측", "매집 감지됐는데 DOWN",
+    "내부자 대규모 매수 + 공매도 감소"). Call these out BY NAME.
+(b) **예측 후 발생한 외부 사건** — news, product launch, earnings, 지정학 이슈.
+    Cite date + specific event when possible.
+
+Requirements:
+- Every driver should be CONCRETE (date/number/product name).
+- Avoid generic phrases ("실적 호조", "시장 분위기 좋음") without evidence.
+- If a signal was in (a) category — the data already showed it — prefix with "신호 미반영:".
+- If a guess without direct evidence — prefix with "가능성:".
 
 Language: Korean. Respond ONLY with this JSON:
 {
-  "drivers": ["구체적 한 줄, 날짜/제품명/수치 포함", ... 2~3개],
+  "drivers": ["구체적 한 줄", ... 2~3개],
   "advice": "다음 예측에서 이 티커에 대해 추가로 볼 시그널 (1문장, 구체적)",
-  "summary": "한 문단 (2~3문장), 어떤 날짜에 뭐가 일어났는지 포함"
+  "summary": "한 문단 (2~3문장). 'a) 미리 볼 수 있었던 것 + b) 외부 사건' 구분해서 설명"
 }"""
 
     user = f"""티커: {ticker}
