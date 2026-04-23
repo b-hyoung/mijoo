@@ -7,52 +7,73 @@ from pathlib import Path
 
 FEATURE_COLS = [
     "ma5", "ma20", "ma60", "rsi", "macd", "macd_signal",
-    "bb_upper", "bb_lower", "volume_ratio", "obv", "sentiment"
+    "bb_upper", "bb_lower", "volume_ratio", "obv", "sentiment",
+    "vix", "vix_20d_change",
+    "treasury_10y", "treasury_10y_20d_change",
+    "dxy", "dxy_20d_change",
 ]
-MODEL_DIR = Path(__file__).parent / "saved"
-MODEL_DIR.mkdir(exist_ok=True)
+MODEL_DIR = Path("/app/data/models")
+MODEL_DIR.mkdir(parents=True, exist_ok=True)
 
-def build_dataset(df: pd.DataFrame):
+WEEKS = [1, 2]  # 7, 14일 (week3/4는 구조 시그널로 대체)
+
+
+def build_dataset(df: pd.DataFrame, days: int):
     df = df.dropna(subset=FEATURE_COLS + ["close"])
     X = df[FEATURE_COLS].values
-    y2 = df["close"].shift(-14).values
-    y4 = df["close"].shift(-28).values
-    mask2 = ~np.isnan(y2)
-    mask4 = ~np.isnan(y4)
-    return X[mask2], y2[mask2], X[mask4], y4[mask4]
+    y = df["close"].shift(-days).values
+    mask = ~np.isnan(y)
+    return X[mask], y[mask], df.index[mask]
 
-def train_model(df: pd.DataFrame):
-    X2, y2, X4, y4 = build_dataset(df)
-    model2 = xgb.XGBRegressor(n_estimators=200, max_depth=4, learning_rate=0.05, random_state=42)
-    model4 = xgb.XGBRegressor(n_estimators=200, max_depth=4, learning_rate=0.05, random_state=42)
-    model2.fit(X2, y2)
-    model4.fit(X4, y4)
-    return model2, model4
 
-def save_models(ticker: str, model2, model4):
-    model2.save_model(str(MODEL_DIR / f"{ticker}_week2.json"))
-    model4.save_model(str(MODEL_DIR / f"{ticker}_week4.json"))
+def _compute_sample_weights(dates: pd.DatetimeIndex) -> np.ndarray:
+    """Recent 1 year gets 2x weight, older data gets 1x.
+    Smooth transition over 3 months to avoid hard cutoff."""
+    if len(dates) == 0:
+        return np.array([])
+    latest = dates.max()
+    days_ago = (latest - dates).days
+    weights = np.where(
+        days_ago <= 365, 2.0,                          # last 1 year: 2x
+        np.where(days_ago <= 455, 2.0 - (days_ago - 365) / 90,  # 3-month fade
+                 1.0)                                   # older: 1x
+    )
+    return weights.astype(float)
 
-def load_models(ticker: str):
-    m2 = xgb.XGBRegressor()
-    m4 = xgb.XGBRegressor()
-    m2.load_model(str(MODEL_DIR / f"{ticker}_week2.json"))
-    m4.load_model(str(MODEL_DIR / f"{ticker}_week4.json"))
-    return m2, m4
 
-def get_or_train_model(ticker: str, df):
-    """Load cached model if fresh (< 7 days), otherwise train and save."""
-    model2_path = MODEL_DIR / f"{ticker}_week2.json"
-    model4_path = MODEL_DIR / f"{ticker}_week4.json"
+def train_models(df: pd.DataFrame) -> dict:
+    models = {}
+    for w in WEEKS:
+        X, y, dates = build_dataset(df, w * 7)
+        sample_weights = _compute_sample_weights(dates)
+        m = xgb.XGBRegressor(n_estimators=200, max_depth=4, learning_rate=0.05, random_state=42)
+        m.fit(X, y, sample_weight=sample_weights)
+        models[w] = m
+    return models
 
+
+def save_models(ticker: str, models: dict):
+    for w, m in models.items():
+        m.save_model(str(MODEL_DIR / f"{ticker}_week{w}.json"))
+
+
+def load_models(ticker: str) -> dict:
+    models = {}
+    for w in WEEKS:
+        m = xgb.XGBRegressor()
+        m.load_model(str(MODEL_DIR / f"{ticker}_week{w}.json"))
+        models[w] = m
+    return models
+
+
+def get_or_train_model(ticker: str, df: pd.DataFrame) -> dict:
+    paths = [MODEL_DIR / f"{ticker}_week{w}.json" for w in WEEKS]
     seven_days = 7 * 24 * 3600
     now = time.time()
 
-    if (model2_path.exists() and model4_path.exists() and
-            (now - model2_path.stat().st_mtime) < seven_days):
-        model2, model4 = load_models(ticker)
-        return model2, model4
+    if all(p.exists() for p in paths) and (now - paths[0].stat().st_mtime) < seven_days:
+        return load_models(ticker)
 
-    model2, model4 = train_model(df)
-    save_models(ticker, model2, model4)
-    return model2, model4
+    models = train_models(df)
+    save_models(ticker, models)
+    return models
