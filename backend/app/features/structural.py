@@ -138,7 +138,11 @@ SIGNAL_LABELS: dict[str, str] = {
 
 
 def build_signal_breakdown(signals: dict) -> dict:
-    """Convert raw signal dict into UI-friendly breakdown with weights + contributions."""
+    """Convert raw signal dict into UI-friendly breakdown with weights + contributions.
+
+    Rows are emitted in WEIGHTS insertion order (fixed) so the UI stays
+    consistent across tickers. Users comparing cards see the same layout.
+    """
     rows: list[dict] = []
     total = 0.0
     for key, weight in WEIGHTS.items():
@@ -152,7 +156,6 @@ def build_signal_breakdown(signals: dict) -> dict:
             "weight": round(weight, 3),
             "contribution": round(contrib, 3),
         })
-    rows.sort(key=lambda r: abs(r["contribution"]), reverse=True)
     return {"rows": rows, "score": round(total, 3)}
 
 
