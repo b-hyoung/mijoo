@@ -1,4 +1,5 @@
 import { fetchAccuracy } from "@/lib/api";
+import MissAnalysisButton from "./MissAnalysisButton";
 
 export default async function AccuracyDashboard() {
   const data = await fetchAccuracy();
@@ -82,6 +83,7 @@ export default async function AccuracyDashboard() {
           const color =
             rate >= 70 ? "var(--up)" :
             rate >= 50 ? "#f5a623" : "var(--down)";
+          const missCount = t.total - t.correct;
           return (
             <div key={t.ticker} style={{
               display: "grid",
@@ -137,6 +139,11 @@ export default async function AccuracyDashboard() {
                   ? `$${t.current_price.toFixed(2)}`
                   : "—"}
               </span>
+              {missCount > 0 && (
+                <div style={{ gridColumn: "1 / -1", marginTop: 4 }}>
+                  <MissAnalysisButton ticker={t.ticker} missCount={missCount} />
+                </div>
+              )}
             </div>
           );
         })}

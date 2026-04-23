@@ -2,6 +2,7 @@ from app.debate.orchestrator import orchestrate
 from app.debate.judge import judge
 from app.debate.personas import PERSONAS
 from app.collectors.event_calendar import upcoming_events
+from app.stats_analysis import fetch_miss_context_for_prompt
 
 
 def _format_event_block(ticker: str, earnings_data: dict | None) -> str:
@@ -104,6 +105,7 @@ EARNINGS CALENDAR: {warn}
 """
 
     event_block = _format_event_block(ticker, earnings_data)
+    miss_feedback = fetch_miss_context_for_prompt(ticker)
 
     return f"""
 STOCK: {ticker}
@@ -129,6 +131,8 @@ RECENT NEWS HEADLINES:
 {headlines_text}
 {analyst_section}{insider_section}{macro_section}{options_section}{earnings_section}{anomaly_section}{ml_section}
 {event_block}
+
+{miss_feedback}
 """
 
 def run_debate(ticker: str, technical_data: dict, news_headlines: list[str], short_data: dict, order_flow: dict, ml_result: dict = None, analyst_data: dict = None, insider_data: dict = None, macro_data=None, options_data=None, earnings_data=None, anomaly_data=None) -> dict:

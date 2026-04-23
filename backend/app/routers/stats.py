@@ -10,9 +10,26 @@ from __future__ import annotations
 import json
 from datetime import datetime, timedelta, timezone
 
-from fastapi import APIRouter
+from fastapi import APIRouter, HTTPException
+
+from app.stats_analysis import generate_miss_analysis
 
 router = APIRouter()
+
+
+@router.get("/miss-analysis/{ticker}")
+def get_miss_analysis(ticker: str, force: bool = False):
+    """Post-mortem for a ticker's recent missed predictions.
+
+    Generates (or returns cached) analysis explaining why reality went
+    against the predicted direction. Cache TTL is 7 days — pass
+    ?force=true to regenerate immediately.
+    """
+    ticker = ticker.upper()
+    result = generate_miss_analysis(ticker, force=force)
+    if result is None:
+        return {"ticker": ticker, "miss_count": 0, "message": "no misses in window"}
+    return result
 
 
 def _latest_close(ticker: str) -> float | None:

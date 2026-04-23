@@ -351,6 +351,39 @@ export async function fetchAccuracy(): Promise<AccuracyResult | null> {
   }
 }
 
+export interface MissAnalysis {
+  ticker: string;
+  analyzed_at?: string;
+  miss_count: number;
+  predicted_direction?: "UP" | "DOWN";
+  actual_direction?: "UP" | "DOWN";
+  drivers?: string[];
+  advice?: string;
+  summary?: string;
+  misses?: {
+    predicted_at: string;
+    predicted_direction: "UP" | "DOWN";
+    actual_direction: "UP" | "DOWN";
+    price_at: number;
+    current_price: number;
+    change_pct: number;
+    reasoning: string;
+  }[];
+  cached?: boolean;
+  message?: string;
+}
+
+export async function fetchMissAnalysis(ticker: string, force = false): Promise<MissAnalysis | null> {
+  try {
+    const qs = force ? "?force=true" : "";
+    const res = await fetch(`${API_BASE}/stats/miss-analysis/${ticker}${qs}`, { cache: "no-store" });
+    if (!res.ok) return null;
+    return res.json();
+  } catch {
+    return null;
+  }
+}
+
 export async function fetchStatus(): Promise<WarmingStatus> {
   try {
     const res = await fetch(`${API_BASE}/status`, { cache: "no-store" });

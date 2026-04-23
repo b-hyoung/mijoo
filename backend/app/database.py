@@ -56,6 +56,16 @@ def init_db(db_path=None):
         CREATE TABLE IF NOT EXISTS custom_tickers (
             ticker TEXT PRIMARY KEY
         );
+        CREATE TABLE IF NOT EXISTS miss_analysis (
+            ticker TEXT PRIMARY KEY,
+            analyzed_at TEXT NOT NULL,
+            predicted_direction TEXT NOT NULL,
+            actual_direction TEXT NOT NULL,
+            miss_count INTEGER NOT NULL,
+            drivers TEXT,
+            advice TEXT,
+            summary TEXT
+        );
     """)
     conn.commit()
     conn.close()
