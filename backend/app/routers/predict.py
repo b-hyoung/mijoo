@@ -21,7 +21,7 @@ from app.debate.engine import run_debate
 from app.features.structural import (
     weekly_trend, range_position, mid_momentum, macro_regime,
     analyst_consensus_score, institutional_flow_score,
-    compute_structural_prediction,
+    compute_structural_prediction, compute_confluence,
 )
 
 
@@ -510,11 +510,18 @@ def get_prediction(ticker: str):
     # 10. Signals
     signals = comp_signals(latest)
 
+    # 10b. Confluence (4-week directional alignment)
+    confluence = compute_confluence(
+        ml_result["week1"], ml_result["week2"],
+        ml_result["week3"], ml_result["week4"],
+    )
+
     # 11. Assemble + Cache
     result = assemble_result(
         ticker, latest, sentiment, short_data, order_flow, articles,
         signals, fund, anomaly, ml_result, debate_result,
     )
+    result["confluence"] = confluence
 
     has_analyst = fund["analyst"].get("target_mean") is not None
     has_debate = debate_result.get("confidence", 0) > 0 and debate_result.get("summary", "")
