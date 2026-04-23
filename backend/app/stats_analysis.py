@@ -81,15 +81,90 @@ def _gather_misses(ticker: str) -> list[dict]:
 
 
 def _gather_headlines(ticker: str, since_iso: str) -> list[str]:
-    """Pull news headlines for ticker since given date."""
-    conn = get_db()
-    rows = conn.execute(
-        "SELECT date, title FROM news WHERE ticker = ? AND date >= ? "
-        "ORDER BY date DESC LIMIT 30",
-        (ticker, since_iso[:10]),
-    ).fetchall()
-    conn.close()
-    return [f"{r['date']}: {r['title']}" for r in rows]
+    """Pull news headlines for ticker since given date.
+
+    Tries fresh yfinance fetch first (covers events during the miss window),
+    falls back to news table. Both sources are merged and de-duplicated.
+    """
+    # Fresh fetch
+    fresh: list[tuple[str, str]] = []
+    try:
+        from app.collectors.news_collector import fetch_news
+        articles = fetch_news(ticker, days=45)
+        for a in articles:
+            title = (a.get("title") or "").strip()
+            date = (a.get("date") or "")[:10]
+            if title and date and date >= since_iso[:10]:
+                fresh.append((date, title))
+    except Exception:
+        pass
+
+    # DB fallback / supplement
+    try:
+        conn = get_db()
+        db_rows = conn.execute(
+            "SELECT date, title FROM news WHERE ticker = ? AND date >= ? "
+            "ORDER BY date DESC LIMIT 30",
+            (ticker, since_iso[:10]),
+        ).fetchall()
+        conn.close()
+        for r in db_rows:
+            fresh.append((r["date"], r["title"]))
+    except Exception:
+        pass
+
+    seen: set[str] = set()
+    out: list[str] = []
+    for date, title in sorted(fresh, key=lambda x: x[0], reverse=True):
+        key = title.strip().lower()
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append(f"{date}: {title}")
+    return out[:25]
+
+
+def _gather_price_path(ticker: str, since_iso: str) -> str:
+    """Build a compact daily price-change summary during the miss window."""
+    try:
+        from app.collectors.price_collector import fetch_price_history
+        df = fetch_price_history(ticker, period="2mo")
+        if df.empty:
+            return "(가격 이력 없음)"
+        import pandas as pd
+        if not isinstance(df.index, pd.DatetimeIndex):
+            df.index = pd.to_datetime(df.index)
+        since_dt = pd.Timestamp(since_iso[:10])
+        window = df[df.index >= since_dt]
+        if len(window) < 2:
+            return "(기간 데이터 부족)"
+        closes = window["close"]
+        lines: list[str] = []
+        prev = closes.iloc[0]
+        for idx, close in closes.items():
+            chg = (close - prev) / prev * 100
+            # Only surface days with material moves (|>=2%|) to keep signal
+            if abs(chg) >= 2.0 or idx == closes.index[-1] or idx == closes.index[0]:
+                lines.append(f"  {idx.strftime('%Y-%m-%d')}: ${float(close):.2f} ({chg:+.1f}% 전일대비)")
+            prev = close
+        total_chg = (closes.iloc[-1] - closes.iloc[0]) / closes.iloc[0] * 100
+        header = f"시작 ${float(closes.iloc[0]):.2f} → 현재 ${float(closes.iloc[-1]):.2f} ({total_chg:+.1f}%, {len(closes)}거래일)"
+        return header + "\n" + "\n".join(lines) if lines else header
+    except Exception as e:
+        return f"(가격 이력 실패: {e})"
+
+
+def _gather_macro_snapshot() -> str:
+    try:
+        from app.collectors.macro_collector import fetch_macro_latest
+        m = fetch_macro_latest()
+        return (
+            f"VIX {m.get('vix')} (20d {m.get('vix_20d_change'):+.1f}%), "
+            f"10Y {m.get('treasury_10y')}% (20d {m.get('treasury_10y_20d_change'):+.1f}%), "
+            f"DXY {m.get('dxy')} (20d {m.get('dxy_20d_change'):+.1f}%)"
+        )
+    except Exception:
+        return "(매크로 스냅샷 미수집)"
 
 
 def _cached_analysis(ticker: str) -> dict | None:
@@ -169,32 +244,52 @@ def generate_miss_analysis(ticker: str, force: bool = False) -> dict | None:
     # Use the earliest miss date as the news window start
     earliest = misses[-1]["predicted_at"]
     headlines = _gather_headlines(ticker, earliest)
+    price_path = _gather_price_path(ticker, earliest)
+    macro_now = _gather_macro_snapshot()
 
     # Build reasoning block
     reasoning_block = "\n\n".join(
         f"[{m['predicted_at'][:10]}] {m['predicted_direction']} 예측, 실제 {m['actual_direction']} ({m['change_pct']:+.1f}%)\n{m['reasoning']}"
         for m in misses[:5]
     )
-    headlines_block = "\n".join(f"- {h}" for h in headlines[:15]) or "(수집된 헤드라인 없음)"
+    headlines_block = "\n".join(f"- {h}" for h in headlines[:20]) or "(수집된 헤드라인 없음)"
 
-    system = """You are a post-mortem analyst. When directional predictions were wrong,
-identify what real-world factors overrode the reasoning. Be specific, cite headlines
-if helpful. Output Korean.
+    system = """You are a financial post-mortem analyst. Given a ticker's wrong directional
+predictions, identify what SPECIFIC real-world factors overrode our reasoning.
 
-Respond ONLY with this JSON:
-{"drivers": ["한 줄 설명", ...3개 이하], "advice": "다음 예측에서 이 티커에 대해 추가로 고려할 점 (1문장)", "summary": "한 문단 요약 (2~3문장)"}"""
+Requirements for every driver you list:
+- Cite a concrete event, date, or number when possible (e.g., "4/15 Robotaxi 발표", "Q1 EPS +12%", "Cybertruck 유럽 출시")
+- Avoid generic phrases like "실적 발표가 예상 상회" without a date/number.
+- If the exact event is not in the provided data, clearly prefix with "가능성:" and
+  name the most likely catalyst category (섹터 로테이션, 숏커버, 거시 전환 등).
+- Prefer NAMING specific products / policies / people rather than abstract trends.
 
-    user = f"""티커: {misses[0].get('predicted_at','')}의 {len(misses)}회 예측 실패.
-예측: {misses[0]['predicted_direction']}, 실제: {misses[0]['actual_direction']}
+Language: Korean. Respond ONLY with this JSON:
+{
+  "drivers": ["구체적 한 줄, 날짜/제품명/수치 포함", ... 2~3개],
+  "advice": "다음 예측에서 이 티커에 대해 추가로 볼 시그널 (1문장, 구체적)",
+  "summary": "한 문단 (2~3문장), 어떤 날짜에 뭐가 일어났는지 포함"
+}"""
+
+    user = f"""티커: {ticker}
+예측 실패: {len(misses)}회
+기본 방향: {misses[0]['predicted_direction']} 예측 → 실제 {misses[0]['actual_direction']}
 
 === 빗나간 예측별 당시 근거 ===
 {reasoning_block}
 
-=== 기간 내 뉴스 헤드라인 ===
+=== 가격 경로 (기간 내 일별 움직임) ===
+{price_path}
+
+=== 현재 매크로 스냅샷 ===
+{macro_now}
+
+=== 기간 내 뉴스 헤드라인 (최신순) ===
 {headlines_block}
 
 위 근거들이 있었음에도 실제로 반대로 간 **결정적 요인 1~3가지**를 찾아라.
-뉴스/이벤트/시장 구조 어떤 것이든. 추측일 수밖에 없는 경우 "가능성:" 접두사 붙여라."""
+가능한 한 날짜 + 구체적 이벤트명(제품, 정책, 인물)을 포함해라.
+뉴스에 없는 가설이면 "가능성:" 붙여서 적어라."""
 
     try:
         result = chat_json(system=system, user=user, tier="strong", temperature=0.3, max_tokens=600)
