@@ -111,6 +111,23 @@ export default async function StockDetailPage({ params }: { params: Promise<{ ti
         <Verdict debate={debate} />
       </div>
 
+      {/* Upcoming events strip */}
+      {data.upcoming_events && data.upcoming_events.length > 0 && (
+        <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginBottom: 12 }}>
+          {data.upcoming_events.map((e, i) => (
+            <span key={i}
+              title={e.date}
+              style={{
+                fontSize: 11, fontWeight: 700, color: "var(--text-2)",
+                background: "rgba(255,255,255,0.04)", border: "1px solid var(--border)",
+                borderRadius: 4, padding: "3px 8px", letterSpacing: "-0.01em",
+              }}>
+              {e.type === "earnings" ? "실적" : e.type} D-{e.days_until}
+            </span>
+          ))}
+        </div>
+      )}
+
       {/* Summary */}
       {debate?.summary && (
         <div style={{ paddingBottom: 24 }}>
