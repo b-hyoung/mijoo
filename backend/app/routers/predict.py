@@ -24,6 +24,7 @@ from app.features.structural import (
     weekly_trend, range_position, mid_momentum, macro_regime,
     analyst_consensus_score, institutional_flow_score,
     compute_structural_prediction, compute_confluence,
+    build_signal_breakdown,
 )
 
 
@@ -517,6 +518,9 @@ def get_prediction(ticker: str):
         ml_result["week1"], ml_result["week2"],
         ml_result["week3"], ml_result["week4"],
     )
+
+    # 10b+. Structural signal breakdown (for UI display)
+    confluence["structural_signals"] = build_signal_breakdown(structural_signals)
 
     # 10c. Confluence explanation (1 GPT call, cached per week via SQLite)
     personas = debate_result.get("personas", []) if debate_result else []

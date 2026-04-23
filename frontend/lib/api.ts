@@ -182,6 +182,16 @@ export interface PredictionResult {
     tone: "strong" | "moderate" | "mixed";
     per_week: ("UP" | "DOWN")[];
     explanation?: string;
+    structural_signals?: {
+      score: number;
+      rows: {
+        key: string;
+        label: string;
+        value: number;
+        weight: number;
+        contribution: number;
+      }[];
+    };
   };
   upcoming_events?: {
     type: "FOMC" | "CPI" | "NFP" | "earnings";

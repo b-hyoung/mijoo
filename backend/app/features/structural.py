@@ -127,6 +127,34 @@ WEIGHTS: dict[str, float] = {
     "institutional_flow": 0.10,
 }
 
+SIGNAL_LABELS: dict[str, str] = {
+    "weekly_trend": "주간 추세",
+    "range_position": "52주 위치",
+    "mid_momentum": "중기 모멘텀",
+    "macro_regime": "매크로 레짐",
+    "analyst_consensus": "애널리스트 컨센서스",
+    "institutional_flow": "스마트머니 흐름",
+}
+
+
+def build_signal_breakdown(signals: dict) -> dict:
+    """Convert raw signal dict into UI-friendly breakdown with weights + contributions."""
+    rows: list[dict] = []
+    total = 0.0
+    for key, weight in WEIGHTS.items():
+        value = float(signals.get(key, 0.0))
+        contrib = value * weight
+        total += contrib
+        rows.append({
+            "key": key,
+            "label": SIGNAL_LABELS[key],
+            "value": round(value, 3),
+            "weight": round(weight, 3),
+            "contribution": round(contrib, 3),
+        })
+    rows.sort(key=lambda r: abs(r["contribution"]), reverse=True)
+    return {"rows": rows, "score": round(total, 3)}
+
 
 def compute_structural_prediction(signals: dict, current_price: float, week: int) -> dict:
     """Produce a week-3/4 prediction from 6 structural signals.
