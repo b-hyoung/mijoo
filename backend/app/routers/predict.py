@@ -18,6 +18,7 @@ from app.ml.predictor import predict as ml_predict
 from app.ml.predictor import apply_fundamental_adjustment
 from app.ml.trainer import get_or_train_model
 from app.debate.engine import run_debate
+from app.debate.orchestrator import get_confluence_explanation
 from app.features.structural import (
     weekly_trend, range_position, mid_momentum, macro_regime,
     analyst_consensus_score, institutional_flow_score,
@@ -515,6 +516,15 @@ def get_prediction(ticker: str):
         ml_result["week1"], ml_result["week2"],
         ml_result["week3"], ml_result["week4"],
     )
+
+    # 10c. Confluence explanation (1 GPT call, cached per week via SQLite)
+    personas = debate_result.get("personas", []) if debate_result else []
+    driver_lines = []
+    for p in personas:
+        arg = (p.get("argument") or "").splitlines()[0][:120]
+        driver_lines.append(f"- {p.get('role', p.get('id'))}: {p.get('direction')} — {arg}")
+    personas_summary = "\n".join(driver_lines) if driver_lines else "(페르소나 미수집)"
+    confluence["explanation"] = get_confluence_explanation(ticker, confluence, personas_summary)
 
     # 11. Assemble + Cache
     result = assemble_result(
