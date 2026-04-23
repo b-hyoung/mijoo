@@ -50,6 +50,11 @@ export default async function AccuracyDashboard() {
         </span>
         <span style={{ fontSize: 12, color: "var(--text-3)" }}>
           {overall.correct}/{overall.total}건
+          {overall.exceed > 0 && (
+            <span style={{ color: "#fbbf24", marginLeft: 6 }}>
+              (초과 {overall.exceed})
+            </span>
+          )}
         </span>
         <span style={{ marginLeft: "auto", fontSize: 11, color: "var(--text-3)" }}>
           자세히 ▾
@@ -103,15 +108,27 @@ export default async function AccuracyDashboard() {
                 {rate}%
               </span>
               <div style={{ display: "flex", gap: 4 }}>
-                {t.recent.map((r, i) => (
-                  <span key={i}
-                    title={`${r.date} · 예측 ${r.predicted_direction} · 실제 ${r.actual_direction}`}
-                    style={{
-                      width: 10, height: 10, borderRadius: "50%",
-                      background: r.correct ? "var(--up)" : "var(--down)",
-                      opacity: 0.85,
-                    }}/>
-                ))}
+                {t.recent.map((r, i) => {
+                  const bg =
+                    r.status === "exceed" ? "#fbbf24" :  // gold
+                    r.status === "hit"    ? "var(--up)" :
+                    "var(--down)";
+                  const label =
+                    r.status === "exceed" ? "초과" :
+                    r.status === "hit"    ? "적중" :
+                    "빗나감";
+                  const expStr = r.expected_pct != null ? `${r.expected_pct >= 0 ? "+" : ""}${r.expected_pct.toFixed(1)}%` : "—";
+                  const actStr = `${r.actual_pct >= 0 ? "+" : ""}${r.actual_pct.toFixed(1)}%`;
+                  return (
+                    <span key={i}
+                      title={`${r.date} · 예측 ${r.predicted_direction} ${expStr} · 실제 ${actStr} → ${label}`}
+                      style={{
+                        width: 10, height: 10, borderRadius: "50%",
+                        background: bg, opacity: 0.9,
+                        boxShadow: r.status === "exceed" ? "0 0 0 1.5px rgba(251,191,36,0.4)" : undefined,
+                      }}/>
+                  );
+                })}
               </div>
               <span style={{ fontFamily: "var(--font-mono)",
                              textAlign: "right", fontSize: 12,

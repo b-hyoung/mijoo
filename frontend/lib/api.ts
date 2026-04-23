@@ -319,13 +319,17 @@ export interface AccuracyRecent {
   actual_direction: "UP" | "DOWN";
   price_at_prediction: number;
   current_price: number;
+  actual_pct: number;
+  expected_pct: number | null;
+  status: "miss" | "hit" | "exceed";
   correct: boolean;
 }
 
 export interface AccuracyTickerStat {
   ticker: string;
   total: number;
-  correct: number;
+  correct: number;   // hit or exceed (direction matched)
+  exceed: number;
   hit_rate: number;
   current_price: number | null;
   recent: AccuracyRecent[];
@@ -333,7 +337,7 @@ export interface AccuracyTickerStat {
 
 export interface AccuracyResult {
   window_days: number;
-  overall: { total: number; correct: number; hit_rate: number };
+  overall: { total: number; correct: number; exceed: number; hit_rate: number };
   tickers: AccuracyTickerStat[];
 }
 
