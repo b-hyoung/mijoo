@@ -1,7 +1,15 @@
 import sqlite3
 from pathlib import Path
 
-DB_PATH = Path("stocks.db")
+# Docker container: /app/data/stocks.db (bind-mounted from host)
+# Local dev:       <project_root>/data/stocks.db  (same file Docker mounts)
+# /.dockerenv is the standard marker Docker drops inside containers.
+_IN_DOCKER = Path("/.dockerenv").exists()
+DB_PATH = (
+    Path("/app/data/stocks.db") if _IN_DOCKER
+    else Path(__file__).resolve().parents[2] / "data" / "stocks.db"
+)
+DB_PATH.parent.mkdir(parents=True, exist_ok=True)
 
 def get_db(db_path=None):
     path = db_path if db_path else str(DB_PATH)
