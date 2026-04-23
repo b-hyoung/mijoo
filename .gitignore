@@ -1,9 +1,30 @@
+# Env / secrets
 .env
+backend/gcp-key.json
+*.pem
+*.key
+
+# Local/user-specific
+.claude/settings.local.json
+.agents/
+.claude/skills/
+skills-lock.json
+.impeccable.md
+
+# Data artifacts
 *.db
 data/
 backend/app/ml/saved/
+backend/stocks.db
+
+# Python
 __pycache__/
 *.pyc
+*.pyo
+
+# Frontend build
 .next/
 node_modules/
+
+# Superpowers
 .superpowers/
