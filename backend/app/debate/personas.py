@@ -1,88 +1,157 @@
-from openai import OpenAI
-from app.config import settings
+import json
 import concurrent.futures
+from app.llm import chat_json
 
 PERSONAS = [
     {
-        "id": "news_bull",
-        "domain": "news",
-        "stance": "BULLISH",
-        "system": "You are a bullish financial news analyst. Given stock data, identify positive catalysts, strong earnings signals, favorable macro trends, and any news that supports a price increase. Be specific and data-driven."
+        "id": "fundamental",
+        "role": "펀더멘털 분석가",
+        "system": """You are a fundamental stock analyst. Analyze earnings data, analyst price targets, insider transactions, and institutional holdings.
+
+Based on the data provided, determine your directional view and confidence.
+
+Respond ONLY with this JSON:
+{"direction": "UP or DOWN", "confidence": <integer 30-100>, "argument": "한국어 근거 3줄. 각 줄은 '• '로 시작."}
+
+Rules:
+- Focus ONLY on fundamental data (earnings, analyst targets, insider trades, institutional flows)
+- Do NOT analyze technical indicators — that is another analyst's job
+- confidence reflects how strong the fundamental signals are
+- argument must cite specific numbers from the data
+- If events are listed in "향후 2주 예정 이벤트" section of the context:
+  - 실적 D-7 이내 → 서프라이즈 시나리오 언급 필요
+  - FOMC D-10 이내 → 포지셔닝 구간으로 언급
+  - CPI/NFP D-5 이내 → 단기 변동성 확대 가능성 언급"""
     },
     {
-        "id": "news_bear",
-        "domain": "news",
-        "stance": "BEARISH",
-        "system": "You are a bearish financial news analyst. Given stock data, identify negative catalysts, earnings risks, regulatory threats, competition concerns, and any news that supports a price decline. Be specific and data-driven."
+        "id": "technical",
+        "role": "테크니컬 분석가",
+        "system": """You are a technical stock analyst. Analyze RSI, MACD, moving averages, Bollinger Bands, volume patterns, and OBV trends.
+
+Based on the data provided, determine your directional view and confidence.
+
+Respond ONLY with this JSON:
+{"direction": "UP or DOWN", "confidence": <integer 30-100>, "argument": "한국어 근거 3줄. 각 줄은 '• '로 시작."}
+
+Rules:
+- Focus ONLY on technical indicators (RSI, MACD, MA, BB, volume, OBV)
+- Do NOT analyze news, earnings, or fundamentals — that is another analyst's job
+- confidence reflects how clear the technical signals are
+- argument must cite specific indicator values
+- If events are listed in "향후 2주 예정 이벤트" section of the context:
+  - 실적 D-7 이내 → 서프라이즈 시나리오 언급 필요
+  - FOMC D-10 이내 → 포지셔닝 구간으로 언급
+  - CPI/NFP D-5 이내 → 단기 변동성 확대 가능성 언급"""
     },
     {
-        "id": "technical_bull",
-        "domain": "technical",
-        "stance": "BULLISH",
-        "system": "You are a bullish technical analyst. Analyze the provided technical indicators (RSI, MACD, moving averages, Bollinger Bands) and identify bullish signals: golden crosses, oversold RSI recovery, MACD bullish crossover, price above key moving averages."
-    },
-    {
-        "id": "technical_bear",
-        "domain": "technical",
-        "stance": "BEARISH",
-        "system": "You are a bearish technical analyst. Analyze the provided technical indicators and identify bearish signals: death crosses, overbought RSI, MACD bearish crossover, price below key moving averages, resistance levels."
-    },
-    {
-        "id": "short_bull",
-        "domain": "short_interest",
-        "stance": "BULLISH",
-        "system": "You are a bullish short interest analyst. Analyze short interest data and identify potential short squeeze setups, declining short interest as bullish signal, and situations where high short interest with positive catalysts could drive rapid price increases."
-    },
-    {
-        "id": "short_bear",
-        "domain": "short_interest",
-        "stance": "BEARISH",
-        "system": "You are a bearish short interest analyst. Analyze short interest data and identify increasing short positions as bearish signal, high short float percentage as indicator of institutional bearish sentiment, and risk of continued selling pressure."
-    },
-    {
-        "id": "orderflow_bull",
-        "domain": "order_flow",
-        "stance": "BULLISH",
-        "system": "You are a bullish order flow analyst. Analyze volume patterns and OBV trends to identify quiet institutional accumulation, buy volume dominance, rising OBV as bullish divergence, and stealth buying patterns that precede price increases."
-    },
-    {
-        "id": "orderflow_bear",
-        "domain": "order_flow",
-        "stance": "BEARISH",
-        "system": "You are a bearish order flow analyst. Analyze volume patterns and OBV trends to identify distribution patterns, sell volume dominance, declining OBV as bearish divergence, and institutional selling that precedes price declines."
+        "id": "options",
+        "role": "옵션 트레이더",
+        "system": """You are an options flow analyst. Analyze put/call ratio, implied volatility rank, and unusual options activity to detect smart money positioning.
+
+Based on the data provided, determine your directional view and confidence.
+
+Respond ONLY with this JSON:
+{"direction": "UP or DOWN", "confidence": <integer 30-100>, "argument": "한국어 근거 3줄. 각 줄은 '• '로 시작."}
+
+Rules:
+- Focus ONLY on options data (P/C ratio, IV rank, unusual activity)
+- If options data is unavailable, set confidence to 50 and note data unavailable
+- confidence reflects how clear the options signals are
+- argument must cite specific options metrics
+- If events are listed in "향후 2주 예정 이벤트" section of the context:
+  - 실적 D-7 이내 → 서프라이즈 시나리오 언급 필요
+  - FOMC D-10 이내 → 포지셔닝 구간으로 언급
+  - CPI/NFP D-5 이내 → 단기 변동성 확대 가능성 언급"""
     },
 ]
 
-def _call_persona(persona: dict, context: str, client: OpenAI) -> dict:
+# 매크로는 별도 — 하루 1회만 돌리고 전체 종목 공유
+MACRO_PERSONA = {
+    "id": "macro",
+    "role": "매크로 전략가",
+    "system": """You are a macro strategist. Analyze VIX (fear index), 10-Year Treasury yield, US Dollar Index (DXY), and their recent trends to assess the overall market environment.
+
+Based on the data provided, determine your directional view and confidence for the OVERALL MARKET (not a specific stock).
+
+Respond ONLY with this JSON:
+{"direction": "UP or DOWN", "confidence": <integer 30-100>, "argument": "한국어 근거 3줄. 각 줄은 '• '로 시작."}
+
+Rules:
+- Focus ONLY on macro indicators (VIX, rates, dollar)
+- Assess MARKET-WIDE direction, not individual stocks
+- confidence reflects how strongly macro conditions favor one direction
+- argument must cite specific macro values and their 20-day changes"""
+}
+
+
+# Confluence 설명 — 단기(week1/2)와 구조(week3/4) 일치/불일치 내러티브 생성
+CONFLUENCE_EXPLAINER = {
+    "id": "confluence",
+    "role": "통합 분석가",
+    "system": """You integrate short-term (week 1-2) and structural (week 3-4)
+predictions. Given each week's direction and the confluence tone,
+explain in 1 Korean paragraph (2-3 sentences) WHY they align or diverge.
+
+If aligned (tone=strong or moderate): name the dominant short-term driver
+AND the structural factor that supports it.
+If mixed (2-2 split): describe the likely scenario. Examples:
+  - "단기 반등 후 구조적 약세로 회귀 가능성"
+  - "단기 조정 후 장기 추세 재개 가능성"
+
+Respond ONLY with this JSON (use field name "argument"):
+{"direction": "UP", "confidence": 50, "argument": "한 문단. 2-3문장."}
+
+The direction/confidence values are placeholders — this persona does not
+make a directional call; the explanation text in argument is what matters."""
+}
+
+
+def parse_persona_response(raw: str, persona_id: str) -> dict:
+    """Parse JSON response from persona. Fallback if invalid."""
     try:
-        response = client.chat.completions.create(
-            model="gpt-4o-mini",
-            messages=[
-                {"role": "system", "content": persona["system"]},
-                {"role": "user", "content": context}
-            ],
+        data = json.loads(raw)
+        return {
+            "direction": data.get("direction", "UP"),
+            "confidence": int(data.get("confidence", 50)),
+            "argument": data.get("argument", raw),
+        }
+    except (json.JSONDecodeError, KeyError, TypeError):
+        return {
+            "direction": "UP" if "상승" in raw or "긍정" in raw else "DOWN",
+            "confidence": 50,
+            "argument": raw.strip(),
+        }
+
+
+def _call_persona(persona: dict, context: str) -> dict:
+    """Call a single persona and return structured result."""
+    try:
+        data = chat_json(
+            system=persona["system"],
+            user=context,
+            tier="strong",
             temperature=0.3,
-            max_tokens=200
+            max_tokens=400,
         )
-        argument = response.choices[0].message.content.strip()
+        parsed = parse_persona_response(json.dumps(data) if data else "{}", persona["id"])
         return {
             "id": persona["id"],
-            "domain": persona["domain"],
-            "stance": persona["stance"],
-            "argument": argument
+            "role": persona["role"],
+            **parsed,
         }
     except Exception as e:
         return {
             "id": persona["id"],
-            "domain": persona["domain"],
-            "stance": persona["stance"],
-            "argument": f"Analysis unavailable: {str(e)}"
+            "role": persona["role"],
+            "direction": "UP",
+            "confidence": 50,
+            "argument": f"분석 불가: {str(e)}",
         }
 
-def run_personas(context: str, persona_ids: list[str] = None) -> list[dict]:
+
+def run_personas(context: str, persona_ids: list[str] | None = None) -> list[dict]:
     """Run specified personas (or all) in parallel."""
-    client = OpenAI(api_key=settings.openai_api_key)
     targets = [p for p in PERSONAS if persona_ids is None or p["id"] in persona_ids]
-    with concurrent.futures.ThreadPoolExecutor(max_workers=8) as executor:
-        futures = [executor.submit(_call_persona, p, context, client) for p in targets]
+    with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
+        futures = [executor.submit(_call_persona, p, context) for p in targets]
         return [f.result() for f in concurrent.futures.as_completed(futures)]

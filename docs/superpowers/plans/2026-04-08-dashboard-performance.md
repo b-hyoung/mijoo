@@ -47,6 +47,8 @@ import threading
 from datetime import datetime, timezone
 from app.config import settings
 
+_lock = threading.Lock()
+
 warming_status = {
     "warming": False,
     "cached_count": 0,
@@ -59,7 +61,8 @@ def _warm_ticker(ticker: str):
     try:
         from app.routers.predict import get_prediction
         get_prediction(ticker)
-        warming_status["cached_count"] += 1
+        with _lock:
+            warming_status["cached_count"] += 1
     except Exception:
         pass
 

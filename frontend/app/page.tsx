@@ -1,35 +1,44 @@
-import { fetchStockList, fetchPrediction } from "@/lib/api";
+import { fetchStockList, fetchCurrentPrice } from "@/lib/api";
 import StockCard from "@/components/StockCard";
+import WarmingBanner from "@/components/WarmingBanner";
+import AccuracyDashboard from "@/components/AccuracyDashboard";
+
+async function StockCardWithPrice({ ticker }: { ticker: string }) {
+  const currentPrice = await fetchCurrentPrice(ticker);
+  return <StockCard ticker={ticker} currentPrice={currentPrice} />;
+}
 
 export default async function DashboardPage() {
-  let tickers: string[] = ["AAPL", "MSFT", "NVDA", "AMZN", "GOOGL", "META", "TSLA", "AVGO", "COST", "NFLX"];
+  let tickers: string[] = ["AAPL","MSFT","NVDA","AMZN","GOOGL","META","TSLA","AVGO","COST","NFLX"];
   try {
     const list = await fetchStockList();
     tickers = list.tickers;
   } catch {}
 
-  const predictions = await Promise.allSettled(
-    tickers.slice(0, 12).map(t => fetchPrediction(t))
-  );
-  const successful = predictions
-    .filter((r): r is PromiseFulfilledResult<any> => r.status === "fulfilled")
-    .map(r => r.value);
-
   return (
     <div>
-      <div className="flex justify-between items-center mb-6">
-        <h2 className="text-xl font-semibold">종목 예측 현황</h2>
-        <span className="text-sm text-slate-500">{successful.length > 0 ? `${successful.length}개 종목` : "백엔드 연결 필요"}</span>
-      </div>
-      {successful.length === 0 && (
-        <div className="text-center py-20 text-slate-500">
-          <p className="text-lg mb-2">백엔드 서버가 실행되지 않았습니다</p>
-          <p className="text-sm">cd backend && uvicorn app.main:app --reload</p>
+      <WarmingBanner />
+      <AccuracyDashboard />
+
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 20 }}>
+        <div>
+          <h1 style={{ fontSize: 20, fontWeight: 700, color: "var(--text)", margin: 0, letterSpacing: "-0.03em" }}>
+            종목 예측 현황
+          </h1>
+          <p style={{ fontSize: 12, color: "var(--text-3)", marginTop: 4 }}>AI 분석 기반 2주·4주 방향 예측</p>
         </div>
-      )}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {successful.map((data: any) => (
-          <StockCard key={data.ticker} data={data} />
+        <span style={{ fontSize: 12, color: "var(--text-3)", fontVariantNumeric: "tabular-nums" }}>
+          {tickers.length}개 종목
+        </span>
+      </div>
+
+      <div className="grid-home" style={{
+        display: "grid",
+        gridTemplateColumns: "repeat(3, 1fr)",
+        gap: 10,
+      }}>
+        {tickers.slice(0, 12).map(ticker => (
+          <StockCardWithPrice key={ticker} ticker={ticker} />
         ))}
       </div>
     </div>

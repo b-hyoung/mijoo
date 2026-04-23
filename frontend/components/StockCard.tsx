@@ -1,55 +1,38 @@
 import Link from "next/link";
-import { PredictionResult } from "@/lib/api";
-import PredictionBadge from "./PredictionBadge";
+import { Suspense } from "react";
+import PredictionSection from "./PredictionSection";
 
 interface Props {
-  data: PredictionResult;
+  ticker: string;
+  currentPrice: number | null;
 }
 
-export default function StockCard({ data }: Props) {
-  const debate = data.debate;
-  const isUp = debate ? debate.direction === "UP" : data.prediction.week2.direction === "UP";
-  const confidence = debate ? debate.confidence : data.prediction.week2.confidence;
-
+function Skeleton() {
   return (
-    <Link href={`/stock/${data.ticker}`}>
-      <div className="bg-slate-900 border border-slate-800 rounded-xl p-5 hover:border-slate-600 transition-colors cursor-pointer h-full">
-        <div className="flex justify-between items-start mb-3">
-          <div>
-            <h2 className="text-lg font-bold text-white">{data.ticker}</h2>
-            <p className="text-slate-400 text-sm">${data.current_price.toLocaleString()}</p>
-          </div>
-          <div className={`flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-sm font-semibold ${
-            isUp ? "bg-emerald-950 text-emerald-400 border border-emerald-800"
-                 : "bg-red-950 text-red-400 border border-red-800"
-          }`}>
-            <span>{isUp ? "📈" : "📉"}</span>
-            <span>{isUp ? "상승" : "하락"}</span>
-            <span className="text-xs opacity-70">{confidence}%</span>
-          </div>
+    <div style={{ paddingTop: 12, display: "flex", flexDirection: "column", gap: 8 }}>
+      <div style={{ height: 22, background: "var(--surface-2)", borderRadius: 4, width: "45%" }} />
+      <div style={{ height: 12, background: "var(--surface-2)", borderRadius: 3, width: "70%" }} />
+    </div>
+  );
+}
+
+export default function StockCard({ ticker, currentPrice }: Props) {
+  return (
+    <Link href={`/stock/${ticker}`} className="stock-card-link" style={{ textDecoration: "none", display: "block" }}>
+      <div style={{
+        background: "var(--surface)", border: "1px solid var(--border)",
+        borderRadius: 10, padding: 16, height: "100%",
+      }}>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 10 }}>
+          <span style={{ fontSize: 14, fontWeight: 700, color: "var(--text)", letterSpacing: "-0.02em" }}>{ticker}</span>
+          <span style={{ fontFamily: "var(--font-mono)", fontSize: 15, fontWeight: 600, color: "var(--text)" }}>
+            {currentPrice != null ? `$${currentPrice.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}` : "—"}
+          </span>
         </div>
-
-        {debate?.summary && (
-          <p className="text-xs text-slate-400 mb-3 line-clamp-2 leading-relaxed">
-            {debate.summary}
-          </p>
-        )}
-
-        <div className="flex gap-4 mb-3">
-          <PredictionBadge label="2주 후" prediction={data.prediction.week2} />
-          <PredictionBadge label="4주 후" prediction={data.prediction.week4} />
-        </div>
-
-        <div className="flex gap-3 text-xs text-slate-500 border-t border-slate-800 pt-3">
-          {data.short_float_pct !== undefined && (
-            <span>공매도 {data.short_float_pct.toFixed(1)}%</span>
-          )}
-          {data.order_flow?.is_accumulation && (
-            <span className="text-amber-400">⚡ 매집</span>
-          )}
-          {data.order_flow && (
-            <span>매수 {data.order_flow.buy_dominance_pct.toFixed(0)}%</span>
-          )}
+        <div style={{ borderTop: "1px solid var(--border)", paddingTop: 12 }}>
+          <Suspense fallback={<Skeleton />}>
+            <PredictionSection ticker={ticker} />
+          </Suspense>
         </div>
       </div>
     </Link>

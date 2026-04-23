@@ -3,6 +3,8 @@ from datetime import datetime
 from app.config import settings
 
 def send_prediction_alert(ticker: str, current_price: float, prediction: dict, summary: str):
+    if not settings.discord_webhook_url:
+        return
     w2 = prediction["week2"]
     direction_emoji = "📈" if w2["direction"] == "UP" else "📉"
     message = {
@@ -19,9 +21,14 @@ def send_prediction_alert(ticker: str, current_price: float, prediction: dict, s
             "timestamp": datetime.utcnow().isoformat()
         }]
     }
-    requests.post(settings.discord_webhook_url, json=message, timeout=10)
+    try:
+        requests.post(settings.discord_webhook_url, json=message, timeout=10)
+    except Exception:
+        pass
 
 def send_weekly_report(summaries: list[dict]):
+    if not settings.discord_webhook_url:
+        return
     lines = []
     for s in summaries:
         emoji = "📈" if s["direction"] == "UP" else "📉"
@@ -34,4 +41,7 @@ def send_weekly_report(summaries: list[dict]):
             "timestamp": datetime.utcnow().isoformat()
         }]
     }
-    requests.post(settings.discord_webhook_url, json=message, timeout=10)
+    try:
+        requests.post(settings.discord_webhook_url, json=message, timeout=10)
+    except Exception:
+        pass

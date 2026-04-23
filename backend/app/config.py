@@ -1,4 +1,7 @@
+from pathlib import Path
 from pydantic_settings import BaseSettings
+
+_ROOT_ENV = Path(__file__).resolve().parents[2] / ".env"
 
 class Settings(BaseSettings):
     openai_api_key: str = ""
@@ -11,6 +14,7 @@ class Settings(BaseSettings):
     ]
 
     class Config:
-        env_file = ".env"
+        env_file = str(_ROOT_ENV)
+        extra = "ignore"
 
 settings = Settings()

@@ -1,3 +1,4 @@
+# backend/app/scheduler.py
 from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.cron import CronTrigger
 from app.config import settings
@@ -14,6 +15,9 @@ def daily_collect():
         headlines = [a["title"] for a in articles if a.get("title")]
         score = score_articles(ticker, headlines)
         save_news(ticker, articles, score)
+    # 데이터 수집 후 전 종목 예측 캐시 갱신
+    from app.warming import warm_all_tickers
+    warm_all_tickers()
 
 def weekly_report():
     send_weekly_report([])

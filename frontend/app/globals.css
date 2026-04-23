@@ -1,26 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;600;700&display=swap');
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Surfaces */
+  --bg: #101017;
+  --surface: #15151e;
+  --surface-2: #1a1a26;
+  --border: #23233a;
+  --border-2: #2c2c48;
+
+  /* Text */
+  --text: #e2e2ea;
+  --text-2: #8c8ca6;
+  --text-3: #52526e;
+
+  /* Semantic */
+  --up: #2dd4a0;
+  --up-bg: rgba(45, 212, 160, 0.07);
+  --up-border: rgba(45, 212, 160, 0.16);
+  --down: #f06868;
+  --down-bg: rgba(240, 104, 104, 0.07);
+  --down-border: rgba(240, 104, 104, 0.16);
+
+  /* Accent */
+  --brand: #6875f5;
+  --brand-bg: rgba(104, 117, 245, 0.08);
+
+  /* Type scale */
+  --font-mono: "Geist Mono", "SF Mono", "Fira Code", monospace;
+  --font-body: -apple-system, "Pretendard Variable", Pretendard, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --text-xs: 10px;
+  --text-sm: 12px;
+  --text-base: 14px;
+  --text-lg: 16px;
+  --text-xl: 20px;
+  --text-2xl: 24px;
+  --text-3xl: 28px;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background: var(--bg);
+  --color-foreground: var(--text);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+* { box-sizing: border-box; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "tnum" 1;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Smooth transitions */
+a, button {
+  transition: color 0.15s ease-out, background 0.15s ease-out, border-color 0.15s ease-out, opacity 0.15s ease-out, transform 0.15s ease-out;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--border-2); }
+
+/* Card hover */
+.card-hover {
+  transition: border-color 0.15s ease-out, transform 0.1s ease-out;
+}
+.card-hover:hover {
+  border-color: var(--border-2);
+  transform: translateY(-1px);
+}
+
+/* Stock card link */
+.stock-card-link > div {
+  transition: border-color 0.15s ease-out, transform 0.1s ease-out;
+}
+.stock-card-link:hover > div {
+  border-color: var(--border-2);
+  transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hide-mobile { display: none !important; }
+  .grid-4-col { grid-template-columns: repeat(2, 1fr) !important; }
+  .grid-sidebar {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+  .sidebar-border {
+    border-left: none !important;
+    padding-left: 0 !important;
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+  }
+  .grid-home {
+    grid-template-columns: 1fr !important;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@media (max-width: 480px) {
+  .grid-4-col { grid-template-columns: 1fr 1fr !important; }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .grid-home {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
 }

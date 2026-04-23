@@ -20,7 +20,7 @@ def get_history(ticker: str, days: int = 30):
     vol_mean = df["volume"].rolling(5, min_periods=1).mean()
     df["buy_volume"] = (df["volume"] * (df["close"] >= df["close"].shift(1).fillna(df["close"])).astype(float)).astype(int)
     df["sell_volume"] = (df["volume"] - df["buy_volume"]).astype(int)
-    df["is_accumulation"] = (df["buy_volume"] > df["sell_volume"] * 1.4)
+    df["is_accumulation"] = False  # 개별 일자 판단 안 함, predict의 종합 판단 사용
 
     result = []
     for date, row in df.iterrows():

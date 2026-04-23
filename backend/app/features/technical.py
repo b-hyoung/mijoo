@@ -19,3 +19,27 @@ def build_technical_features(df: pd.DataFrame) -> pd.DataFrame:
         df["close"], df["volume"]
     ).on_balance_volume()
     return result
+
+
+def add_macro_features(price_df: pd.DataFrame, macro_df: pd.DataFrame) -> pd.DataFrame:
+    """Join macro data to price DataFrame and compute 20-day change rates."""
+    result = price_df.copy()
+
+    if macro_df.empty:
+        for col in ["vix", "treasury_10y", "dxy"]:
+            result[col] = np.nan
+            result[f"{col}_20d_change"] = np.nan
+        return result
+
+    macro_df.index = pd.to_datetime(macro_df.index).tz_localize(None)
+    result.index = pd.to_datetime(result.index).tz_localize(None)
+
+    for col in ["vix", "treasury_10y", "dxy"]:
+        if col in macro_df.columns:
+            result[col] = macro_df[col].reindex(result.index).ffill()
+            result[f"{col}_20d_change"] = result[col].pct_change(20) * 100
+        else:
+            result[col] = np.nan
+            result[f"{col}_20d_change"] = np.nan
+
+    return result
