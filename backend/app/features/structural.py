@@ -116,3 +116,60 @@ def institutional_flow_score(institutional: dict | None, insider: dict | None) -
     if not parts:
         return 0.0
     return _clip(sum(parts) / len(parts))
+
+
+WEIGHTS: dict[str, float] = {
+    "weekly_trend": 0.25,
+    "range_position": -0.15,
+    "mid_momentum": 0.20,
+    "macro_regime": 0.20,
+    "analyst_consensus": 0.10,
+    "institutional_flow": 0.10,
+}
+
+
+def compute_structural_prediction(signals: dict, current_price: float, week: int) -> dict:
+    """Produce a week-3/4 prediction from 6 structural signals.
+
+    Output shape (intentionally different from week 1/2 — no price_target):
+        direction:       "UP" | "DOWN"
+        up_probability:  20.0 ~ 80.0 (clipped)
+        range_low/high:  current_price * (1 ∓ range_pct)
+    """
+    score = sum(signals.get(k, 0.0) * w for k, w in WEIGHTS.items())
+    score = max(-1.0, min(1.0, score))
+    up_probability = round(50 + score * 30, 1)
+    up_probability = max(20.0, min(80.0, up_probability))
+    direction = "UP" if score >= 0 else "DOWN"
+    range_pct = 0.06 if week == 3 else 0.08
+    return {
+        "direction": direction,
+        "up_probability": up_probability,
+        "range_low": round(current_price * (1 - range_pct), 2),
+        "range_high": round(current_price * (1 + range_pct), 2),
+    }
+
+
+def compute_confluence(w1: dict, w2: dict, w3: dict, w4: dict) -> dict:
+    """Aggregate 4-week directional alignment."""
+    dirs = [w1["direction"], w2["direction"], w3["direction"], w4["direction"]]
+    up = dirs.count("UP")
+    down = dirs.count("DOWN")
+    aligned = max(up, down)
+    majority = "UP" if up >= down else "DOWN"
+
+    if aligned == 4:
+        badge, tone = "강한 확증", "strong"
+    elif aligned == 3:
+        badge, tone = "대체로 일치", "moderate"
+    else:
+        badge, tone = "혼조 — 되돌림 경계", "mixed"
+
+    return {
+        "aligned_count": aligned,
+        "total": 4,
+        "majority_direction": majority,
+        "badge": badge,
+        "tone": tone,
+        "per_week": dirs,
+    }

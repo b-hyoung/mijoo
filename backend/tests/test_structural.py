@@ -82,3 +82,68 @@ def test_institutional_flow_positive():
 def test_institutional_flow_missing_neutral():
     score = institutional_flow_score({"total_pct": None}, {"net_shares_90d": None})
     assert score == 0.0
+
+
+from app.features.structural import (
+    compute_structural_prediction,
+    compute_confluence,
+)
+
+
+def test_structural_prediction_week3_range_pct():
+    signals = {
+        "weekly_trend": 0.5,
+        "range_position": 0.0,
+        "mid_momentum": 0.5,
+        "macro_regime": 0.5,
+        "analyst_consensus": 0.5,
+        "institutional_flow": 0.5,
+    }
+    result = compute_structural_prediction(signals, current_price=100.0, week=3)
+    assert result["range_low"] == 94.0
+    assert result["range_high"] == 106.0
+    assert result["direction"] == "UP"
+    assert 20 <= result["up_probability"] <= 80
+    assert "price_target" not in result
+
+
+def test_structural_prediction_week4_wider_range():
+    signals = {k: 0.0 for k in [
+        "weekly_trend", "range_position", "mid_momentum",
+        "macro_regime", "analyst_consensus", "institutional_flow",
+    ]}
+    result = compute_structural_prediction(signals, current_price=100.0, week=4)
+    assert result["range_low"] == 92.0
+    assert result["range_high"] == 108.0
+    assert result["up_probability"] == 50.0
+
+
+def test_confluence_4_aligned_up():
+    conf = compute_confluence(
+        {"direction": "UP"}, {"direction": "UP"},
+        {"direction": "UP"}, {"direction": "UP"},
+    )
+    assert conf["aligned_count"] == 4
+    assert conf["tone"] == "strong"
+    assert conf["badge"] == "강한 확증"
+    assert conf["majority_direction"] == "UP"
+    assert conf["per_week"] == ["UP", "UP", "UP", "UP"]
+
+
+def test_confluence_3_of_4():
+    conf = compute_confluence(
+        {"direction": "UP"}, {"direction": "UP"},
+        {"direction": "UP"}, {"direction": "DOWN"},
+    )
+    assert conf["aligned_count"] == 3
+    assert conf["tone"] == "moderate"
+
+
+def test_confluence_2_2_split():
+    conf = compute_confluence(
+        {"direction": "UP"}, {"direction": "UP"},
+        {"direction": "DOWN"}, {"direction": "DOWN"},
+    )
+    assert conf["aligned_count"] == 2
+    assert conf["tone"] == "mixed"
+    assert conf["badge"] == "혼조 — 되돌림 경계"
