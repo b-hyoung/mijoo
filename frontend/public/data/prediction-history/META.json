@@ -4,7 +4,7 @@
     {
       "id": 544,
       "predicted_at": "2026-04-23T14:57:07.073710+00:00",
-      "age_hours": 1.7,
+      "age_hours": 1.8,
       "current_price_at_prediction": 665.0,
       "verdict": "매수",
       "direction": "UP",
@@ -46,7 +46,7 @@
     {
       "id": 528,
       "predicted_at": "2026-04-13T14:54:59.928361+00:00",
-      "age_hours": 241.7,
+      "age_hours": 241.8,
       "current_price_at_prediction": 626.65,
       "verdict": "매수",
       "direction": "UP",
@@ -90,7 +90,7 @@
     {
       "id": 515,
       "predicted_at": "2026-04-09T06:42:24.237075+00:00",
-      "age_hours": 345.9,
+      "age_hours": 346.0,
       "current_price_at_prediction": 575.05,
       "verdict": "관망",
       "direction": "UP",
@@ -134,7 +134,7 @@
     {
       "id": 514,
       "predicted_at": "2026-04-09T06:42:10.925494+00:00",
-      "age_hours": 345.9,
+      "age_hours": 346.0,
       "current_price_at_prediction": 575.05,
       "verdict": "관망",
       "direction": "UP",

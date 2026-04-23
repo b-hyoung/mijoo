@@ -264,11 +264,11 @@
     },
     {
       "date": "2026-04-23",
-      "close": 256.93,
-      "volume": 17947897,
-      "buy_volume": 17947897,
+      "close": 256.9,
+      "volume": 18108262,
+      "buy_volume": 18108262,
       "sell_volume": 0,
-      "obv": 470416997.0,
+      "obv": 470577362.0,
       "is_accumulation": false
     }
   ]
