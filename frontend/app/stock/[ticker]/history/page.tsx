@@ -1,5 +1,6 @@
 import { fetchPredictionHistory, PredictionHistoryEntry, fetchCurrentPrice, WeekPrediction } from "@/lib/api";
 import Link from "next/link";
+import MissAnalysisButton from "@/components/MissAnalysisButton";
 
 function formatDate(iso: string): string {
   try {
@@ -39,6 +40,16 @@ export default async function HistoryPage({ params }: { params: Promise<{ ticker
     fetchCurrentPrice(ticker),
   ]);
 
+  // Count misses for this ticker based on current price comparison
+  const missCount = currentPrice
+    ? history.filter((h) => {
+        if (!h.current_price_at_prediction) return false;
+        const actualUp = currentPrice > h.current_price_at_prediction;
+        const predictedUp = h.direction === "UP";
+        return actualUp !== predictedUp;
+      }).length
+    : 0;
+
   return (
     <div style={{ maxWidth: 1000, margin: "0 auto" }}>
       {/* Header */}
@@ -56,6 +67,15 @@ export default async function HistoryPage({ params }: { params: Promise<{ ticker
           {currentPrice && ` · 현재 $${currentPrice.toFixed(2)}`}
         </span>
       </div>
+
+      {missCount > 0 && (
+        <div style={{ marginBottom: 20, display: "flex", alignItems: "center", gap: 10 }}>
+          <span style={{ fontSize: 12, color: "var(--text-3)" }}>
+            이 티커 {missCount}회 빗나감 —
+          </span>
+          <MissAnalysisButton ticker={ticker} missCount={missCount} />
+        </div>
+      )}
 
       {history.length === 0 ? (
         <p style={{ fontSize: 14, color: "var(--text-3)", padding: "40px 0", textAlign: "center" }}>
