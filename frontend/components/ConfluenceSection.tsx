@@ -52,13 +52,13 @@ export default function ConfluenceSection({ confluence }: Props) {
               const pos = r.contribution > 0;
               const color = pos ? "var(--up)" : r.contribution < 0 ? "var(--down)" : "var(--text-3)";
               return (
-                <div key={r.key} style={{
+                <div key={r.key} className="signal-row" style={{
                   display: "grid",
                   gridTemplateColumns: "140px 1fr 70px 60px",
                   alignItems: "center", gap: 8, fontSize: 12,
                 }}>
                   <span style={{ color: "var(--text-2)" }}>{r.label}</span>
-                  <div style={{ position: "relative", height: 6,
+                  <div className="signal-bar" style={{ position: "relative", height: 6,
                                 background: "var(--border)", borderRadius: 3 }}>
                     <div style={{
                       position: "absolute", left: "50%",
@@ -67,11 +67,11 @@ export default function ConfluenceSection({ confluence }: Props) {
                       transform: pos ? "none" : "translateX(-100%)",
                     }} />
                   </div>
-                  <span style={{ fontFamily: "var(--font-mono)", fontSize: 10,
+                  <span style={{ fontFamily: "var(--font-mono)", fontSize: 11,
                                  color: "var(--text-3)", textAlign: "right" }}>
                     {r.value >= 0 ? "+" : ""}{r.value.toFixed(2)}
                   </span>
-                  <span style={{ fontFamily: "var(--font-mono)", fontSize: 11,
+                  <span style={{ fontFamily: "var(--font-mono)", fontSize: 12,
                                  fontWeight: 700, color, textAlign: "right" }}>
                     {r.contribution >= 0 ? "+" : ""}{r.contribution.toFixed(3)}
                   </span>

@@ -20,8 +20,8 @@ export default function ConfluenceBadge({ confluence, size = "sm" }: Props) {
       style={{
         fontSize, fontWeight: 700, color: s.color,
         background: s.bg, border: `1px solid ${s.border}`,
-        borderRadius: 5, padding: "2px 7px", letterSpacing: "-0.01em",
-        whiteSpace: "nowrap",
+        borderRadius: 5, padding: "3px 8px", letterSpacing: "-0.01em",
+        whiteSpace: "nowrap", flex: "0 0 auto",
       }}
     >
       {confluence.aligned_count}/{confluence.total} 일치

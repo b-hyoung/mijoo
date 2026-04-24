@@ -13,8 +13,10 @@ export default function Nav() {
 
   const navLink = (href: string, label: string, active: boolean) => (
     <Link href={href} style={{
-      fontSize: 12, textDecoration: "none",
-      padding: "5px 12px", borderRadius: 6,
+      fontSize: 13, textDecoration: "none",
+      minHeight: "var(--tap-size)", minWidth: "var(--tap-size)",
+      padding: "0 14px", borderRadius: 6,
+      display: "inline-flex", alignItems: "center", justifyContent: "center",
       color: active ? "var(--text)" : "var(--text-3)",
       background: active ? "var(--surface-2)" : "transparent",
     }}>
@@ -29,8 +31,8 @@ export default function Nav() {
       background: "var(--bg)",
     }}>
       <nav style={{
-        maxWidth: 1400, margin: "0 auto", padding: "0 var(--sp-32)",
-        height: 48, display: "flex", alignItems: "center",
+        maxWidth: 1400, margin: "0 auto", padding: "0 var(--sp-20)",
+        minHeight: 56, display: "flex", alignItems: "center",
       }}>
         {/* Logo */}
         <Link href="/" style={{

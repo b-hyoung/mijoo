@@ -63,10 +63,10 @@ export default async function AccuracyDashboard() {
       </summary>
 
       <div style={{ borderTop: "1px solid var(--border)", padding: "14px 20px" }}>
-        <div style={{
+        <div className="accuracy-header" style={{
           display: "grid",
           gridTemplateColumns: "80px 60px 60px 70px 1fr 80px",
-          gap: 10, fontSize: 11, color: "var(--text-3)",
+          gap: 10, fontSize: 12, color: "var(--text-3)",
           fontWeight: 700, letterSpacing: "0.06em",
           textTransform: "uppercase",
           paddingBottom: 8, borderBottom: "1px solid var(--border)",
@@ -85,31 +85,32 @@ export default async function AccuracyDashboard() {
             rate >= 50 ? "#f5a623" : "var(--down)";
           const missCount = t.total - t.correct;
           return (
-            <div key={t.ticker} style={{
+            <div key={t.ticker} className="accuracy-row" style={{
               display: "grid",
               gridTemplateColumns: "80px 60px 60px 70px 1fr 80px",
               gap: 10, padding: "10px 0",
               borderBottom: "1px solid var(--border)",
               fontSize: 13, alignItems: "center",
             }}>
-              <a href={`/stock/${t.ticker}/history`}
+              <a className="accuracy-ticker" href={`/stock/${t.ticker}/history`}
                  style={{ fontWeight: 700, color: "var(--text)",
-                          textDecoration: "none" }}>
+                          textDecoration: "none",
+                          minHeight: 32, display: "inline-flex", alignItems: "center" }}>
                 {t.ticker}
               </a>
-              <span style={{ fontFamily: "var(--font-mono)",
+              <span className="accuracy-stats-correct" style={{ fontFamily: "var(--font-mono)",
                              textAlign: "right", color: "var(--text-2)" }}>
                 {t.correct}
               </span>
-              <span style={{ fontFamily: "var(--font-mono)",
+              <span className="accuracy-stats-total" style={{ fontFamily: "var(--font-mono)",
                              textAlign: "right", color: "var(--text-3)" }}>
                 {t.total}
               </span>
-              <span style={{ fontFamily: "var(--font-mono)", fontWeight: 700,
+              <span className="accuracy-stats-rate" style={{ fontFamily: "var(--font-mono)", fontWeight: 700,
                              textAlign: "right", color }}>
                 {rate}%
               </span>
-              <div style={{ display: "flex", gap: 4 }}>
+              <div className="accuracy-dots" style={{ display: "flex", gap: 4 }}>
                 {t.recent.map((r, i) => {
                   const bg =
                     r.status === "exceed" ? "#fbbf24" :  // gold
@@ -132,7 +133,7 @@ export default async function AccuracyDashboard() {
                   );
                 })}
               </div>
-              <span style={{ fontFamily: "var(--font-mono)",
+              <span className="accuracy-price" style={{ fontFamily: "var(--font-mono)",
                              textAlign: "right", fontSize: 12,
                              color: "var(--text-3)" }}>
                 {t.current_price != null
@@ -140,7 +141,7 @@ export default async function AccuracyDashboard() {
                   : "—"}
               </span>
               {missCount > 0 && (
-                <div style={{ gridColumn: "1 / -1", marginTop: 4 }}>
+                <div className="accuracy-miss-btn" style={{ gridColumn: "1 / -1", marginTop: 4 }}>
                   <MissAnalysisButton ticker={t.ticker} missCount={missCount} />
                 </div>
               )}

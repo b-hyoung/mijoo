@@ -94,7 +94,7 @@ export default async function HistoryPage({ params }: { params: Promise<{ ticker
       ) : (
         <div>
           {/* Table header */}
-          <div style={{
+          <div className="history-header" style={{
             display: "grid", gridTemplateColumns: COL,
             gap: 8, padding: "10px 0",
             borderBottom: "1px solid var(--border)",
@@ -136,13 +136,13 @@ export default async function HistoryPage({ params }: { params: Promise<{ ticker
               : "var(--text-3)";
 
             return (
-              <div key={entry.id} style={{
+              <div key={entry.id} className="history-row" style={{
                 display: "grid", gridTemplateColumns: COL,
                 gap: 8, padding: "14px 0",
                 borderBottom: "1px solid var(--border)",
                 alignItems: "center",
               }}>
-                <span style={{ fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--text-3)" }}>
+                <span className="history-date" style={{ fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--text-3)" }}>
                   {formatDate(entry.predicted_at)}
                 </span>
                 <span style={{ fontSize: 14, fontWeight: 700, color: verdictColor }}>
@@ -163,7 +163,7 @@ export default async function HistoryPage({ params }: { params: Promise<{ ticker
                 <span style={{ fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--text-2)" }}>
                   {currentPrice ? `$${currentPrice.toFixed(2)}` : "—"}
                 </span>
-                <div style={{ textAlign: "right" }}>
+                <div className="history-result" style={{ textAlign: "right" }}>
                   {!reached ? (
                     <span style={{ fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--text-3)" }}>
                       대기중 ({Math.ceil(7 - ageDays)}일 남음)

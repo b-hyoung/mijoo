@@ -36,6 +36,28 @@
   --text-xl: 20px;
   --text-2xl: 24px;
   --text-3xl: 28px;
+
+  /* Spacing scale */
+  --sp-4: 4px;
+  --sp-8: 8px;
+  --sp-12: 12px;
+  --sp-16: 16px;
+  --sp-20: 20px;
+  --sp-24: 24px;
+  --sp-32: 32px;
+  --sp-48: 48px;
+
+  /* Minimum tap target */
+  --tap-size: 44px;
+}
+
+/* Mobile: shrink page padding */
+@media (max-width: 480px) {
+  :root {
+    --sp-20: 12px;
+    --sp-32: 16px;
+    --sp-48: 24px;
+  }
 }
 
 @theme inline {
@@ -101,6 +123,65 @@ a, button {
   .grid-home {
     grid-template-columns: 1fr !important;
   }
+  /* Mobile: collapse history rows from table into stacked cards */
+  .history-header { display: none !important; }
+  .history-row {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 6px !important;
+    padding: 12px !important;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--border) !important;
+  }
+  .history-row > * { text-align: left !important; }
+  .history-row > .history-date { grid-column: 1 / -1; font-weight: 700; }
+  .history-row > .history-result { grid-column: 1 / -1; text-align: right !important; }
+  /* Accuracy table: collapse dashboard into stacked rows */
+  .accuracy-header { display: none !important; }
+  .accuracy-row {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    gap: 8px 12px !important;
+    padding: 12px !important;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid var(--border) !important;
+  }
+  .accuracy-row > .accuracy-ticker {
+    font-size: 15px !important;
+    flex: 1 1 auto;
+    min-width: 60px;
+  }
+  .accuracy-row > .accuracy-stats-correct::after { content: "/"; margin: 0 2px; color: var(--text-3); }
+  .accuracy-row > .accuracy-stats-total { color: var(--text-3) !important; }
+  .accuracy-row > .accuracy-stats-rate {
+    font-size: 17px !important;
+    margin-left: auto;
+  }
+  .accuracy-row > .accuracy-dots {
+    flex: 1 1 100%;
+    order: 10;
+    justify-content: flex-start;
+  }
+  .accuracy-row > .accuracy-price {
+    flex: 0 0 auto;
+    text-align: right !important;
+  }
+  .accuracy-row > .accuracy-miss-btn {
+    grid-column: auto !important;
+    flex: 1 1 100%;
+    order: 11;
+    margin-top: 6px !important;
+  }
+  /* Confluence signal breakdown: 2-col on mobile */
+  .signal-row {
+    grid-template-columns: 110px 1fr auto !important;
+    grid-template-rows: auto auto;
+  }
+  .signal-row > .signal-bar { grid-column: 1 / -1; }
 }
 
 @media (max-width: 480px) {

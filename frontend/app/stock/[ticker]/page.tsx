@@ -26,9 +26,9 @@ function Verdict({ debate }: { debate: DebateResult | undefined }) {
   const bg = isBuy ? "rgba(45,212,160,0.1)" : isSell ? "rgba(240,104,104,0.1)" : "rgba(245,166,35,0.1)";
   const border = isBuy ? "rgba(45,212,160,0.3)" : isSell ? "rgba(240,104,104,0.3)" : "rgba(245,166,35,0.3)";
   return (
-    <div style={{ display: "flex", alignItems: "center", gap: 12, background: bg, border: `1px solid ${border}`, borderRadius: 10, padding: "8px 18px" }}>
-      <span style={{ fontSize: 22, fontWeight: 900, color, letterSpacing: "-0.03em" }}>{v}</span>
-      <span style={{ fontFamily: "var(--font-mono)", fontSize: 20, fontWeight: 900, color }}>
+    <div style={{ display: "inline-flex", alignItems: "center", gap: 10, background: bg, border: `1px solid ${border}`, borderRadius: 10, padding: "6px 14px", flex: "0 0 auto" }}>
+      <span style={{ fontSize: 20, fontWeight: 900, color, letterSpacing: "-0.03em" }}>{v}</span>
+      <span style={{ fontFamily: "var(--font-mono)", fontSize: 18, fontWeight: 900, color }}>
         {debate?.confidence}%
       </span>
     </div>
@@ -100,9 +100,9 @@ export default async function StockDetailPage({ params }: { params: Promise<{ ti
     <div>
       {/* Header */}
       <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", padding: "8px 0 24px", flexWrap: "wrap", gap: 12 }}>
-        <div style={{ display: "flex", alignItems: "baseline", gap: 16 }}>
-          <h1 style={{ margin: 0, fontSize: 28, fontWeight: 800, color: "var(--text)", letterSpacing: "-0.05em" }}>{ticker}</h1>
-          <span style={{ fontFamily: "var(--font-mono)", fontSize: 22, fontWeight: 600, color: "var(--text)" }}>
+        <div style={{ display: "flex", alignItems: "baseline", gap: 12, flexWrap: "wrap" }}>
+          <h1 style={{ margin: 0, fontSize: 26, fontWeight: 800, color: "var(--text)", letterSpacing: "-0.05em" }}>{ticker}</h1>
+          <span style={{ fontFamily: "var(--font-mono)", fontSize: 20, fontWeight: 600, color: "var(--text)" }}>
             ${data.current_price.toLocaleString("en-US", { minimumFractionDigits: 2 })}
           </span>
           {data.predicted_at && (() => {
@@ -112,7 +112,7 @@ export default async function StockDetailPage({ params }: { params: Promise<{ ti
               <span
                 suppressHydrationWarning
                 title={`분석 시각: ${new Date(data.predicted_at).toLocaleString("ko-KR")}`}
-                style={{ fontSize: 11, color }}
+                style={{ fontSize: 12, color }}
               >
                 분석 {formatRelativeTime(data.predicted_at)}
               </span>

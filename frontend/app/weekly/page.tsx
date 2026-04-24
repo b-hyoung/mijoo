@@ -36,7 +36,7 @@ export default async function WeeklyPage() {
       </div>
 
       {/* 요약 카드 */}
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 10, marginBottom: 28 }}>
+      <div className="grid-4-col" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 10, marginBottom: 28 }}>
         <SummaryCard label="매수" count={buys.length} color="var(--up)" bg="rgba(45,212,160,0.08)" />
         <SummaryCard label="매도" count={sells.length} color="var(--down)" bg="rgba(240,104,104,0.08)" />
         <SummaryCard label="관망" count={holds.length} color="#f5a623" bg="rgba(245,166,35,0.08)" />
@@ -47,7 +47,7 @@ export default async function WeeklyPage() {
       {macro && (
         <div style={{ marginBottom: 28, padding: "16px 20px", background: "var(--surface)", border: "1px solid var(--border)", borderRadius: 10 }}>
           <p style={{ margin: "0 0 10px", fontSize: 12, fontWeight: 700, color: "var(--text-3)", letterSpacing: "0.06em" }}>시장 환경</p>
-          <div style={{ display: "flex", gap: 28, flexWrap: "wrap" }}>
+          <div style={{ display: "flex", gap: "clamp(14px, 3vw, 28px)", flexWrap: "wrap" }}>
             <MacroItem label="VIX" value={macro.vix} change={macro.vix_20d_change} danger={macro.vix != null && macro.vix > 25} />
             <MacroItem label="10Y 국채" value={macro.treasury_10y != null ? `${macro.treasury_10y}%` : null} change={macro.treasury_10y_20d_change} />
             <MacroItem label="달러(DXY)" value={macro.dxy} change={macro.dxy_20d_change} />
@@ -146,13 +146,14 @@ function TickerRow({ data }: { data: PredictionResult }) {
       <div style={{
         background: "var(--surface)", border: "1px solid var(--border)", borderRadius: 10,
         padding: "16px 20px", display: "flex", gap: 20, alignItems: "flex-start",
+        flexWrap: "wrap",
         transition: "border-color 0.15s", cursor: "pointer",
       }}
         onMouseOver={undefined}
       >
         {/* Left: ticker + price + verdict */}
-        <div style={{ minWidth: 120 }}>
-          <div style={{ display: "flex", alignItems: "baseline", gap: 10, marginBottom: 6 }}>
+        <div style={{ flex: "1 1 140px", minWidth: 0 }}>
+          <div style={{ display: "flex", alignItems: "baseline", gap: 10, marginBottom: 6, flexWrap: "wrap" }}>
             <span style={{ fontSize: 16, fontWeight: 800, color: "var(--text)" }}>{data.ticker}</span>
             <span style={{ fontFamily: "var(--font-mono)", fontSize: 14, color: "var(--text-2)" }}>
               ${data.current_price.toLocaleString("en-US", { minimumFractionDigits: 2 })}
@@ -169,7 +170,7 @@ function TickerRow({ data }: { data: PredictionResult }) {
         </div>
 
         {/* Middle: probability bar + 2W/4W */}
-        <div style={{ flex: 1, minWidth: 200 }}>
+        <div style={{ flex: "2 1 220px", minWidth: 0 }}>
           <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 8 }}>
             <span style={{ fontFamily: "var(--font-mono)", fontSize: 12, fontWeight: 700, color: "var(--up)", minWidth: 35 }}>▲{upPct}%</span>
             <div style={{ flex: 1, display: "flex", height: 8, borderRadius: 4, overflow: "hidden", background: "var(--border)" }}>
@@ -178,7 +179,7 @@ function TickerRow({ data }: { data: PredictionResult }) {
             </div>
             <span style={{ fontFamily: "var(--font-mono)", fontSize: 12, fontWeight: 700, color: "var(--down)", minWidth: 35, textAlign: "right" }}>{downPct}%▼</span>
           </div>
-          <div style={{ display: "flex", gap: 16 }}>
+          <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
             {w2Chg !== null && (
               <span style={{ fontFamily: "var(--font-mono)", fontSize: 13, fontWeight: 700, color: w2Chg >= 0 ? "var(--up)" : "var(--down)" }}>
                 2W {w2Chg >= 0 ? "+" : ""}{w2Chg.toFixed(1)}%
@@ -193,7 +194,7 @@ function TickerRow({ data }: { data: PredictionResult }) {
         </div>
 
         {/* Right: key reasons */}
-        <div style={{ flex: 1, minWidth: 200, fontSize: 11, color: "var(--text-3)", lineHeight: 1.6 }}>
+        <div style={{ flex: "2 1 220px", minWidth: 0, fontSize: 12, color: "var(--text-3)", lineHeight: 1.6 }}>
           {stockBull.slice(0, 1).map((pt: string, i: number) => (
             <div key={`b${i}`} style={{ display: "flex", gap: 4 }}>
               <span style={{ color: "var(--up)" }}>+</span><span style={{ color: "var(--text-2)" }}>{pt.length > 60 ? pt.slice(0, 60) + "..." : pt}</span>
