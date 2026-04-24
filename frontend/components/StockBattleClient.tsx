@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from "react";
 import { BattleProfile, compareTickers, BattleRow } from "@/lib/battle";
+import TickerPickerGrid from "./TickerPickerGrid";
 
 export type BattleEntry = BattleProfile;
 
@@ -26,7 +27,7 @@ export default function StockBattleClient({ entries, tickers }: Props) {
   if (!comparison) {
     return (
       <div style={{ marginBottom: 24 }}>
-        <TickerPicker tickers={tickers} left={left} right={right} setLeft={setLeft} setRight={setRight} />
+        <TickerPicker tickers={tickers} entries={entries} left={left} right={right} setLeft={setLeft} setRight={setRight} />
         <p style={{ fontSize: 12, color: "var(--text-3)", padding: "20px 0", textAlign: "center" }}>
           서로 다른 두 종목을 골라주세요.
         </p>
@@ -52,7 +53,7 @@ export default function StockBattleClient({ entries, tickers }: Props) {
         <span style={{ fontSize: 12, color: "var(--text-3)" }}>둘 중 뭐 살지 고민될 때 — 1~2주 관점</span>
       </div>
 
-      <TickerPicker tickers={tickers} left={left} right={right} setLeft={setLeft} setRight={setRight} />
+      <TickerPicker tickers={tickers} entries={entries} left={left} right={right} setLeft={setLeft} setRight={setRight} />
 
       {/* Verdict bar */}
       <div style={{
@@ -160,49 +161,47 @@ export default function StockBattleClient({ entries, tickers }: Props) {
 }
 
 function TickerPicker({
-  tickers, left, right, setLeft, setRight,
+  tickers, entries, left, right, setLeft, setRight,
 }: {
-  tickers: string[]; left: string; right: string;
+  tickers: string[];
+  entries: Record<string, BattleProfile>;
+  left: string; right: string;
   setLeft: (t: string) => void; setRight: (t: string) => void;
 }) {
   return (
     <div style={{ display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap" }}>
-      <TickerSelect value={left} tickers={tickers} onChange={setLeft} />
-      <span style={{ fontSize: 14, fontWeight: 700, color: "var(--text-3)" }}>VS</span>
-      <TickerSelect value={right} tickers={tickers} onChange={setRight} />
+      <TickerPickerGrid
+        value={left}
+        tickers={tickers}
+        entries={entries}
+        disabled={right}
+        onChange={setLeft}
+        label="왼쪽"
+      />
+      <span style={{ fontSize: 16, fontWeight: 800, color: "var(--text-3)", padding: "0 4px" }}>VS</span>
+      <TickerPickerGrid
+        value={right}
+        tickers={tickers}
+        entries={entries}
+        disabled={left}
+        onChange={setRight}
+        label="오른쪽"
+      />
       <button
         onClick={() => { const t = left; setLeft(right); setRight(t); }}
+        title="왼쪽/오른쪽 바꾸기"
         style={{
-          marginLeft: 4, fontSize: 12, padding: "6px 12px",
-          background: "transparent",
-          color: "var(--text-3)",
+          marginLeft: 4, fontSize: 13, padding: "8px 14px",
+          background: "var(--surface-2)",
+          color: "var(--text-2)",
           border: "1px solid var(--border)",
-          borderRadius: 6, cursor: "pointer",
-          minHeight: 36,
+          borderRadius: 8, cursor: "pointer",
+          minHeight: 44,
+          fontFamily: "inherit",
         }}>
-        🔄 swap
+        🔄 바꾸기
       </button>
     </div>
-  );
-}
-
-function TickerSelect({ value, tickers, onChange }: {
-  value: string; tickers: string[]; onChange: (t: string) => void;
-}) {
-  return (
-    <select value={value} onChange={e => onChange(e.target.value)}
-      style={{
-        background: "var(--surface-2)",
-        color: "var(--text)",
-        fontSize: 14, fontWeight: 700,
-        padding: "8px 12px",
-        border: "1px solid var(--border)",
-        borderRadius: 6,
-        minHeight: 40,
-        fontFamily: "inherit",
-      }}>
-      {tickers.map(t => <option key={t} value={t}>{t}</option>)}
-    </select>
   );
 }
 
