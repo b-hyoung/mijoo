@@ -7,20 +7,34 @@ export default function Nav() {
   const pathname = usePathname();
   const isHome = pathname === "/";
   const isSettings = pathname === "/settings";
+  const isBattle = pathname === "/battle";
   const isStock = pathname.startsWith("/stock/");
   const isHistory = pathname.endsWith("/history");
   const ticker = isStock ? pathname.split("/")[2]?.toUpperCase() : null;
 
-  const navLink = (href: string, label: string, active: boolean) => (
+  const navLink = (href: string, label: string, active: boolean, beta?: boolean) => (
     <Link href={href} style={{
       fontSize: 13, textDecoration: "none",
-      minHeight: "var(--tap-size)", minWidth: "var(--tap-size)",
+      minHeight: "var(--tap-size)",
       padding: "0 14px", borderRadius: 6,
-      display: "inline-flex", alignItems: "center", justifyContent: "center",
+      display: "inline-flex", alignItems: "center", justifyContent: "center", gap: 6,
       color: active ? "var(--text)" : "var(--text-3)",
       background: active ? "var(--surface-2)" : "transparent",
     }}>
       {label}
+      {beta && (
+        <span style={{
+          fontSize: 9, fontWeight: 700,
+          color: "var(--brand)",
+          background: "rgba(104,117,245,0.12)",
+          border: "1px solid rgba(104,117,245,0.3)",
+          borderRadius: 3, padding: "1px 5px",
+          letterSpacing: "0.04em",
+          lineHeight: 1.2,
+        }}>
+          BETA 0.1
+        </span>
+      )}
     </Link>
   );
 
@@ -66,8 +80,9 @@ export default function Nav() {
         )}
 
         {/* Right */}
-        <div style={{ display: "flex", alignItems: "center", gap: 2 }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 2, flexWrap: "wrap" }}>
           {navLink("/", "대시보드", isHome)}
+          {navLink("/battle", "대결", isBattle, true)}
           {navLink("/weekly", "주간리포트", pathname === "/weekly")}
           {isStock && ticker && navLink(`/stock/${ticker}/history`, "기록", isHistory)}
           {navLink("/settings", "설정", isSettings)}
