@@ -9,6 +9,17 @@ import { fetchAccuracy, fetchPrediction, fetchStockList } from "@/lib/api";
  * 감성은 문구에서만.
  */
 
+type TradingPlan = {
+  entryWhen: string;        // "지금 바로" | "이벤트 후" | "다음 주 초"
+  entryPrice: number;
+  targetPrice: number;
+  targetPct: number;
+  targetHorizonWeeks: number;
+  stopPrice: number;
+  stopPct: number;
+  keyEvent: string | null;  // "실적 D-5" 등
+};
+
 type Candidate = {
   ticker: string;
   verdict: string;
@@ -18,6 +29,7 @@ type Candidate = {
   hitRate: number;
   score: number;
   reasons: string[];
+  plan: TradingPlan | null;
 };
 
 const BUY_TAGLINES = [
@@ -85,6 +97,49 @@ async function gatherCandidates(): Promise<Candidate[]> {
       reasons.push(`${aligned}/4 일치`);
       reasons.push(`최근 적중률 ${Math.round(hitRate * 100)}%`);
 
+      // Trading plan (buy/sell 양쪽에서 쓰임)
+      let plan: TradingPlan | null = null;
+      const w1 = p.prediction.week1;
+      const w2 = p.prediction.week2;
+      const currentPrice = p.current_price;
+      if (w1 && w2 && currentPrice) {
+        // Key event within next 10 days (events list already sorted by days_until)
+        const events = p.upcoming_events || [];
+        const nearEvent = events.find(e => e.days_until <= 10);
+        const keyEvent = nearEvent
+          ? `${nearEvent.type === "earnings" ? "실적" : nearEvent.type} D-${nearEvent.days_until}`
+          : null;
+
+        // Entry timing
+        let entryWhen = "지금 바로";
+        if (nearEvent) {
+          if (nearEvent.type === "earnings" && nearEvent.days_until <= 7) {
+            entryWhen = "실적 발표 후";
+          } else if ((nearEvent.type === "FOMC" || nearEvent.type === "CPI") && nearEvent.days_until <= 3) {
+            entryWhen = "이벤트 발표 후";
+          }
+        }
+
+        // Target: week2 가격 타겟 (2주 지평)
+        const targetPrice = w2.price_target;
+        const targetPct = ((targetPrice - currentPrice) / currentPrice) * 100;
+
+        // Stop: week1 price_low가 가장 가까운 지지선, 또는 현재가 -3%
+        const stopCandidate = Math.max(w1.price_low, currentPrice * 0.97);
+        const stopPct = ((stopCandidate - currentPrice) / currentPrice) * 100;
+
+        plan = {
+          entryWhen,
+          entryPrice: currentPrice,
+          targetPrice: Math.round(targetPrice * 100) / 100,
+          targetPct: Math.round(targetPct * 10) / 10,
+          targetHorizonWeeks: 2,
+          stopPrice: Math.round(stopCandidate * 100) / 100,
+          stopPct: Math.round(stopPct * 10) / 10,
+          keyEvent,
+        };
+      }
+
       results.push({
         ticker,
         verdict,
@@ -94,6 +149,7 @@ async function gatherCandidates(): Promise<Candidate[]> {
         hitRate,
         score,
         reasons,
+        plan,
       });
     } catch {
       // skip
@@ -149,6 +205,80 @@ function PickCard({
           </span>
         ))}
       </div>
+
+      {c.plan && (
+        <div style={{
+          marginTop: 10, paddingTop: 10,
+          borderTop: `1px dashed ${border}`,
+          display: "flex", flexDirection: "column", gap: 4,
+        }}>
+          <div style={{
+            fontSize: 10, fontWeight: 700, color: "var(--text-3)",
+            letterSpacing: "0.06em", marginBottom: 2,
+          }}>
+            📋 매매 플랜 (재미용)
+          </div>
+          <PlanRow
+            icon={isBuy ? "🟢" : "🔴"}
+            label={isBuy ? "진입" : "청산"}
+            value={c.plan.entryWhen}
+            sub={`현재 $${c.plan.entryPrice.toFixed(2)}`}
+          />
+          <PlanRow
+            icon="🎯"
+            label={isBuy ? "목표" : "예상 하단"}
+            value={`${c.plan.targetHorizonWeeks}주 뒤 $${c.plan.targetPrice.toFixed(2)}`}
+            sub={`${c.plan.targetPct >= 0 ? "+" : ""}${c.plan.targetPct.toFixed(1)}%`}
+            subColor={c.plan.targetPct >= 0 ? "var(--up)" : "var(--down)"}
+          />
+          {isBuy && (
+            <PlanRow
+              icon="🛑"
+              label="손절"
+              value={`$${c.plan.stopPrice.toFixed(2)}`}
+              sub={`${c.plan.stopPct.toFixed(1)}%`}
+              subColor="var(--down)"
+            />
+          )}
+          {c.plan.keyEvent && (
+            <PlanRow
+              icon="📅"
+              label="주의"
+              value={c.plan.keyEvent}
+              sub={c.plan.entryWhen !== "지금 바로" ? "이벤트 후 재평가" : "변동성 대비"}
+              subColor="var(--text-3)"
+            />
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
+
+function PlanRow({ icon, label, value, sub, subColor = "var(--text-3)" }: {
+  icon: string; label: string; value: string; sub?: string; subColor?: string;
+}) {
+  return (
+    <div style={{ display: "flex", alignItems: "baseline", gap: 8, fontSize: 12, flexWrap: "wrap" }}>
+      <span style={{ flex: "0 0 auto" }}>{icon}</span>
+      <span style={{
+        flex: "0 0 auto", width: 42,
+        color: "var(--text-3)", fontSize: 11,
+      }}>
+        {label}
+      </span>
+      <span style={{ flex: "1 1 auto", color: "var(--text)", fontWeight: 600, minWidth: 0 }}>
+        {value}
+      </span>
+      {sub && (
+        <span style={{
+          flex: "0 0 auto",
+          fontFamily: "var(--font-mono)", fontSize: 11,
+          color: subColor, fontWeight: 700,
+        }}>
+          {sub}
+        </span>
+      )}
     </div>
   );
 }
