@@ -123,6 +123,9 @@ a, button {
   .grid-home {
     grid-template-columns: 1fr !important;
   }
+  .grid-2-col-mobile {
+    grid-template-columns: 1fr !important;
+  }
   /* Mobile: collapse history rows from table into stacked cards */
   .history-header { display: none !important; }
   .history-row {

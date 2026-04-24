@@ -2,6 +2,7 @@ import { fetchStockList, fetchCurrentPrice } from "@/lib/api";
 import StockCard from "@/components/StockCard";
 import WarmingBanner from "@/components/WarmingBanner";
 import AccuracyDashboard from "@/components/AccuracyDashboard";
+import FullBuyPick from "@/components/FullBuyPick";
 
 async function StockCardWithPrice({ ticker }: { ticker: string }) {
   const currentPrice = await fetchCurrentPrice(ticker);
@@ -18,6 +19,7 @@ export default async function DashboardPage() {
   return (
     <div>
       <WarmingBanner />
+      <FullBuyPick />
       <AccuracyDashboard />
 
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 20 }}>
