@@ -287,15 +287,22 @@ export default async function FullBuyPick() {
   const candidates = await gatherCandidates();
   if (candidates.length === 0) return null;
 
-  const sortedDesc = [...candidates].sort((a, b) => b.score - a.score);
-  const sortedAsc  = [...candidates].sort((a, b) => a.score - b.score);
+  // Buy pick: 반드시 verdict === "매수" 인 후보 중에서 점수 최상
+  const buyPool = candidates.filter(c => c.verdict === "매수");
+  buyPool.sort((a, b) => b.score - a.score);
+  const buy = buyPool[0];
 
-  const buy = sortedDesc[0];
-  const sell = sortedAsc[0];
+  // Sell pick: 반드시 verdict === "매도" 인 후보 중에서 점수 최하
+  const sellPool = candidates.filter(c => c.verdict === "매도");
+  sellPool.sort((a, b) => a.score - b.score);
+  const sell = sellPool[0];
 
-  // buy가 실제 매수 시그널이어야 하고, sell이 실제 매도/약한 시그널이어야 함
-  const showBuy = buy && buy.score > 10;
-  const showSell = sell && sell.score < -5;
+  // 플랜과 방향이 모순되면 (buy인데 target이 하락 / sell인데 target이 상승) 픽에서 제외
+  const buyConsistent = buy && buy.plan && buy.plan.targetPct >= 0;
+  const sellConsistent = sell && sell.plan && sell.plan.targetPct <= 0;
+
+  const showBuy = !!(buy && buyConsistent);
+  const showSell = !!(sell && sellConsistent);
 
   if (!showBuy && !showSell) return null;
 
