@@ -126,6 +126,9 @@ a, button {
   .grid-2-col-mobile {
     grid-template-columns: 1fr !important;
   }
+  .battle-pair {
+    grid-template-columns: 1fr !important;
+  }
   /* Mobile: collapse history rows from table into stacked cards */
   .history-header { display: none !important; }
   .history-row {

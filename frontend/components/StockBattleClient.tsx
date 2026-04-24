@@ -94,73 +94,68 @@ export default function StockBattleClient({ entries, tickers }: Props) {
   );
 }
 
+// Related category pairs — displayed together in 2-col grid.
+// 마지막에 혼자 남는 "감정/심리" 는 full-width 로 렌더.
+const CATEGORY_PAIRS: string[][] = [
+  ["AI 판정", "예측 여력"],
+  ["기술적", "옵션/흐름"],
+  ["펀더멘털", "이벤트"],
+  ["감정/심리"],
+];
+
 function CategoryCards({
   grouped, left, right,
 }: {
   grouped: Record<string, BattleRow[]>;
   left: string; right: string;
 }) {
-  const [allOpen, setAllOpen] = useState<boolean | null>(null);
-  const categoryKeys = Object.keys(grouped);
-
   return (
-    <div>
-      {/* Expand/collapse all */}
-      <div style={{ display: "flex", justifyContent: "flex-end", marginBottom: 10 }}>
-        <button
-          onClick={() => setAllOpen(allOpen === true ? false : true)}
+    <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+      {CATEGORY_PAIRS.map((pair, idx) => (
+        <div
+          key={idx}
+          className="battle-pair"
           style={{
-            fontSize: 11, color: "var(--text-3)",
-            background: "transparent",
-            border: "1px solid var(--border)",
-            borderRadius: 6, padding: "4px 10px",
-            cursor: "pointer", fontFamily: "inherit",
+            display: "grid",
+            gridTemplateColumns: pair.length === 2 ? "1fr 1fr" : "1fr",
+            gap: 12,
           }}>
-          {allOpen === true ? "모두 접기" : "모두 펼치기"}
-        </button>
-      </div>
-
-      <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-        {categoryKeys.map(category => (
-          <CategoryCard
-            key={category}
-            category={category}
-            rows={grouped[category]}
-            left={left}
-            right={right}
-            forceOpen={allOpen}
-          />
-        ))}
-      </div>
+          {pair
+            .filter(c => grouped[c])
+            .map(c => (
+              <CategoryCard
+                key={c}
+                category={c}
+                rows={grouped[c]}
+                left={left}
+                right={right}
+              />
+            ))}
+        </div>
+      ))}
     </div>
   );
 }
 
 function CategoryCard({
-  category, rows, left, right, forceOpen,
+  category, rows, left, right,
 }: {
   category: string;
   rows: BattleRow[];
   left: string; right: string;
-  forceOpen: boolean | null;
 }) {
-  const [open, setOpen] = useState(false);
-  const isOpen = forceOpen !== null ? forceOpen : open;
-
   const lScore = rows.reduce((s, r) => s + r.leftScore, 0);
   const rScore = rows.reduce((s, r) => s + r.rightScore, 0);
   const diff = lScore - rScore;
   const winnerSide: "left" | "right" | "tie" =
     Math.abs(diff) < 0.01 ? "tie" : diff > 0 ? "left" : "right";
 
-  const winnerColor =
-    winnerSide === "tie" ? "var(--text-3)" : "var(--up)";
   const winnerBg =
     winnerSide === "tie"
       ? "var(--surface)"
       : winnerSide === "left"
-        ? "linear-gradient(90deg, rgba(45,212,160,0.07) 0%, transparent 60%)"
-        : "linear-gradient(90deg, transparent 40%, rgba(45,212,160,0.07) 100%)";
+        ? "linear-gradient(180deg, rgba(45,212,160,0.05) 0%, transparent 100%)"
+        : "linear-gradient(180deg, rgba(45,212,160,0.05) 0%, transparent 100%)";
 
   return (
     <div style={{
@@ -168,89 +163,81 @@ function CategoryCard({
       border: "1px solid var(--border)",
       borderRadius: 10,
       overflow: "hidden",
+      display: "flex", flexDirection: "column",
     }}>
-      <button
-        onClick={() => setOpen(!open)}
-        style={{
-          width: "100%",
-          display: "flex", alignItems: "center", gap: 10,
-          background: "transparent",
-          border: "none",
-          padding: "12px 16px",
-          cursor: "pointer",
-          color: "var(--text)",
-          fontFamily: "inherit",
-          minHeight: 48,
-        }}>
+      {/* Category header */}
+      <div style={{
+        display: "flex", alignItems: "center", gap: 8,
+        padding: "10px 14px",
+        borderBottom: "1px solid var(--border)",
+        background: "var(--surface-2)",
+      }}>
         <span style={{
-          fontSize: 12, fontWeight: 800, color: "var(--text)",
-          letterSpacing: "-0.01em",
+          fontSize: 11, fontWeight: 800, color: "var(--text-3)",
+          letterSpacing: "0.08em", textTransform: "uppercase",
         }}>
           {category}
         </span>
         <span style={{
           flex: 1, textAlign: "right",
-          fontSize: 12, color: "var(--text-3)",
+          fontSize: 12,
         }}>
           {winnerSide === "tie" ? (
-            <span>박빙 · {lScore.toFixed(1)} : {rScore.toFixed(1)}</span>
+            <span style={{ color: "var(--text-3)" }}>박빙 {lScore.toFixed(1)} : {rScore.toFixed(1)}</span>
           ) : (
-            <span>
-              <b style={{ color: winnerColor, fontWeight: 800 }}>
+            <>
+              <b style={{ color: "var(--up)", fontWeight: 800 }}>
                 {winnerSide === "left" ? left : right}
               </b>
-              {" "}
-              <span style={{ color: "var(--text-3)" }}>
-                +{Math.abs(diff).toFixed(1)} · {lScore.toFixed(1)} : {rScore.toFixed(1)}
+              <span style={{ color: "var(--text-3)", marginLeft: 6 }}>
+                +{Math.abs(diff).toFixed(1)}
               </span>
-            </span>
+            </>
           )}
         </span>
-        <span style={{
-          fontSize: 11, color: "var(--text-3)",
-          transform: isOpen ? "rotate(180deg)" : "none",
-          transition: "transform 0.15s",
-        }}>▾</span>
-      </button>
+      </div>
 
-      {isOpen && (
-        <div style={{ borderTop: "1px solid var(--border)" }}>
-          {rows.map((r, i) => (
-            <div key={i} style={{
-              display: "grid",
-              gridTemplateColumns: "1fr auto auto 22px",
-              gap: 10, padding: "8px 16px",
-              borderBottom: i < rows.length - 1 ? "1px solid var(--border)" : "none",
-              fontSize: 12, alignItems: "center",
+      {/* Rows */}
+      <div>
+        {rows.map((r, i) => (
+          <div key={i} style={{
+            display: "grid",
+            gridTemplateColumns: "minmax(0, 1fr) minmax(0, auto) 18px minmax(0, auto)",
+            gap: 8, padding: "7px 14px",
+            borderBottom: i < rows.length - 1 ? "1px solid var(--border)" : "none",
+            fontSize: 12, alignItems: "center",
+          }}>
+            <span style={{ color: "var(--text-3)", minWidth: 0,
+                           overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}
+                  title={r.note}>
+              {r.metric}
+            </span>
+            <span style={{
+              fontFamily: "var(--font-mono)", fontSize: 11,
+              color: r.winner === "left" ? "var(--up)" : "var(--text-2)",
+              fontWeight: r.winner === "left" ? 700 : 400,
+              textAlign: "right",
+              overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap",
             }}>
-              <span style={{ color: "var(--text-3)" }} title={r.note}>
-                {r.metric}
-              </span>
-              <span style={{
-                fontFamily: "var(--font-mono)", fontSize: 11,
-                color: r.winner === "left" ? "var(--up)" : "var(--text-2)",
-                fontWeight: r.winner === "left" ? 700 : 400,
-                textAlign: "right", minWidth: 60,
-              }}>
-                {r.leftText}
-              </span>
-              <span style={{
-                fontFamily: "var(--font-mono)", fontSize: 11,
-                color: r.winner === "right" ? "var(--up)" : "var(--text-2)",
-                fontWeight: r.winner === "right" ? 700 : 400,
-                textAlign: "right", minWidth: 60,
-              }}>
-                {r.rightText}
-              </span>
-              <span style={{ textAlign: "center", fontSize: 11 }}>
-                {r.winner === "left" ? <span style={{ color: "var(--up)" }}>◀</span> :
-                 r.winner === "right" ? <span style={{ color: "var(--up)" }}>▶</span> :
-                 <span style={{ color: "var(--text-3)" }}>=</span>}
-              </span>
-            </div>
-          ))}
-        </div>
-      )}
+              {r.leftText}
+            </span>
+            <span style={{ textAlign: "center", fontSize: 10, color: "var(--text-3)" }}>
+              {r.winner === "left" ? <span style={{ color: "var(--up)" }}>◀</span> :
+               r.winner === "right" ? <span style={{ color: "var(--up)" }}>▶</span> :
+               "="}
+            </span>
+            <span style={{
+              fontFamily: "var(--font-mono)", fontSize: 11,
+              color: r.winner === "right" ? "var(--up)" : "var(--text-2)",
+              fontWeight: r.winner === "right" ? 700 : 400,
+              textAlign: "left",
+              overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap",
+            }}>
+              {r.rightText}
+            </span>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
