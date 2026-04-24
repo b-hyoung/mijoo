@@ -1,15 +1,27 @@
 {
   "ticker": "KO",
-  "current_price": 75.91,
-  "sentiment_score": 0.6,
+  "current_price": 76.28,
+  "sentiment_score": 0.5,
   "short_float_pct": 1.08,
   "short_change": "N/A",
   "order_flow": {
-    "buy_dominance_pct": 50.9,
+    "buy_dominance_pct": 52.0,
     "obv_trend": "UP",
     "is_accumulation": false
   },
   "news_headlines": [
+    {
+      "title": "Groceries Cost $741 More Than 6 Year Ago — and You’re Getting Less",
+      "url": "https://www.cheapism.com/shrinkflation-grocery-prices/"
+    },
+    {
+      "title": "Why Is The Coca-Cola Company (KO) Part Of Warren Buffett’s Portfolio Since 1988?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-coca-cola-company-ko-170136170.html"
+    },
+    {
+      "title": "TAP's Q1 Earnings Coming Up: Will the Stock Extend Its Beat Streak?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/taps-q1-earnings-coming-stock-160600949.html"
+    },
     {
       "title": "Got 5,000? Coca-Cola vs. PepsiCo – One Has Quietly Outperformed for a Decade",
       "url": "https://247wallst.com/investing/2026/04/23/got-5000-coca-cola-vs-pepsico-one-has-quietly-outperformed-for-a-decade/"
@@ -37,32 +49,20 @@
     {
       "title": "Coca-Cola vs. Monster Beverage: Which Stock Is the Better Investment?",
       "url": "https://finance.yahoo.com/markets/stocks/articles/coca-cola-vs-monster-beverage-143900663.html"
-    },
-    {
-      "title": "Wall Street’s Bullish Stocks View Contrasts With Consumer Gloom",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/wall-street-bullish-stocks-view-112800536.html"
-    },
-    {
-      "title": "If You Bought Coca-Cola When Buffett Did, Here’s What You Have Today",
-      "url": "https://247wallst.com/investing/2026/04/22/if-you-bought-coca-cola-when-buffett-did-heres-what-you-have-today/"
-    },
-    {
-      "title": "Here's How Much Dividend Income You'd Have Collected If You'd Bought 100 Shares of Coca-Cola 10 Years Ago",
-      "url": "https://www.fool.com/investing/2026/04/22/how-much-dividend-income-coca-cola-stock/"
     }
   ],
   "signals": {
-    "rsi": 49.2,
+    "rsi": 51.3,
     "macd_cross": "BEARISH",
     "ma_trend": "BEARISH",
-    "bb_position": 46,
-    "volume_ratio": 0.35
+    "bb_position": 56,
+    "volume_ratio": 0.85
   },
   "analyst": {
     "target_mean": 83.67,
     "target_high": 90.0,
     "target_low": 71.38,
-    "upside_pct": 10.2,
+    "upside_pct": 9.7,
     "num_analysts": 23,
     "recommendation": "buy"
   },
@@ -76,17 +76,17 @@
     "change_pct": null
   },
   "macro": {
-    "vix": 18.76,
-    "vix_20d_change": -25.9,
-    "treasury_10y": 4.29,
-    "treasury_10y_20d_change": -0.9,
-    "dxy": 98.56,
-    "dxy_20d_change": -1.0
+    "vix": 19.31,
+    "vix_20d_change": -23.8,
+    "treasury_10y": 4.32,
+    "treasury_10y_20d_change": -0.1,
+    "dxy": 98.88,
+    "dxy_20d_change": -0.7
   },
   "options": {
-    "pc_ratio": 0.41,
+    "pc_ratio": 0.33,
     "iv_rank": 100,
-    "unusual_activity": 4.0,
+    "unusual_activity": 35.0,
     "unusual_side": "CALL",
     "data_source": "earnings",
     "expiry_used": "2026-05-01"
@@ -96,16 +96,27 @@
     "days_until": null,
     "history": []
   },
+  "insider_cluster": {
+    "buyers_30d": 0,
+    "trades_30d": 0,
+    "total_value_30d": 0.0,
+    "cluster_detected": false,
+    "c_level_buy": false,
+    "last_buy_date": null,
+    "recent": [],
+    "source": "openinsider"
+  },
+  "reddit": {},
   "anomaly": {
-    "score": 20,
+    "score": 40,
     "direction": "UP",
-    "level": "정상",
+    "level": "관심",
     "signals": [
       {
         "name": "거래량 급증 + 횡보",
         "score": 0,
         "direction": null,
-        "detail": "거래량 0.6x, 가격변동 1.6%"
+        "detail": "거래량 0.7x, 가격변동 2.1%"
       },
       {
         "name": "IV 급등",
@@ -115,9 +126,9 @@
       },
       {
         "name": "옵션 이상 거래",
-        "score": 0,
-        "direction": null,
-        "detail": "4.0x"
+        "score": 20,
+        "direction": "UP",
+        "detail": "평소 대비 35.0x (CALL)"
       },
       {
         "name": "내부자 방향 전환",
@@ -129,116 +140,103 @@
         "name": "P/C ratio 극단",
         "score": 0,
         "direction": null,
-        "detail": "P/C 0.41"
+        "detail": "P/C 0.33"
       }
     ]
   },
   "prediction": {
     "week1": {
       "direction": "UP",
-      "confidence": 50.2,
-      "price_low": 74.44,
-      "price_high": 77.48,
-      "price_target": 75.96
+      "confidence": 50.4,
+      "price_low": 74.86,
+      "price_high": 77.91,
+      "price_target": 76.38
     },
     "week2": {
       "direction": "UP",
-      "confidence": 50.4,
-      "price_low": 73.73,
-      "price_high": 78.28,
-      "price_target": 76.0
+      "confidence": 50.6,
+      "price_low": 74.16,
+      "price_high": 78.73,
+      "price_target": 76.44
     },
     "week3": {
       "direction": "UP",
-      "up_probability": 56.5,
-      "range_low": 71.35,
-      "range_high": 80.46
+      "up_probability": 55.8,
+      "range_low": 71.7,
+      "range_high": 80.86
     },
     "week4": {
       "direction": "UP",
-      "up_probability": 56.5,
-      "range_low": 69.84,
-      "range_high": 81.98
+      "up_probability": 55.8,
+      "range_low": 70.18,
+      "range_high": 82.38
     }
   },
   "debate": {
     "direction": "UP",
-    "confidence": 65,
+    "confidence": 69,
     "verdict": "매수",
-    "summary": "옵션과 펀더멘털 분석에서 상승 신호가 강하게 나타나고 있습니다. 매크로 환경도 긍정적이며 시장의 두려움이 감소하고 있습니다.",
+    "summary": "옵션 트레이더와 펀더멘털 분석가의 강한 상승 전망에 따라 KO 주식은 상승 가능성이 높습니다. 시장의 안정성과 긍정적인 애널리스트 전망이 이를 뒷받침합니다.",
     "stock_bull": [
-      "옵션의 Put/Call 비율이 0.41로 콜 옵션에 대한 수요가 높음을 나타냅니다.",
-      "IV Rank가 100%로 높아 큰 움직임이 예상되며, 이는 상승 가능성을 시사합니다.",
-      "분석가의 평균 목표 주가는 $83.67로 현재 가격 대비 10.2% 상승 여지가 있습니다.",
-      "분석가 23명의 추천은 '매수'로, 강력한 긍정적 신호를 제공합니다.",
-      "기관 투자자들의 보유 비중이 높아진 점은 주가 상승 가능성을 뒷받침합니다."
+      "옵션의 Put/Call 비율이 0.33으로 콜 옵션이 우세",
+      "IV Rank가 100%로 매우 높아 큰 움직임이 예상됨",
+      "애널리스트의 평균 목표 주가가 현재 주가 대비 9.7% 상승 여력"
     ],
     "stock_bear": [
-      "RSI가 49.2로 중립 영역에 위치하여 강한 매수 또는 매도 신호가 없음.",
-      "MACD가 시그널 라인 아래에서 하락세를 보이며, 단기적으로 약세를 시사.",
-      "주가가 MA5보다 위에 있지만 MA20과 MA60 아래에 있어 단기 반등 가능성은 있으나 전반적인 하락 추세를 나타냄."
+      "MACD가 시그널 라인 아래에 있으며 하락세를 시사"
     ],
     "market_bull": [
-      "VIX가 19.04로 20일 동안 24.8% 하락하여 시장의 두려움이 감소하고 있음을 나타냅니다.",
-      "10년 만기 국채 수익률이 4.29%로 20일 동안 0.8% 하락하여 금리 부담이 완화되고 있습니다.",
-      "달러 인덱스가 98.6으로 20일 동안 1.0% 하락하여 미국 달러의 상대적 약세가 나타나고 있습니다."
+      "VIX 지수는 19.31로 23.8% 하락하여 시장의 불안감 감소",
+      "10년물 국채 수익률의 안정성",
+      "달러 인덱스 하락으로 글로벌 리스크 자산에 긍정적 영향"
     ],
     "market_bear": [],
     "bull_points": [
-      "옵션의 Put/Call 비율이 0.41로 콜 옵션에 대한 수요가 높음을 나타냅니다.",
-      "IV Rank가 100%로 높아 큰 움직임이 예상되며, 이는 상승 가능성을 시사합니다.",
-      "분석가의 평균 목표 주가는 $83.67로 현재 가격 대비 10.2% 상승 여지가 있습니다.",
-      "분석가 23명의 추천은 '매수'로, 강력한 긍정적 신호를 제공합니다.",
-      "기관 투자자들의 보유 비중이 높아진 점은 주가 상승 가능성을 뒷받침합니다.",
-      "VIX가 19.04로 20일 동안 24.8% 하락하여 시장의 두려움이 감소하고 있음을 나타냅니다.",
-      "10년 만기 국채 수익률이 4.29%로 20일 동안 0.8% 하락하여 금리 부담이 완화되고 있습니다.",
-      "달러 인덱스가 98.6으로 20일 동안 1.0% 하락하여 미국 달러의 상대적 약세가 나타나고 있습니다."
+      "옵션의 Put/Call 비율이 0.33으로 콜 옵션이 우세",
+      "IV Rank가 100%로 매우 높아 큰 움직임이 예상됨",
+      "애널리스트의 평균 목표 주가가 현재 주가 대비 9.7% 상승 여력",
+      "VIX 지수는 19.31로 23.8% 하락하여 시장의 불안감 감소",
+      "10년물 국채 수익률의 안정성",
+      "달러 인덱스 하락으로 글로벌 리스크 자산에 긍정적 영향"
     ],
     "bear_points": [
-      "RSI가 49.2로 중립 영역에 위치하여 강한 매수 또는 매도 신호가 없음.",
-      "MACD가 시그널 라인 아래에서 하락세를 보이며, 단기적으로 약세를 시사.",
-      "주가가 MA5보다 위에 있지만 MA20과 MA60 아래에 있어 단기 반등 가능성은 있으나 전반적인 하락 추세를 나타냄."
+      "MACD가 시그널 라인 아래에 있으며 하락세를 시사"
     ],
     "weekly_outlook": {
-      "week1": "옵션의 Put/Call 비율이 0.41로 콜 수요가 높음.",
-      "week2": "IV Rank가 100%로 큰 가격 변동 예상됨.",
-      "week3": "분석가 평균 목표 주가 $83.67로 상승 여지 존재.",
-      "week4": "VIX가 19.04로 24.8% 하락, 시장 두려움 감소."
+      "week1": "옵션의 Put/Call 비율이 0.33으로 콜 옵션이 우세해 상승 기대감이 높음.",
+      "week2": "IV Rank가 100%로 매우 높아 큰 움직임이 예상되며 상승 방향으로 해석됨.",
+      "week3": "애널리스트의 평균 목표 주가는 $83.67로 현재 주가 대비 9.7% 상승 여력 존재.",
+      "week4": "VIX 지수는 19.31로 20일 동안 23.8% 하락, 시장의 불안감 감소로 긍정적 영향."
     },
-    "key_news": [
-      {
-        "headline": "Exploring Analyst Estimates for Coca-Cola (KO) Q1 Earnings, Beyond Revenue and EPS",
-        "summary": "애널리스트의 1분기 실적 추정치는 주가에 큰 영향을 미칠 수 있습니다."
-      }
-    ],
+    "key_news": [],
     "personas": [
-      {
-        "id": "options",
-        "role": "옵션 트레이더",
-        "direction": "UP",
-        "confidence": 85,
-        "argument": "• 옵션의 Put/Call 비율이 0.41로 콜 옵션에 대한 수요가 높음을 나타냅니다.\n• IV Rank가 100%로 높아 큰 움직임이 예상되며, 이는 상승 가능성을 시사합니다.\n• 콜 옵션에서 4.0배의 비정상적 활동이 관찰되어 상승 포지셔닝이 강화되고 있습니다."
-      },
       {
         "id": "technical",
         "role": "테크니컬 분석가",
         "direction": "DOWN",
         "confidence": 70,
-        "argument": "• RSI가 49.2로 중립 영역에 위치하여 강한 매수 또는 매도 신호가 없음.\n• MACD가 시그널 라인 아래에서 하락세를 보이며, 단기적으로 약세를 시사.\n• 주가가 MA5보다 위에 있지만 MA20과 MA60 아래에 있어 단기 반등 가능성은 있으나 전반적인 하락 추세를 나타냄."
+        "argument": "• RSI가 51.3으로 중립 수준에 머물러 있어 강한 방향성을 제시하지 않음.\n• MACD가 시그널 라인 아래에 있으며 하락세를 시사.\n• FOMC 발표 D-5로 단기 변동성 확대 가능성 존재."
+      },
+      {
+        "id": "options",
+        "role": "옵션 트레이더",
+        "direction": "UP",
+        "confidence": 85,
+        "argument": "• 옵션의 Put/Call 비율이 0.33으로 콜 옵션이 우세, 상승 기대감이 높음.\n• IV Rank가 100%로 매우 높아, 큰 움직임이 예상되며, 이는 상승 방향으로 해석될 수 있음.\n• 콜 옵션의 이상 거래가 35.0배로 급증, 스마트 머니의 상승 포지셔닝 가능성."
       },
       {
         "id": "fundamental",
         "role": "펀더멘털 분석가",
         "direction": "UP",
-        "confidence": 70,
-        "argument": "• 분석가의 평균 목표 주가는 $83.67로 현재 가격 대비 10.2% 상승 여지가 있습니다. \n• 분석가 23명의 추천은 '매수'로, 강력한 긍정적 신호를 제공합니다.\n• 기관 투자자들의 보유 비중이 높아진 점은 주가 상승 가능성을 뒷받침합니다."
+        "confidence": 85,
+        "argument": "• 애널리스트의 평균 목표 주가는 $83.67로 현재 주가 대비 9.7%의 상승 여력이 있으며, 이는 긍정적인 전망을 반영합니다. \n• 애널리스트 23명 중 다수가 '매수'를 추천하고 있어 시장의 신뢰가 높습니다.\n• FOMC 발표가 5일 남아있어 단기적인 변동성이 예상되지만, 이는 포지셔닝 기회로 볼 수 있습니다."
       },
       {
         "id": "macro",
         "role": "매크로 전략가",
         "direction": "UP",
         "confidence": 75,
-        "argument": "• VIX가 19.04로 20일 동안 24.8% 하락하여 시장의 두려움이 감소하고 있음을 나타냅니다. \n• 10년 만기 국채 수익률이 4.29%로 20일 동안 0.8% 하락하여 금리 부담이 완화되고 있습니다. \n• 달러 인덱스가 98.6으로 20일 동안 1.0% 하락하여 미국 달러의 상대적 약세가 나타나고 있습니다."
+        "argument": "• VIX 지수는 19.31로 20일 동안 23.8% 하락하여 시장의 불안감이 감소하고 있음을 나타냅니다.\n• 10년물 국채 수익률은 4.32%로 20일 동안 거의 변동이 없으며, 이는 금리 안정성을 시사합니다.\n• 달러 인덱스는 98.89로 20일 동안 0.7% 하락하여, 달러 약세가 글로벌 리스크 자산에 긍정적 영향을 미칠 수 있습니다."
       }
     ]
   },
@@ -259,37 +257,37 @@
         {
           "key": "weekly_trend",
           "label": "주간 추세",
-          "value": 0.466,
+          "value": 0.481,
           "weight": 0.25,
-          "contribution": 0.117
+          "contribution": 0.12
         },
         {
           "key": "range_position",
           "label": "52주 위치",
-          "value": 0.372,
+          "value": 0.418,
           "weight": -0.15,
-          "contribution": -0.056
+          "contribution": -0.063
         },
         {
           "key": "mid_momentum",
           "label": "중기 모멘텀",
-          "value": 0.391,
+          "value": 0.413,
           "weight": 0.2,
-          "contribution": 0.078
+          "contribution": 0.083
         },
         {
           "key": "macro_regime",
           "label": "매크로 레짐",
-          "value": 0.212,
+          "value": 0.107,
           "weight": 0.2,
-          "contribution": 0.042
+          "contribution": 0.021
         },
         {
           "key": "analyst_consensus",
           "label": "애널리스트 컨센서스",
-          "value": 0.34,
+          "value": 0.323,
           "weight": 0.1,
-          "contribution": 0.034
+          "contribution": 0.032
         },
         {
           "key": "institutional_flow",
@@ -299,21 +297,21 @@
           "contribution": 0.0
         }
       ],
-      "score": 0.215
+      "score": 0.194
     },
-    "explanation": "단기적으로 옵션 트레이더의 콜 옵션 수요 증가가 주가 상승을 주도하고 있으며, 이는 펀더멘털 분석가의 목표 주가 상승 여지와 일치합니다. 구조적으로는 매크로 전략가가 언급한 VIX 하락이 시장의 안정성을 뒷받침하여 전반적인 상승세를 강화하고 있습니다. 테크니컬 분석가의 중립적 시각에도 불구하고, 강한 확증의 조화로 인해 상승 방향이 지배적입니다."
+    "explanation": "단기적으로 옵션 트레이더의 콜 옵션 우세와 펀더멘털 분석가의 긍정적인 목표 주가가 상승을 주도하고 있습니다. 구조적으로는 매크로 전략가의 분석처럼 VIX 지수의 하락이 시장의 불안감을 줄이며 상승을 지지하고 있습니다. 이러한 요인들이 강하게 일치하여 KO의 주가 상승 가능성을 높이고 있습니다."
   },
   "upcoming_events": [
     {
       "type": "FOMC",
       "date": "2026-04-29",
-      "days_until": 6
+      "days_until": 5
     },
     {
       "type": "NFP",
       "date": "2026-05-01",
-      "days_until": 8
+      "days_until": 7
     }
   ],
-  "predicted_at": "2026-04-23T15:12:58.816726+00:00"
+  "predicted_at": "2026-04-24T03:53:41.359448+00:00"
 }

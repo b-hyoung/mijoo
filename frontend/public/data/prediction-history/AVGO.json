@@ -2,51 +2,51 @@
   "ticker": "AVGO",
   "history": [
     {
-      "id": 546,
-      "predicted_at": "2026-04-23T14:57:55.182703+00:00",
-      "age_hours": 1.8,
-      "current_price_at_prediction": 426.89,
+      "id": 558,
+      "predicted_at": "2026-04-24T03:52:06.707724+00:00",
+      "age_hours": 0.0,
+      "current_price_at_prediction": 419.94,
       "verdict": "관망",
       "direction": "DOWN",
       "confidence": 55,
-      "summary": "AVGO 주식은 과매수 상태와 비정상적인 풋 거래량 증가로 인해 하락 압력이 높아지고 있습니다. FOMC 발표를 앞두고 단기 변동성이 확대될 가능성이 큽니다.",
+      "summary": "AVGO는 기술적 지표와 옵션 거래에서 하락 압력을 받고 있습니다. 시장의 불안감은 줄어들고 있으나, 단기 변동성 확대 가능성이 존재합니다.",
       "week1": {
         "direction": "DOWN",
-        "confidence": 90.3,
-        "price_low": 361.01,
-        "price_high": 378.09,
-        "price_target": 369.55
+        "confidence": 86.8,
+        "price_low": 360.02,
+        "price_high": 376.82,
+        "price_target": 368.42
       },
       "week2": {
         "direction": "DOWN",
         "confidence": 95,
-        "price_low": 339.27,
-        "price_high": 364.89,
-        "price_target": 352.08
+        "price_low": 338.39,
+        "price_high": 363.59,
+        "price_target": 350.99
       },
       "week3": {
         "direction": "UP",
-        "up_probability": 59.9,
-        "range_low": 401.28,
-        "range_high": 452.5
+        "up_probability": 59.3,
+        "range_low": 394.74,
+        "range_high": 445.14
       },
       "week4": {
         "direction": "UP",
-        "up_probability": 59.9,
-        "range_low": 392.74,
-        "range_high": 461.04
+        "up_probability": 59.3,
+        "range_low": 386.34,
+        "range_high": 453.54
       },
       "weekly_outlook": {
-        "week1": "[RSI 79.9 과매수 상태이나 MACD 0.5로 상승세 지속 중.]",
-        "week2": "[기관 투자자 매수세 +1.2%이나 옵션 풋 거래량 15.5배 급증.]",
-        "week3": "[애널리스트 목표가 $475.49 상승 여력 있으나 FOMC 발표 D-6로 변동성 확대 가능.]",
-        "week4": "[VIX 19.04로 두려움 감소하나 IV Rank 100%로 큰 가격 변동 예상.]"
+        "week1": "[RSI 77.2로 과매수 구간 진입이나 MACD가 시그널 라인보다 높음.]",
+        "week2": "[기관 투자자 매수 비율 78%이나 FOMC 발표로 단기 변동성 확대 가능성 있음.]",
+        "week3": "[애널리스트 목표가 $475.49로 상승 여력 13.2%이나 옵션의 Put/Call 비율 0.94로 하락 압력 시사.]",
+        "week4": "[VIX 지수 19.31로 불안감 감소하나 IV Rank 100%로 큰 가격 변동 예상.]"
       }
     },
     {
       "id": 529,
       "predicted_at": "2026-04-13T14:55:00.452487+00:00",
-      "age_hours": 241.8,
+      "age_hours": 253.0,
       "current_price_at_prediction": 375.77,
       "verdict": "관망",
       "direction": "UP",
@@ -90,7 +90,7 @@
     {
       "id": 519,
       "predicted_at": "2026-04-09T06:43:20.210212+00:00",
-      "age_hours": 346.0,
+      "age_hours": 357.2,
       "current_price_at_prediction": 333.97,
       "verdict": "매수",
       "direction": "UP",
@@ -134,7 +134,7 @@
     {
       "id": 518,
       "predicted_at": "2026-04-09T06:43:06.461748+00:00",
-      "age_hours": 346.0,
+      "age_hours": 357.2,
       "current_price_at_prediction": 333.97,
       "verdict": "매수",
       "direction": "UP",

@@ -2,51 +2,51 @@
   "ticker": "META",
   "history": [
     {
-      "id": 544,
-      "predicted_at": "2026-04-23T14:57:07.073710+00:00",
-      "age_hours": 1.8,
-      "current_price_at_prediction": 665.0,
+      "id": 556,
+      "predicted_at": "2026-04-24T03:51:21.486520+00:00",
+      "age_hours": 0.0,
+      "current_price_at_prediction": 659.15,
       "verdict": "매수",
       "direction": "UP",
-      "confidence": 65,
-      "summary": "대부분의 분석가들이 META의 상승을 예상하며, 기술적 및 펀더멘털 지표가 긍정적입니다. 시장 환경도 안정적이며, 금리와 달러 약세가 긍정적으로 작용하고 있습니다.",
+      "confidence": 88,
+      "summary": "",
       "week1": {
         "direction": "UP",
-        "confidence": 51.0,
-        "price_low": 653.99,
-        "price_high": 680.59,
-        "price_target": 667.29
+        "confidence": 53.4,
+        "price_low": 653.35,
+        "price_high": 679.71,
+        "price_target": 666.53
       },
       "week2": {
         "direction": "UP",
-        "confidence": 50.0,
-        "price_low": 645.09,
-        "price_high": 684.99,
-        "price_target": 665.04
+        "confidence": 55.8,
+        "price_low": 652.06,
+        "price_high": 691.61,
+        "price_target": 671.84
       },
       "week3": {
         "direction": "DOWN",
-        "up_probability": 46.4,
-        "range_low": 625.1,
-        "range_high": 704.9
+        "up_probability": 45.7,
+        "range_low": 619.6,
+        "range_high": 698.7
       },
       "week4": {
         "direction": "DOWN",
-        "up_probability": 46.4,
-        "range_low": 611.8,
-        "range_high": 718.2
+        "up_probability": 45.7,
+        "range_low": 606.42,
+        "range_high": 711.88
       },
       "weekly_outlook": {
-        "week1": "RSI가 59.7로 상승 여력이 있어 기술적 반등 예상.",
-        "week2": "MACD가 시그널 라인보다 높아 상승 모멘텀 지속.",
-        "week3": "애널리스트 목표 주가 평균이 $855.11로 상승 여력 28.6%.",
-        "week4": "10년 만기 국채 수익률 4.29%로 금리 부담 완화, 긍정적 전망."
+        "week1": "옵션의 Put/Call 비율이 0.69로 콜 옵션이 더 많이 거래되고 있어 상승 압력이 큽니다.",
+        "week2": "IV Rank가 88%로 높아 큰 움직임이 예상되며, 이는 상승 가능성을 시사합니다.",
+        "week3": "애널리스트의 평균 목표가는 $855.11로 현재 가격 대비 29.7% 상승 여력이 있습니다.",
+        "week4": "기관 투자자들의 보유 비율이 높고, 최근 1주간 매수 우위가 75.6%로 나타나 긍정적인 흐름을 보입니다."
       }
     },
     {
       "id": 528,
       "predicted_at": "2026-04-13T14:54:59.928361+00:00",
-      "age_hours": 241.8,
+      "age_hours": 253.0,
       "current_price_at_prediction": 626.65,
       "verdict": "매수",
       "direction": "UP",
@@ -90,7 +90,7 @@
     {
       "id": 515,
       "predicted_at": "2026-04-09T06:42:24.237075+00:00",
-      "age_hours": 346.0,
+      "age_hours": 357.2,
       "current_price_at_prediction": 575.05,
       "verdict": "관망",
       "direction": "UP",
@@ -134,7 +134,7 @@
     {
       "id": 514,
       "predicted_at": "2026-04-09T06:42:10.925494+00:00",
-      "age_hours": 346.0,
+      "age_hours": 357.2,
       "current_price_at_prediction": 575.05,
       "verdict": "관망",
       "direction": "UP",

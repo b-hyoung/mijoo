@@ -2,51 +2,51 @@
   "ticker": "COST",
   "history": [
     {
-      "id": 547,
-      "predicted_at": "2026-04-23T14:58:22.954563+00:00",
-      "age_hours": 1.7,
-      "current_price_at_prediction": 1010.68,
-      "verdict": "매수",
+      "id": 559,
+      "predicted_at": "2026-04-24T03:52:34.714514+00:00",
+      "age_hours": 0.0,
+      "current_price_at_prediction": 1014.38,
+      "verdict": "관망",
       "direction": "UP",
-      "confidence": 66,
-      "summary": "COST 주식은 기술적 및 펀더멘털 분석에서 긍정적인 신호를 보이고 있으며, 시장 환경도 우호적입니다. 옵션 시장의 하락 압력에도 불구하고, 전반적인 상승 모멘텀이 강합니다.",
+      "confidence": 63,
+      "summary": "",
       "week1": {
-        "direction": "UP",
-        "confidence": 51.5,
-        "price_low": 995.47,
-        "price_high": 1035.9,
-        "price_target": 1015.69
+        "direction": "DOWN",
+        "confidence": 53.5,
+        "price_low": 982.4,
+        "price_high": 1022.97,
+        "price_target": 1002.69
       },
       "week2": {
-        "direction": "UP",
-        "confidence": 51.8,
-        "price_low": 986.3,
-        "price_high": 1046.94,
-        "price_target": 1016.62
+        "direction": "DOWN",
+        "confidence": 53.9,
+        "price_low": 970.68,
+        "price_high": 1031.55,
+        "price_target": 1001.11
       },
       "week3": {
         "direction": "UP",
-        "up_probability": 57.2,
-        "range_low": 950.04,
-        "range_high": 1071.32
+        "up_probability": 56.7,
+        "range_low": 953.52,
+        "range_high": 1075.24
       },
       "week4": {
         "direction": "UP",
-        "up_probability": 57.2,
-        "range_low": 929.83,
-        "range_high": 1091.53
+        "up_probability": 56.7,
+        "range_low": 933.23,
+        "range_high": 1095.53
       },
       "weekly_outlook": {
-        "week1": "RSI 56.3으로 상승 여력 존재, 기술적 반등 기대.",
-        "week2": "OBV가 최근 1주간 62% 매수 우위로 강한 매수세 확인.",
-        "week3": "분석가 평균 목표가 $1072.16로 6.1% 상승 여력 보유.",
-        "week4": "VIX 19.04로 24.8% 하락, 시장 두려움 감소로 긍정적 환경."
+        "week1": "RSI 57.7로 중립 이상이나 MACD가 -1.2로 하락세를 나타냄.",
+        "week2": "애널리스트 32명 중 20명이 매수 추천하나 P/C 비율 0.8로 풋 옵션 우세.",
+        "week3": "분기 배당금 인상으로 매출 성장 기대되나 IV 랭크 100%로 변동성 우려.",
+        "week4": "기관 투자자 매수 비율 62.8%이나 풋 옵션 이상 거래 13.9배로 하락 위험 존재."
       }
     },
     {
       "id": 527,
       "predicted_at": "2026-04-13T14:54:59.620379+00:00",
-      "age_hours": 241.8,
+      "age_hours": 253.0,
       "current_price_at_prediction": 989.55,
       "verdict": "관망",
       "direction": "DOWN",
@@ -90,7 +90,7 @@
     {
       "id": 521,
       "predicted_at": "2026-04-09T06:43:37.090108+00:00",
-      "age_hours": 346.0,
+      "age_hours": 357.2,
       "current_price_at_prediction": 1013.21,
       "verdict": "관망",
       "direction": "UP",
@@ -134,7 +134,7 @@
     {
       "id": 520,
       "predicted_at": "2026-04-09T06:43:29.510763+00:00",
-      "age_hours": 346.0,
+      "age_hours": 357.2,
       "current_price_at_prediction": 1013.21,
       "verdict": "관망",
       "direction": "UP",

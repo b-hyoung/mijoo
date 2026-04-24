@@ -2,51 +2,51 @@
   "ticker": "NFLX",
   "history": [
     {
-      "id": 548,
-      "predicted_at": "2026-04-23T14:58:45.986697+00:00",
-      "age_hours": 1.7,
-      "current_price_at_prediction": 93.63,
+      "id": 560,
+      "predicted_at": "2026-04-24T03:52:57.311465+00:00",
+      "age_hours": 0.0,
+      "current_price_at_prediction": 92.82,
       "verdict": "관망",
       "direction": "DOWN",
-      "confidence": 55,
-      "summary": "넷플릭스는 자사주 매입과 기관 투자자들의 매수 추천으로 긍정적인 펀더멘털 신호를 보이고 있습니다. 그러나 옵션 시장의 이상 거래와 기술적 지표는 단기 하락 가능성을 시사하고 있습니다.",
+      "confidence": 64,
+      "summary": "넷플릭스의 최근 실적 가이던스 부진과 옵션 시장의 하방 압력 증가로 주가 하락 가능성이 큽니다. 또한, 단기 변동성 확대 요인들이 주가에 추가적인 압박을 가할 수 있습니다.",
       "week1": {
         "direction": "UP",
-        "confidence": 56.2,
-        "price_low": 93.68,
-        "price_high": 97.43,
-        "price_target": 95.56
+        "confidence": 57.0,
+        "price_low": 93.13,
+        "price_high": 96.85,
+        "price_target": 94.99
       },
       "week2": {
         "direction": "UP",
-        "confidence": 62.7,
-        "price_low": 94.79,
-        "price_high": 100.41,
-        "price_target": 97.6
+        "confidence": 64.4,
+        "price_low": 94.5,
+        "price_high": 100.07,
+        "price_target": 97.28
       },
       "week3": {
         "direction": "UP",
-        "up_probability": 61.8,
-        "range_low": 88.01,
-        "range_high": 99.25
+        "up_probability": 58.9,
+        "range_low": 87.25,
+        "range_high": 98.39
       },
       "week4": {
         "direction": "UP",
-        "up_probability": 61.8,
-        "range_low": 86.14,
-        "range_high": 101.12
+        "up_probability": 58.9,
+        "range_low": 85.39,
+        "range_high": 100.25
       },
       "weekly_outlook": {
-        "week1": "[RSI 43으로 약세 신호이나 MACD가 -1.5로 하락세 지속 중.]",
-        "week2": "[기관 투자자 매수 추천 유지하나 옵션의 Put/Call 비율 0.35로 하방 압력 존재.]",
-        "week3": "[자사주 매입 승인으로 주주 가치 증가 기대하나 10년 만기 국채 수익률 4.29%로 금리 부담 여전.]",
-        "week4": "[VIX 19.04로 두려움 감소하나 IV Rank 100%로 큰 변동성 예상.]"
+        "week1": "[RSI 41.4로 과매도 접근이나 MACD -0.5로 하락세 지속 중.] vs [OBV 하락세로 매도세 우세, 하락 압력 지속 중.]",
+        "week2": "[VIX 19.31로 불안감 감소, 시장 심리 개선 가능성 있음.] vs [Put/Call 비율 0.66으로 콜 우세, 그러나 풋 거래량 6.7배 증가해 하방 압력 시사.]",
+        "week3": "[10년물 국채 수익률 4.32%로 안정적, 금리 불확실성 감소.] vs [최근 실적 가이던스 부진으로 주가 13.4% 하락, 투자자 신뢰 저하.]",
+        "week4": "[달러 인덱스 98.89로 하락, 글로벌 리스크 자산에 긍정적 영향 가능.] vs [FOMC 발표 D-5, 단기 변동성 확대 가능성으로 주가 압박 우려.]"
       }
     },
     {
       "id": 536,
       "predicted_at": "2026-04-13T14:55:04.367158+00:00",
-      "age_hours": 241.8,
+      "age_hours": 253.0,
       "current_price_at_prediction": 102.86,
       "verdict": "관망",
       "direction": "UP",
@@ -90,7 +90,7 @@
     {
       "id": 523,
       "predicted_at": "2026-04-09T06:43:54.511309+00:00",
-      "age_hours": 346.0,
+      "age_hours": 357.2,
       "current_price_at_prediction": 98.82,
       "verdict": "관망",
       "direction": "UP",
@@ -134,7 +134,7 @@
     {
       "id": 522,
       "predicted_at": "2026-04-09T06:43:54.509335+00:00",
-      "age_hours": 346.0,
+      "age_hours": 357.2,
       "current_price_at_prediction": 98.82,
       "verdict": "관망",
       "direction": "UP",

@@ -228,6 +228,27 @@ export function compareTickers(left: BattleProfile, right: BattleProfile): { row
     ));
   }
 
+  // Insider Form 4 cluster (openinsider)
+  const lCluster = L.insider_cluster;
+  const rCluster = R.insider_cluster;
+  if (lCluster || rCluster) {
+    const lBuyers = lCluster?.buyers_30d ?? 0;
+    const rBuyers = rCluster?.buyers_30d ?? 0;
+    rows.push(row(
+      "펀더멘털", "내부자 매수자 수 (30d)",
+      lBuyers, `${lBuyers}명${lCluster?.cluster_detected ? " 🔥" : ""}`,
+      rBuyers, `${rBuyers}명${rCluster?.cluster_detected ? " 🔥" : ""}`,
+      false,
+      "openinsider Form 4 · 2명+/7일 = cluster buy",
+    ));
+    // C-level (CEO/CFO) bought — strongest single signal
+    rows.push(flagRow(
+      "펀더멘털", "임원진(C-level) 매수",
+      !!lCluster?.c_level_buy, lCluster?.c_level_buy ? "있음" : "없음",
+      !!rCluster?.c_level_buy, rCluster?.c_level_buy ? "있음" : "없음",
+    ));
+  }
+
   // 실적 시즌 이벤트 (가까울수록 risky — invert)
   const lEd = L.earnings?.days_until;
   const rEd = R.earnings?.days_until;
@@ -268,6 +289,21 @@ export function compareTickers(left: BattleProfile, right: BattleProfile): { row
     lSent, lSent.toFixed(2),
     rSent, rSent.toFixed(2),
   ));
+
+  // Reddit WSB/stocks mentions
+  const lRed = L.reddit;
+  const rRed = R.reddit;
+  if (lRed || rRed) {
+    const lm = lRed?.mentions ?? 0;
+    const rm = rRed?.mentions ?? 0;
+    rows.push(row(
+      "감정/심리", "Reddit 멘션 (WSB/stocks)",
+      lm, `${lm}회${(lRed?.dollar_mentions ?? 0) > 0 ? ` ($${lRed?.dollar_mentions})` : ""}`,
+      rm, `${rm}회${(rRed?.dollar_mentions ?? 0) > 0 ? ` ($${rRed?.dollar_mentions})` : ""}`,
+      false,
+      "최근 300 posts 기준 · $TICKER + 대문자 매치",
+    ));
+  }
   const lShort = safe(L.short_float_pct, 0);
   const rShort = safe(R.short_float_pct, 0);
   // 공매도 높은 건 스퀴즈 가능성 (약한 긍정). 높을수록 +

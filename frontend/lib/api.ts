@@ -165,6 +165,34 @@ export interface AnomalyData {
   signals: AnomalySignal[];
 }
 
+export interface InsiderClusterData {
+  buyers_30d: number;
+  trades_30d: number;
+  total_value_30d: number;
+  cluster_detected: boolean;
+  c_level_buy: boolean;
+  last_buy_date: string | null;
+  recent: {
+    filing_date: string;
+    trade_date: string;
+    insider: string;
+    title: string;
+    trade_type: string;
+    price: number;
+    qty: number;
+    value: number;
+  }[];
+  source: string;
+}
+
+export interface RedditMentionsData {
+  mentions: number;
+  dollar_mentions: number;
+  scanned_posts: number;
+  latest_title: string | null;
+  latest_at: string | null;
+}
+
 export interface PredictionResult {
   ticker: string;
   current_price: number;
@@ -180,6 +208,8 @@ export interface PredictionResult {
   macro?: MacroData;
   options?: OptionsData;
   earnings?: EarningsData;
+  insider_cluster?: InsiderClusterData;
+  reddit?: RedditMentionsData;
   anomaly?: AnomalyData;
   prediction: {
     week1: WeekPredictionPoint;

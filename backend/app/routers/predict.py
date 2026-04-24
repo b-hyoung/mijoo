@@ -11,6 +11,8 @@ from app.collectors.fundamental_collector import fetch_analyst_data, fetch_insid
 from app.collectors.macro_collector import fetch_macro_history, fetch_macro_latest
 from app.collectors.earnings_collector import fetch_earnings_data
 from app.collectors.options_collector import fetch_options_data
+from app.collectors.insider_cluster_collector import fetch_insider_cluster
+from app.collectors.reddit_mentions_collector import fetch_reddit_mentions
 from app.anomaly import calculate_anomaly_score
 from app.features.technical import build_technical_features, add_macro_features
 from app.features.sentiment import score_articles
@@ -166,20 +168,44 @@ def comp_news(ticker: str):
 #  Component 3: Fundamentals (parallel)
 # ═══════════════════════════════════════════════════════════════════
 
+# Reddit mentions cached per-session (1 scrape for all tickers, 30-min TTL)
+_reddit_cache: dict = {"fetched_at": None, "data": {}}
+
+
+def _get_reddit_for(ticker: str) -> dict:
+    from datetime import datetime, timezone, timedelta
+    from app.config import settings
+    now = datetime.now(timezone.utc)
+    if (_reddit_cache["fetched_at"] is None
+        or now - _reddit_cache["fetched_at"] > timedelta(minutes=30)):
+        try:
+            data = fetch_reddit_mentions(settings.nasdaq100_tickers)
+            _reddit_cache["data"] = data
+            _reddit_cache["fetched_at"] = now
+            print(f"[reddit] refreshed mentions for {len(data)} tickers", flush=True)
+        except Exception as e:
+            print(f"[reddit] fetch failed: {e}", flush=True)
+    return _reddit_cache["data"].get(ticker.upper(), {})
+
+
 def comp_fundamentals(ticker: str):
-    """Parallel fetch: analyst, insider, institutional, macro, earnings, options.
-    Returns dict with all data."""
-    with concurrent.futures.ThreadPoolExecutor(max_workers=6) as ex:
+    """Parallel fetch: analyst, insider, institutional, macro, earnings, options,
+    insider_cluster (openinsider), reddit_mentions (WSB/stocks)."""
+    with concurrent.futures.ThreadPoolExecutor(max_workers=8) as ex:
         f_analyst = ex.submit(fetch_analyst_data, ticker)
         f_insider = ex.submit(fetch_insider_data, ticker)
         f_institutional = ex.submit(fetch_institutional_data, ticker)
         f_macro = ex.submit(fetch_macro_latest)
         f_earnings = ex.submit(fetch_earnings_data, ticker)
+        f_cluster = ex.submit(fetch_insider_cluster, ticker)
+        f_reddit = ex.submit(_get_reddit_for, ticker)
         analyst = f_analyst.result()
         insider = f_insider.result()
         institutional = f_institutional.result()
         macro = f_macro.result()
         earnings = f_earnings.result()
+        insider_cluster = f_cluster.result()
+        reddit = f_reddit.result()
 
     options = fetch_options_data(ticker, earnings_date=earnings.get("next_date"))
 
@@ -190,6 +216,8 @@ def comp_fundamentals(ticker: str):
         "macro": macro,
         "earnings": earnings,
         "options": options,
+        "insider_cluster": insider_cluster,
+        "reddit": reddit,
     }
 
 
@@ -344,6 +372,8 @@ def assemble_result(ticker, latest, sentiment, short_data, order_flow, articles,
         "macro": fund["macro"],
         "options": fund["options"],
         "earnings": fund["earnings"],
+        "insider_cluster": fund.get("insider_cluster"),
+        "reddit": fund.get("reddit"),
         "anomaly": anomaly,
         "prediction": ml_result,
         "debate": debate_result,

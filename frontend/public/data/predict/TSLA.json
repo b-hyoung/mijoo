@@ -1,69 +1,65 @@
 {
   "ticker": "TSLA",
-  "current_price": 375.98,
+  "current_price": 373.72,
   "sentiment_score": 0.1,
   "short_float_pct": 2.43,
   "short_change": "N/A",
   "order_flow": {
-    "buy_dominance_pct": 50.5,
+    "buy_dominance_pct": 48.8,
     "obv_trend": "UP",
     "is_accumulation": false
   },
   "news_headlines": [
     {
-      "title": "Tesla Q1 analyst reaction: Capex rise a surprise but needed for AI, Optimus, robotaxi, chip fab build-out",
-      "url": "https://finance.yahoo.com/markets/stocks/article/tesla-q1-analyst-reaction-capex-rise-a-surprise-but-needed-for-ai-optimus-robotaxi-chip-fab-build-out-145253241.html"
+      "title": "Tesla stock wavers after earnings call despite strong sales and 'tailwinds'",
+      "url": "https://finance.yahoo.com/markets/stocks/article/tesla-stock-wavers-after-earnings-call-despite-strong-sales-and-tailwinds-135049358.html"
+    },
+    {
+      "title": "Tesla and SpaceX will probably merge after IPO: Dan Ives",
+      "url": "https://finance.yahoo.com/video/tesla-and-spacex-will-probably-merge-after-ipo-dan-ives-150422843.html"
     },
     {
       "title": "Tesla investors really need to see progress on Robotaxi, robotics",
       "url": "https://finance.yahoo.com/video/tesla-investors-really-need-to-see-progress-on-robotaxi-robotics-214456931.html"
     },
     {
-      "title": "Elon Musk's Optimus dream inches closer to reality",
-      "url": "https://finance.yahoo.com/markets/stocks/article/elon-musks-optimus-dream-inches-closer-to-reality-231947477.html"
+      "title": "Dow Jones Futures: Stocks Fall On Iran, ServiceNow, Tesla; Intel Soars Late",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-iran-news-servicenow-tesla-intel-soars-comfort-systems/?src=A00220&yptr=yahoo"
     },
     {
-      "title": "Trading Tesla stock around earnings is a coin toss, but long-term investors have better odds",
-      "url": "https://finance.yahoo.com/markets/article/trading-tesla-stock-around-earnings-is-a-coin-toss-but-long-term-investors-have-better-odds-214038331.html"
+      "title": "Elon Musk vs. Plug Power Stock: Here's What the CEO of Tesla Thinks About Hydrogen Energy",
+      "url": "https://www.fool.com/investing/2026/04/23/nuscale-vs-plug-power-which-clean-energy-stock-wil/"
     },
     {
-      "title": "VIX Creeps Toward 20 as Iran Fears and Tesla’s Whipsaw Rattle Nerves",
-      "url": "https://247wallst.com/investing/2026/04/23/vix-creeps-toward-20-as-iran-fears-and-teslas-whipsaw-rattle-nerves/"
+      "title": "Xiaomi has delivered 26,000 units of upgraded SU7 series sedan",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/xiaomi-delivered-26-000-units-014207436.html"
     },
     {
-      "title": "The Musk Premium Is Getting Tested—And Tesla's Earnings Call Showed Why",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/musk-premium-getting-tested-teslas-143103267.html"
+      "title": "Tesla Vs GM: Which is the Best Investment as the Q1 Earnings Season Heats Up?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-vs-gm-best-investment-011500785.html"
     },
     {
-      "title": "Stock Market Today: Dow Off Lightly; Tesla Drops On Musk Comments But Texas Instruments Soars (Live Coverage)",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-jobless-claims-tesla-tsla-stock-musk/?src=A00220&yptr=yahoo"
+      "title": "Gary Black Says Tesla's $25 Billion Spend Not A Surprise, Expects TSLA Valuation To Come Down Amid Self-Driving Roll Back",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/gary-black-says-teslas-25-003103829.html"
     },
     {
-      "title": "Musk admits older Teslas need hardware upgrades for FSD",
-      "url": "https://qz.com/tesla-hardware-upgrade-full-self-driving-musk-042326"
-    },
-    {
-      "title": "Tesla Just Shocked Wall Street With $22.4 Billion in Revenue. Here Are 3 Other Takeaways From the EV Giant's Latest Quarterly Results.",
-      "url": "https://www.fool.com/investing/2026/04/23/tesla-just-shocked-wall-street-takeaways/"
-    },
-    {
-      "title": "Why Tesla Stock Is Falling After Earnings Beat: Huge Capital Spending Plans, Elon Musk Comments",
-      "url": "https://www.investors.com/news/tesla-stock-falls-capital-spending-plans-elon-musk-comments/?src=A00220&yptr=yahoo"
+      "title": "Review & Preview: Earnings Storm",
+      "url": "https://www.barrons.com/articles/stocks-today-chips-intel-earnings-d007603c?siteid=yhoof2&yptr=yahoo"
     }
   ],
   "signals": {
-    "rsi": 48.7,
+    "rsi": 47.7,
     "macd_cross": "BULLISH",
     "ma_trend": "BULLISH",
-    "bb_position": 60,
-    "volume_ratio": 0.69
+    "bb_position": 57,
+    "volume_ratio": 1.29
   },
   "analyst": {
-    "target_mean": 415.81,
+    "target_mean": 419.0,
     "target_high": 600.0,
-    "target_low": 125.0,
-    "upside_pct": 10.5,
-    "num_analysts": 41,
+    "target_low": 123.0,
+    "upside_pct": 12.1,
+    "num_analysts": 40,
     "recommendation": "buy"
   },
   "insider": {
@@ -76,18 +72,18 @@
     "change_pct": null
   },
   "macro": {
-    "vix": 19.03,
-    "vix_20d_change": -24.9,
-    "treasury_10y": 4.29,
-    "treasury_10y_20d_change": -0.8,
-    "dxy": 98.58,
-    "dxy_20d_change": -1.0
+    "vix": 19.31,
+    "vix_20d_change": -23.8,
+    "treasury_10y": 4.32,
+    "treasury_10y_20d_change": -0.1,
+    "dxy": 98.88,
+    "dxy_20d_change": -0.7
   },
   "options": {
-    "pc_ratio": 0.81,
+    "pc_ratio": 0.74,
     "iv_rank": 100,
-    "unusual_activity": 17.0,
-    "unusual_side": "PUT",
+    "unusual_activity": 50.0,
+    "unusual_side": "CALL",
     "data_source": "nearest+monthly",
     "expiry_used": "2026-04-24"
   },
@@ -96,16 +92,33 @@
     "days_until": null,
     "history": []
   },
+  "insider_cluster": {
+    "buyers_30d": 0,
+    "trades_30d": 0,
+    "total_value_30d": 0.0,
+    "cluster_detected": false,
+    "c_level_buy": false,
+    "last_buy_date": null,
+    "recent": [],
+    "source": "openinsider"
+  },
+  "reddit": {
+    "mentions": 7,
+    "dollar_mentions": 0,
+    "scanned_posts": 300,
+    "latest_title": "Gonna be down huge tomorrow",
+    "latest_at": "2026-04-23T02:06:12+00:00"
+  },
   "anomaly": {
     "score": 40,
-    "direction": null,
+    "direction": "UP",
     "level": "관심",
     "signals": [
       {
         "name": "거래량 급증 + 횡보",
         "score": 0,
         "direction": null,
-        "detail": "거래량 1.0x, 가격변동 1.0%"
+        "detail": "거래량 1.1x, 가격변동 0.4%"
       },
       {
         "name": "IV 급등",
@@ -116,8 +129,8 @@
       {
         "name": "옵션 이상 거래",
         "score": 20,
-        "direction": "DOWN",
-        "detail": "평소 대비 17.0x (PUT)"
+        "direction": "UP",
+        "detail": "평소 대비 50.0x (CALL)"
       },
       {
         "name": "내부자 방향 전환",
@@ -129,127 +142,117 @@
         "name": "P/C ratio 극단",
         "score": 0,
         "direction": null,
-        "detail": "P/C 0.81"
+        "detail": "P/C 0.74"
       }
     ]
   },
   "prediction": {
     "week1": {
-      "direction": "DOWN",
-      "confidence": 50.5,
-      "price_low": 367.78,
-      "price_high": 382.82,
-      "price_target": 375.3
+      "direction": "UP",
+      "confidence": 50.3,
+      "price_low": 366.58,
+      "price_high": 381.53,
+      "price_target": 374.05
     },
     "week2": {
       "direction": "UP",
-      "confidence": 82.9,
-      "price_low": 405.95,
-      "price_high": 428.51,
-      "price_target": 417.23
+      "confidence": 80.6,
+      "price_low": 400.58,
+      "price_high": 423.0,
+      "price_target": 411.79
     },
     "week3": {
       "direction": "DOWN",
-      "up_probability": 40.6,
-      "range_low": 353.43,
-      "range_high": 398.54
+      "up_probability": 40.2,
+      "range_low": 351.3,
+      "range_high": 396.14
     },
     "week4": {
       "direction": "DOWN",
-      "up_probability": 40.6,
-      "range_low": 345.91,
-      "range_high": 406.06
+      "up_probability": 40.2,
+      "range_low": 343.82,
+      "range_high": 403.62
     }
   },
   "debate": {
-    "direction": "DOWN",
-    "confidence": 52,
-    "verdict": "관망",
-    "summary": "옵션 시장의 하락 신호와 기술적 지표의 혼조세로 인해 테슬라 주가는 하락 압력을 받고 있습니다. 그러나 매크로 환경의 개선은 긍정적 영향을 미칠 수 있습니다.",
+    "direction": "UP",
+    "confidence": 87,
+    "verdict": "매수",
+    "summary": "TSLA는 옵션 거래와 기술적 지표에서 상승 신호를 보이고 있으며, 펀더멘털 분석가들도 긍정적인 전망을 제시하고 있습니다. 시장 전반의 불안감 감소와 금리 안정성도 주가 상승에 유리한 환경을 제공합니다.",
     "stock_bull": [
-      "테슬라의 최근 실적 발표에서 매출이 월가 예상치를 상회하여 강력한 펀더멘털을 시사합니다.",
-      "애널리스트의 평균 목표 주가는 현재 주가 대비 10.5% 상승 여력이 있습니다.",
-      "기관 투자자들의 매수세가 강하게 나타나고 있습니다."
+      "옵션의 풋/콜 비율이 0.74로 콜 옵션이 더 많이 거래되고 있어 상승 기대가 높습니다.",
+      "RSI가 47.7로 중립에 가까워 추가 상승 여력이 있습니다.",
+      "애널리스트 평균 목표 주가가 현재 가격 대비 12.1% 상승 여력을 보여 BUY 추천을 받고 있습니다."
     ],
-    "stock_bear": [
-      "옵션 거래에서 PUT 옵션의 비정상적 활동이 17배 증가하여 하락 압력을 시사합니다.",
-      "RSI가 중립 영역에 위치하고 MACD가 명확한 상승 모멘텀을 나타내지 않습니다.",
-      "현재 가격이 MA5와 MA60보다 낮고, MA20보다 높아 혼조세를 보입니다."
-    ],
+    "stock_bear": [],
     "market_bull": [
-      "VIX가 하락하여 시장의 두려움이 감소하고 있습니다.",
-      "10년 만기 국채 수익률이 하락하여 금리 부담이 완화되고 있습니다.",
-      "달러 인덱스가 하락하여 미국 달러의 상대적 약세가 나타나고 있습니다."
+      "VIX 지수는 19.31로 20일 동안 23.8% 하락하여 시장의 불안감이 감소하고 있음을 나타냅니다.",
+      "달러 인덱스는 98.89로 20일 동안 0.7% 하락하여, 달러 약세가 글로벌 리스크 자산에 긍정적 영향을 미칠 수 있습니다."
     ],
     "market_bear": [],
     "bull_points": [
-      "테슬라의 최근 실적 발표에서 매출이 월가 예상치를 상회하여 강력한 펀더멘털을 시사합니다.",
-      "애널리스트의 평균 목표 주가는 현재 주가 대비 10.5% 상승 여력이 있습니다.",
-      "기관 투자자들의 매수세가 강하게 나타나고 있습니다.",
-      "VIX가 하락하여 시장의 두려움이 감소하고 있습니다.",
-      "10년 만기 국채 수익률이 하락하여 금리 부담이 완화되고 있습니다.",
-      "달러 인덱스가 하락하여 미국 달러의 상대적 약세가 나타나고 있습니다."
+      "옵션의 풋/콜 비율이 0.74로 콜 옵션이 더 많이 거래되고 있어 상승 기대가 높습니다.",
+      "RSI가 47.7로 중립에 가까워 추가 상승 여력이 있습니다.",
+      "애널리스트 평균 목표 주가가 현재 가격 대비 12.1% 상승 여력을 보여 BUY 추천을 받고 있습니다.",
+      "VIX 지수는 19.31로 20일 동안 23.8% 하락하여 시장의 불안감이 감소하고 있음을 나타냅니다.",
+      "달러 인덱스는 98.89로 20일 동안 0.7% 하락하여, 달러 약세가 글로벌 리스크 자산에 긍정적 영향을 미칠 수 있습니다."
     ],
-    "bear_points": [
-      "옵션 거래에서 PUT 옵션의 비정상적 활동이 17배 증가하여 하락 압력을 시사합니다.",
-      "RSI가 중립 영역에 위치하고 MACD가 명확한 상승 모멘텀을 나타내지 않습니다.",
-      "현재 가격이 MA5와 MA60보다 낮고, MA20보다 높아 혼조세를 보입니다."
-    ],
+    "bear_points": [],
     "weekly_outlook": {
-      "week1": "[RSI 48.7로 중립적이나 MACD가 시그널 라인 아래에서 약간 상승 중.] vs [MACD가 강한 상승 모멘텀을 나타내지 않으며, 혼조세 지속 중.]",
-      "week2": "[VIX 19.04로 24.8% 하락, 시장 두려움 감소 시사.] vs [PUT 옵션 거래가 17배 증가, 하락 압력 우려.]",
-      "week3": "[10년 만기 국채 수익률 4.29%로 하락, 금리 부담 완화.] vs [FOMC 발표 D-6, 단기 변동성 확대 가능성.]",
-      "week4": "[기관 투자자들의 매수세가 강하게 나타나 긍정적.] vs [IV Rank 100%로 큰 가격 변동 예상, 하락 가능성.]"
+      "week1": "옵션의 풋/콜 비율이 0.74로 콜 옵션이 우세해 상승 기대감이 높습니다.",
+      "week2": "IV Rank가 100%로 큰 변동성이 예상되어 주가 상승 압력이 존재합니다.",
+      "week3": "애널리스트 평균 목표 주가가 현재 가격 대비 12.1% 상승 여력을 보여 매수 추천이 있습니다.",
+      "week4": "기관 투자자들의 보유량 증가가 주가 상승에 긍정적인 영향을 미칠 것으로 예상됩니다."
     },
     "key_news": [
       {
-        "headline": "Tesla Just Shocked Wall Street With $22.4 Billion in Revenue. Here Are 3 Other Takeaways From the EV Giant's Latest Quarterly Results.",
-        "summary": "테슬라가 224억 달러의 매출을 기록하며 시장의 기대를 초과했지만, 이는 긍정적인 신호로 주가에 긍정적 영향을 미칠 수 있습니다."
+        "headline": "Tesla investors really need to see progress on Robotaxi, robotics",
+        "summary": "로보택시와 로봇 기술의 진전이 없으면 투자자 신뢰가 하락할 수 있어 주가에 부정적 영향을 미칠 수 있습니다."
       },
       {
-        "headline": "Why Tesla Stock Is Falling After Earnings Beat: Huge Capital Spending Plans, Elon Musk Comments",
-        "summary": "테슬라의 실적이 예상보다 좋았음에도 불구하고, 대규모 자본 지출 계획과 머스크의 발언이 주가 하락을 초래하고 있습니다."
+        "headline": "Gary Black Says Tesla's $25 Billion Spend Not A Surprise, Expects TSLA Valuation To Come Down Amid Self-Driving Roll Back",
+        "summary": "자율주행 기술의 후퇴와 대규모 지출로 인해 TSLA의 가치가 하락할 것으로 예상되어 주가에 부정적인 영향을 미칠 수 있습니다."
       }
     ],
     "personas": [
       {
         "id": "options",
         "role": "옵션 트레이더",
-        "direction": "DOWN",
-        "confidence": 80,
-        "argument": "• 옵션 거래에서 PUT 옵션의 비정상적 활동이 17배 증가하여 하락 압력을 시사합니다.\n• IV Rank가 100%로 매우 높아, 큰 가격 변동이 예상되며, 이는 하락 방향일 가능성이 큽니다.\n• FOMC 발표가 D-6으로 포지셔닝 구간에 있어 단기적으로 변동성이 확대될 수 있습니다."
+        "direction": "UP",
+        "confidence": 90,
+        "argument": "• 옵션의 풋/콜 비율이 0.74로 콜 옵션이 더 많이 거래되고 있어 상승 기대가 높습니다. \n• IV Rank가 100%로 매우 높은 수준이며, 이는 큰 변동성이 예상됨을 의미합니다.\n• 콜 옵션에서 50.0배의 이상 거래가 발생하여 상승 압력이 존재합니다."
+      },
+      {
+        "id": "technical",
+        "role": "테크니컬 분석가",
+        "direction": "UP",
+        "confidence": 75,
+        "argument": "• RSI가 47.7로 중립에 가까워 추가 상승 여력이 있습니다.\n• MACD가 시그널보다 높아지며 상승 모멘텀을 시사합니다.\n• OBV가 상승세를 보이며 매수 압력이 존재합니다."
       },
       {
         "id": "fundamental",
         "role": "펀더멘털 분석가",
         "direction": "UP",
         "confidence": 75,
-        "argument": "• 최근 실적 발표에서 테슬라는 224억 달러의 매출을 기록하며 월가의 예상을 상회하였습니다. 이는 강력한 펀더멘털을 시사합니다.\n• 애널리스트의 평균 목표 주가는 $415.81로 현재 주가 대비 10.5%의 상승 여력이 있으며, 전반적인 추천은 '매수'입니다.\n• 기관 투자자들의 매수세가 강하게 나타나고 있으며, 이는 주가 상승에 긍정적인 영향을 미칠 수 있습니다."
-      },
-      {
-        "id": "technical",
-        "role": "테크니컬 분석가",
-        "direction": "DOWN",
-        "confidence": 70,
-        "argument": "• RSI가 48.7로 중립 영역에 위치해 있으며, 강한 매수 또는 매도 신호를 제공하지 않습니다.\n• MACD가 시그널 라인 아래에서 약간의 상승을 보이고 있으나, 강한 상승 모멘텀을 나타내지 않습니다.\n• 현재 가격이 MA5와 MA60보다 낮고, MA20보다 높아 혼조세를 보이며, 명확한 방향성을 제공하지 않습니다."
+        "argument": "• 애널리스트 평균 목표 주가가 현재 가격 대비 12.1% 상승 여력을 보여 BUY 추천을 받고 있습니다. \n• 기관 투자자들의 보유량이 증가하고 있으며, 이는 주가 상승에 긍정적인 영향을 미칠 수 있습니다.\n• 향후 FOMC 발표가 예정되어 있어 포지셔닝 구간으로, 단기 변동성 확대 가능성이 있습니다."
       },
       {
         "id": "macro",
         "role": "매크로 전략가",
         "direction": "UP",
         "confidence": 75,
-        "argument": "• VIX가 19.04로 20일 동안 24.8% 하락하여 시장의 두려움이 감소하고 있음을 나타냅니다. \n• 10년 만기 국채 수익률이 4.29%로 20일 동안 0.8% 하락하여 금리 부담이 완화되고 있습니다. \n• 달러 인덱스가 98.6으로 20일 동안 1.0% 하락하여 미국 달러의 상대적 약세가 나타나고 있습니다."
+        "argument": "• VIX 지수는 19.31로 20일 동안 23.8% 하락하여 시장의 불안감이 감소하고 있음을 나타냅니다.\n• 10년물 국채 수익률은 4.32%로 20일 동안 거의 변동이 없으며, 이는 금리 안정성을 시사합니다.\n• 달러 인덱스는 98.89로 20일 동안 0.7% 하락하여, 달러 약세가 글로벌 리스크 자산에 긍정적 영향을 미칠 수 있습니다."
       }
     ]
   },
   "confluence": {
-    "aligned_count": 3,
+    "aligned_count": 2,
     "total": 4,
-    "majority_direction": "DOWN",
-    "badge": "대체로 일치",
-    "tone": "moderate",
+    "majority_direction": "UP",
+    "badge": "혼조 — 되돌림 경계",
+    "tone": "mixed",
     "per_week": [
-      "DOWN",
+      "UP",
       "UP",
       "DOWN",
       "DOWN"
@@ -266,30 +269,30 @@
         {
           "key": "range_position",
           "label": "52주 위치",
-          "value": 0.047,
+          "value": 0.029,
           "weight": -0.15,
-          "contribution": -0.007
+          "contribution": -0.004
         },
         {
           "key": "mid_momentum",
           "label": "중기 모멘텀",
-          "value": -0.654,
+          "value": -0.668,
           "weight": 0.2,
-          "contribution": -0.131
+          "contribution": -0.134
         },
         {
           "key": "macro_regime",
           "label": "매크로 레짐",
-          "value": 0.197,
+          "value": 0.107,
           "weight": 0.2,
-          "contribution": 0.039
+          "contribution": 0.021
         },
         {
           "key": "analyst_consensus",
           "label": "애널리스트 컨센서스",
-          "value": 0.35,
+          "value": 0.403,
           "weight": 0.1,
-          "contribution": 0.035
+          "contribution": 0.04
         },
         {
           "key": "institutional_flow",
@@ -299,21 +302,21 @@
           "contribution": 0.0
         }
       ],
-      "score": -0.314
+      "score": -0.326
     },
-    "explanation": "단기적으로는 옵션 트레이더와 테크니컬 분석가의 의견에 따라 하락 압력이 존재하지만, 펀더멘털 분석가가 제시한 강력한 실적 발표와 매크로 전략가의 시장 안정 신호가 이를 상쇄하고 있습니다. 특히, 매출 증가와 VIX의 하락은 구조적으로 긍정적인 요소로 작용하여 중장기적으로 주가 상승을 지지할 가능성이 큽니다. 따라서, 단기 조정 후 장기 추세 재개 가능성이 있습니다."
+    "explanation": "단기적으로는 옵션 트레이더와 테크니컬 분석가의 지표가 상승을 지지하고 있으며, 펀더멘털 분석가의 목표 주가와 매크로 전략가의 시장 안정성 지표도 긍정적입니다. 그러나 구조적으로는 시장의 불확실성이 여전히 존재할 수 있어, 단기 상승 후 구조적 요인에 의해 조정 가능성이 있습니다."
   },
   "upcoming_events": [
     {
       "type": "FOMC",
       "date": "2026-04-29",
-      "days_until": 6
+      "days_until": 5
     },
     {
       "type": "NFP",
       "date": "2026-05-01",
-      "days_until": 8
+      "days_until": 7
     }
   ],
-  "predicted_at": "2026-04-23T14:57:31.641499+00:00"
+  "predicted_at": "2026-04-24T03:51:43.646592+00:00"
 }

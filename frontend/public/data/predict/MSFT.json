@@ -1,68 +1,64 @@
 {
   "ticker": "MSFT",
-  "current_price": 420.96,
-  "sentiment_score": 0.8,
+  "current_price": 415.75,
+  "sentiment_score": -0.3,
   "short_float_pct": 1.11,
   "short_change": "N/A",
   "order_flow": {
-    "buy_dominance_pct": 69.0,
+    "buy_dominance_pct": 66.5,
     "obv_trend": "UP",
     "is_accumulation": false
   },
   "news_headlines": [
     {
-      "title": "Google takes on Nvidia, announces 2 new AI chips",
-      "url": "https://finance.yahoo.com/video/google-takes-on-nvidia-announces-2-new-ai-chips-145915437.html"
+      "title": "Tech job market woes deepen with Meta layoffs and Microsoft buyouts",
+      "url": "https://finance.yahoo.com/economy/article/tech-job-market-woes-deepen-with-meta-layoffs-and-microsoft-buyouts-150901111.html"
     },
     {
-      "title": "Rising AI PC Sales Can’t Hide HPQ’s Mounting Risks",
-      "url": "https://www.trefis.com/articles/597180/rising-ai-pc-sales-cant-hide-hpqs-mounting-risks/2026-04-23?source=yahoo&from=HPQ-2026-04-23"
+      "title": "Microsoft offering buyouts to employees, ServiceNow stock sinks",
+      "url": "https://finance.yahoo.com/video/microsoft-offering-buyouts-to-employees-servicenow-stock-sinks-170959122.html"
     },
     {
-      "title": "Microsoft commits $18bn to Australian digital infrastructure expansion",
-      "url": "https://www.investmentmonitor.ai/news/microsoft-australian-digital-infrastructure-expansion/"
+      "title": "Oil extends gains, stocks sink as peace talk hopes fade",
+      "url": "https://finance.yahoo.com/markets/commodities/articles/oil-extends-gains-stocks-sink-025127756.html"
     },
     {
-      "title": "Microsoft ramps up AI push with record Australia investment",
-      "url": "https://finance.yahoo.com/sectors/technology/articles/microsoft-ramps-ai-push-record-134820653.html"
+      "title": "3 Overrated  Stocks with Warning Signs",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/3-overrated-stocks-warning-signs-024523737.html"
     },
     {
-      "title": "Microsoft considered acquiring Cursor before SpaceX deal",
-      "url": "https://qz.com/microsoft-cursor-acquisition-spacex-60-billion-042326"
+      "title": "Why Applied Digital Stock Jumped Today",
+      "url": "https://www.fool.com/investing/2026/04/23/why-applied-digital-stock-jumped-today/"
     },
     {
-      "title": "Intel’s $240 Billion Rally Slams Into a Potential Earnings Wall",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/intel-240-billion-rally-slams-091734304.html"
+      "title": "Microsoft’s A$25b Australia Plan Puts AI CapEx And Cloud Usage In Focus",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/microsoft-25b-australia-plan-puts-011007041.html"
     },
     {
-      "title": "Microsoft Unveils A$25 Billion Australia AI Investment Through 2029",
-      "url": "https://finance.yahoo.com/sectors/technology/articles/microsoft-unveils-25-billion-australia-133729137.html"
+      "title": "Where is Microsoft’s headquarters? Inside the tech giant’s corporate campus",
+      "url": "https://www.thestreet.com/investing/stocks/microsoft-headquarters"
     },
     {
-      "title": "Applied Digital signs $7.5 billion AI data center lease with US hyperscaler",
-      "url": "https://finance.yahoo.com/sectors/technology/articles/applied-digital-signs-7-5-133658684.html"
+      "title": "Review & Preview: Earnings Storm",
+      "url": "https://www.barrons.com/articles/stocks-today-chips-intel-earnings-d007603c?siteid=yhoof2&yptr=yahoo"
     },
     {
-      "title": "Microsoft (MSFT) Rides AI Wave as Analysts Back Copilot and Azure Growth",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/microsoft-msft-rides-ai-wave-133414976.html"
-    },
-    {
-      "title": "Microsoft commits $18 billion to Australia AI infrastructure",
-      "url": "https://qz.com/microsoft-18-billion-australia-ai-infrastructure-042326"
+      "title": "Meta plans 10% layoffs as AI spending soars: source",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/meta-plans-10-layoffs-ai-193633862.html"
     }
   ],
   "signals": {
-    "rsi": 63.3,
+    "rsi": 59.8,
     "macd_cross": "BULLISH",
     "ma_trend": "BULLISH",
-    "bb_position": 82,
-    "volume_ratio": 0.43
+    "bb_position": 77,
+    "volume_ratio": 1.08
   },
   "analyst": {
-    "target_mean": 579.57,
+    "target_mean": 578.0,
     "target_high": 730.0,
     "target_low": 392.0,
-    "upside_pct": 37.7,
+    "upside_pct": 39.0,
     "num_analysts": 54,
     "recommendation": "strong_buy"
   },
@@ -76,18 +72,18 @@
     "change_pct": null
   },
   "macro": {
-    "vix": 19.03,
-    "vix_20d_change": -24.9,
-    "treasury_10y": 4.29,
-    "treasury_10y_20d_change": -0.8,
-    "dxy": 98.6,
-    "dxy_20d_change": -1.0
+    "vix": 19.31,
+    "vix_20d_change": -23.8,
+    "treasury_10y": 4.32,
+    "treasury_10y_20d_change": -0.1,
+    "dxy": 98.89,
+    "dxy_20d_change": -0.7
   },
   "options": {
-    "pc_ratio": 0.43,
-    "iv_rank": 85,
-    "unusual_activity": 2.7,
-    "unusual_side": "CALL",
+    "pc_ratio": 0.51,
+    "iv_rank": 100,
+    "unusual_activity": 4.6,
+    "unusual_side": "PUT",
     "data_source": "earnings",
     "expiry_used": "2026-05-01"
   },
@@ -96,8 +92,25 @@
     "days_until": null,
     "history": []
   },
+  "insider_cluster": {
+    "buyers_30d": 0,
+    "trades_30d": 0,
+    "total_value_30d": 0.0,
+    "cluster_detected": false,
+    "c_level_buy": false,
+    "last_buy_date": null,
+    "recent": [],
+    "source": "openinsider"
+  },
+  "reddit": {
+    "mentions": 10,
+    "dollar_mentions": 0,
+    "scanned_posts": 300,
+    "latest_title": "GOOGL remains strong,The MOST promising contender to follow NVIDIA to a $5T market cap",
+    "latest_at": "2026-04-23T14:38:06+00:00"
+  },
   "anomaly": {
-    "score": 15,
+    "score": 20,
     "direction": "UP",
     "level": "정상",
     "signals": [
@@ -105,19 +118,19 @@
         "name": "거래량 급증 + 횡보",
         "score": 0,
         "direction": null,
-        "detail": "거래량 0.8x, 가격변동 15.0%"
+        "detail": "거래량 0.9x, 가격변동 13.6%"
       },
       {
         "name": "IV 급등",
-        "score": 15,
+        "score": 20,
         "direction": "UP",
-        "detail": "IV rank 85%"
+        "detail": "IV rank 100%"
       },
       {
         "name": "옵션 이상 거래",
         "score": 0,
         "direction": null,
-        "detail": "2.7x"
+        "detail": "4.6x"
       },
       {
         "name": "내부자 방향 전환",
@@ -129,84 +142,86 @@
         "name": "P/C ratio 극단",
         "score": 0,
         "direction": null,
-        "detail": "P/C 0.43"
+        "detail": "P/C 0.51"
       }
     ]
   },
   "prediction": {
     "week1": {
       "direction": "UP",
-      "confidence": 61.0,
-      "price_low": 427.99,
-      "price_high": 444.83,
-      "price_target": 436.41
+      "confidence": 61.5,
+      "price_low": 423.4,
+      "price_high": 440.03,
+      "price_target": 431.72
     },
     "week2": {
       "direction": "UP",
-      "confidence": 62.2,
-      "price_low": 425.42,
-      "price_high": 450.68,
-      "price_target": 438.05
+      "confidence": 64.5,
+      "price_low": 423.42,
+      "price_high": 448.36,
+      "price_target": 435.89
     },
     "week3": {
       "direction": "DOWN",
-      "up_probability": 43.9,
-      "range_low": 395.7,
-      "range_high": 446.22
+      "up_probability": 43.4,
+      "range_low": 390.8,
+      "range_high": 440.7
     },
     "week4": {
       "direction": "DOWN",
-      "up_probability": 43.9,
-      "range_low": 387.28,
-      "range_high": 454.64
+      "up_probability": 43.4,
+      "range_low": 382.49,
+      "range_high": 449.01
     }
   },
   "debate": {
     "direction": "UP",
-    "confidence": 88,
+    "confidence": 66,
     "verdict": "매수",
-    "summary": "MSFT 주식은 기술적 지표와 옵션 시장에서 강한 상승 신호를 보이고 있으며, 펀더멘털 측면에서도 긍정적인 평가를 받고 있습니다. 시장 전반의 두려움 감소와 금리 부담 완화도 상승에 기여할 수 있습니다.",
+    "summary": "MSFT 주식은 기술적 및 펀더멘털 분석에서 긍정적인 신호를 보이고 있으며, 시장의 불안감 감소와 금리 안정성도 상승에 기여할 수 있습니다. 옵션 시장의 하락 베팅에도 불구하고, 전반적인 상승 모멘텀이 강합니다.",
     "stock_bull": [
-      "RSI가 63.3으로 과매수 구간에 진입하지 않았으며 상승 여력이 있습니다.",
-      "MACD가 시그널 라인보다 높아 강한 상승 모멘텀을 나타내고 있습니다.",
-      "옵션의 Put/Call 비율이 0.43으로 콜 옵션 매수 우위가 뚜렷합니다.",
-      "애널리스트의 평균 목표 주가는 $579.57로 현재 가격 대비 37.7% 상승 여력이 있습니다."
+      "RSI(14)가 59.8로 중립 이상이며 상승 여력이 있음.",
+      "MACD가 시그널을 상회하며 강한 상승 모멘텀을 시사함.",
+      "애널리스트의 평균 목표 주가는 $578로 현재 가격 대비 39% 상승 여력이 있음.",
+      "기관 투자자들의 보유 비중이 높고, 최근 1주간 매수 우위가 66.5%로 나타남."
     ],
-    "stock_bear": [],
+    "stock_bear": [
+      "Put/Call 비율이 0.51로 콜 옵션 수요가 높지만, 4.6배의 비정상적 풋 거래가 있어 하락 베팅이 강함을 시사함.",
+      "IV Rank가 100%로 매우 높아, 큰 가격 변동성이 예상됨."
+    ],
     "market_bull": [
-      "VIX가 19.04로 20일 동안 24.8% 하락하여 시장의 두려움이 감소하고 있음을 나타냅니다.",
-      "10년 만기 국채 수익률이 4.29%로 20일 동안 0.8% 하락하여 금리 부담이 완화되고 있습니다.",
-      "달러 인덱스가 98.6으로 20일 동안 1.0% 하락하여 미국 달러의 상대적 약세가 나타나고 있습니다."
+      "VIX 지수는 19.31로 20일 동안 23.8% 하락하여 시장의 불안감이 감소하고 있음.",
+      "10년물 국채 수익률은 4.32%로 20일 동안 거의 변동이 없으며, 금리 안정성을 시사함.",
+      "달러 인덱스는 98.89로 20일 동안 0.7% 하락하여, 달러 약세가 글로벌 리스크 자산에 긍정적 영향을 미칠 수 있음."
     ],
     "market_bear": [],
     "bull_points": [
-      "RSI가 63.3으로 과매수 구간에 진입하지 않았으며 상승 여력이 있습니다.",
-      "MACD가 시그널 라인보다 높아 강한 상승 모멘텀을 나타내고 있습니다.",
-      "옵션의 Put/Call 비율이 0.43으로 콜 옵션 매수 우위가 뚜렷합니다.",
-      "애널리스트의 평균 목표 주가는 $579.57로 현재 가격 대비 37.7% 상승 여력이 있습니다.",
-      "VIX가 19.04로 20일 동안 24.8% 하락하여 시장의 두려움이 감소하고 있음을 나타냅니다.",
-      "10년 만기 국채 수익률이 4.29%로 20일 동안 0.8% 하락하여 금리 부담이 완화되고 있습니다.",
-      "달러 인덱스가 98.6으로 20일 동안 1.0% 하락하여 미국 달러의 상대적 약세가 나타나고 있습니다."
+      "RSI(14)가 59.8로 중립 이상이며 상승 여력이 있음.",
+      "MACD가 시그널을 상회하며 강한 상승 모멘텀을 시사함.",
+      "애널리스트의 평균 목표 주가는 $578로 현재 가격 대비 39% 상승 여력이 있음.",
+      "기관 투자자들의 보유 비중이 높고, 최근 1주간 매수 우위가 66.5%로 나타남.",
+      "VIX 지수는 19.31로 20일 동안 23.8% 하락하여 시장의 불안감이 감소하고 있음.",
+      "10년물 국채 수익률은 4.32%로 20일 동안 거의 변동이 없으며, 금리 안정성을 시사함.",
+      "달러 인덱스는 98.89로 20일 동안 0.7% 하락하여, 달러 약세가 글로벌 리스크 자산에 긍정적 영향을 미칠 수 있음."
     ],
-    "bear_points": [],
+    "bear_points": [
+      "Put/Call 비율이 0.51로 콜 옵션 수요가 높지만, 4.6배의 비정상적 풋 거래가 있어 하락 베팅이 강함을 시사함.",
+      "IV Rank가 100%로 매우 높아, 큰 가격 변동성이 예상됨."
+    ],
     "weekly_outlook": {
-      "week1": "RSI가 63.3으로 과매수 구간에 진입하지 않아 상승 여력이 있습니다.",
-      "week2": "MACD가 시그널 라인보다 높아 강한 상승 모멘텀을 나타냅니다.",
-      "week3": "애널리스트의 평균 목표 주가는 $579.57로 37.7% 상승 여력이 있습니다.",
-      "week4": "10년 만기 국채 수익률이 4.29%로 하락하여 금리 부담이 완화되고 있습니다."
+      "week1": "RSI가 59.8로 상승 여력이 있어 기술적 반등 예상.",
+      "week2": "MACD가 시그널을 상회하며 강한 상승 모멘텀을 시사함.",
+      "week3": "애널리스트 평균 목표 주가 $578로 39% 상승 여력 존재.",
+      "week4": "기관 투자자 매수 비중 66.5%로 긍정적인 수급 상황 지속."
     },
     "key_news": [
       {
-        "headline": "Microsoft commits $18bn to Australian digital infrastructure expansion",
-        "summary": "MSFT가 호주 디지털 인프라에 180억 달러를 투자함으로써, 장기적인 성장 가능성을 높이고 주가에 긍정적인 영향을 미칠 것으로 예상됩니다."
+        "headline": "Microsoft offering buyouts to employees, ServiceNow stock sinks",
+        "summary": "마이크로소프트의 직원 매각 제안은 인력 조정 신호로, 투자자들에게 불안감을 줄 수 있어 주가에 부정적 영향을 미칠 수 있다."
       },
       {
-        "headline": "Microsoft ramps up AI push with record Australia investment",
-        "summary": "MSFT의 호주 AI 투자 확대는 AI 시장에서의 경쟁력을 강화하고, 향후 수익 증가에 기여할 것으로 보입니다."
-      },
-      {
-        "headline": "Microsoft Unveils A$25 Billion Australia AI Investment Through 2029",
-        "summary": "2029년까지 250억 호주 달러의 AI 투자 계획은 MSFT의 기술 혁신과 시장 점유율 확대에 중요한 역할을 할 것입니다."
+        "headline": "Microsoft’s A$25b Australia Plan Puts AI CapEx And Cloud Usage In Focus",
+        "summary": "호주에서의 대규모 투자 계획은 AI 및 클라우드 사용 증가를 촉진할 것으로 예상되어, 장기적으로 주가에 긍정적인 영향을 미칠 수 있다."
       }
     ],
     "personas": [
@@ -215,28 +230,28 @@
         "role": "테크니컬 분석가",
         "direction": "UP",
         "confidence": 75,
-        "argument": "• RSI가 63.3으로 과매수 구간에 진입하지 않았으며 상승 여력이 있습니다.\n• MACD가 시그널 라인보다 높아 강한 상승 모멘텀을 나타내고 있습니다.\n• OBV가 상승세를 보이며 매수세가 지속되고 있음을 시사합니다."
+        "argument": "• RSI(14)가 59.8로 중립 이상이며 상승 여력이 있음.\n• MACD가 시그널을 상회하며 강한 상승 모멘텀을 시사함.\n• OBV가 상승 추세를 보이며 매수세가 지속되고 있음을 나타냄."
       },
       {
         "id": "options",
         "role": "옵션 트레이더",
-        "direction": "UP",
-        "confidence": 85,
-        "argument": "• 옵션의 Put/Call 비율이 0.43으로 콜 옵션 매수 우위가 뚜렷합니다.\n• IV Rank가 85%로 높아 큰 움직임이 예상되며, 이는 상승 가능성을 시사합니다.\n• 콜 옵션에서 2.7배의 비정상적 활동이 관찰되어 상승 포지셔닝이 강화되고 있습니다."
+        "direction": "DOWN",
+        "confidence": 80,
+        "argument": "• Put/Call 비율이 0.51로 콜 옵션 수요가 높지만, 4.6배의 비정상적 풋 거래가 있어 하락 베팅이 강함을 시사합니다.\n• IV Rank가 100%로 매우 높아, 큰 가격 변동성이 예상되며, 이는 하락 위험을 증가시킬 수 있습니다.\n• FOMC 발표가 D-5로 포지셔닝 구간에 해당하며, 단기 변동성 확대 가능성이 있습니다."
       },
       {
         "id": "fundamental",
         "role": "펀더멘털 분석가",
         "direction": "UP",
         "confidence": 85,
-        "argument": "• 애널리스트의 평균 목표 주가는 $579.57로 현재 가격 대비 37.7% 상승 여력이 있으며, 강력 매수 추천을 받고 있습니다. \n• 내부자 거래 정보는 없지만, 기관 투자자들의 보유량이 증가하고 있으며, 이는 긍정적인 신호로 해석됩니다. \n• FOMC 발표가 D-6 이내로 포지셔닝 구간에 해당되며, 실적 발표는 2026-04-30로 서프라이즈 시나리오가 고려될 수 있습니다."
+        "argument": "• 애널리스트의 평균 목표 주가는 $578로 현재 가격 대비 39% 상승 여력이 있으며, 이는 강력한 매수 추천으로 뒷받침됩니다. \n• 기관 투자자들의 보유 비중이 높고, 최근 1주간 매수 우위가 66.5%로 나타나 긍정적인 수급 상황을 보여줍니다.\n• 실적 발표가 임박하지 않아 단기적인 실적 서프라이즈 리스크는 없으며, FOMC 발표 전 포지셔닝 구간으로 볼 수 있습니다."
       },
       {
         "id": "macro",
         "role": "매크로 전략가",
         "direction": "UP",
         "confidence": 75,
-        "argument": "• VIX가 19.04로 20일 동안 24.8% 하락하여 시장의 두려움이 감소하고 있음을 나타냅니다. \n• 10년 만기 국채 수익률이 4.29%로 20일 동안 0.8% 하락하여 금리 부담이 완화되고 있습니다. \n• 달러 인덱스가 98.6으로 20일 동안 1.0% 하락하여 미국 달러의 상대적 약세가 나타나고 있습니다."
+        "argument": "• VIX 지수는 19.31로 20일 동안 23.8% 하락하여 시장의 불안감이 감소하고 있음을 나타냅니다.\n• 10년물 국채 수익률은 4.32%로 20일 동안 거의 변동이 없으며, 이는 금리 안정성을 시사합니다.\n• 달러 인덱스는 98.89로 20일 동안 0.7% 하락하여, 달러 약세가 글로벌 리스크 자산에 긍정적 영향을 미칠 수 있습니다."
       }
     ]
   },
@@ -264,23 +279,23 @@
         {
           "key": "range_position",
           "label": "52주 위치",
-          "value": -0.299,
+          "value": -0.356,
           "weight": -0.15,
-          "contribution": 0.045
+          "contribution": 0.053
         },
         {
           "key": "mid_momentum",
           "label": "중기 모멘텀",
-          "value": -0.693,
+          "value": -0.719,
           "weight": 0.2,
-          "contribution": -0.139
+          "contribution": -0.144
         },
         {
           "key": "macro_regime",
           "label": "매크로 레짐",
-          "value": 0.197,
+          "value": 0.107,
           "weight": 0.2,
-          "contribution": 0.039
+          "contribution": 0.021
         },
         {
           "key": "analyst_consensus",
@@ -297,21 +312,21 @@
           "contribution": 0.0
         }
       ],
-      "score": -0.204
+      "score": -0.219
     },
-    "explanation": "MSFT의 단기 상승은 기술적 지표와 옵션 시장의 강세 신호에 의해 주도되고 있습니다. RSI가 과매수 구간에 진입하지 않았고, 옵션의 Put/Call 비율이 콜 옵션 매수 우위를 나타내어 추가 상승 가능성을 시사합니다. 또한, 펀더멘털 측면에서 애널리스트의 목표 주가가 현재 가격 대비 상당한 상승 여력을 보여주며, 매크로 환경에서도 시장의 두려움이 감소하고 있어 구조적으로도 상승을 지지하고 있습니다."
+    "explanation": "단기적으로는 기술적 지표와 펀더멘털 요인이 상승을 지지하고 있습니다. RSI가 중립 이상으로 상승 여력을 보이며, 애널리스트의 목표 주가가 현재 가격 대비 상당한 상승 여력을 시사합니다. 그러나 옵션 시장에서의 비정상적 풋 거래는 하락 베팅이 강함을 나타내어, 단기 반등 후 구조적 약세로 회귀할 가능성이 있습니다."
   },
   "upcoming_events": [
     {
       "type": "FOMC",
       "date": "2026-04-29",
-      "days_until": 6
+      "days_until": 5
     },
     {
       "type": "NFP",
       "date": "2026-05-01",
-      "days_until": 8
+      "days_until": 7
     }
   ],
-  "predicted_at": "2026-04-23T14:55:26.380398+00:00"
+  "predicted_at": "2026-04-24T03:49:51.315429+00:00"
 }

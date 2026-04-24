@@ -2,51 +2,51 @@
   "ticker": "NVDA",
   "history": [
     {
-      "id": 541,
-      "predicted_at": "2026-04-23T14:55:53.187660+00:00",
-      "age_hours": 1.8,
-      "current_price_at_prediction": 202.39,
-      "verdict": "매수",
-      "direction": "UP",
-      "confidence": 86,
-      "summary": "NVDA는 기술적, 옵션, 펀더멘털 분석에서 모두 긍정적인 신호를 보이며 상승 가능성이 높습니다. 시장의 두려움 감소와 금리 부담 완화도 상승을 지원합니다.",
+      "id": 553,
+      "predicted_at": "2026-04-24T03:50:11.101886+00:00",
+      "age_hours": 0.1,
+      "current_price_at_prediction": 199.64,
+      "verdict": "관망",
+      "direction": "DOWN",
+      "confidence": 54,
+      "summary": "옵션 및 기술적 분석에서 NVDA의 하락 가능성이 높다고 평가합니다. 시장 불안감은 감소했으나, NVDA에 대한 하락 베팅이 강하게 존재합니다.",
       "week1": {
-        "direction": "UP",
-        "confidence": 58.4,
-        "price_low": 203.98,
-        "price_high": 212.08,
-        "price_target": 208.03
+        "direction": "DOWN",
+        "confidence": 64.9,
+        "price_low": 185.71,
+        "price_high": 193.7,
+        "price_target": 189.71
       },
       "week2": {
-        "direction": "UP",
-        "confidence": 61.5,
-        "price_low": 204.09,
-        "price_high": 216.23,
-        "price_target": 210.16
+        "direction": "DOWN",
+        "confidence": 68.5,
+        "price_low": 181.31,
+        "price_high": 193.29,
+        "price_target": 187.3
       },
       "week3": {
         "direction": "UP",
-        "up_probability": 53.4,
-        "range_low": 190.25,
-        "range_high": 214.53
+        "up_probability": 52.3,
+        "range_low": 187.66,
+        "range_high": 211.62
       },
       "week4": {
         "direction": "UP",
-        "up_probability": 53.4,
-        "range_low": 186.2,
-        "range_high": 218.58
+        "up_probability": 52.3,
+        "range_low": 183.67,
+        "range_high": 215.61
       },
       "weekly_outlook": {
-        "week1": "RSI가 69.6으로 과매수 구간에 근접해 상승 모멘텀 강함.",
-        "week2": "MACD가 시그널 라인보다 높아 강한 매수 신호를 나타냄.",
-        "week3": "애널리스트 목표 주가 평균 $268.61로 32.7% 상승 여력.",
-        "week4": "VIX가 19.04로 하락, 시장 두려움 감소로 상승 기대감 증가."
+        "week1": "RSI 64.6으로 과매수 구간 접근 중이나 MACD가 시그널 라인 위에 있어 약세 신호.",
+        "week2": "애널리스트 56명이 'STRONG BUY' 추천하나 Put/Call 비율 0.9로 하락 예상 포지션 우세.",
+        "week3": "기관 투자자 보유 비율 높으나 IV Rank 100%로 큰 변동성 예상.",
+        "week4": "VIX 19.31로 불안감 감소하나 FOMC 발표 D-5로 단기 변동성 확대 가능성 존재."
       }
     },
     {
       "id": 531,
       "predicted_at": "2026-04-13T14:55:00.817847+00:00",
-      "age_hours": 241.8,
+      "age_hours": 253.0,
       "current_price_at_prediction": 189.3,
       "verdict": "매수",
       "direction": "UP",
@@ -90,7 +90,7 @@
     {
       "id": 509,
       "predicted_at": "2026-04-09T06:41:06.616934+00:00",
-      "age_hours": 346.0,
+      "age_hours": 357.2,
       "current_price_at_prediction": 178.1,
       "verdict": "관망",
       "direction": "UP",
@@ -134,7 +134,7 @@
     {
       "id": 508,
       "predicted_at": "2026-04-09T06:40:50.361250+00:00",
-      "age_hours": 346.0,
+      "age_hours": 357.2,
       "current_price_at_prediction": 178.1,
       "verdict": "관망",
       "direction": "UP",

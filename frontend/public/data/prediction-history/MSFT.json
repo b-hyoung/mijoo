@@ -2,93 +2,51 @@
   "ticker": "MSFT",
   "history": [
     {
-      "id": 540,
-      "predicted_at": "2026-04-23T14:55:26.380398+00:00",
-      "age_hours": 1.8,
-      "current_price_at_prediction": 420.96,
+      "id": 552,
+      "predicted_at": "2026-04-24T03:49:51.315429+00:00",
+      "age_hours": 0.1,
+      "current_price_at_prediction": 415.75,
       "verdict": "매수",
       "direction": "UP",
-      "confidence": 88,
-      "summary": "MSFT 주식은 기술적 지표와 옵션 시장에서 강한 상승 신호를 보이고 있으며, 펀더멘털 측면에서도 긍정적인 평가를 받고 있습니다. 시장 전반의 두려움 감소와 금리 부담 완화도 상승에 기여할 수 있습니다.",
+      "confidence": 66,
+      "summary": "MSFT 주식은 기술적 및 펀더멘털 분석에서 긍정적인 신호를 보이고 있으며, 시장의 불안감 감소와 금리 안정성도 상승에 기여할 수 있습니다. 옵션 시장의 하락 베팅에도 불구하고, 전반적인 상승 모멘텀이 강합니다.",
       "week1": {
         "direction": "UP",
-        "confidence": 61.0,
-        "price_low": 427.99,
-        "price_high": 444.83,
-        "price_target": 436.41
+        "confidence": 61.5,
+        "price_low": 423.4,
+        "price_high": 440.03,
+        "price_target": 431.72
       },
       "week2": {
         "direction": "UP",
-        "confidence": 62.2,
-        "price_low": 425.42,
-        "price_high": 450.68,
-        "price_target": 438.05
+        "confidence": 64.5,
+        "price_low": 423.42,
+        "price_high": 448.36,
+        "price_target": 435.89
       },
       "week3": {
         "direction": "DOWN",
-        "up_probability": 43.9,
-        "range_low": 395.7,
-        "range_high": 446.22
+        "up_probability": 43.4,
+        "range_low": 390.8,
+        "range_high": 440.7
       },
       "week4": {
         "direction": "DOWN",
-        "up_probability": 43.9,
-        "range_low": 387.28,
-        "range_high": 454.64
+        "up_probability": 43.4,
+        "range_low": 382.49,
+        "range_high": 449.01
       },
       "weekly_outlook": {
-        "week1": "RSI가 63.3으로 과매수 구간에 진입하지 않아 상승 여력이 있습니다.",
-        "week2": "MACD가 시그널 라인보다 높아 강한 상승 모멘텀을 나타냅니다.",
-        "week3": "애널리스트의 평균 목표 주가는 $579.57로 37.7% 상승 여력이 있습니다.",
-        "week4": "10년 만기 국채 수익률이 4.29%로 하락하여 금리 부담이 완화되고 있습니다."
-      }
-    },
-    {
-      "id": 539,
-      "predicted_at": "2026-04-23T14:55:13.293363+00:00",
-      "age_hours": 1.8,
-      "current_price_at_prediction": 420.85,
-      "verdict": "매수",
-      "direction": "UP",
-      "confidence": 87,
-      "summary": "MSFT는 기술적 지표와 옵션 시장에서 강한 상승 신호를 보이고 있으며, 펀더멘털 측면에서도 긍정적인 평가를 받고 있습니다. 시장 전반적으로도 금리 부담이 완화되고, 달러 약세가 나타나면서 상승에 유리한 환경이 조성되고 있습니다.",
-      "week1": {
-        "direction": "UP",
-        "confidence": 61.0,
-        "price_low": 427.9,
-        "price_high": 444.74,
-        "price_target": 436.32
-      },
-      "week2": {
-        "direction": "UP",
-        "confidence": 62.2,
-        "price_low": 425.33,
-        "price_high": 450.58,
-        "price_target": 437.96
-      },
-      "week3": {
-        "direction": "DOWN",
-        "up_probability": 43.8,
-        "range_low": 395.6,
-        "range_high": 446.1
-      },
-      "week4": {
-        "direction": "DOWN",
-        "up_probability": 43.8,
-        "range_low": 387.18,
-        "range_high": 454.52
-      },
-      "weekly_outlook": {
-        "week1": "MACD가 시그널 라인을 상회하며 강한 상승 모멘텀을 시사합니다.",
-        "week2": "옵션의 Put/Call 비율이 0.43으로, 콜 옵션에 대한 강한 수요를 나타냅니다.",
-        "week3": "애널리스트 목표 주가 평균이 $579.57로, 현재 주가 대비 37.7% 상승 여력이 있습니다.",
-        "week4": "10년 만기 국채 수익률이 4.29%로 20일 동안 0.8% 하락하여 금리 부담이 완화되고 있습니다."
+        "week1": "RSI가 59.8로 상승 여력이 있어 기술적 반등 예상.",
+        "week2": "MACD가 시그널을 상회하며 강한 상승 모멘텀을 시사함.",
+        "week3": "애널리스트 평균 목표 주가 $578로 39% 상승 여력 존재.",
+        "week4": "기관 투자자 매수 비중 66.5%로 긍정적인 수급 상황 지속."
       }
     },
     {
       "id": 537,
       "predicted_at": "2026-04-13T14:55:14.808837+00:00",
-      "age_hours": 241.8,
+      "age_hours": 253.0,
       "current_price_at_prediction": 378.41,
       "verdict": "관망",
       "direction": "DOWN",
@@ -132,7 +90,7 @@
     {
       "id": 532,
       "predicted_at": "2026-04-13T14:55:01.343820+00:00",
-      "age_hours": 241.8,
+      "age_hours": 253.0,
       "current_price_at_prediction": 378.7,
       "verdict": "매수",
       "direction": "UP",
@@ -176,7 +134,7 @@
     {
       "id": 507,
       "predicted_at": "2026-04-09T06:40:21.642097+00:00",
-      "age_hours": 346.0,
+      "age_hours": 357.2,
       "current_price_at_prediction": 372.29,
       "verdict": "관망",
       "direction": "UP",
@@ -220,7 +178,7 @@
     {
       "id": 506,
       "predicted_at": "2026-04-09T06:40:21.224790+00:00",
-      "age_hours": 346.0,
+      "age_hours": 357.2,
       "current_price_at_prediction": 372.29,
       "verdict": "관망",
       "direction": "UP",

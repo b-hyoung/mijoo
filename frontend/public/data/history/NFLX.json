@@ -256,19 +256,19 @@
     {
       "date": "2026-04-22",
       "close": 93.24,
-      "volume": 33582600,
-      "buy_volume": 33582600,
+      "volume": 33694300,
+      "buy_volume": 33694300,
       "sell_volume": 0,
-      "obv": 275385000.0,
+      "obv": 275496700.0,
       "is_accumulation": false
     },
     {
       "date": "2026-04-23",
-      "close": 92.51,
-      "volume": 17092867,
+      "close": 92.82,
+      "volume": 37485455,
       "buy_volume": 0,
-      "sell_volume": 17092867,
-      "obv": 258292133.0,
+      "sell_volume": 37485455,
+      "obv": 238011245.0,
       "is_accumulation": false
     }
   ]

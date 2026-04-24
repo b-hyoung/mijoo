@@ -1,0 +1,41 @@
+{
+  "ticker": "KO",
+  "analyzed_at": "2026-04-24T03:53:56.161548+00:00",
+  "miss_count": 1,
+  "predicted_direction": "UP",
+  "actual_direction": "DOWN",
+  "drivers": [
+    "신호 미반영: RSI가 중립 수준에 머물러 있어 강한 상승 신호가 부족했음.",
+    "가능성: KO의 주요 경쟁사들이 새로운 마케팅 캠페인이나 제품을 출시하여 시장 점유율을 잠식했을 가능성.",
+    "가능성: 글로벌 경제 불확실성 증가로 인해 투자자들이 방어적인 포지션을 취했을 가능성."
+  ],
+  "advice": "KO의 경우 경쟁사들의 마케팅 및 제품 출시 계획을 주기적으로 모니터링해야 합니다.",
+  "summary": "a) 미리 볼 수 있었던 것: RSI가 중립 수준에 머물러 있어 강한 상승 신호가 부족했음에도 불구하고 이를 간과함. b) 외부 사건: KO의 경쟁사들이 새로운 마케팅 캠페인이나 제품을 출시했을 가능성과 글로벌 경제 불확실성 증가로 인해 투자자들이 방어적인 포지션을 취했을 가능성이 있음.",
+  "misses": [
+    {
+      "predicted_at": "2026-04-24T03:53:41.359448+00:00",
+      "predicted_direction": "UP",
+      "actual_direction": "DOWN",
+      "price_at": 76.28,
+      "current_price": 76.27999877929688,
+      "change_pct": -0.0,
+      "reasoning": "  - 테크니컬 분석가: DOWN — • RSI가 51.3으로 중립 수준에 머물러 있어 강한 방향성을 제시하지 않음.\n  - 옵션 트레이더: UP — • 옵션의 Put/Call 비율이 0.33으로 콜 옵션이 우세, 상승 기대감이 높음.\n  - 펀더멘털 분석가: UP — • 애널리스트의 평균 목표 주가는 $83.67로 현재 주가 대비 9.7%의 상승 여력이 있으며, 이는 긍정적인 전망을 반영합니다. \n  - 매크로 전략가: UP — • VIX 지수는 19.31로 20일 동안 23.8% 하락하여 시장의 불안감이 감소하고 있음을 나타냅니다.",
+      "summary": "옵션 트레이더와 펀더멘털 분석가의 강한 상승 전망에 따라 KO 주식은 상승 가능성이 높습니다. 시장의 안정성과 긍정적인 애널리스트 전망이 이를 뒷받침합니다.",
+      "signals_at_time": {
+        "pc_ratio": 0.33,
+        "iv_rank": 100,
+        "unusual_activity": 35.0,
+        "unusual_side": "CALL",
+        "short_float_pct": 1.08,
+        "short_change": "N/A",
+        "insider_net_90d": 0,
+        "anomaly_score": 40,
+        "anomaly_direction": "UP",
+        "buy_dominance": 52.0,
+        "obv_trend": "UP",
+        "is_accumulation": false
+      }
+    }
+  ],
+  "cached": false
+}

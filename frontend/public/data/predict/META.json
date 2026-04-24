@@ -1,68 +1,64 @@
 {
   "ticker": "META",
-  "current_price": 665.0,
-  "sentiment_score": 0.3,
+  "current_price": 659.15,
+  "sentiment_score": -0.6,
   "short_float_pct": 1.21,
   "short_change": "N/A",
   "order_flow": {
-    "buy_dominance_pct": 77.5,
+    "buy_dominance_pct": 75.6,
     "obv_trend": "UP",
     "is_accumulation": false
   },
   "news_headlines": [
     {
-      "title": "Google takes on Nvidia, announces 2 new AI chips",
-      "url": "https://finance.yahoo.com/video/google-takes-on-nvidia-announces-2-new-ai-chips-145915437.html"
+      "title": "Meta plans to cut about 8K jobs amid ramped-up AI spending",
+      "url": "https://finance.yahoo.com/video/meta-plans-to-cut-about-8k-jobs-amid-ramped-up-ai-spending-194930746.html"
     },
     {
-      "title": "Is Meta Platforms (META) Trading at an Attractive Price?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/meta-platforms-meta-trading-attractive-141400218.html"
+      "title": "Meta to cut 8,000 jobs, Microsoft offers buyouts to to staff as AI spending costs hit Big Tech workers",
+      "url": "https://finance.yahoo.com/markets/article/meta-to-cut-8000-jobs-microsoft-offers-buyouts-to-to-staff-as-ai-spending-costs-hit-big-tech-workers-182722919.html"
     },
     {
-      "title": "Meta's latest AI move is raising questions among employees",
-      "url": "https://finance.yahoo.com/sectors/technology/articles/metas-latest-ai-move-raising-134929979.html"
+      "title": "Oil extends gains, stocks sink as peace talk hopes fade",
+      "url": "https://finance.yahoo.com/markets/commodities/articles/oil-extends-gains-stocks-sink-025127756.html"
     },
     {
-      "title": "Microsoft ramps up AI push with record Australia investment",
-      "url": "https://finance.yahoo.com/sectors/technology/articles/microsoft-ramps-ai-push-record-134820653.html"
+      "title": "Behind Meta’s Huge Layoffs Is a Relentless Shift Toward AI",
+      "url": "https://www.wsj.com/tech/ai/behind-metas-huge-layoffs-is-a-relentless-shift-toward-ai-97d99b54?siteid=yhoof2&yptr=yahoo"
     },
     {
-      "title": "Applied Digital signs $7.5 billion AI data center lease with US hyperscaler",
-      "url": "https://finance.yahoo.com/sectors/technology/articles/applied-digital-signs-7-5-133658684.html"
+      "title": "Review & Preview: Earnings Storm",
+      "url": "https://www.barrons.com/articles/stocks-today-chips-intel-earnings-d007603c?siteid=yhoof2&yptr=yahoo"
     },
     {
-      "title": "Amazon.com Inc. (AMZN) Gains Analyst Support on Strong AWS and AI Demand",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/amazon-com-inc-amzn-gains-133422641.html"
+      "title": "2 of Wall Street’s Favorite Stocks to Target This Week and 1 We Brush Off",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/2-wall-street-favorite-stocks-234923282.html"
     },
     {
-      "title": "Meta Platforms (META) Gains Analyst Support on AI Engagement and Ad Strength",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/meta-platforms-meta-gains-analyst-133407787.html"
+      "title": "Meta plans 10% layoffs as AI spending soars: source",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/meta-plans-10-layoffs-ai-193633862.html"
     },
     {
-      "title": "Taiwan Semiconductor Manufacturing Company (TSM) in Focus as Barclays Raises Target After Strong Earnings",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/taiwan-semiconductor-manufacturing-company-tsm-133400185.html"
+      "title": "Microsoft and Meta announce large staff reductions as they spend big on AI",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/microsoft-meta-announce-sweeping-layoffs-212338173.html"
     },
     {
-      "title": "Broadcom (AVGO) and Meta Announce Multi-Year AI Infrastructure Partnership",
-      "url": "https://finance.yahoo.com/sectors/technology/articles/broadcom-avgo-meta-announce-multi-133355191.html"
-    },
-    {
-      "title": "Tesla (TSLA) Gains Analyst Support as Robotaxi Opportunity Takes Shape",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-tsla-gains-analyst-support-133340680.html"
+      "title": "Meta informs staff of layoffs affecting 8,000 employees amid AI push",
+      "url": "https://www.foxbusiness.com/technology/meta-informs-staff-layoffs-affecting-8000-employees-amid-ai-push"
     }
   ],
   "signals": {
-    "rsi": 59.7,
+    "rsi": 57.6,
     "macd_cross": "BULLISH",
     "ma_trend": "BULLISH",
-    "bb_position": 72,
-    "volume_ratio": 0.32
+    "bb_position": 70,
+    "volume_ratio": 0.99
   },
   "analyst": {
     "target_mean": 855.11,
     "target_high": 1015.0,
     "target_low": 614.0,
-    "upside_pct": 28.6,
+    "upside_pct": 29.7,
     "num_analysts": 60,
     "recommendation": "strong_buy"
   },
@@ -76,18 +72,18 @@
     "change_pct": null
   },
   "macro": {
-    "vix": 19.01,
-    "vix_20d_change": -25.0,
-    "treasury_10y": 4.29,
-    "treasury_10y_20d_change": -0.8,
-    "dxy": 98.57,
-    "dxy_20d_change": -1.0
+    "vix": 19.31,
+    "vix_20d_change": -23.8,
+    "treasury_10y": 4.32,
+    "treasury_10y_20d_change": -0.1,
+    "dxy": 98.89,
+    "dxy_20d_change": -0.7
   },
   "options": {
-    "pc_ratio": 1.27,
-    "iv_rank": 86,
-    "unusual_activity": 5.0,
-    "unusual_side": "PUT",
+    "pc_ratio": 0.69,
+    "iv_rank": 88,
+    "unusual_activity": 50.0,
+    "unusual_side": "CALL",
     "data_source": "earnings",
     "expiry_used": "2026-05-01"
   },
@@ -96,28 +92,45 @@
     "days_until": null,
     "history": []
   },
+  "insider_cluster": {
+    "buyers_30d": 0,
+    "trades_30d": 0,
+    "total_value_30d": 0.0,
+    "cluster_detected": false,
+    "c_level_buy": false,
+    "last_buy_date": null,
+    "recent": [],
+    "source": "openinsider"
+  },
+  "reddit": {
+    "mentions": 2,
+    "dollar_mentions": 0,
+    "scanned_posts": 300,
+    "latest_title": "GOOGL remains strong,The MOST promising contender to follow NVIDIA to a $5T market cap",
+    "latest_at": "2026-04-23T14:38:06+00:00"
+  },
   "anomaly": {
-    "score": 26,
-    "direction": "DOWN",
-    "level": "정상",
+    "score": 38,
+    "direction": "UP",
+    "level": "관심",
     "signals": [
       {
         "name": "거래량 급증 + 횡보",
         "score": 0,
         "direction": null,
-        "detail": "거래량 0.3x, 가격변동 21.5%"
+        "detail": "거래량 0.4x, 가격변동 20.4%"
       },
       {
         "name": "IV 급등",
-        "score": 16,
-        "direction": "DOWN",
-        "detail": "IV rank 86%"
+        "score": 18,
+        "direction": "UP",
+        "detail": "IV rank 88%"
       },
       {
         "name": "옵션 이상 거래",
-        "score": 10,
-        "direction": "DOWN",
-        "detail": "평소 대비 5.0x (PUT)"
+        "score": 20,
+        "direction": "UP",
+        "detail": "평소 대비 50.0x (CALL)"
       },
       {
         "name": "내부자 방향 전환",
@@ -129,118 +142,97 @@
         "name": "P/C ratio 극단",
         "score": 0,
         "direction": null,
-        "detail": "P/C 1.27"
+        "detail": "P/C 0.69"
       }
     ]
   },
   "prediction": {
     "week1": {
       "direction": "UP",
-      "confidence": 51.0,
-      "price_low": 653.99,
-      "price_high": 680.59,
-      "price_target": 667.29
+      "confidence": 53.4,
+      "price_low": 653.35,
+      "price_high": 679.71,
+      "price_target": 666.53
     },
     "week2": {
       "direction": "UP",
-      "confidence": 50.0,
-      "price_low": 645.09,
-      "price_high": 684.99,
-      "price_target": 665.04
+      "confidence": 55.8,
+      "price_low": 652.06,
+      "price_high": 691.61,
+      "price_target": 671.84
     },
     "week3": {
       "direction": "DOWN",
-      "up_probability": 46.4,
-      "range_low": 625.1,
-      "range_high": 704.9
+      "up_probability": 45.7,
+      "range_low": 619.6,
+      "range_high": 698.7
     },
     "week4": {
       "direction": "DOWN",
-      "up_probability": 46.4,
-      "range_low": 611.8,
-      "range_high": 718.2
+      "up_probability": 45.7,
+      "range_low": 606.42,
+      "range_high": 711.88
     }
   },
   "debate": {
     "direction": "UP",
-    "confidence": 65,
+    "confidence": 88,
     "verdict": "매수",
-    "summary": "대부분의 분석가들이 META의 상승을 예상하며, 기술적 및 펀더멘털 지표가 긍정적입니다. 시장 환경도 안정적이며, 금리와 달러 약세가 긍정적으로 작용하고 있습니다.",
-    "stock_bull": [
-      "RSI가 59.7로 중립적이지만 상승 여력이 있습니다.",
-      "MACD가 시그널 라인보다 높아 상승 모멘텀을 시사합니다.",
-      "OBV가 상승세를 보이며 매수세가 우세합니다.",
-      "애널리스트 목표 주가 평균이 $855.11로 현재 주가 대비 28.6% 상승 여력이 있습니다."
-    ],
-    "stock_bear": [
-      "Put/Call 비율이 1.27로 콜 옵션보다 풋 옵션이 더 많이 거래되고 있어 하방 압력이 예상됩니다.",
-      "IV Rank가 86%로 높아 큰 변동성이 예상되며, 이는 하락 가능성을 시사합니다.",
-      "풋 옵션에서 5.0배의 비정상적인 활동이 관찰되어 하방 포지셔닝이 강화되고 있습니다."
-    ],
-    "market_bull": [
-      "VIX가 19.04로 20일 동안 24.8% 하락하여 시장의 두려움이 감소하고 있음을 나타냅니다.",
-      "10년 만기 국채 수익률이 4.29%로 20일 동안 0.8% 하락하여 금리 부담이 완화되고 있습니다.",
-      "달러 인덱스가 98.6으로 20일 동안 1.0% 하락하여 미국 달러의 상대적 약세가 나타나고 있습니다."
-    ],
+    "summary": "",
+    "stock_bull": [],
+    "stock_bear": [],
+    "market_bull": [],
     "market_bear": [],
-    "bull_points": [
-      "RSI가 59.7로 중립적이지만 상승 여력이 있습니다.",
-      "MACD가 시그널 라인보다 높아 상승 모멘텀을 시사합니다.",
-      "OBV가 상승세를 보이며 매수세가 우세합니다.",
-      "애널리스트 목표 주가 평균이 $855.11로 현재 주가 대비 28.6% 상승 여력이 있습니다.",
-      "VIX가 19.04로 20일 동안 24.8% 하락하여 시장의 두려움이 감소하고 있음을 나타냅니다.",
-      "10년 만기 국채 수익률이 4.29%로 20일 동안 0.8% 하락하여 금리 부담이 완화되고 있습니다.",
-      "달러 인덱스가 98.6으로 20일 동안 1.0% 하락하여 미국 달러의 상대적 약세가 나타나고 있습니다."
-    ],
-    "bear_points": [
-      "Put/Call 비율이 1.27로 콜 옵션보다 풋 옵션이 더 많이 거래되고 있어 하방 압력이 예상됩니다.",
-      "IV Rank가 86%로 높아 큰 변동성이 예상되며, 이는 하락 가능성을 시사합니다.",
-      "풋 옵션에서 5.0배의 비정상적인 활동이 관찰되어 하방 포지셔닝이 강화되고 있습니다."
-    ],
+    "bull_points": [],
+    "bear_points": [],
     "weekly_outlook": {
-      "week1": "RSI가 59.7로 상승 여력이 있어 기술적 반등 예상.",
-      "week2": "MACD가 시그널 라인보다 높아 상승 모멘텀 지속.",
-      "week3": "애널리스트 목표 주가 평균이 $855.11로 상승 여력 28.6%.",
-      "week4": "10년 만기 국채 수익률 4.29%로 금리 부담 완화, 긍정적 전망."
+      "week1": "옵션의 Put/Call 비율이 0.69로 콜 옵션이 더 많이 거래되고 있어 상승 압력이 큽니다.",
+      "week2": "IV Rank가 88%로 높아 큰 움직임이 예상되며, 이는 상승 가능성을 시사합니다.",
+      "week3": "애널리스트의 평균 목표가는 $855.11로 현재 가격 대비 29.7% 상승 여력이 있습니다.",
+      "week4": "기관 투자자들의 보유 비율이 높고, 최근 1주간 매수 우위가 75.6%로 나타나 긍정적인 흐름을 보입니다."
     },
     "key_news": [
       {
-        "headline": "Meta Platforms (META) Gains Analyst Support on AI Engagement and Ad Strength",
-        "summary": "AI 참여와 광고 강세로 애널리스트의 지지를 얻어 주가 상승 가능성이 높아짐."
+        "headline": "Meta plans to cut about 8K jobs amid ramped-up AI spending",
+        "summary": "메타가 8,000명의 직원을 감축하며 AI에 대한 지출을 늘린다는 소식은 비용 절감과 효율성 향상을 통해 주가에 긍정적인 영향을 미칠 수 있습니다."
       },
       {
-        "headline": "Broadcom (AVGO) and Meta Announce Multi-Year AI Infrastructure Partnership",
-        "summary": "AI 인프라 파트너십 발표로 META의 기술력 강화 및 장기 성장 기대."
+        "headline": "Meta to cut 8,000 jobs, Microsoft offers buyouts to to staff as AI spending costs hit Big Tech workers",
+        "summary": "메타의 대규모 감원은 AI 투자에 따른 비용 증가를 반영하며, 이는 투자자들에게 재무 건전성에 대한 우려를 불러일으킬 수 있습니다."
+      },
+      {
+        "headline": "Meta informs staff of layoffs affecting 8,000 employees amid AI push",
+        "summary": "AI 추진에 따른 8,000명 감원 소식은 메타의 전략적 방향성을 보여주며, 주가에 중대한 영향을 미칠 수 있습니다."
       }
     ],
     "personas": [
       {
+        "id": "options",
+        "role": "옵션 트레이더",
+        "direction": "UP",
+        "confidence": 85,
+        "argument": "• 옵션의 Put/Call 비율이 0.69로 콜 옵션이 더 많이 거래되고 있어 상승 압력이 큽니다.\n• IV Rank가 88%로 높아 큰 움직임이 예상되며, 이는 상승 가능성을 시사합니다.\n• 콜 옵션의 이상 거래가 50.0배로 급증하여 스마트 머니의 매수 포지셔닝이 감지됩니다."
+      },
+      {
         "id": "technical",
         "role": "테크니컬 분석가",
         "direction": "UP",
-        "confidence": 70,
-        "argument": "• RSI가 59.7로 중립적이지만 상승 여력이 있습니다.\n• MACD가 시그널 라인보다 높아 상승 모멘텀을 시사합니다.\n• OBV가 상승세를 보이며 매수세가 우세합니다."
+        "confidence": 75,
+        "argument": "• RSI(14) 값이 57.6으로 중립적이지만 상승 여력이 있습니다.\n• MACD가 시그널 라인보다 높고 양의 값으로 강한 상승 모멘텀을 보입니다.\n• OBV 트렌드가 상승 중이며, 최근 1주간 매수 우위가 75.6%로 강력한 매수세가 존재합니다."
       },
       {
         "id": "fundamental",
         "role": "펀더멘털 분석가",
         "direction": "UP",
         "confidence": 85,
-        "argument": "• 애널리스트 목표 주가 평균이 $855.11로 현재 주가 대비 28.6% 상승 여력이 있으며, 이는 강력한 매수 추천으로 이어집니다. \n• 내부자 거래 정보는 제공되지 않았지만, 기관 투자자들의 강력한 매수 추천이 긍정적인 신호로 해석됩니다. \n• FOMC 발표가 D-6으로 포지셔닝 구간에 있으며, 이는 단기 변동성을 고려한 포지셔닝 기회로 볼 수 있습니다."
-      },
-      {
-        "id": "options",
-        "role": "옵션 트레이더",
-        "direction": "DOWN",
-        "confidence": 80,
-        "argument": "• Put/Call 비율이 1.27로 콜 옵션보다 풋 옵션이 더 많이 거래되고 있어 하방 압력이 예상됩니다.\n• IV Rank가 86%로 높아 큰 변동성이 예상되며, 이는 하락 가능성을 시사합니다.\n• 풋 옵션에서 5.0배의 비정상적인 활동이 관찰되어 하방 포지셔닝이 강화되고 있습니다."
+        "argument": "• 애널리스트의 평균 목표가는 $855.11로 현재 가격 대비 29.7% 상승 여력이 있습니다. \n• 애널리스트 60명의 컨센서스는 STRONG BUY로 강력한 매수 추천을 받고 있습니다. \n• 기관 투자자들의 보유 비율이 높고, 최근 1주간 매수 우위가 75.6%로 나타나 긍정적인 흐름을 보입니다."
       },
       {
         "id": "macro",
         "role": "매크로 전략가",
         "direction": "UP",
         "confidence": 75,
-        "argument": "• VIX가 19.04로 20일 동안 24.8% 하락하여 시장의 두려움이 감소하고 있음을 나타냅니다. \n• 10년 만기 국채 수익률이 4.29%로 20일 동안 0.8% 하락하여 금리 부담이 완화되고 있습니다. \n• 달러 인덱스가 98.6으로 20일 동안 1.0% 하락하여 미국 달러의 상대적 약세가 나타나고 있습니다."
+        "argument": "• VIX 지수는 19.31로 20일 동안 23.8% 하락하여 시장의 불안감이 감소하고 있음을 나타냅니다.\n• 10년물 국채 수익률은 4.32%로 20일 동안 거의 변동이 없으며, 이는 금리 안정성을 시사합니다.\n• 달러 인덱스는 98.89로 20일 동안 0.7% 하락하여, 달러 약세가 글로벌 리스크 자산에 긍정적 영향을 미칠 수 있습니다."
       }
     ]
   },
@@ -261,37 +253,37 @@
         {
           "key": "weekly_trend",
           "label": "주간 추세",
-          "value": -0.724,
+          "value": -0.752,
           "weight": 0.25,
-          "contribution": -0.181
+          "contribution": -0.188
         },
         {
           "key": "range_position",
           "label": "52주 위치",
-          "value": 0.086,
+          "value": 0.043,
           "weight": -0.15,
-          "contribution": -0.013
+          "contribution": -0.006
         },
         {
           "key": "mid_momentum",
           "label": "중기 모멘텀",
-          "value": -0.302,
+          "value": -0.339,
           "weight": 0.2,
-          "contribution": -0.06
+          "contribution": -0.068
         },
         {
           "key": "macro_regime",
           "label": "매크로 레짐",
-          "value": 0.197,
+          "value": 0.107,
           "weight": 0.2,
-          "contribution": 0.039
+          "contribution": 0.021
         },
         {
           "key": "analyst_consensus",
           "label": "애널리스트 컨센서스",
-          "value": 0.953,
+          "value": 0.99,
           "weight": 0.1,
-          "contribution": 0.095
+          "contribution": 0.099
         },
         {
           "key": "institutional_flow",
@@ -301,21 +293,21 @@
           "contribution": 0.0
         }
       ],
-      "score": -0.12
+      "score": -0.142
     },
-    "explanation": "단기적으로는 RSI가 중립적이지만 상승 여력이 있다는 점과 애널리스트 목표 주가가 현재 주가 대비 크게 높다는 점에서 상승 가능성이 제기됩니다. 그러나 옵션 시장에서는 풋 옵션 거래가 활발하여 하방 압력이 존재하고, 이는 단기 반등 후 구조적 약세로 회귀할 가능성을 시사합니다. 매크로 환경에서는 VIX의 하락이 긍정적이지만, 옵션 시장의 하방 압력과의 상충으로 인해 혼조된 전망이 나타납니다."
+    "explanation": "단기적으로는 옵션 트레이더와 테크니컬 분석가의 의견에 따라 상승 압력이 강하게 작용하고 있습니다. 특히, 옵션 시장에서 콜 옵션의 거래가 활발하며 RSI 지표도 상승 여력을 시사하고 있습니다. 그러나 구조적으로는 펀더멘털 분석가와 매크로 전략가의 의견이 일치하여, 시장의 불안감 감소와 애널리스트 목표가의 상승 여력이 장기적인 상승을 지지하고 있습니다. 따라서 단기 반등 후 구조적 약세로 회귀 가능성이 존재합니다."
   },
   "upcoming_events": [
     {
       "type": "FOMC",
       "date": "2026-04-29",
-      "days_until": 6
+      "days_until": 5
     },
     {
       "type": "NFP",
       "date": "2026-05-01",
-      "days_until": 8
+      "days_until": 7
     }
   ],
-  "predicted_at": "2026-04-23T14:57:07.073710+00:00"
+  "predicted_at": "2026-04-24T03:51:21.486520+00:00"
 }

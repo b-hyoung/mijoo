@@ -2,51 +2,51 @@
   "ticker": "AAPL",
   "history": [
     {
-      "id": 538,
-      "predicted_at": "2026-04-23T14:54:58.738948+00:00",
-      "age_hours": 1.8,
-      "current_price_at_prediction": 274.18,
+      "id": 551,
+      "predicted_at": "2026-04-24T03:49:14.360636+00:00",
+      "age_hours": 0.1,
+      "current_price_at_prediction": 273.43,
       "verdict": "관망",
       "direction": "UP",
-      "confidence": 62,
-      "summary": "AAPL 주식은 기술적, 펀더멘털, 매크로 요인에서 긍정적인 신호를 보이고 있습니다. 옵션 시장의 변동성 증가에도 불구하고, 전반적인 상승 모멘텀이 강합니다.",
+      "confidence": 63,
+      "summary": "AAPL 주식은 기술적 지표와 펀더멘털 분석에서 긍정적인 신호를 보이며 상승할 가능성이 높습니다. 시장의 전반적인 안정성과 긍정적인 전망도 상승을 지지합니다.",
       "week1": {
         "direction": "DOWN",
-        "confidence": 53.7,
-        "price_low": 265.36,
-        "price_high": 276.32,
-        "price_target": 270.84
+        "confidence": 52.5,
+        "price_low": 265.65,
+        "price_high": 276.59,
+        "price_target": 271.12
       },
       "week2": {
         "direction": "DOWN",
-        "confidence": 57.2,
-        "price_low": 259.4,
-        "price_high": 275.85,
-        "price_target": 267.62
+        "confidence": 56.0,
+        "price_low": 259.79,
+        "price_high": 276.2,
+        "price_target": 267.99
       },
       "week3": {
         "direction": "DOWN",
-        "up_probability": 48.9,
-        "range_low": 257.73,
-        "range_high": 290.64
+        "up_probability": 49.2,
+        "range_low": 257.02,
+        "range_high": 289.84
       },
       "week4": {
         "direction": "DOWN",
-        "up_probability": 48.9,
-        "range_low": 252.25,
-        "range_high": 296.12
+        "up_probability": 49.2,
+        "range_low": 251.56,
+        "range_high": 295.3
       },
       "weekly_outlook": {
-        "week1": "[RSI 63.5로 과매수 접근이나 MACD가 시그널 라인 아래로 하락 중.]",
-        "week2": "[기관 투자자 매수 증가 10%이나 IV Rank 100%로 변동성 우려.]",
-        "week3": "[애널리스트 목표가 $180로 상승 여력 있으나 10년 만기 국채 수익률 4.29%로 여전히 높음.]",
-        "week4": "[내부자 매수 증가 15%이나 VIX 19.04로 여전히 불안정한 시장 상황.]"
+        "week1": "RSI 62.9로 과매수 구간에 접근하나 MACD가 시그널 라인 아래로 하락세 지속 중.",
+        "week2": "애널리스트 40명 중 30명이 '매수' 추천하나 푸트/콜 비율 0.6으로 하락 압력 존재.",
+        "week3": "애널리스트 평균 목표가 $297.71로 상승 여력 있으나 IV Rank 100%로 변동성 증가 우려.",
+        "week4": "기관 투자자 보유 비율 높으나 FOMC 발표 D-5로 단기 변동성 확대 가능성."
       }
     },
     {
       "id": 530,
       "predicted_at": "2026-04-13T14:55:00.727025+00:00",
-      "age_hours": 241.8,
+      "age_hours": 253.0,
       "current_price_at_prediction": 257.45,
       "verdict": "관망",
       "direction": "UP",
@@ -90,7 +90,7 @@
     {
       "id": 525,
       "predicted_at": "2026-04-13T14:54:53.141688+00:00",
-      "age_hours": 241.8,
+      "age_hours": 253.0,
       "current_price_at_prediction": 257.46,
       "verdict": "관망",
       "direction": "UP",
@@ -134,7 +134,7 @@
     {
       "id": 505,
       "predicted_at": "2026-04-09T06:39:45.426847+00:00",
-      "age_hours": 346.1,
+      "age_hours": 357.2,
       "current_price_at_prediction": 253.5,
       "verdict": "관망",
       "direction": "DOWN",
@@ -178,7 +178,7 @@
     {
       "id": 504,
       "predicted_at": "2026-04-09T06:39:44.121620+00:00",
-      "age_hours": 346.1,
+      "age_hours": 357.2,
       "current_price_at_prediction": 253.5,
       "verdict": "관망",
       "direction": "DOWN",

@@ -97,6 +97,21 @@ async function gatherCandidates(): Promise<Candidate[]> {
       reasons.push(`${aligned}/4 일치`);
       reasons.push(`최근 적중률 ${Math.round(hitRate * 100)}%`);
 
+      // openinsider cluster buy (강력한 bullish 신호)
+      if (p.insider_cluster?.cluster_detected) {
+        reasons.push(`🔥 내부자 집단매수 ${p.insider_cluster.buyers_30d}명`);
+        score += 5;
+      } else if (p.insider_cluster?.c_level_buy) {
+        reasons.push(`임원 매수 감지`);
+        score += 3;
+      }
+
+      // Reddit 멘션 (약한 모멘텀 신호)
+      if (p.reddit && p.reddit.mentions >= 10) {
+        reasons.push(`Reddit 멘션 ${p.reddit.mentions}회`);
+        score += 1;
+      }
+
       // Trading plan (buy/sell 양쪽에서 쓰임)
       let plan: TradingPlan | null = null;
       const w1 = p.prediction.week1;

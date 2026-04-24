@@ -2,51 +2,51 @@
   "ticker": "GOOGL",
   "history": [
     {
-      "id": 543,
-      "predicted_at": "2026-04-23T14:56:44.345820+00:00",
-      "age_hours": 1.8,
-      "current_price_at_prediction": 340.23,
+      "id": 555,
+      "predicted_at": "2026-04-24T03:50:55.649177+00:00",
+      "age_hours": 0.0,
+      "current_price_at_prediction": 338.89,
       "verdict": "매수",
       "direction": "UP",
-      "confidence": 88,
-      "summary": "GOOGL은 기술적 지표와 옵션 거래에서 강한 상승 신호를 보이고 있으며, 펀더멘털 측면에서도 긍정적인 평가를 받고 있습니다. 시장 전반적으로도 두려움이 감소하고 금리 부담이 완화되면서 주가 상승에 유리한 환경이 조성되고 있습니다.",
+      "confidence": 85,
+      "summary": "GOOGL은 옵션 수요 증가와 기술적 지표의 긍정적 신호로 상승세를 보이고 있습니다. 시장의 불안감 감소와 금리 안정성은 추가적인 긍정 요소입니다.",
       "week1": {
         "direction": "UP",
-        "confidence": 56.2,
-        "price_low": 340.43,
-        "price_high": 354.04,
-        "price_target": 347.24
+        "confidence": 56.1,
+        "price_low": 339.0,
+        "price_high": 352.56,
+        "price_target": 345.78
       },
       "week2": {
         "direction": "UP",
-        "confidence": 56.1,
-        "price_low": 336.89,
-        "price_high": 357.3,
-        "price_target": 347.1
+        "confidence": 55.8,
+        "price_low": 335.22,
+        "price_high": 355.56,
+        "price_target": 345.39
       },
       "week3": {
-        "direction": "UP",
-        "up_probability": 50.9,
-        "range_low": 319.82,
-        "range_high": 360.64
+        "direction": "DOWN",
+        "up_probability": 49.2,
+        "range_low": 318.56,
+        "range_high": 359.22
       },
       "week4": {
-        "direction": "UP",
-        "up_probability": 50.9,
-        "range_low": 313.01,
-        "range_high": 367.45
+        "direction": "DOWN",
+        "up_probability": 49.2,
+        "range_low": 311.78,
+        "range_high": 366.0
       },
       "weekly_outlook": {
-        "week1": "MACD가 시그널 라인보다 높아 강한 상승 모멘텀을 나타냅니다.",
-        "week2": "옵션의 P/C 비율이 0.18로 극단적인 낙관적 신호를 보이고 있습니다.",
-        "week3": "56명의 애널리스트가 GOOGL에 대해 강력한 매수 추천을 하고 있으며, 평균 목표가는 10.7% 상승 여력입니다.",
-        "week4": "VIX가 19.04로 20일 동안 24.8% 하락하여 시장의 두려움이 감소하고 있습니다."
+        "week1": "옵션의 Put/Call 비율이 0.53으로 콜 옵션 수요 증가.",
+        "week2": "IV Rank가 100%로 큰 가격 변동 예상, 상승 압력 지속.",
+        "week3": "10년물 국채 수익률 4.32%로 금리 안정성 시사, 긍정적.",
+        "week4": "VIX 지수 19.31로 20일 동안 23.8% 하락, 시장 불안감 감소."
       }
     },
     {
       "id": 535,
       "predicted_at": "2026-04-13T14:55:03.869411+00:00",
-      "age_hours": 241.8,
+      "age_hours": 253.0,
       "current_price_at_prediction": 318.35,
       "verdict": "관망",
       "direction": "UP",
@@ -90,7 +90,7 @@
     {
       "id": 513,
       "predicted_at": "2026-04-09T06:41:46.718797+00:00",
-      "age_hours": 346.0,
+      "age_hours": 357.2,
       "current_price_at_prediction": 305.46,
       "verdict": "관망",
       "direction": "UP",
@@ -134,7 +134,7 @@
     {
       "id": 512,
       "predicted_at": "2026-04-09T06:41:44.540156+00:00",
-      "age_hours": 346.0,
+      "age_hours": 357.2,
       "current_price_at_prediction": 305.46,
       "verdict": "관망",
       "direction": "UP",
