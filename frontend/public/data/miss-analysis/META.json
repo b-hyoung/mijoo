@@ -1,0 +1,41 @@
+{
+  "ticker": "META",
+  "analyzed_at": "2026-04-27T15:42:30.886800+00:00",
+  "miss_count": 1,
+  "predicted_direction": "UP",
+  "actual_direction": "DOWN",
+  "drivers": [
+    "신호 미반영: 내부자 순 +0주로 내부자 매수나 매집이 없었음에도 UP 예측.",
+    "신호 미반영: 비정상 옵션 38.0x (CALL side)에도 불구하고 실제 가격 하락.",
+    "가능성: 2026년 4월 말에 메타의 주요 제품이나 서비스에 대한 부정적인 뉴스가 있었을 가능성."
+  ],
+  "advice": "다음 예측에서 내부자 거래 동향과 비정상 옵션 거래의 실제 영향력을 더 면밀히 분석해야 합니다.",
+  "summary": "a) 미리 볼 수 있었던 것: 내부자 매수나 매집이 없었고, 비정상 옵션 거래가 실제 가격에 영향을 미치지 않았습니다. b) 외부 사건: 2026년 4월 말에 메타의 주요 제품이나 서비스에 대한 부정적인 뉴스가 있었을 가능성이 있습니다. 이러한 요소들이 결합되어 예측과 다른 방향으로 가격이 움직였습니다.",
+  "misses": [
+    {
+      "predicted_at": "2026-04-27T15:41:59.324328+00:00",
+      "predicted_direction": "UP",
+      "actual_direction": "DOWN",
+      "price_at": 674.64,
+      "current_price": 674.2100219726562,
+      "change_pct": -0.06,
+      "reasoning": "  - 옵션 트레이더: UP — • 옵션의 Put/Call 비율이 0.43으로 낮아 콜 옵션에 대한 수요가 높음을 나타냅니다.\n  - 테크니컬 분석가: UP — • RSI(14)가 61.4로 과매수 구간에 진입하지 않았지만 상승 여력이 있음.\n  - 펀더멘털 분석가: UP — • 애널리스트 목표 주가는 평균 $855.11로 현재 가격 대비 26.8% 상승 여력이 있으며, 강력 매수 추천을 받고 있습니다.\n  - 매크로 전략가: UP — • VIX 지수가 18.83으로 20일 동안 39.4% 하락하여 시장의 불안감이 크게 줄어들었음을 시사합니다. ",
+      "summary": "META 주식은 옵션, 기술적 지표 및 펀더멘털 분석에서 모두 긍정적인 신호를 보이고 있습니다. 시장의 불안감이 줄어들고 금리 부담이 완화되면서 매수 기회가 제공되고 있습니다.",
+      "signals_at_time": {
+        "pc_ratio": 0.43,
+        "iv_rank": 100,
+        "unusual_activity": 38.0,
+        "unusual_side": "CALL",
+        "short_float_pct": 1.21,
+        "short_change": "N/A",
+        "insider_net_90d": 0,
+        "anomaly_score": 40,
+        "anomaly_direction": "UP",
+        "buy_dominance": 79.9,
+        "obv_trend": "UP",
+        "is_accumulation": false
+      }
+    }
+  ],
+  "cached": true
+}

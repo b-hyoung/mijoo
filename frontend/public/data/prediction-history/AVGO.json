@@ -2,9 +2,51 @@
   "ticker": "AVGO",
   "history": [
     {
+      "id": 568,
+      "predicted_at": "2026-04-27T15:42:00.216900+00:00",
+      "age_hours": 0.1,
+      "current_price_at_prediction": 417.33,
+      "verdict": "관망",
+      "direction": "UP",
+      "confidence": 62,
+      "summary": "AVGO에 대한 분석가들의 의견은 대체로 긍정적입니다. 옵션 활동과 펀더멘털 지표가 상승을 지지하고 있으며, 매크로 환경도 우호적입니다.",
+      "week1": {
+        "direction": "DOWN",
+        "confidence": 82.8,
+        "price_low": 363.32,
+        "price_high": 380.01,
+        "price_target": 371.66
+      },
+      "week2": {
+        "direction": "DOWN",
+        "confidence": 95,
+        "price_low": 338.63,
+        "price_high": 363.67,
+        "price_target": 351.15
+      },
+      "week3": {
+        "direction": "UP",
+        "up_probability": 61.0,
+        "range_low": 392.29,
+        "range_high": 442.37
+      },
+      "week4": {
+        "direction": "UP",
+        "up_probability": 61.0,
+        "range_low": 383.94,
+        "range_high": 450.72
+      },
+      "weekly_outlook": {
+        "week1": "[RSI 73.7 과매수 구간 진입이나 MACD 0.5로 변동성 확대 예상.] vs [거래량 5일 평균 대비 0.37배로 상승 지속 확신 부족.]",
+        "week2": "[콜 옵션 비정상적 활동 11.5배로 강한 매수 관심 나타남.] vs [최근 뉴스에서 AVGO에 대한 부정적 보도 증가, 투자자 신뢰 하락.]",
+        "week3": "[애널리스트 목표 주가 평균 $475.49로 13.9% 상승 여력 존재.] vs [내부자 거래 순매도 -324,282주로 부정적 신호.]",
+        "week4": "[VIX 지수 18.83로 39.4% 하락, 시장 불안감 감소.] vs [RSI 73.7로 조정 가능성 높아 리스크 증가.]"
+      }
+    },
+    {
       "id": 558,
       "predicted_at": "2026-04-24T03:52:06.707724+00:00",
-      "age_hours": 0.0,
+      "age_hours": 83.9,
       "current_price_at_prediction": 419.94,
       "verdict": "관망",
       "direction": "DOWN",
@@ -46,7 +88,7 @@
     {
       "id": 529,
       "predicted_at": "2026-04-13T14:55:00.452487+00:00",
-      "age_hours": 253.0,
+      "age_hours": 336.9,
       "current_price_at_prediction": 375.77,
       "verdict": "관망",
       "direction": "UP",
@@ -90,7 +132,7 @@
     {
       "id": 519,
       "predicted_at": "2026-04-09T06:43:20.210212+00:00",
-      "age_hours": 357.2,
+      "age_hours": 441.1,
       "current_price_at_prediction": 333.97,
       "verdict": "매수",
       "direction": "UP",
@@ -134,7 +176,7 @@
     {
       "id": 518,
       "predicted_at": "2026-04-09T06:43:06.461748+00:00",
-      "age_hours": 357.2,
+      "age_hours": 441.1,
       "current_price_at_prediction": 333.97,
       "verdict": "매수",
       "direction": "UP",

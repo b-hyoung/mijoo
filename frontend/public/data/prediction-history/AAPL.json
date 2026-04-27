@@ -2,9 +2,93 @@
   "ticker": "AAPL",
   "history": [
     {
+      "id": 572,
+      "predicted_at": "2026-04-27T15:42:03.214561+00:00",
+      "age_hours": 0.1,
+      "current_price_at_prediction": 267.42,
+      "verdict": "관망",
+      "direction": "DOWN",
+      "confidence": 53,
+      "summary": "AAPL 주식은 기술적, 펀더멘털 분석에서 하락 신호가 강하게 나타나고 있습니다. 시장의 변동성 확대 가능성에도 불구하고, 내부자 매도와 기관 보유 비율 감소가 주가 하락 압력으로 작용할 수 있습니다.",
+      "week1": {
+        "direction": "UP",
+        "confidence": 50.8,
+        "price_low": 262.77,
+        "price_high": 273.46,
+        "price_target": 268.12
+      },
+      "week2": {
+        "direction": "DOWN",
+        "confidence": 53.9,
+        "price_low": 255.9,
+        "price_high": 271.94,
+        "price_target": 263.92
+      },
+      "week3": {
+        "direction": "UP",
+        "up_probability": 54.9,
+        "range_low": 251.37,
+        "range_high": 283.47
+      },
+      "week4": {
+        "direction": "UP",
+        "up_probability": 54.9,
+        "range_low": 246.03,
+        "range_high": 288.81
+      },
+      "weekly_outlook": {
+        "week1": "[RSI 55로 중립이나 MACD 시그널 라인 위에 위치함] vs [최근 볼륨이 평균 대비 0.39배로 낮아 상승 모멘텀 부족]",
+        "week2": "[VIX 18.83으로 39.4% 하락하여 불안감 감소] vs [FOMC 발표 D-2로 시장 방향성에 영향 가능성]",
+        "week3": "[10년물 국채 수익률 4.34%로 2.3% 하락하여 금리 부담 완화] vs [기관 보유 비율 감소로 주가 하락 압력 가능성]",
+        "week4": "[달러 지수 98.37로 1.8% 하락하여 글로벌 시장 안정] vs [내부자 매도 우위로 주가 하락 예상 가능성]"
+      }
+    },
+    {
+      "id": 562,
+      "predicted_at": "2026-04-27T15:41:51.986915+00:00",
+      "age_hours": 0.1,
+      "current_price_at_prediction": 267.36,
+      "verdict": "관망",
+      "direction": "DOWN",
+      "confidence": 52,
+      "summary": "애플 주식에 대한 분석가들의 의견이 엇갈리고 있습니다. 옵션 시장의 비정상적인 활동과 기술적 지표의 중립 상태가 하락 가능성을 시사하지만, 매크로 환경은 긍정적입니다.",
+      "week1": {
+        "direction": "UP",
+        "confidence": 54.3,
+        "price_low": 265.82,
+        "price_high": 276.52,
+        "price_target": 271.17
+      },
+      "week2": {
+        "direction": "DOWN",
+        "confidence": 50.9,
+        "price_low": 258.55,
+        "price_high": 274.59,
+        "price_target": 266.57
+      },
+      "week3": {
+        "direction": "UP",
+        "up_probability": 53.2,
+        "range_low": 251.32,
+        "range_high": 283.4
+      },
+      "week4": {
+        "direction": "UP",
+        "up_probability": 53.2,
+        "range_low": 245.97,
+        "range_high": 288.75
+      },
+      "weekly_outlook": {
+        "week1": "RSI 54.9로 중립적이나 MACD가 시그널 라인 위에 있어 상승 가능성 존재.",
+        "week2": "애널리스트 40명 중 30명이 '매수' 추천하나 푸트/콜 비율 0.54로 하락 압력 감지.",
+        "week3": "10년물 국채 수익률 4.34%로 하락세이나 IV Rank 100%로 변동성 우려 커.",
+        "week4": "VIX 18.83로 불안감 감소하나 FOMC 발표 D-2로 단기 변동성 확대 가능성 존재."
+      }
+    },
+    {
       "id": 551,
       "predicted_at": "2026-04-24T03:49:14.360636+00:00",
-      "age_hours": 0.1,
+      "age_hours": 84.0,
       "current_price_at_prediction": 273.43,
       "verdict": "관망",
       "direction": "UP",
@@ -46,7 +130,7 @@
     {
       "id": 530,
       "predicted_at": "2026-04-13T14:55:00.727025+00:00",
-      "age_hours": 253.0,
+      "age_hours": 336.9,
       "current_price_at_prediction": 257.45,
       "verdict": "관망",
       "direction": "UP",
@@ -90,7 +174,7 @@
     {
       "id": 525,
       "predicted_at": "2026-04-13T14:54:53.141688+00:00",
-      "age_hours": 253.0,
+      "age_hours": 336.9,
       "current_price_at_prediction": 257.46,
       "verdict": "관망",
       "direction": "UP",
@@ -134,7 +218,7 @@
     {
       "id": 505,
       "predicted_at": "2026-04-09T06:39:45.426847+00:00",
-      "age_hours": 357.2,
+      "age_hours": 441.2,
       "current_price_at_prediction": 253.5,
       "verdict": "관망",
       "direction": "DOWN",
@@ -178,7 +262,7 @@
     {
       "id": 504,
       "predicted_at": "2026-04-09T06:39:44.121620+00:00",
-      "age_hours": 357.2,
+      "age_hours": 441.2,
       "current_price_at_prediction": 253.5,
       "verdict": "관망",
       "direction": "DOWN",

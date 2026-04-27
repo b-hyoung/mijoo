@@ -1,66 +1,70 @@
 {
   "ticker": "MSFT",
-  "current_price": 415.75,
-  "sentiment_score": -0.3,
-  "short_float_pct": 1.11,
+  "current_price": 422.51,
+  "sentiment_score": -0.2,
+  "short_float_pct": 1.14,
   "short_change": "N/A",
   "order_flow": {
-    "buy_dominance_pct": 66.5,
+    "buy_dominance_pct": 68.5,
     "obv_trend": "UP",
     "is_accumulation": false
   },
   "news_headlines": [
     {
-      "title": "Tech job market woes deepen with Meta layoffs and Microsoft buyouts",
-      "url": "https://finance.yahoo.com/economy/article/tech-job-market-woes-deepen-with-meta-layoffs-and-microsoft-buyouts-150901111.html"
+      "title": "Tech stocks today: Qualcomm stock soars, Microsoft and OpenAI amend deal, with Big Tech earnings on deck",
+      "url": "https://finance.yahoo.com/sectors/technology/live/tech-stocks-today-nvidia-magnificent-seven-113535737.html"
     },
     {
-      "title": "Microsoft offering buyouts to employees, ServiceNow stock sinks",
-      "url": "https://finance.yahoo.com/video/microsoft-offering-buyouts-to-employees-servicenow-stock-sinks-170959122.html"
+      "title": "Nvidia could be undervalued by at least 30%: BofA analyst on Mag 7",
+      "url": "https://finance.yahoo.com/video/nvidia-could-be-undervalued-by-at-least-30-bofa-analyst-on-mag-7-150156204.html"
     },
     {
-      "title": "Oil extends gains, stocks sink as peace talk hopes fade",
-      "url": "https://finance.yahoo.com/markets/commodities/articles/oil-extends-gains-stocks-sink-025127756.html"
+      "title": "Elon Musk's years-long legal battle with OpenAI and Sam Altman will finally head to trial on Monday",
+      "url": "https://finance.yahoo.com/sectors/technology/article/elon-musks-years-long-legal-battle-with-openai-and-sam-altman-will-finally-head-to-trial-on-monday-130000137.html"
     },
     {
-      "title": "3 Overrated  Stocks with Warning Signs",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/3-overrated-stocks-warning-signs-024523737.html"
+      "title": "Microsoft facing UK antitrust lawsuit from Slack over Teams 'bundling'",
+      "url": "https://ca.news.yahoo.com/microsoft-facing-uk-antitrust-lawsuit-153600686.html"
     },
     {
-      "title": "Why Applied Digital Stock Jumped Today",
-      "url": "https://www.fool.com/investing/2026/04/23/why-applied-digital-stock-jumped-today/"
+      "title": "Google's AI Reckoning: Can Gemini Turn Dominance Into Dollars?",
+      "url": "https://www.investors.com/news/technology/google-stock-artificial-intelligence-ai-models-gemini/?src=A00220&yptr=yahoo"
     },
     {
-      "title": "Microsoft’s A$25b Australia Plan Puts AI CapEx And Cloud Usage In Focus",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/microsoft-25b-australia-plan-puts-011007041.html"
+      "title": "Google To Increase Anthropic Investment; OpenAI, Microsoft Shake Up Partnership",
+      "url": "https://www.investors.com/news/technology/google-increase-anthropic-investment-cloud-giants-chase-ai-business/?src=A00220&yptr=yahoo"
     },
     {
-      "title": "Where is Microsoft’s headquarters? Inside the tech giant’s corporate campus",
-      "url": "https://www.thestreet.com/investing/stocks/microsoft-headquarters"
+      "title": "Microsoft Stock Price Drops Sharply After OpenAI Revises Partnership",
+      "url": "https://beincrypto.com/openai-microsoft-cloud-exclusivity-ends/"
     },
     {
-      "title": "Review & Preview: Earnings Storm",
-      "url": "https://www.barrons.com/articles/stocks-today-chips-intel-earnings-d007603c?siteid=yhoof2&yptr=yahoo"
+      "title": "Mizuho Upgrades CrowdStrike With a $520 Price Target: Is AI Security the Next Mega-Trade?",
+      "url": "https://247wallst.com/investing/2026/04/27/mizuho-upgrades-crowdstrike-with-a-520-price-target-is-ai-security-the-next-mega-trade/"
     },
     {
-      "title": "Meta plans 10% layoffs as AI spending soars: source",
-      "url": "https://finance.yahoo.com/sectors/technology/articles/meta-plans-10-layoffs-ai-193633862.html"
+      "title": "Microsoft and OpenAI Rework AI Deal, Cutting Exclusivity and AGI Provisions",
+      "url": "https://decrypt.co/365630/microsoft-openai-rework-ai-deal-cutting-exclusivity-agi-provisions"
+    },
+    {
+      "title": "Stocks Are Wavering to Kick Off a Busy Week",
+      "url": "https://www.barrons.com/livecoverage/stock-market-news-today-042726/card/stocks-are-wavering-to-kick-off-a-busy-week-Z6d7YhwvcW5h2phTIjME?siteid=yhoof2&yptr=yahoo"
     }
   ],
   "signals": {
-    "rsi": 59.8,
+    "rsi": 62.0,
     "macd_cross": "BULLISH",
     "ma_trend": "BULLISH",
-    "bb_position": 77,
-    "volume_ratio": 1.08
+    "bb_position": 78,
+    "volume_ratio": 0.45
   },
   "analyst": {
-    "target_mean": 578.0,
-    "target_high": 730.0,
-    "target_low": 392.0,
-    "upside_pct": 39.0,
-    "num_analysts": 54,
-    "recommendation": "strong_buy"
+    "target_mean": null,
+    "target_high": null,
+    "target_low": null,
+    "upside_pct": null,
+    "num_analysts": null,
+    "recommendation": ""
   },
   "insider": {
     "recent": [],
@@ -72,17 +76,17 @@
     "change_pct": null
   },
   "macro": {
-    "vix": 19.31,
-    "vix_20d_change": -23.8,
-    "treasury_10y": 4.32,
-    "treasury_10y_20d_change": -0.1,
-    "dxy": 98.89,
-    "dxy_20d_change": -0.7
+    "vix": 18.8,
+    "vix_20d_change": -39.5,
+    "treasury_10y": 4.34,
+    "treasury_10y_20d_change": -2.3,
+    "dxy": 98.38,
+    "dxy_20d_change": -1.8
   },
   "options": {
-    "pc_ratio": 0.51,
+    "pc_ratio": 0.4,
     "iv_rank": 100,
-    "unusual_activity": 4.6,
+    "unusual_activity": 21.0,
     "unusual_side": "PUT",
     "data_source": "earnings",
     "expiry_used": "2026-05-01"
@@ -103,22 +107,22 @@
     "source": "openinsider"
   },
   "reddit": {
-    "mentions": 10,
-    "dollar_mentions": 0,
+    "mentions": 11,
+    "dollar_mentions": 3,
     "scanned_posts": 300,
-    "latest_title": "GOOGL remains strong,The MOST promising contender to follow NVIDIA to a $5T market cap",
-    "latest_at": "2026-04-23T14:38:06+00:00"
+    "latest_title": "Earnings Week: Best Long Call Picks?",
+    "latest_at": "2026-04-25T18:02:31+00:00"
   },
   "anomaly": {
-    "score": 20,
-    "direction": "UP",
-    "level": "정상",
+    "score": 40,
+    "direction": null,
+    "level": "관심",
     "signals": [
       {
         "name": "거래량 급증 + 횡보",
         "score": 0,
         "direction": null,
-        "detail": "거래량 0.9x, 가격변동 13.6%"
+        "detail": "거래량 0.9x, 가격변동 17.7%"
       },
       {
         "name": "IV 급등",
@@ -128,9 +132,9 @@
       },
       {
         "name": "옵션 이상 거래",
-        "score": 0,
-        "direction": null,
-        "detail": "4.6x"
+        "score": 20,
+        "direction": "DOWN",
+        "detail": "평소 대비 21.0x (PUT)"
       },
       {
         "name": "내부자 방향 전환",
@@ -142,116 +146,120 @@
         "name": "P/C ratio 극단",
         "score": 0,
         "direction": null,
-        "detail": "P/C 0.51"
+        "detail": "P/C 0.40"
       }
     ]
   },
   "prediction": {
     "week1": {
       "direction": "UP",
-      "confidence": 61.5,
-      "price_low": 423.4,
-      "price_high": 440.03,
-      "price_target": 431.72
+      "confidence": 56.5,
+      "price_low": 423.17,
+      "price_high": 440.07,
+      "price_target": 431.62
     },
     "week2": {
       "direction": "UP",
-      "confidence": 64.5,
-      "price_low": 423.42,
-      "price_high": 448.36,
-      "price_target": 435.89
+      "confidence": 63.8,
+      "price_low": 429.3,
+      "price_high": 454.65,
+      "price_target": 441.97
     },
     "week3": {
       "direction": "DOWN",
-      "up_probability": 43.4,
-      "range_low": 390.8,
-      "range_high": 440.7
+      "up_probability": 44.3,
+      "range_low": 397.16,
+      "range_high": 447.86
     },
     "week4": {
       "direction": "DOWN",
-      "up_probability": 43.4,
-      "range_low": 382.49,
-      "range_high": 449.01
+      "up_probability": 44.3,
+      "range_low": 388.71,
+      "range_high": 456.31
     }
   },
   "debate": {
     "direction": "UP",
-    "confidence": 66,
-    "verdict": "매수",
-    "summary": "MSFT 주식은 기술적 및 펀더멘털 분석에서 긍정적인 신호를 보이고 있으며, 시장의 불안감 감소와 금리 안정성도 상승에 기여할 수 있습니다. 옵션 시장의 하락 베팅에도 불구하고, 전반적인 상승 모멘텀이 강합니다.",
+    "confidence": 63,
+    "verdict": "관망",
+    "summary": "MSFT 주식은 기술적 지표와 펀더멘털 측면에서 긍정적인 신호를 보이고 있습니다. 시장 불안감이 줄어들고 금리 부담이 완화되면서 매수 기회로 보입니다.",
     "stock_bull": [
-      "RSI(14)가 59.8로 중립 이상이며 상승 여력이 있음.",
-      "MACD가 시그널을 상회하며 강한 상승 모멘텀을 시사함.",
-      "애널리스트의 평균 목표 주가는 $578로 현재 가격 대비 39% 상승 여력이 있음.",
-      "기관 투자자들의 보유 비중이 높고, 최근 1주간 매수 우위가 66.5%로 나타남."
+      "애널리스트 목표 주가가 현재 주가보다 높음",
+      "기관 투자자들의 보유 비중 증가",
+      "옵션 시장에서 높은 콜 옵션 비율",
+      "RSI가 과매수 구간에 근접했으나 상승 여력 존재",
+      "MACD가 시그널 라인보다 높아 상승 모멘텀",
+      "OBV 상승 추세로 매수세 우세"
     ],
     "stock_bear": [
-      "Put/Call 비율이 0.51로 콜 옵션 수요가 높지만, 4.6배의 비정상적 풋 거래가 있어 하락 베팅이 강함을 시사함.",
-      "IV Rank가 100%로 매우 높아, 큰 가격 변동성이 예상됨."
+      "옵션 시장에서 푸트 옵션의 이상 거래 급증",
+      "IV 랭크가 100%로 매우 높아 큰 변동성 예상"
     ],
     "market_bull": [
-      "VIX 지수는 19.31로 20일 동안 23.8% 하락하여 시장의 불안감이 감소하고 있음.",
-      "10년물 국채 수익률은 4.32%로 20일 동안 거의 변동이 없으며, 금리 안정성을 시사함.",
-      "달러 인덱스는 98.89로 20일 동안 0.7% 하락하여, 달러 약세가 글로벌 리스크 자산에 긍정적 영향을 미칠 수 있음."
+      "VIX 지수 하락으로 시장 불안감 감소",
+      "10년물 국채 수익률 하락으로 금리 부담 완화",
+      "달러 지수 하락으로 글로벌 시장에서의 달러 강세 약화"
     ],
     "market_bear": [],
     "bull_points": [
-      "RSI(14)가 59.8로 중립 이상이며 상승 여력이 있음.",
-      "MACD가 시그널을 상회하며 강한 상승 모멘텀을 시사함.",
-      "애널리스트의 평균 목표 주가는 $578로 현재 가격 대비 39% 상승 여력이 있음.",
-      "기관 투자자들의 보유 비중이 높고, 최근 1주간 매수 우위가 66.5%로 나타남.",
-      "VIX 지수는 19.31로 20일 동안 23.8% 하락하여 시장의 불안감이 감소하고 있음.",
-      "10년물 국채 수익률은 4.32%로 20일 동안 거의 변동이 없으며, 금리 안정성을 시사함.",
-      "달러 인덱스는 98.89로 20일 동안 0.7% 하락하여, 달러 약세가 글로벌 리스크 자산에 긍정적 영향을 미칠 수 있음."
+      "애널리스트 목표 주가가 현재 주가보다 높음",
+      "기관 투자자들의 보유 비중 증가",
+      "옵션 시장에서 높은 콜 옵션 비율",
+      "RSI가 과매수 구간에 근접했으나 상승 여력 존재",
+      "MACD가 시그널 라인보다 높아 상승 모멘텀",
+      "OBV 상승 추세로 매수세 우세",
+      "VIX 지수 하락으로 시장 불안감 감소",
+      "10년물 국채 수익률 하락으로 금리 부담 완화",
+      "달러 지수 하락으로 글로벌 시장에서의 달러 강세 약화"
     ],
     "bear_points": [
-      "Put/Call 비율이 0.51로 콜 옵션 수요가 높지만, 4.6배의 비정상적 풋 거래가 있어 하락 베팅이 강함을 시사함.",
-      "IV Rank가 100%로 매우 높아, 큰 가격 변동성이 예상됨."
+      "옵션 시장에서 푸트 옵션의 이상 거래 급증",
+      "IV 랭크가 100%로 매우 높아 큰 변동성 예상"
     ],
     "weekly_outlook": {
-      "week1": "RSI가 59.8로 상승 여력이 있어 기술적 반등 예상.",
-      "week2": "MACD가 시그널을 상회하며 강한 상승 모멘텀을 시사함.",
-      "week3": "애널리스트 평균 목표 주가 $578로 39% 상승 여력 존재.",
-      "week4": "기관 투자자 매수 비중 66.5%로 긍정적인 수급 상황 지속."
+      "week1": "RSI 62로 과매수 접근이나 MACD가 시그널 라인 아래로 하락세 지속 중.",
+      "week2": "VIX 지수 18.83로 불안감 감소하나 푸트 옵션 거래량 21.0배로 급증.",
+      "week3": "기관 투자자 보유 비중 증가하나 IV 랭크 100%로 변동성 우려.",
+      "week4": "OBV 상승세 지속하나 FOMC 발표 D-2로 단기 하락 위험 증가."
     },
     "key_news": [
       {
-        "headline": "Microsoft offering buyouts to employees, ServiceNow stock sinks",
-        "summary": "마이크로소프트의 직원 매각 제안은 인력 조정 신호로, 투자자들에게 불안감을 줄 수 있어 주가에 부정적 영향을 미칠 수 있다."
+        "headline": "Microsoft facing UK antitrust lawsuit from Slack over Teams 'bundling'",
+        "summary": "슬랙이 팀즈 번들링으로 영국에서 반독점 소송을 제기하여, 마이크로소프트의 시장 지배력에 대한 우려가 커지고 주가에 부정적 영향을 미칠 수 있습니다."
       },
       {
-        "headline": "Microsoft’s A$25b Australia Plan Puts AI CapEx And Cloud Usage In Focus",
-        "summary": "호주에서의 대규모 투자 계획은 AI 및 클라우드 사용 증가를 촉진할 것으로 예상되어, 장기적으로 주가에 긍정적인 영향을 미칠 수 있다."
+        "headline": "Microsoft Stock Price Drops Sharply After OpenAI Revises Partnership",
+        "summary": "오픈AI가 파트너십을 수정하면서 마이크로소프트 주가가 급락했습니다. 이는 투자자들에게 불확실성을 초래합니다."
       }
     ],
     "personas": [
+      {
+        "id": "fundamental",
+        "role": "펀더멘털 분석가",
+        "direction": "UP",
+        "confidence": 75,
+        "argument": "• 최근 실적 발표는 없지만, 애널리스트 목표 주가가 현재 주가보다 높아 긍정적 전망을 유지하고 있습니다. \n• 기관 투자자들의 보유 비중이 증가하고 있으며, 이는 주가 상승에 긍정적인 영향을 줄 수 있습니다.\n• 내부자 거래는 없지만, 옵션 시장에서의 높은 콜 옵션 비율은 투자자들의 긍정적 기대를 반영합니다."
+      },
       {
         "id": "technical",
         "role": "테크니컬 분석가",
         "direction": "UP",
         "confidence": 75,
-        "argument": "• RSI(14)가 59.8로 중립 이상이며 상승 여력이 있음.\n• MACD가 시그널을 상회하며 강한 상승 모멘텀을 시사함.\n• OBV가 상승 추세를 보이며 매수세가 지속되고 있음을 나타냄."
+        "argument": "• RSI가 62로 과매수 구간에 근접했으나 아직 상승 여력이 있습니다.\n• MACD가 시그널 라인보다 높아 상승 모멘텀을 나타내고 있습니다.\n• OBV가 상승 추세를 보이며 매수세가 우세함을 시사합니다."
       },
       {
         "id": "options",
         "role": "옵션 트레이더",
         "direction": "DOWN",
         "confidence": 80,
-        "argument": "• Put/Call 비율이 0.51로 콜 옵션 수요가 높지만, 4.6배의 비정상적 풋 거래가 있어 하락 베팅이 강함을 시사합니다.\n• IV Rank가 100%로 매우 높아, 큰 가격 변동성이 예상되며, 이는 하락 위험을 증가시킬 수 있습니다.\n• FOMC 발표가 D-5로 포지셔닝 구간에 해당하며, 단기 변동성 확대 가능성이 있습니다."
-      },
-      {
-        "id": "fundamental",
-        "role": "펀더멘털 분석가",
-        "direction": "UP",
-        "confidence": 85,
-        "argument": "• 애널리스트의 평균 목표 주가는 $578로 현재 가격 대비 39% 상승 여력이 있으며, 이는 강력한 매수 추천으로 뒷받침됩니다. \n• 기관 투자자들의 보유 비중이 높고, 최근 1주간 매수 우위가 66.5%로 나타나 긍정적인 수급 상황을 보여줍니다.\n• 실적 발표가 임박하지 않아 단기적인 실적 서프라이즈 리스크는 없으며, FOMC 발표 전 포지셔닝 구간으로 볼 수 있습니다."
+        "argument": "• 옵션 시장에서 푸트 옵션의 이상 거래가 21.0배로 급증, 이는 하락 압력을 시사합니다.\n• IV 랭크가 100%로 매우 높아, 큰 변동성이 예상되며 이는 하락 가능성을 높입니다.\n• FOMC 발표가 D-2로 다가오면서 포지셔닝 구간에 진입, 단기적으로 하락 가능성 증가."
       },
       {
         "id": "macro",
         "role": "매크로 전략가",
         "direction": "UP",
         "confidence": 75,
-        "argument": "• VIX 지수는 19.31로 20일 동안 23.8% 하락하여 시장의 불안감이 감소하고 있음을 나타냅니다.\n• 10년물 국채 수익률은 4.32%로 20일 동안 거의 변동이 없으며, 이는 금리 안정성을 시사합니다.\n• 달러 인덱스는 98.89로 20일 동안 0.7% 하락하여, 달러 약세가 글로벌 리스크 자산에 긍정적 영향을 미칠 수 있습니다."
+        "argument": "• VIX 지수가 18.83으로 20일 동안 39.4% 하락하여 시장의 불안감이 크게 줄어들었음을 시사합니다. \n• 10년물 국채 수익률이 4.34%로 20일 동안 2.3% 하락하여 금리 부담이 완화되고 있습니다.\n• 달러 지수가 98.37로 20일 동안 1.8% 하락하여 글로벌 시장에서의 달러 강세가 약화되고 있습니다."
       }
     ]
   },
@@ -272,37 +280,37 @@
         {
           "key": "weekly_trend",
           "label": "주간 추세",
-          "value": -1.0,
+          "value": -0.868,
           "weight": 0.25,
-          "contribution": -0.25
+          "contribution": -0.217
         },
         {
           "key": "range_position",
           "label": "52주 위치",
-          "value": -0.356,
+          "value": -0.282,
           "weight": -0.15,
-          "contribution": 0.053
+          "contribution": 0.042
         },
         {
           "key": "mid_momentum",
           "label": "중기 모멘텀",
-          "value": -0.719,
+          "value": -0.47,
           "weight": 0.2,
-          "contribution": -0.144
+          "contribution": -0.094
         },
         {
           "key": "macro_regime",
           "label": "매크로 레짐",
-          "value": 0.107,
+          "value": 0.393,
           "weight": 0.2,
-          "contribution": 0.021
+          "contribution": 0.079
         },
         {
           "key": "analyst_consensus",
           "label": "애널리스트 컨센서스",
-          "value": 1.0,
+          "value": 0.0,
           "weight": 0.1,
-          "contribution": 0.1
+          "contribution": 0.0
         },
         {
           "key": "institutional_flow",
@@ -312,21 +320,21 @@
           "contribution": 0.0
         }
       ],
-      "score": -0.219
+      "score": -0.19
     },
-    "explanation": "단기적으로는 기술적 지표와 펀더멘털 요인이 상승을 지지하고 있습니다. RSI가 중립 이상으로 상승 여력을 보이며, 애널리스트의 목표 주가가 현재 가격 대비 상당한 상승 여력을 시사합니다. 그러나 옵션 시장에서의 비정상적 풋 거래는 하락 베팅이 강함을 나타내어, 단기 반등 후 구조적 약세로 회귀할 가능성이 있습니다."
+    "explanation": "단기적으로는 펀더멘털과 테크니컬 분석이 상승을 지지하고 있습니다. 애널리스트 목표 주가가 높고, RSI 지표도 아직 상승 여력이 있다는 점에서 긍정적입니다. 그러나 옵션 시장에서의 푸트 옵션 거래 급증은 하락 압력을 시사하며, 구조적으로는 이러한 하락 압력이 반영될 가능성이 있습니다. 따라서 단기 상승 후 구조적 약세로 회귀 가능성이 존재합니다."
   },
   "upcoming_events": [
     {
       "type": "FOMC",
       "date": "2026-04-29",
-      "days_until": 5
+      "days_until": 2
     },
     {
       "type": "NFP",
       "date": "2026-05-01",
-      "days_until": 7
+      "days_until": 4
     }
   ],
-  "predicted_at": "2026-04-24T03:49:51.315429+00:00"
+  "predicted_at": "2026-04-27T15:42:19.910577+00:00"
 }

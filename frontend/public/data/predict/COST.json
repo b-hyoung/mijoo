@@ -1,68 +1,68 @@
 {
   "ticker": "COST",
-  "current_price": 1014.38,
+  "current_price": 1007.8,
   "sentiment_score": 0.2,
-  "short_float_pct": 1.42,
+  "short_float_pct": 1.48,
   "short_change": "N/A",
   "order_flow": {
-    "buy_dominance_pct": 62.8,
+    "buy_dominance_pct": 56.5,
     "obv_trend": "UP",
     "is_accumulation": true
   },
   "news_headlines": [
     {
-      "title": "Sam's Club just gave members a reason to ditch Costco",
-      "url": "https://www.thestreet.com/retail/sams-club-just-gave-members-a-reason-to-ditch-costco"
+      "title": "Costco Wholesale Corporation (COST) Is a Trending Stock: Facts to Know Before Betting on It",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/costco-wholesale-corporation-cost-trending-130014282.html"
     },
     {
-      "title": "Costco (COST) Ascends While Market Falls: Some Facts to Note",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/costco-cost-ascends-while-market-214505187.html"
+      "title": "Costco's Renewal Rates Hold Strong: Can Digital Members Catch Up?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/costcos-renewal-rates-hold-strong-123900636.html"
     },
     {
-      "title": "Tax Refunds Are Here. Retail Stocks to Watch as People Sort Out Whether to Spend on Gas or Goodies.",
-      "url": "https://www.barrons.com/articles/tax-refunds-retail-stocks-gas-prices-cb55f6c6?siteid=yhoof2&yptr=yahoo"
+      "title": "BJ’s takes on Costco with major expansion",
+      "url": "https://www.thestreet.com/retail/bjs-takes-on-costco-with-major-expansion-texas"
     },
     {
-      "title": "With Costco Down 7% From Its All-Time High, Could Buying Now Set You Up for Life?",
-      "url": "https://www.fool.com/investing/2026/04/23/costco-all-time-high-buy-now-set-you-up-for-life/"
+      "title": "Mama’s Creations (MAMA) Fuels Confidence Following Q4 Outperformance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/mama-creations-mama-fuels-confidence-151322398.html"
     },
     {
-      "title": "America's Greatest Opportunities: How Price Club Offered A Lesson On Fundamentals",
-      "url": "https://www.investors.com/how-to-invest/price-club-stock-americas-greatest-opportunities/?src=A00220&yptr=yahoo"
+      "title": "Trump's tariffs cost families $1,700 on average — corporations are getting a $166B refund. Where are your tariff checks?",
+      "url": "https://finance.yahoo.com/economy/policy/articles/trumps-tariffs-cost-families-1-180000644.html"
     },
     {
-      "title": "Is Costco's Stock Too Expensive Now?",
-      "url": "https://www.fool.com/investing/2026/04/22/is-costco-stock-too-expensive-now/"
+      "title": "3 Stocks Announcing Dividend Hikes of 11% or More",
+      "url": "https://247wallst.com/investing/2026/04/25/3-stocks-announcing-dividend-hikes-of-11-or-more/"
     },
     {
-      "title": "Costco (COST) Approves Quarterly Dividend Increase Amid Robust Sales Growth",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/costco-cost-approves-quarterly-dividend-214800678.html"
+      "title": "Focus in on Consumer Staples Dividend Payers With These ETFs",
+      "url": "https://www.marketbeat.com/originals/focus-in-on-consumer-staples-dividend-payers-with-these-etfs/?utm_source=yahoofinance&utm_medium=yahoofinance"
     },
     {
-      "title": "After Costco's Surge, Here Are the 3 Best S&P 500 Stocks to Buy Now",
-      "url": "https://www.fool.com/investing/2026/04/22/after-costcos-best-sp-500-stocks-buy-now/"
+      "title": "Costco Expands Beauty Offering With Exclusive Aussie Miracle Curls Launch",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/costco-expands-beauty-offering-exclusive-120449942.html"
     },
     {
-      "title": "Why Kroger’s $2.6B Automation Bet Failed",
-      "url": "https://www.youtube.com/watch?v=i-EaJiwTNtA"
+      "title": "Kroger quietly builds a massive gas edge over Costco, Walmart",
+      "url": "https://www.thestreet.com/retail/kroger-quietly-builds-a-massive-gas-edge-over-costco-walmart"
     },
     {
-      "title": "New BJ's locations Texas: Club rivaling Costco, Sam's expands to Texas",
-      "url": "https://www.usatoday.com/story/money/business/2026/04/22/bjs-wholesale-club-is-opening-4-locations-in-texas-in-2026/89729670007/"
+      "title": "3 Consumer Staples Stocks That Provide Stability in a Volatile Investing Environment",
+      "url": "https://www.fool.com/investing/2026/04/24/3-consumer-staples-stocks-that-provide-stability-i/"
     }
   ],
   "signals": {
-    "rsi": 57.7,
+    "rsi": 54.3,
     "macd_cross": "BULLISH",
     "ma_trend": "BULLISH",
-    "bb_position": 72,
-    "volume_ratio": 0.65
+    "bb_position": 58,
+    "volume_ratio": 0.3
   },
   "analyst": {
     "target_mean": 1072.16,
     "target_high": 1315.0,
     "target_low": 650.0,
-    "upside_pct": 5.7,
+    "upside_pct": 6.4,
     "num_analysts": 32,
     "recommendation": "buy"
   },
@@ -76,20 +76,20 @@
     "change_pct": null
   },
   "macro": {
-    "vix": 19.31,
-    "vix_20d_change": -23.8,
-    "treasury_10y": 4.32,
-    "treasury_10y_20d_change": -0.1,
-    "dxy": 98.89,
-    "dxy_20d_change": -0.7
+    "vix": 18.8,
+    "vix_20d_change": -39.5,
+    "treasury_10y": 4.34,
+    "treasury_10y_20d_change": -2.3,
+    "dxy": 18.8,
+    "dxy_20d_change": -39.5
   },
   "options": {
-    "pc_ratio": 0.8,
-    "iv_rank": 100,
-    "unusual_activity": 13.9,
+    "pc_ratio": 6.32,
+    "iv_rank": 94,
+    "unusual_activity": 17.9,
     "unusual_side": "PUT",
-    "data_source": "nearest+monthly",
-    "expiry_used": "2026-04-24"
+    "data_source": "earnings",
+    "expiry_used": "2026-05-29"
   },
   "earnings": {
     "next_date": "2026-05-29",
@@ -107,34 +107,34 @@
     "source": "openinsider"
   },
   "reddit": {
-    "mentions": 4,
-    "dollar_mentions": 1,
+    "mentions": 0,
+    "dollar_mentions": 0,
     "scanned_posts": 300,
-    "latest_title": "COST: The Quiet Money Printer",
-    "latest_at": "2026-04-21T18:10:57+00:00"
+    "latest_title": null,
+    "latest_at": null
   },
   "anomaly": {
-    "score": 40,
-    "direction": null,
+    "score": 50,
+    "direction": "DOWN",
     "level": "관심",
     "signals": [
       {
         "name": "거래량 급증 + 횡보",
         "score": 0,
         "direction": null,
-        "detail": "거래량 0.8x, 가격변동 3.5%"
+        "detail": "거래량 0.6x, 가격변동 1.1%"
       },
       {
         "name": "IV 급등",
         "score": 20,
-        "direction": "UP",
-        "detail": "IV rank 100%"
+        "direction": "DOWN",
+        "detail": "IV rank 94%"
       },
       {
         "name": "옵션 이상 거래",
         "score": 20,
         "direction": "DOWN",
-        "detail": "평소 대비 13.9x (PUT)"
+        "detail": "평소 대비 17.9x (PUT)"
       },
       {
         "name": "내부자 방향 전환",
@@ -144,102 +144,118 @@
       },
       {
         "name": "P/C ratio 극단",
-        "score": 0,
-        "direction": null,
-        "detail": "P/C 0.80"
+        "score": 10,
+        "direction": "DOWN",
+        "detail": "P/C 6.32 (극단적 비관)"
       }
     ]
   },
   "prediction": {
     "week1": {
-      "direction": "DOWN",
-      "confidence": 53.5,
-      "price_low": 982.4,
-      "price_high": 1022.97,
-      "price_target": 1002.69
+      "direction": "UP",
+      "confidence": 52.1,
+      "price_low": 994.85,
+      "price_high": 1035.16,
+      "price_target": 1015.01
     },
     "week2": {
       "direction": "DOWN",
-      "confidence": 53.9,
-      "price_low": 970.68,
-      "price_high": 1031.55,
-      "price_target": 1001.11
+      "confidence": 50.8,
+      "price_low": 974.72,
+      "price_high": 1035.19,
+      "price_target": 1004.95
     },
     "week3": {
       "direction": "UP",
-      "up_probability": 56.7,
-      "range_low": 953.52,
-      "range_high": 1075.24
+      "up_probability": 59.3,
+      "range_low": 947.33,
+      "range_high": 1068.27
     },
     "week4": {
       "direction": "UP",
-      "up_probability": 56.7,
-      "range_low": 933.23,
-      "range_high": 1095.53
+      "up_probability": 59.3,
+      "range_low": 927.18,
+      "range_high": 1088.42
     }
   },
   "debate": {
-    "direction": "UP",
-    "confidence": 63,
+    "direction": "DOWN",
+    "confidence": 50,
     "verdict": "관망",
-    "summary": "",
-    "stock_bull": [],
-    "stock_bear": [],
-    "market_bull": [],
-    "market_bear": [],
-    "bull_points": [],
-    "bear_points": [],
-    "weekly_outlook": {
-      "week1": "RSI 57.7로 중립 이상이나 MACD가 -1.2로 하락세를 나타냄.",
-      "week2": "애널리스트 32명 중 20명이 매수 추천하나 P/C 비율 0.8로 풋 옵션 우세.",
-      "week3": "분기 배당금 인상으로 매출 성장 기대되나 IV 랭크 100%로 변동성 우려.",
-      "week4": "기관 투자자 매수 비율 62.8%이나 풋 옵션 이상 거래 13.9배로 하락 위험 존재."
-    },
-    "key_news": [
-      {
-        "headline": "Costco (COST) Approves Quarterly Dividend Increase Amid Robust Sales Growth",
-        "summary": "코스트코가 분기 배당금을 인상하며 매출 성장세를 보이고 있어, 주가 상승에 긍정적인 영향을 미칠 것으로 예상됩니다."
-      }
+    "summary": "옵션 시장의 비관적 신호와 높은 변동성으로 인해 하락 압력이 예상됩니다. 매크로 환경은 긍정적이지만, 종목 자체의 약세 신호가 강합니다.",
+    "stock_bull": [
+      "애널리스트 목표 주가가 현재 주가보다 6.4% 높음",
+      "기관 투자자들의 매수세가 강함"
     ],
+    "stock_bear": [
+      "옵션 시장에서 P/C 비율이 6.32로 매우 높음",
+      "IV Rank가 94%로 매우 높아 큰 변동성이 예상됨",
+      "PUT 옵션의 이상 거래가 17.9배로 급증"
+    ],
+    "market_bull": [
+      "VIX 지수가 18.83으로 20일 동안 39.4% 하락",
+      "10년물 국채 수익률이 4.34%로 20일 동안 2.3% 하락",
+      "달러 지수가 98.37로 20일 동안 1.8% 하락"
+    ],
+    "market_bear": [],
+    "bull_points": [
+      "애널리스트 목표 주가가 현재 주가보다 6.4% 높음",
+      "기관 투자자들의 매수세가 강함",
+      "VIX 지수가 18.83으로 20일 동안 39.4% 하락",
+      "10년물 국채 수익률이 4.34%로 20일 동안 2.3% 하락",
+      "달러 지수가 98.37로 20일 동안 1.8% 하락"
+    ],
+    "bear_points": [
+      "옵션 시장에서 P/C 비율이 6.32로 매우 높음",
+      "IV Rank가 94%로 매우 높아 큰 변동성이 예상됨",
+      "PUT 옵션의 이상 거래가 17.9배로 급증"
+    ],
+    "weekly_outlook": {
+      "week1": "RSI 54.3으로 중립 수준이나 MACD 신호선 위에 있어 상승 가능성 존재.",
+      "week2": "기관 매수세 56.5%로 긍정적이나 옵션 P/C 비율 6.32로 약세 신호.",
+      "week3": "10년물 국채 수익률 4.34%로 하락해 금리 부담 완화되었으나 FOMC 발표 예정으로 변동성 우려.",
+      "week4": "VIX 18.83로 불안감 감소했으나 IV Rank 94%로 큰 변동성 예상되어 리스크 존재."
+    },
+    "key_news": [],
     "personas": [
+      {
+        "id": "technical",
+        "role": "테크니컬 분석가",
+        "direction": "DOWN",
+        "confidence": 75,
+        "argument": "• RSI가 54.3으로 중립 수준에 있어 강한 방향성을 제시하지 않음.\n• MACD가 신호선 위에 있지만 큰 차이가 없어 강한 상승 모멘텀은 부족.\n• FOMC와 NFP 발표가 예정되어 있어 단기 변동성 확대 가능성 존재."
+      },
       {
         "id": "options",
         "role": "옵션 트레이더",
         "direction": "DOWN",
-        "confidence": 80,
-        "argument": "• 옵션 P/C 비율이 0.8로 콜 옵션보다 풋 옵션이 상대적으로 더 많이 거래되고 있음.\n• IV 랭크가 100%로 매우 높아, 큰 가격 변동성이 예상됨.\n• 풋 옵션에서 13.9배의 이상 거래가 발생, 하락에 대한 베팅이 강하게 나타남."
-      },
-      {
-        "id": "technical",
-        "role": "테크니컬 분석가",
-        "direction": "UP",
-        "confidence": 75,
-        "argument": "• RSI가 57.7로 중립 이상이며, 과매수 상태가 아님을 시사합니다.\n• MACD가 시그널 라인보다 높아 상승 모멘텀을 나타내고 있습니다.\n• OBV가 상승세를 보이며, 매수세가 강하다는 것을 보여줍니다."
+        "confidence": 90,
+        "argument": "• 옵션 시장에서 극단적인 비관적 신호가 감지되었습니다. P/C 비율이 6.32로 매우 높아 약세를 나타냅니다. \n• IV Rank가 94%로 매우 높아, 큰 변동성이 예상되며, 이는 하락 압력으로 작용할 수 있습니다.\n• PUT 옵션의 이상 거래가 17.9배로 급증하여, 하락에 대한 강한 베팅이 이루어지고 있음을 시사합니다."
       },
       {
         "id": "fundamental",
         "role": "펀더멘털 분석가",
         "direction": "UP",
-        "confidence": 75,
-        "argument": "• 애널리스트 목표 주가 평균이 현재 가격 대비 5.7% 상승 여력을 보여주며, 32명의 애널리스트가 매수 추천을 하고 있습니다. \n• 최근 Costco는 분기 배당금 인상을 승인하며 견고한 매출 성장을 보여주고 있어 긍정적인 실적 전망을 뒷받침합니다.\n• 기관 투자자들의 매수 우위(62.8%)와 축적 신호는 주가 상승에 대한 강한 신뢰를 나타냅니다."
+        "confidence": 70,
+        "argument": "• 애널리스트 목표 주가 평균이 현재 주가보다 6.4% 높으며, 매수 추천을 받고 있습니다. \n• 기관 투자자들의 매수세가 강하며, 최근 1주간 매수 우세가 56.5%로 나타났습니다.\n• 내부자 거래 정보는 제공되지 않았지만, 기관의 포지셔닝은 긍정적입니다."
       },
       {
         "id": "macro",
         "role": "매크로 전략가",
         "direction": "UP",
         "confidence": 75,
-        "argument": "• VIX 지수는 19.31로 20일 동안 23.8% 하락하여 시장의 불안감이 감소하고 있음을 나타냅니다.\n• 10년물 국채 수익률은 4.32%로 20일 동안 거의 변동이 없으며, 이는 금리 안정성을 시사합니다.\n• 달러 인덱스는 98.89로 20일 동안 0.7% 하락하여, 달러 약세가 글로벌 리스크 자산에 긍정적 영향을 미칠 수 있습니다."
+        "argument": "• VIX 지수가 18.83으로 20일 동안 39.4% 하락하여 시장의 불안감이 크게 줄어들었음을 시사합니다. \n• 10년물 국채 수익률이 4.34%로 20일 동안 2.3% 하락하여 금리 부담이 완화되고 있습니다.\n• 달러 지수가 98.37로 20일 동안 1.8% 하락하여 글로벌 시장에서의 달러 강세가 약화되고 있습니다."
       }
     ]
   },
   "confluence": {
-    "aligned_count": 2,
+    "aligned_count": 3,
     "total": 4,
     "majority_direction": "UP",
-    "badge": "혼조 — 되돌림 경계",
-    "tone": "mixed",
+    "badge": "대체로 일치",
+    "tone": "moderate",
     "per_week": [
-      "DOWN",
+      "UP",
       "DOWN",
       "UP",
       "UP"
@@ -249,37 +265,37 @@
         {
           "key": "weekly_trend",
           "label": "주간 추세",
-          "value": 0.798,
+          "value": 0.753,
           "weight": 0.25,
-          "contribution": 0.199
+          "contribution": 0.188
         },
         {
           "key": "range_position",
           "label": "52주 위치",
-          "value": 0.626,
+          "value": 0.561,
           "weight": -0.15,
-          "contribution": -0.094
+          "contribution": -0.084
         },
         {
           "key": "mid_momentum",
           "label": "중기 모멘텀",
-          "value": 0.384,
+          "value": 0.393,
           "weight": 0.2,
-          "contribution": 0.077
+          "contribution": 0.079
         },
         {
           "key": "macro_regime",
           "label": "매크로 레짐",
-          "value": 0.107,
+          "value": 0.527,
           "weight": 0.2,
-          "contribution": 0.021
+          "contribution": 0.105
         },
         {
           "key": "analyst_consensus",
           "label": "애널리스트 컨센서스",
-          "value": 0.19,
+          "value": 0.213,
           "weight": 0.1,
-          "contribution": 0.019
+          "contribution": 0.021
         },
         {
           "key": "institutional_flow",
@@ -289,21 +305,21 @@
           "contribution": 0.0
         }
       ],
-      "score": 0.223
+      "score": 0.309
     },
-    "explanation": "단기적으로는 옵션 트레이더의 풋 옵션 거래 증가로 인해 하락 압력이 존재하지만, 기술적 분석가와 펀더멘털 분석가의 긍정적인 지표가 장기적으로 상승 가능성을 뒷받침하고 있습니다. 특히, 애널리스트들의 매수 추천과 목표 주가 상승 여력이 구조적 상승 요인으로 작용할 수 있습니다. 따라서 단기 조정 후 장기 추세 재개 가능성이 높습니다."
+    "explanation": "COST의 주가는 단기적으로 변동성이 있을 수 있지만, 구조적으로 상승할 가능성이 큽니다. 옵션 시장의 비관적 신호와 기술적 지표의 중립성에도 불구하고, 펀더멘털 분석가와 매크로 전략가의 긍정적인 전망이 주가 상승을 지지합니다. 특히, 애널리스트들의 목표 주가와 시장의 불안감 감소가 주요 상승 요인으로 작용할 것입니다."
   },
   "upcoming_events": [
     {
       "type": "FOMC",
       "date": "2026-04-29",
-      "days_until": 5
+      "days_until": 2
     },
     {
       "type": "NFP",
       "date": "2026-05-01",
-      "days_until": 7
+      "days_until": 4
     }
   ],
-  "predicted_at": "2026-04-24T03:52:34.714514+00:00"
+  "predicted_at": "2026-04-27T15:41:57.553607+00:00"
 }

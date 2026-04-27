@@ -2,9 +2,51 @@
   "ticker": "META",
   "history": [
     {
+      "id": 566,
+      "predicted_at": "2026-04-27T15:41:59.324328+00:00",
+      "age_hours": 0.1,
+      "current_price_at_prediction": 674.64,
+      "verdict": "매수",
+      "direction": "UP",
+      "confidence": 88,
+      "summary": "META 주식은 옵션, 기술적 지표 및 펀더멘털 분석에서 모두 긍정적인 신호를 보이고 있습니다. 시장의 불안감이 줄어들고 금리 부담이 완화되면서 매수 기회가 제공되고 있습니다.",
+      "week1": {
+        "direction": "UP",
+        "confidence": 51.1,
+        "price_low": 663.54,
+        "price_high": 690.53,
+        "price_target": 677.04
+      },
+      "week2": {
+        "direction": "UP",
+        "confidence": 50.0,
+        "price_low": 654.5,
+        "price_high": 694.98,
+        "price_target": 674.74
+      },
+      "week3": {
+        "direction": "UP",
+        "up_probability": 56.1,
+        "range_low": 634.16,
+        "range_high": 715.12
+      },
+      "week4": {
+        "direction": "UP",
+        "up_probability": 56.1,
+        "range_low": 620.67,
+        "range_high": 728.61
+      },
+      "weekly_outlook": {
+        "week1": "옵션의 Put/Call 비율이 0.43으로 콜 옵션 수요 증가.",
+        "week2": "기관 투자가 매수 비율 79.9%로 긍정적 수급 상황.",
+        "week3": "애널리스트 목표 주가 $855.11로 26.8% 상승 여력.",
+        "week4": "VIX 지수 18.83로 시장 불안감 크게 감소."
+      }
+    },
+    {
       "id": 556,
       "predicted_at": "2026-04-24T03:51:21.486520+00:00",
-      "age_hours": 0.0,
+      "age_hours": 84.0,
       "current_price_at_prediction": 659.15,
       "verdict": "매수",
       "direction": "UP",
@@ -46,7 +88,7 @@
     {
       "id": 528,
       "predicted_at": "2026-04-13T14:54:59.928361+00:00",
-      "age_hours": 253.0,
+      "age_hours": 336.9,
       "current_price_at_prediction": 626.65,
       "verdict": "매수",
       "direction": "UP",
@@ -90,7 +132,7 @@
     {
       "id": 515,
       "predicted_at": "2026-04-09T06:42:24.237075+00:00",
-      "age_hours": 357.2,
+      "age_hours": 441.1,
       "current_price_at_prediction": 575.05,
       "verdict": "관망",
       "direction": "UP",
@@ -134,7 +176,7 @@
     {
       "id": 514,
       "predicted_at": "2026-04-09T06:42:10.925494+00:00",
-      "age_hours": 357.2,
+      "age_hours": 441.1,
       "current_price_at_prediction": 575.05,
       "verdict": "관망",
       "direction": "UP",

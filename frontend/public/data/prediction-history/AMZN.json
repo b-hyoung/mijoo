@@ -2,9 +2,51 @@
   "ticker": "AMZN",
   "history": [
     {
+      "id": 569,
+      "predicted_at": "2026-04-27T15:42:00.636632+00:00",
+      "age_hours": 0.1,
+      "current_price_at_prediction": 261.47,
+      "verdict": "관망",
+      "direction": "UP",
+      "confidence": 64,
+      "summary": "대부분의 분석가들이 아마존 주가의 상승을 예상하고 있으며, 옵션 데이터와 펀더멘털 지표가 이를 지지합니다. 시장의 불안감이 줄어들고 금리 부담이 완화되면서 매수 기회로 평가됩니다.",
+      "week1": {
+        "direction": "DOWN",
+        "confidence": 82.2,
+        "price_low": 228.18,
+        "price_high": 238.64,
+        "price_target": 233.41
+      },
+      "week2": {
+        "direction": "DOWN",
+        "confidence": 89.7,
+        "price_low": 219.0,
+        "price_high": 234.69,
+        "price_target": 226.85
+      },
+      "week3": {
+        "direction": "UP",
+        "up_probability": 60.7,
+        "range_low": 245.78,
+        "range_high": 277.16
+      },
+      "week4": {
+        "direction": "UP",
+        "up_probability": 60.7,
+        "range_low": 240.55,
+        "range_high": 282.39
+      },
+      "weekly_outlook": {
+        "week1": "[RSI 76.4 과매수 구간이나 MACD 0.5로 상승 모멘텀 약화 가능성]",
+        "week2": "[Put/Call 비율 0.44로 콜 옵션 수요 높으나 FOMC 발표 D-2로 변동성 확대 우려]",
+        "week3": "[기관 투자자 보유 비중 증가로 신뢰도 상승하나 10년물 국채 수익률 4.34%로 금리 부담 여전]",
+        "week4": "[VIX 18.83로 불안감 감소하나 단기 변동성 확대 가능성 존재]"
+      }
+    },
+    {
       "id": 554,
       "predicted_at": "2026-04-24T03:50:34.194013+00:00",
-      "age_hours": 0.1,
+      "age_hours": 84.0,
       "current_price_at_prediction": 255.08,
       "verdict": "매수",
       "direction": "UP",
@@ -46,7 +88,7 @@
     {
       "id": 526,
       "predicted_at": "2026-04-13T14:54:59.066345+00:00",
-      "age_hours": 253.0,
+      "age_hours": 336.9,
       "current_price_at_prediction": 236.96,
       "verdict": "매수",
       "direction": "UP",
@@ -90,7 +132,7 @@
     {
       "id": 511,
       "predicted_at": "2026-04-09T06:41:25.667044+00:00",
-      "age_hours": 357.2,
+      "age_hours": 441.1,
       "current_price_at_prediction": 213.77,
       "verdict": "매수",
       "direction": "UP",
@@ -134,7 +176,7 @@
     {
       "id": 510,
       "predicted_at": "2026-04-09T06:41:17.526129+00:00",
-      "age_hours": 357.2,
+      "age_hours": 441.1,
       "current_price_at_prediction": 213.77,
       "verdict": "매수",
       "direction": "UP",

@@ -1,58 +1,62 @@
 {
   "ticker": "AMZN",
-  "current_price": 255.08,
-  "sentiment_score": 0.2,
-  "short_float_pct": 0.9,
+  "current_price": 261.47,
+  "sentiment_score": 0.5,
+  "short_float_pct": 0.95,
   "short_change": "N/A",
   "order_flow": {
-    "buy_dominance_pct": 78.0,
+    "buy_dominance_pct": 80.7,
     "obv_trend": "UP",
     "is_accumulation": false
   },
   "news_headlines": [
     {
-      "title": "Why Microsoft is offering its first voluntary employee buyout",
-      "url": "https://finance.yahoo.com/video/why-microsoft-is-offering-its-first-voluntary-employee-buyout-195448856.html"
+      "title": "Tech stocks today: Qualcomm stock soars, Microsoft and OpenAI amend deal, with Big Tech earnings on deck",
+      "url": "https://finance.yahoo.com/sectors/technology/live/tech-stocks-today-nvidia-magnificent-seven-113535737.html"
     },
     {
-      "title": "GitLab Deepens AWS And Google Cloud Ties For AI DevSecOps Growth",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/gitlab-deepens-aws-google-cloud-030635108.html"
+      "title": "Amazon's 2026 CapEx spend: What Polymarket is predicting",
+      "url": "https://finance.yahoo.com/video/amazons-2026-capex-spend-what-polymarket-is-predicting-143401387.html"
     },
     {
-      "title": "Where is Microsoft’s headquarters? Inside the tech giant’s corporate campus",
-      "url": "https://www.thestreet.com/investing/stocks/microsoft-headquarters"
+      "title": "Stocks' strong April gains come with 1 potential downside",
+      "url": "https://finance.yahoo.com/news/stocks-strong-april-gains-come-with-1-potential-downside-122514320.html"
     },
     {
-      "title": "Amazon-Backed Nuclear Firm X-Energy Raises $1.02 Billion in IPO",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/amazon-backed-nuclear-firm-x-001155364.html"
+      "title": "Google's AI Reckoning: Can Gemini Turn Dominance Into Dollars?",
+      "url": "https://www.investors.com/news/technology/google-stock-artificial-intelligence-ai-models-gemini/?src=A00220&yptr=yahoo"
     },
     {
-      "title": "Review & Preview: Earnings Storm",
-      "url": "https://www.barrons.com/articles/stocks-today-chips-intel-earnings-d007603c?siteid=yhoof2&yptr=yahoo"
+      "title": "Google To Increase Anthropic Investment; OpenAI, Microsoft Shake Up Partnership",
+      "url": "https://www.investors.com/news/technology/google-increase-anthropic-investment-cloud-giants-chase-ai-business/?src=A00220&yptr=yahoo"
     },
     {
-      "title": "Meta plans 10% layoffs as AI spending soars: source",
-      "url": "https://finance.yahoo.com/sectors/technology/articles/meta-plans-10-layoffs-ai-193633862.html"
+      "title": "Amazon's Core Businesses Just Keep Getting Stronger -- This Is the Growth Powerhouse I'd Hold Through Any Market Crash",
+      "url": "https://www.fool.com/investing/2026/04/27/amazons-core-businesses-just-keep-getting-stronger/"
     },
     {
-      "title": "Bezos’ Physical AI Lab Has Closed Round at $38 Billion Value",
-      "url": "https://finance.yahoo.com/sectors/technology/articles/bezos-physical-ai-lab-closed-204011972.html"
+      "title": "AI casts existential shadow over legacy software companies, Bridgewater CIOs warn",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/ai-casts-existential-shadow-over-145920203.html"
     },
     {
-      "title": "Meta set to layoff 10% of its staff as it pushes for AI",
-      "url": "https://www.usatoday.com/story/news/california/2026/04/23/meta-set-to-layoff-10-of-its-staff-as-it-pushes-for-ai-california/89755689007/"
+      "title": "Stocks Are Wavering to Kick Off a Busy Week",
+      "url": "https://www.barrons.com/livecoverage/stock-market-news-today-042726/card/stocks-are-wavering-to-kick-off-a-busy-week-Z6d7YhwvcW5h2phTIjME?siteid=yhoof2&yptr=yahoo"
     },
     {
-      "title": "Nasdaq Slides. Earnings Fail to Save the Day.",
-      "url": "https://www.barrons.com/livecoverage/stock-market-news-today-042326/card/nasdaq-slides-earnings-fail-to-save-the-day--Ec48AtfXwFCi29vuP4Qx?siteid=yhoof2&yptr=yahoo"
+      "title": "Week ahead: Big Tech earnings, Fed decision, and an oil crisis set up Wall Street's biggest test of the year",
+      "url": "https://www.proactiveinvestors.com/companies/news/1091245/week-ahead-big-tech-earnings-fed-decision-and-an-oil-crisis-set-up-wall-street-s-biggest-test-of-the-year-1091245.html"
+    },
+    {
+      "title": "Nvidia Stock Rises After Record High. The Breakout Is Finally Here.",
+      "url": "https://www.barrons.com/articles/nvidia-stock-price-record-catalyst-earnings-8ccdec80?siteid=yhoof2&yptr=yahoo"
     }
   ],
   "signals": {
     "rsi": 76.4,
     "macd_cross": "BULLISH",
     "ma_trend": "BULLISH",
-    "bb_position": 81,
-    "volume_ratio": 0.77
+    "bb_position": 82,
+    "volume_ratio": 0.51
   },
   "analyst": {
     "target_mean": null,
@@ -72,23 +76,23 @@
     "change_pct": null
   },
   "macro": {
-    "vix": 19.31,
-    "vix_20d_change": -23.8,
-    "treasury_10y": 4.32,
-    "treasury_10y_20d_change": -0.1,
-    "dxy": 98.89,
-    "dxy_20d_change": -0.7
+    "vix": 4.34,
+    "vix_20d_change": -2.3,
+    "treasury_10y": 18.8,
+    "treasury_10y_20d_change": -39.5,
+    "dxy": 98.37,
+    "dxy_20d_change": -1.8
   },
   "options": {
-    "pc_ratio": 0.58,
+    "pc_ratio": 0.44,
     "iv_rank": 100,
-    "unusual_activity": 8.8,
+    "unusual_activity": 50.0,
     "unusual_side": "CALL",
-    "data_source": "earnings",
-    "expiry_used": "2026-05-01"
+    "data_source": "nearest+monthly",
+    "expiry_used": "2026-04-27"
   },
   "earnings": {
-    "next_date": "2026-04-30",
+    "next_date": null,
     "days_until": null,
     "history": []
   },
@@ -103,14 +107,14 @@
     "source": "openinsider"
   },
   "reddit": {
-    "mentions": 8,
-    "dollar_mentions": 0,
+    "mentions": 6,
+    "dollar_mentions": 2,
     "scanned_posts": 300,
-    "latest_title": "How much of MSFT, AMZN, GOOGL revenue is from the EU?",
-    "latest_at": "2026-04-22T17:37:02+00:00"
+    "latest_title": "Earnings Week: Best Long Call Picks?",
+    "latest_at": "2026-04-25T18:02:31+00:00"
   },
   "anomaly": {
-    "score": 37,
+    "score": 40,
     "direction": "UP",
     "level": "관심",
     "signals": [
@@ -118,7 +122,7 @@
         "name": "거래량 급증 + 횡보",
         "score": 0,
         "direction": null,
-        "detail": "거래량 0.8x, 가격변동 22.9%"
+        "detail": "거래량 0.9x, 가격변동 30.1%"
       },
       {
         "name": "IV 급등",
@@ -128,9 +132,9 @@
       },
       {
         "name": "옵션 이상 거래",
-        "score": 17,
+        "score": 20,
         "direction": "UP",
-        "detail": "평소 대비 8.8x (CALL)"
+        "detail": "평소 대비 50.0x (CALL)"
       },
       {
         "name": "내부자 방향 전환",
@@ -142,128 +146,124 @@
         "name": "P/C ratio 극단",
         "score": 0,
         "direction": null,
-        "detail": "P/C 0.58"
+        "detail": "P/C 0.44"
       }
     ]
   },
   "prediction": {
     "week1": {
-      "direction": "UP",
-      "confidence": 60.3,
-      "price_low": 258.73,
-      "price_high": 268.94,
-      "price_target": 263.84
+      "direction": "DOWN",
+      "confidence": 82.2,
+      "price_low": 228.18,
+      "price_high": 238.64,
+      "price_target": 233.41
     },
     "week2": {
-      "direction": "UP",
-      "confidence": 67.5,
-      "price_low": 262.32,
-      "price_high": 277.62,
-      "price_target": 269.97
+      "direction": "DOWN",
+      "confidence": 89.7,
+      "price_low": 219.0,
+      "price_high": 234.69,
+      "price_target": 226.85
     },
     "week3": {
       "direction": "UP",
-      "up_probability": 52.6,
-      "range_low": 239.78,
-      "range_high": 270.38
+      "up_probability": 60.7,
+      "range_low": 245.78,
+      "range_high": 277.16
     },
     "week4": {
       "direction": "UP",
-      "up_probability": 52.6,
-      "range_low": 234.67,
-      "range_high": 275.49
+      "up_probability": 60.7,
+      "range_low": 240.55,
+      "range_high": 282.39
     }
   },
   "debate": {
     "direction": "UP",
-    "confidence": 67,
-    "verdict": "매수",
-    "summary": "AMZN 주식은 옵션과 펀더멘털 측면에서 긍정적인 신호가 많아 상승 가능성이 높습니다. 시장 전반의 안정성도 상승을 뒷받침하고 있습니다.",
+    "confidence": 64,
+    "verdict": "관망",
+    "summary": "대부분의 분석가들이 아마존 주가의 상승을 예상하고 있으며, 옵션 데이터와 펀더멘털 지표가 이를 지지합니다. 시장의 불안감이 줄어들고 금리 부담이 완화되면서 매수 기회로 평가됩니다.",
     "stock_bull": [
-      "애널리스트 목표 주가가 현재 주가보다 높아 상승 여력이 있습니다.",
-      "내부자 거래에서 매수 신호가 강하게 나타나고 있습니다.",
-      "기관 투자자들의 보유 비중이 증가하고 있어 긍정적인 시장 신호입니다.",
-      "옵션의 Put/Call 비율이 0.58로 콜 옵션에 대한 수요가 높음을 나타냅니다.",
-      "IV Rank가 100%로 매우 높아, 큰 가격 변동이 예상됩니다.",
-      "콜 옵션의 이상 거래량이 8.8배로 증가하여 상승 압력이 강하게 나타나고 있습니다."
+      "옵션의 Put/Call 비율이 0.44로 콜 옵션에 대한 수요가 높음을 나타냅니다.",
+      "최근 실적 발표에서 아마존의 핵심 사업이 강력한 성장을 보이며 시장의 긍정적인 평가를 받았습니다.",
+      "분석가들의 목표 주가가 현재 주가보다 높게 설정되어 있으며, 이는 주가 상승에 대한 기대감을 반영합니다.",
+      "기관 투자자들의 보유 비중이 증가하고 있으며, 이는 주식에 대한 신뢰를 나타냅니다."
     ],
     "stock_bear": [
-      "RSI(14)가 76.4로 과매수 구간에 진입하여 조정 가능성이 높습니다.",
-      "MACD가 시그널 라인보다 높지만, 과열 구간에 있어 상승 지속에 대한 의문이 있습니다."
+      "RSI(14)가 76.4로 과매수 구간에 진입하여 조정 가능성이 큽니다.",
+      "MACD가 시그널 라인보다 높지만, 과열 구간에 있어 상승 모멘텀이 약화될 수 있습니다."
     ],
     "market_bull": [
-      "VIX 지수는 19.31로 20일 동안 23.8% 하락하여 시장의 불안감이 감소하고 있음을 나타냅니다.",
-      "10년물 국채 수익률은 4.32%로 20일 동안 거의 변동이 없으며, 이는 금리 안정성을 시사합니다.",
-      "달러 인덱스는 98.89로 20일 동안 0.7% 하락하여, 달러 약세가 글로벌 리스크 자산에 긍정적 영향을 미칠 수 있습니다."
+      "VIX 지수가 18.83으로 20일 동안 39.4% 하락하여 시장의 불안감이 크게 줄어들었음을 시사합니다.",
+      "10년물 국채 수익률이 4.34%로 20일 동안 2.3% 하락하여 금리 부담이 완화되고 있습니다.",
+      "달러 지수가 98.37로 20일 동안 1.8% 하락하여 글로벌 시장에서의 달러 강세가 약화되고 있습니다."
     ],
     "market_bear": [],
     "bull_points": [
-      "애널리스트 목표 주가가 현재 주가보다 높아 상승 여력이 있습니다.",
-      "내부자 거래에서 매수 신호가 강하게 나타나고 있습니다.",
-      "기관 투자자들의 보유 비중이 증가하고 있어 긍정적인 시장 신호입니다.",
-      "옵션의 Put/Call 비율이 0.58로 콜 옵션에 대한 수요가 높음을 나타냅니다.",
-      "IV Rank가 100%로 매우 높아, 큰 가격 변동이 예상됩니다.",
-      "콜 옵션의 이상 거래량이 8.8배로 증가하여 상승 압력이 강하게 나타나고 있습니다.",
-      "VIX 지수는 19.31로 20일 동안 23.8% 하락하여 시장의 불안감이 감소하고 있음을 나타냅니다.",
-      "10년물 국채 수익률은 4.32%로 20일 동안 거의 변동이 없으며, 이는 금리 안정성을 시사합니다.",
-      "달러 인덱스는 98.89로 20일 동안 0.7% 하락하여, 달러 약세가 글로벌 리스크 자산에 긍정적 영향을 미칠 수 있습니다."
+      "옵션의 Put/Call 비율이 0.44로 콜 옵션에 대한 수요가 높음을 나타냅니다.",
+      "최근 실적 발표에서 아마존의 핵심 사업이 강력한 성장을 보이며 시장의 긍정적인 평가를 받았습니다.",
+      "분석가들의 목표 주가가 현재 주가보다 높게 설정되어 있으며, 이는 주가 상승에 대한 기대감을 반영합니다.",
+      "기관 투자자들의 보유 비중이 증가하고 있으며, 이는 주식에 대한 신뢰를 나타냅니다.",
+      "VIX 지수가 18.83으로 20일 동안 39.4% 하락하여 시장의 불안감이 크게 줄어들었음을 시사합니다.",
+      "10년물 국채 수익률이 4.34%로 20일 동안 2.3% 하락하여 금리 부담이 완화되고 있습니다.",
+      "달러 지수가 98.37로 20일 동안 1.8% 하락하여 글로벌 시장에서의 달러 강세가 약화되고 있습니다."
     ],
     "bear_points": [
-      "RSI(14)가 76.4로 과매수 구간에 진입하여 조정 가능성이 높습니다.",
-      "MACD가 시그널 라인보다 높지만, 과열 구간에 있어 상승 지속에 대한 의문이 있습니다."
+      "RSI(14)가 76.4로 과매수 구간에 진입하여 조정 가능성이 큽니다.",
+      "MACD가 시그널 라인보다 높지만, 과열 구간에 있어 상승 모멘텀이 약화될 수 있습니다."
     ],
     "weekly_outlook": {
-      "week1": "콜 옵션의 이상 거래량이 8.8배로 증가하여 상승 압력이 강하게 나타납니다.",
-      "week2": "애널리스트 목표 주가가 현재 주가보다 15% 높아 상승 여력이 큽니다.",
-      "week3": "기관 투자자들의 보유 비중이 5% 증가하여 긍정적인 시장 신호를 보입니다.",
-      "week4": "VIX 지수가 19.31로 하락하여 시장의 불안감이 감소하고 있습니다."
+      "week1": "[RSI 76.4 과매수 구간이나 MACD 0.5로 상승 모멘텀 약화 가능성]",
+      "week2": "[Put/Call 비율 0.44로 콜 옵션 수요 높으나 FOMC 발표 D-2로 변동성 확대 우려]",
+      "week3": "[기관 투자자 보유 비중 증가로 신뢰도 상승하나 10년물 국채 수익률 4.34%로 금리 부담 여전]",
+      "week4": "[VIX 18.83로 불안감 감소하나 단기 변동성 확대 가능성 존재]"
     },
     "key_news": [
       {
-        "headline": "Amazon-Backed Nuclear Firm X-Energy Raises $1.02 Billion in IPO",
-        "summary": "아마존이 지원하는 X-Energy가 10억 달러 이상을 IPO로 모금하여, 아마존의 에너지 투자 확대와 미래 성장 가능성을 시사합니다."
+        "headline": "Amazon's Core Businesses Just Keep Getting Stronger -- This Is the Growth Powerhouse I'd Hold Through Any Market Crash",
+        "summary": "아마존의 핵심 사업이 계속 성장하고 있어, 시장 불황에도 안정적인 투자처로 평가받고 있습니다."
       }
     ],
     "personas": [
       {
-        "id": "fundamental",
-        "role": "펀더멘털 분석가",
-        "direction": "UP",
-        "confidence": 75,
-        "argument": "• 애널리스트 목표 주가가 현재 주가보다 높아 상승 여력이 있습니다.\n• 내부자 거래에서 매수 신호가 강하게 나타나고 있습니다.\n• 기관 투자자들의 보유 비중이 증가하고 있어 긍정적인 시장 신호입니다."
-      },
-      {
         "id": "options",
         "role": "옵션 트레이더",
         "direction": "UP",
-        "confidence": 85,
-        "argument": "• 옵션의 Put/Call 비율이 0.58로 콜 옵션에 대한 수요가 높음을 나타냅니다. \n• IV Rank가 100%로 매우 높아, 큰 가격 변동이 예상됩니다.\n• 콜 옵션의 이상 거래량이 8.8배로 증가하여 상승 압력이 강하게 나타나고 있습니다."
+        "confidence": 80,
+        "argument": "• 옵션의 Put/Call 비율이 0.44로 콜 옵션에 대한 수요가 높음을 나타냅니다. \n• IV Rank가 100%로, 큰 가격 변동이 예상되며, 이는 콜 옵션의 이상 거래와 일치합니다.\n• FOMC 발표가 D-2로 포지셔닝 구간에 진입, 옵션 데이터가 상승을 지지합니다."
       },
       {
         "id": "technical",
         "role": "테크니컬 분석가",
         "direction": "DOWN",
-        "confidence": 75,
-        "argument": "• RSI(14)가 76.4로 과매수 구간에 진입하여 조정 가능성이 높습니다. \n• MACD가 시그널 라인보다 높지만, 과열 구간에 있어 상승 지속에 대한 의문이 있습니다. \n• FOMC 발표가 D-5로 단기 변동성 확대 가능성이 있어 주의가 필요합니다."
+        "confidence": 70,
+        "argument": "• RSI(14)가 76.4로 과매수 구간에 진입하여 조정 가능성이 큽니다.\n• MACD가 시그널 라인보다 높지만, 과열 구간에 있어 상승 모멘텀이 약화될 수 있습니다.\n• FOMC와 NFP 발표가 예정되어 있어 단기 변동성이 확대될 가능성이 있습니다."
+      },
+      {
+        "id": "fundamental",
+        "role": "펀더멘털 분석가",
+        "direction": "UP",
+        "confidence": 70,
+        "argument": "• 최근 실적 발표에서 아마존의 핵심 사업이 강력한 성장을 보이며 시장의 긍정적인 평가를 받았습니다. 이는 주가 상승에 긍정적인 영향을 미칠 수 있습니다.\n• 분석가들의 목표 주가가 현재 주가보다 높게 설정되어 있으며, 이는 주가 상승에 대한 기대감을 반영합니다.\n• 기관 투자자들의 보유 비중이 증가하고 있으며, 이는 주식에 대한 신뢰를 나타내며 주가 상승을 지지할 수 있습니다."
       },
       {
         "id": "macro",
         "role": "매크로 전략가",
         "direction": "UP",
         "confidence": 75,
-        "argument": "• VIX 지수는 19.31로 20일 동안 23.8% 하락하여 시장의 불안감이 감소하고 있음을 나타냅니다.\n• 10년물 국채 수익률은 4.32%로 20일 동안 거의 변동이 없으며, 이는 금리 안정성을 시사합니다.\n• 달러 인덱스는 98.89로 20일 동안 0.7% 하락하여, 달러 약세가 글로벌 리스크 자산에 긍정적 영향을 미칠 수 있습니다."
+        "argument": "• VIX 지수가 18.83으로 20일 동안 39.4% 하락하여 시장의 불안감이 크게 줄어들었음을 시사합니다. \n• 10년물 국채 수익률이 4.34%로 20일 동안 2.3% 하락하여 금리 부담이 완화되고 있습니다.\n• 달러 지수가 98.37로 20일 동안 1.8% 하락하여 글로벌 시장에서의 달러 강세가 약화되고 있습니다."
       }
     ]
   },
   "confluence": {
-    "aligned_count": 4,
+    "aligned_count": 2,
     "total": 4,
     "majority_direction": "UP",
-    "badge": "강한 확증",
-    "tone": "strong",
+    "badge": "혼조 — 되돌림 경계",
+    "tone": "mixed",
     "per_week": [
-      "UP",
-      "UP",
+      "DOWN",
+      "DOWN",
       "UP",
       "UP"
     ],
@@ -272,30 +272,30 @@
         {
           "key": "weekly_trend",
           "label": "주간 추세",
-          "value": 0.564,
+          "value": 1.0,
           "weight": 0.25,
-          "contribution": 0.141
+          "contribution": 0.25
         },
         {
           "key": "range_position",
           "label": "52주 위치",
-          "value": 0.993,
+          "value": 0.937,
           "weight": -0.15,
-          "contribution": -0.149
+          "contribution": -0.14
         },
         {
           "key": "mid_momentum",
           "label": "중기 모멘텀",
-          "value": 0.359,
+          "value": 0.363,
           "weight": 0.2,
-          "contribution": 0.072
+          "contribution": 0.073
         },
         {
           "key": "macro_regime",
           "label": "매크로 레짐",
-          "value": 0.107,
+          "value": 0.867,
           "weight": 0.2,
-          "contribution": 0.021
+          "contribution": 0.173
         },
         {
           "key": "analyst_consensus",
@@ -312,21 +312,21 @@
           "contribution": 0.0
         }
       ],
-      "score": 0.085
+      "score": 0.356
     },
-    "explanation": "AMZN의 주가 상승에 대한 강한 확증은 펀더멘털과 옵션 시장에서의 긍정적인 신호가 주도하고 있습니다. 애널리스트 목표 주가가 현재 주가보다 높아 펀더멘털 측면에서 상승 여력이 있으며, 옵션 시장에서도 콜 옵션에 대한 수요가 높아 긍정적인 전망을 뒷받침합니다. 매크로 환경에서도 VIX 지수의 하락이 시장의 불안감을 줄이며 상승을 지지하고 있습니다. 반면, 기술적 분석에서는 과매수 신호가 나타나고 있지만, 이는 단기적인 조정 가능성에 불과하며 전체적인 상승 추세를 막지는 못할 것입니다."
+    "explanation": "단기적으로는 기술적 분석가의 의견에 따라 과매수 상태로 인한 조정 가능성이 있지만, 구조적으로는 펀더멘털 분석가와 매크로 전략가의 의견이 지배적입니다. 아마존의 강력한 실적 성장과 시장 불안감 감소는 주가 상승을 지지하는 요인으로 작용할 수 있습니다. 따라서 단기 조정 후 장기 추세 재개 가능성이 높습니다."
   },
   "upcoming_events": [
     {
       "type": "FOMC",
       "date": "2026-04-29",
-      "days_until": 5
+      "days_until": 2
     },
     {
       "type": "NFP",
       "date": "2026-05-01",
-      "days_until": 7
+      "days_until": 4
     }
   ],
-  "predicted_at": "2026-04-24T03:50:34.194013+00:00"
+  "predicted_at": "2026-04-27T15:42:00.636632+00:00"
 }

@@ -2,9 +2,51 @@
   "ticker": "COST",
   "history": [
     {
+      "id": 563,
+      "predicted_at": "2026-04-27T15:41:57.553607+00:00",
+      "age_hours": 0.1,
+      "current_price_at_prediction": 1007.8,
+      "verdict": "관망",
+      "direction": "DOWN",
+      "confidence": 50,
+      "summary": "옵션 시장의 비관적 신호와 높은 변동성으로 인해 하락 압력이 예상됩니다. 매크로 환경은 긍정적이지만, 종목 자체의 약세 신호가 강합니다.",
+      "week1": {
+        "direction": "UP",
+        "confidence": 52.1,
+        "price_low": 994.85,
+        "price_high": 1035.16,
+        "price_target": 1015.01
+      },
+      "week2": {
+        "direction": "DOWN",
+        "confidence": 50.8,
+        "price_low": 974.72,
+        "price_high": 1035.19,
+        "price_target": 1004.95
+      },
+      "week3": {
+        "direction": "UP",
+        "up_probability": 59.3,
+        "range_low": 947.33,
+        "range_high": 1068.27
+      },
+      "week4": {
+        "direction": "UP",
+        "up_probability": 59.3,
+        "range_low": 927.18,
+        "range_high": 1088.42
+      },
+      "weekly_outlook": {
+        "week1": "RSI 54.3으로 중립 수준이나 MACD 신호선 위에 있어 상승 가능성 존재.",
+        "week2": "기관 매수세 56.5%로 긍정적이나 옵션 P/C 비율 6.32로 약세 신호.",
+        "week3": "10년물 국채 수익률 4.34%로 하락해 금리 부담 완화되었으나 FOMC 발표 예정으로 변동성 우려.",
+        "week4": "VIX 18.83로 불안감 감소했으나 IV Rank 94%로 큰 변동성 예상되어 리스크 존재."
+      }
+    },
+    {
       "id": 559,
       "predicted_at": "2026-04-24T03:52:34.714514+00:00",
-      "age_hours": 0.0,
+      "age_hours": 83.9,
       "current_price_at_prediction": 1014.38,
       "verdict": "관망",
       "direction": "UP",
@@ -46,7 +88,7 @@
     {
       "id": 527,
       "predicted_at": "2026-04-13T14:54:59.620379+00:00",
-      "age_hours": 253.0,
+      "age_hours": 336.9,
       "current_price_at_prediction": 989.55,
       "verdict": "관망",
       "direction": "DOWN",
@@ -90,7 +132,7 @@
     {
       "id": 521,
       "predicted_at": "2026-04-09T06:43:37.090108+00:00",
-      "age_hours": 357.2,
+      "age_hours": 441.1,
       "current_price_at_prediction": 1013.21,
       "verdict": "관망",
       "direction": "UP",
@@ -134,7 +176,7 @@
     {
       "id": 520,
       "predicted_at": "2026-04-09T06:43:29.510763+00:00",
-      "age_hours": 357.2,
+      "age_hours": 441.1,
       "current_price_at_prediction": 1013.21,
       "verdict": "관망",
       "direction": "UP",

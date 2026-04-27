@@ -2,9 +2,51 @@
   "ticker": "NVDA",
   "history": [
     {
+      "id": 570,
+      "predicted_at": "2026-04-27T15:42:01.313360+00:00",
+      "age_hours": 0.1,
+      "current_price_at_prediction": 210.5,
+      "verdict": "관망",
+      "direction": "DOWN",
+      "confidence": 50,
+      "summary": "NVDA의 주가는 과매수 상태이며, 옵션 시장에서 하락 압력이 강하게 나타나고 있습니다. 시장 전반의 불안감은 줄어들었으나, 단기 변동성 확대 가능성이 높습니다.",
+      "week1": {
+        "direction": "DOWN",
+        "confidence": 82.8,
+        "price_low": 183.25,
+        "price_high": 191.67,
+        "price_target": 187.46
+      },
+      "week2": {
+        "direction": "DOWN",
+        "confidence": 84.7,
+        "price_low": 179.84,
+        "price_high": 192.47,
+        "price_target": 186.16
+      },
+      "week3": {
+        "direction": "UP",
+        "up_probability": 54.9,
+        "range_low": 197.87,
+        "range_high": 223.13
+      },
+      "week4": {
+        "direction": "UP",
+        "up_probability": 54.9,
+        "range_low": 193.66,
+        "range_high": 227.34
+      },
+      "weekly_outlook": {
+        "week1": "RSI 73.0으로 과매수 구간이나 MACD 1.5로 상승세 지속 중.",
+        "week2": "VIX 18.83로 불안감 감소하나 옵션의 Put/Call 비율 0.42로 하방 압력 존재.",
+        "week3": "10년물 국채 수익률 4.34% 하락하나 내부자 순매도 5만주 발생.",
+        "week4": "기관 투자자 보유량 변화 미비하나 IV Rank 100%로 변동성 증가 가능."
+      }
+    },
+    {
       "id": 553,
       "predicted_at": "2026-04-24T03:50:11.101886+00:00",
-      "age_hours": 0.1,
+      "age_hours": 84.0,
       "current_price_at_prediction": 199.64,
       "verdict": "관망",
       "direction": "DOWN",
@@ -46,7 +88,7 @@
     {
       "id": 531,
       "predicted_at": "2026-04-13T14:55:00.817847+00:00",
-      "age_hours": 253.0,
+      "age_hours": 336.9,
       "current_price_at_prediction": 189.3,
       "verdict": "매수",
       "direction": "UP",
@@ -90,7 +132,7 @@
     {
       "id": 509,
       "predicted_at": "2026-04-09T06:41:06.616934+00:00",
-      "age_hours": 357.2,
+      "age_hours": 441.1,
       "current_price_at_prediction": 178.1,
       "verdict": "관망",
       "direction": "UP",
@@ -134,7 +176,7 @@
     {
       "id": 508,
       "predicted_at": "2026-04-09T06:40:50.361250+00:00",
-      "age_hours": 357.2,
+      "age_hours": 441.1,
       "current_price_at_prediction": 178.1,
       "verdict": "관망",
       "direction": "UP",

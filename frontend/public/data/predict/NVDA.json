@@ -1,94 +1,174 @@
 {
   "ticker": "NVDA",
-  "current_price": 199.64,
-  "sentiment_score": 0.3,
-  "short_float_pct": 1.2,
+  "current_price": 210.5,
+  "sentiment_score": 0.6,
+  "short_float_pct": 1.21,
   "short_change": "N/A",
   "order_flow": {
-    "buy_dominance_pct": 75.5,
+    "buy_dominance_pct": 87.7,
     "obv_trend": "UP",
     "is_accumulation": false
   },
   "news_headlines": [
     {
-      "title": "Chip stocks just added $3 trillion in market value — but are the most overextended in decades: Chart of the Day",
-      "url": "https://finance.yahoo.com/markets/article/chip-stocks-just-added-3-trillion-in-market-value--but-are-the-most-overextended-in-decades-chart-of-the-day-192542685.html"
+      "title": "Tech stocks today: Qualcomm stock soars, Microsoft and OpenAI amend deal, with Big Tech earnings on deck",
+      "url": "https://finance.yahoo.com/sectors/technology/live/tech-stocks-today-nvidia-magnificent-seven-113535737.html"
     },
     {
-      "title": "ServiceNow Stock Just Got Slammed. Why I'm Still Not Buying the Dip.",
-      "url": "https://www.fool.com/investing/2026/04/23/servicenow-stock-just-got-slammed-why-im-still-not/"
+      "title": "Have software stocks reached an extreme washout yet?",
+      "url": "https://finance.yahoo.com/news/have-software-stocks-reached-an-extreme-washout-yet-141914857.html"
     },
     {
-      "title": "Semiconductor Stocks Are on a Historic 32-Year Run. Here's What Usually Happens After a Rally Like This.",
-      "url": "https://www.fool.com/investing/2026/04/23/semiconductor-stocks-historic-run-history-says/"
+      "title": "'A return to optimism': Wall Street strategists are bullish on the AI trade",
+      "url": "https://finance.yahoo.com/markets/article/a-return-to-optimism-wall-street-strategists-are-bullish-on-the-ai-trade-143000172.html"
     },
     {
-      "title": "Intel's Earnings Report Shows How the CPU Has Found Its Way to the AI Boom.",
-      "url": "https://www.fool.com/investing/2026/04/23/intels-earnings-report-shows-how-the-cpu-has-found/"
+      "title": "Mag 7 earnings bonanza and Powell's home stretch: What to watch this week",
+      "url": "https://finance.yahoo.com/news/mag-7-earnings-bonanza-and-powells-home-stretch-what-to-watch-this-week-113016596.html"
     },
     {
-      "title": "Why Applied Digital Stock Jumped Today",
-      "url": "https://www.fool.com/investing/2026/04/23/why-applied-digital-stock-jumped-today/"
+      "title": "Elon Musk Just Delivered Great News for Tesla, but Don't Rush to Buy the Stock",
+      "url": "https://www.fool.com/investing/2026/04/27/elon-musk-great-news-tesla-dont-buy-stock/"
     },
     {
-      "title": "Why Molina Healthcare Stock Rocketed 14% Higher Today",
-      "url": "https://www.fool.com/investing/2026/04/23/why-molina-healthcare-stock-rocketed-14-higher-tod/"
+      "title": "Stock Market Today: Dow Firm As Pharma Shines; Google Stock Clears Entry, But Note This (Live Coverage)",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-iran-news-nvidia-stock-nvda/?src=A00220&yptr=yahoo"
     },
     {
-      "title": "Oracle just made Supermicro’s story a lot more complicated",
-      "url": "https://www.thestreet.com/investing/stocks/oracle-just-made-supermicros-story-a-lot-more-complicated"
+      "title": "Google's AI Reckoning: Can Gemini Turn Dominance Into Dollars?",
+      "url": "https://www.investors.com/news/technology/google-stock-artificial-intelligence-ai-models-gemini/?src=A00220&yptr=yahoo"
     },
     {
-      "title": "Review & Preview: Earnings Storm",
-      "url": "https://www.barrons.com/articles/stocks-today-chips-intel-earnings-d007603c?siteid=yhoof2&yptr=yahoo"
+      "title": "Google To Increase Anthropic Investment; OpenAI, Microsoft Shake Up Partnership",
+      "url": "https://www.investors.com/news/technology/google-increase-anthropic-investment-cloud-giants-chase-ai-business/?src=A00220&yptr=yahoo"
     },
     {
-      "title": "Why Honeywell Stock Tumbled on Thursday",
-      "url": "https://www.fool.com/investing/2026/04/23/why-honeywell-stock-tumbled-on-thursday/"
+      "title": "Chip Stocks Take A Breather After Historic Run. What's Next For Semiconductor Group?",
+      "url": "https://www.investors.com/news/technology/chip-stocks-sox-historic-run-qcom-nvda-intc/?src=A00220&yptr=yahoo"
+    },
+    {
+      "title": "Amazon's Core Businesses Just Keep Getting Stronger -- This Is the Growth Powerhouse I'd Hold Through Any Market Crash",
+      "url": "https://www.fool.com/investing/2026/04/27/amazons-core-businesses-just-keep-getting-stronger/"
     }
   ],
   "signals": {
-    "rsi": 64.6,
+    "rsi": 73.0,
     "macd_cross": "BULLISH",
     "ma_trend": "BULLISH",
-    "bb_position": 77,
-    "volume_ratio": 0.9
+    "bb_position": 90,
+    "volume_ratio": 0.56
   },
   "analyst": {
     "target_mean": 268.61,
     "target_high": 380.0,
     "target_low": 140.0,
-    "upside_pct": 34.5,
+    "upside_pct": 27.6,
     "num_analysts": 56,
     "recommendation": "strong_buy"
   },
   "insider": {
-    "recent": [],
-    "net_shares_90d": 0
+    "recent": [
+      {
+        "date": "2026-03-20",
+        "insider": "ROBERTSON DONALD F JR",
+        "title": "Officer",
+        "type": "매도",
+        "shares": 5396,
+        "value": 942944
+      },
+      {
+        "date": "2026-03-20",
+        "insider": "KRESS COLETTE M.",
+        "title": "Chief Financial Officer",
+        "type": "매도",
+        "shares": 62650,
+        "value": 10956706
+      },
+      {
+        "date": "2026-03-20",
+        "insider": "STEVENS MARK A",
+        "title": "Director",
+        "type": "매도",
+        "shares": 221682,
+        "value": 38502524
+      },
+      {
+        "date": "2026-03-19",
+        "insider": "SHAH AARTI S",
+        "title": "Director",
+        "type": "매도",
+        "shares": 19000,
+        "value": 3357549
+      },
+      {
+        "date": "2026-03-18",
+        "insider": "PURI AJAY K",
+        "title": "Officer",
+        "type": "매도",
+        "shares": 300000,
+        "value": 54676140
+      }
+    ],
+    "net_shares_90d": -959372
   },
   "institutional": {
-    "top_holders": [],
-    "total_pct": null,
-    "change_pct": null
+    "top_holders": [
+      {
+        "name": "Vanguard Group Inc",
+        "pct_held": 9.33,
+        "shares": 2266683275,
+        "change_pct": 1.94,
+        "date_reported": "2025-12-31"
+      },
+      {
+        "name": "Blackrock Inc.",
+        "pct_held": 8.0,
+        "shares": 1943812884,
+        "change_pct": 0.75,
+        "date_reported": "2025-12-31"
+      },
+      {
+        "name": "State Street Corporation",
+        "pct_held": 4.08,
+        "shares": 991480489,
+        "change_pct": 1.17,
+        "date_reported": "2025-12-31"
+      },
+      {
+        "name": "FMR, LLC",
+        "pct_held": 4.0,
+        "shares": 971063283,
+        "change_pct": -1.18,
+        "date_reported": "2025-12-31"
+      },
+      {
+        "name": "Geode Capital Management, LLC",
+        "pct_held": 2.42,
+        "shares": 588803093,
+        "change_pct": 0.58,
+        "date_reported": "2025-12-31"
+      }
+    ],
+    "total_pct": null
   },
   "macro": {
-    "vix": 19.31,
-    "vix_20d_change": -23.8,
-    "treasury_10y": 4.32,
-    "treasury_10y_20d_change": -0.1,
-    "dxy": 98.89,
-    "dxy_20d_change": -0.7
+    "vix": 98.37,
+    "vix_20d_change": -1.8,
+    "treasury_10y": 98.37,
+    "treasury_10y_20d_change": -1.8,
+    "dxy": 4.34,
+    "dxy_20d_change": -2.3
   },
   "options": {
-    "pc_ratio": 0.9,
+    "pc_ratio": 0.42,
     "iv_rank": 100,
-    "unusual_activity": 11.0,
+    "unusual_activity": 18.0,
     "unusual_side": "PUT",
-    "data_source": "earnings",
-    "expiry_used": "2026-05-22"
+    "data_source": "nearest+monthly",
+    "expiry_used": "2026-04-27"
   },
   "earnings": {
-    "next_date": "2026-05-21",
+    "next_date": null,
     "days_until": null,
     "history": []
   },
@@ -103,22 +183,22 @@
     "source": "openinsider"
   },
   "reddit": {
-    "mentions": 13,
-    "dollar_mentions": 0,
+    "mentions": 21,
+    "dollar_mentions": 1,
     "scanned_posts": 300,
-    "latest_title": "NVDA holders, are you jumping onto the dram boat and the cpu boat?",
-    "latest_at": "2026-04-23T21:41:56+00:00"
+    "latest_title": "$RDDT get in before earnings",
+    "latest_at": "2026-04-27T15:31:47+00:00"
   },
   "anomaly": {
-    "score": 40,
-    "direction": null,
+    "score": 48,
+    "direction": "DOWN",
     "level": "관심",
     "signals": [
       {
         "name": "거래량 급증 + 횡보",
         "score": 0,
         "direction": null,
-        "detail": "거래량 0.6x, 가격변동 16.6%"
+        "detail": "거래량 0.7x, 가격변동 27.4%"
       },
       {
         "name": "IV 급등",
@@ -130,123 +210,124 @@
         "name": "옵션 이상 거래",
         "score": 20,
         "direction": "DOWN",
-        "detail": "평소 대비 11.0x (PUT)"
+        "detail": "평소 대비 18.0x (PUT)"
       },
       {
         "name": "내부자 방향 전환",
-        "score": 0,
-        "direction": null,
-        "detail": "거래 부족"
+        "score": 8,
+        "direction": "DOWN",
+        "detail": "순-959,372주 (대량)"
       },
       {
         "name": "P/C ratio 극단",
         "score": 0,
         "direction": null,
-        "detail": "P/C 0.90"
+        "detail": "P/C 0.42"
       }
     ]
   },
   "prediction": {
     "week1": {
       "direction": "DOWN",
-      "confidence": 64.9,
-      "price_low": 185.71,
-      "price_high": 193.7,
-      "price_target": 189.71
+      "confidence": 82.8,
+      "price_low": 183.25,
+      "price_high": 191.67,
+      "price_target": 187.46
     },
     "week2": {
       "direction": "DOWN",
-      "confidence": 68.5,
-      "price_low": 181.31,
-      "price_high": 193.29,
-      "price_target": 187.3
+      "confidence": 84.7,
+      "price_low": 179.84,
+      "price_high": 192.47,
+      "price_target": 186.16
     },
     "week3": {
       "direction": "UP",
-      "up_probability": 52.3,
-      "range_low": 187.66,
-      "range_high": 211.62
+      "up_probability": 54.9,
+      "range_low": 197.87,
+      "range_high": 223.13
     },
     "week4": {
       "direction": "UP",
-      "up_probability": 52.3,
-      "range_low": 183.67,
-      "range_high": 215.61
+      "up_probability": 54.9,
+      "range_low": 193.66,
+      "range_high": 227.34
     }
   },
   "debate": {
     "direction": "DOWN",
-    "confidence": 54,
+    "confidence": 50,
     "verdict": "관망",
-    "summary": "옵션 및 기술적 분석에서 NVDA의 하락 가능성이 높다고 평가합니다. 시장 불안감은 감소했으나, NVDA에 대한 하락 베팅이 강하게 존재합니다.",
+    "summary": "NVDA의 주가는 과매수 상태이며, 옵션 시장에서 하락 압력이 강하게 나타나고 있습니다. 시장 전반의 불안감은 줄어들었으나, 단기 변동성 확대 가능성이 높습니다.",
     "stock_bull": [
-      "애널리스트의 평균 목표 주가는 $268.61로 현재 가격 대비 34.5%의 상승 여력이 있습니다.",
-      "56명의 애널리스트가 'STRONG BUY'를 추천하고 있습니다.",
-      "기관 투자자들의 보유 비율이 높고, 내부자 거래에 대한 부정적인 신호가 없습니다."
+      "분석가들의 평균 목표 주가가 $268.61로 현재 주가 대비 27.6% 상승 여력을 보이고 있습니다."
     ],
     "stock_bear": [
-      "옵션의 Put/Call 비율이 0.9로 풋 옵션의 비중이 높습니다.",
-      "IV Rank가 100%로 매우 높아 하락 가능성을 시사합니다.",
-      "옵션 이상 거래에서 풋 옵션의 거래가 11.0배 증가했습니다.",
-      "RSI(14)가 64.6으로 과매수 구간에 근접하여 조정 가능성이 있습니다.",
-      "MACD가 시그널 라인 위에 있지만, 최근 볼륨이 약세입니다."
+      "RSI(14)가 73.0으로 과매수 구간에 진입하여 조정 가능성이 높습니다.",
+      "옵션의 Put/Call 비율이 0.42로 콜 옵션에 비해 풋 옵션이 상대적으로 적지만, 이상 거래가 18.0배로 급증하여 하방 압력이 강하게 나타남.",
+      "IV Rank가 100%로 매우 높아, 향후 큰 변동성이 예상되며, 이는 하락 가능성을 시사함."
     ],
     "market_bull": [
-      "VIX 지수는 19.31로 20일 동안 23.8% 하락하여 시장의 불안감이 감소하고 있습니다.",
-      "10년물 국채 수익률은 4.32%로 금리 안정성을 시사합니다.",
-      "달러 인덱스는 98.89로 20일 동안 0.7% 하락하여, 달러 약세가 글로벌 리스크 자산에 긍정적 영향을 미칠 수 있습니다."
+      "VIX 지수가 18.83으로 20일 동안 39.4% 하락하여 시장의 불안감이 크게 줄어들었음을 시사합니다.",
+      "10년물 국채 수익률이 4.34%로 20일 동안 2.3% 하락하여 금리 부담이 완화되고 있습니다.",
+      "달러 지수가 98.37로 20일 동안 1.8% 하락하여 글로벌 시장에서의 달러 강세가 약화되고 있습니다."
     ],
     "market_bear": [],
     "bull_points": [
-      "애널리스트의 평균 목표 주가는 $268.61로 현재 가격 대비 34.5%의 상승 여력이 있습니다.",
-      "56명의 애널리스트가 'STRONG BUY'를 추천하고 있습니다.",
-      "기관 투자자들의 보유 비율이 높고, 내부자 거래에 대한 부정적인 신호가 없습니다.",
-      "VIX 지수는 19.31로 20일 동안 23.8% 하락하여 시장의 불안감이 감소하고 있습니다.",
-      "10년물 국채 수익률은 4.32%로 금리 안정성을 시사합니다.",
-      "달러 인덱스는 98.89로 20일 동안 0.7% 하락하여, 달러 약세가 글로벌 리스크 자산에 긍정적 영향을 미칠 수 있습니다."
+      "분석가들의 평균 목표 주가가 $268.61로 현재 주가 대비 27.6% 상승 여력을 보이고 있습니다.",
+      "VIX 지수가 18.83으로 20일 동안 39.4% 하락하여 시장의 불안감이 크게 줄어들었음을 시사합니다.",
+      "10년물 국채 수익률이 4.34%로 20일 동안 2.3% 하락하여 금리 부담이 완화되고 있습니다.",
+      "달러 지수가 98.37로 20일 동안 1.8% 하락하여 글로벌 시장에서의 달러 강세가 약화되고 있습니다."
     ],
     "bear_points": [
-      "옵션의 Put/Call 비율이 0.9로 풋 옵션의 비중이 높습니다.",
-      "IV Rank가 100%로 매우 높아 하락 가능성을 시사합니다.",
-      "옵션 이상 거래에서 풋 옵션의 거래가 11.0배 증가했습니다.",
-      "RSI(14)가 64.6으로 과매수 구간에 근접하여 조정 가능성이 있습니다.",
-      "MACD가 시그널 라인 위에 있지만, 최근 볼륨이 약세입니다."
+      "RSI(14)가 73.0으로 과매수 구간에 진입하여 조정 가능성이 높습니다.",
+      "옵션의 Put/Call 비율이 0.42로 콜 옵션에 비해 풋 옵션이 상대적으로 적지만, 이상 거래가 18.0배로 급증하여 하방 압력이 강하게 나타남.",
+      "IV Rank가 100%로 매우 높아, 향후 큰 변동성이 예상되며, 이는 하락 가능성을 시사함."
     ],
     "weekly_outlook": {
-      "week1": "RSI 64.6으로 과매수 구간 접근 중이나 MACD가 시그널 라인 위에 있어 약세 신호.",
-      "week2": "애널리스트 56명이 'STRONG BUY' 추천하나 Put/Call 비율 0.9로 하락 예상 포지션 우세.",
-      "week3": "기관 투자자 보유 비율 높으나 IV Rank 100%로 큰 변동성 예상.",
-      "week4": "VIX 19.31로 불안감 감소하나 FOMC 발표 D-5로 단기 변동성 확대 가능성 존재."
+      "week1": "RSI 73.0으로 과매수 구간이나 MACD 1.5로 상승세 지속 중.",
+      "week2": "VIX 18.83로 불안감 감소하나 옵션의 Put/Call 비율 0.42로 하방 압력 존재.",
+      "week3": "10년물 국채 수익률 4.34% 하락하나 내부자 순매도 5만주 발생.",
+      "week4": "기관 투자자 보유량 변화 미비하나 IV Rank 100%로 변동성 증가 가능."
     },
-    "key_news": [],
-    "personas": [
+    "key_news": [
       {
-        "id": "options",
-        "role": "옵션 트레이더",
-        "direction": "DOWN",
-        "confidence": 85,
-        "argument": "• 옵션의 Put/Call 비율이 0.9로 콜 옵션보다 풋 옵션의 비중이 높아 하락을 예상하는 포지션이 우세합니다.\n• IV Rank가 100%로 매우 높아, 시장이 큰 변동성을 예상하고 있으며 이는 하락 가능성을 시사합니다.\n• 옵션 이상 거래에서 풋 옵션의 거래가 11.0배 증가하여 하락에 대한 강한 베팅이 존재합니다."
+        "headline": "'A return to optimism': Wall Street strategists are bullish on the AI trade",
+        "summary": "AI 관련 주식에 대한 낙관론이 높아져 NVDA 주가에 긍정적 영향을 미칠 수 있습니다."
       },
+      {
+        "headline": "Google To Increase Anthropic Investment; OpenAI, Microsoft Shake Up Partnership",
+        "summary": "구글의 AI 투자 확대는 경쟁 심화를 의미하며, NVDA의 시장 점유율에 영향을 줄 수 있습니다."
+      }
+    ],
+    "personas": [
       {
         "id": "technical",
         "role": "테크니컬 분석가",
         "direction": "DOWN",
-        "confidence": 70,
-        "argument": "• RSI(14)가 64.6으로 과매수 구간에 근접하여 조정 가능성 있음.\n• MACD가 시그널 라인 위에 있지만, 최근 볼륨이 5일 평균 대비 0.90배로 약세.\n• FOMC 발표 D-5로 단기 변동성 확대 가능성 존재."
+        "confidence": 85,
+        "argument": "• RSI(14)가 73.0으로 과매수 구간에 진입하여 조정 가능성이 높습니다.\n• MACD가 시그널 라인보다 높지만, FOMC와 NFP 발표로 인해 단기 변동성 확대 가능성이 있습니다.\n• OBV는 상승 중이나, 거래량이 5일 평균의 0.56배로 감소하여 상승 모멘텀이 약화될 수 있습니다."
       },
       {
         "id": "fundamental",
         "role": "펀더멘털 분석가",
         "direction": "UP",
-        "confidence": 80,
-        "argument": "• 애널리스트의 평균 목표 주가는 $268.61로 현재 가격 대비 34.5%의 상승 여력이 있습니다. \n• 56명의 애널리스트가 'STRONG BUY'를 추천하고 있어 시장의 긍정적인 전망을 보여줍니다.\n• 기관 투자자들의 보유 비율이 높고, 내부자 거래에 대한 부정적인 신호가 없습니다."
+        "confidence": 70,
+        "argument": "• 분석가들의 평균 목표 주가가 $268.61로 현재 주가 대비 27.6%의 상승 여력을 보이고 있으며, 강력한 매수 추천을 받고 있습니다. \n• 내부자 거래에서 순매도가 발생했지만, 이는 종종 주가에 단기적인 영향을 미치며 장기적인 펀더멘털에 대한 신호로 해석되지 않을 수 있습니다. \n• 기관 투자자들의 보유량 변화는 언급되지 않았으나, 분석가들의 긍정적인 전망과 일치할 가능성이 높습니다."
+      },
+      {
+        "id": "options",
+        "role": "옵션 트레이더",
+        "direction": "DOWN",
+        "confidence": 85,
+        "argument": "• 옵션의 Put/Call 비율이 0.42로 콜 옵션에 비해 풋 옵션이 상대적으로 적지만, 이상 거래가 18.0배로 급증하여 하방 압력이 강하게 나타남.\n• IV Rank가 100%로 매우 높아, 향후 큰 변동성이 예상되며, 이는 하락 가능성을 시사함.\n• FOMC와 NFP 발표가 예정되어 있어 단기 변동성 확대 가능성이 있으며, 이는 하락 포지셔닝을 강화할 수 있음."
       },
       {
         "id": "macro",
         "role": "매크로 전략가",
         "direction": "UP",
         "confidence": 75,
-        "argument": "• VIX 지수는 19.31로 20일 동안 23.8% 하락하여 시장의 불안감이 감소하고 있음을 나타냅니다.\n• 10년물 국채 수익률은 4.32%로 20일 동안 거의 변동이 없으며, 이는 금리 안정성을 시사합니다.\n• 달러 인덱스는 98.89로 20일 동안 0.7% 하락하여, 달러 약세가 글로벌 리스크 자산에 긍정적 영향을 미칠 수 있습니다."
+        "argument": "• VIX 지수가 18.83으로 20일 동안 39.4% 하락하여 시장의 불안감이 크게 줄어들었음을 시사합니다. \n• 10년물 국채 수익률이 4.34%로 20일 동안 2.3% 하락하여 금리 부담이 완화되고 있습니다.\n• 달러 지수가 98.37로 20일 동안 1.8% 하락하여 글로벌 시장에서의 달러 강세가 약화되고 있습니다."
       }
     ]
   },
@@ -267,61 +348,61 @@
         {
           "key": "weekly_trend",
           "label": "주간 추세",
-          "value": 0.29,
+          "value": 1.0,
           "weight": 0.25,
-          "contribution": 0.072
+          "contribution": 0.25
         },
         {
           "key": "range_position",
           "label": "52주 위치",
-          "value": 0.859,
+          "value": 1.0,
           "weight": -0.15,
-          "contribution": -0.129
+          "contribution": -0.15
         },
         {
           "key": "mid_momentum",
           "label": "중기 모멘텀",
-          "value": 0.058,
+          "value": 0.321,
           "weight": 0.2,
-          "contribution": 0.012
+          "contribution": 0.064
         },
         {
           "key": "macro_regime",
           "label": "매크로 레짐",
-          "value": 0.107,
+          "value": 0.042,
           "weight": 0.2,
-          "contribution": 0.021
+          "contribution": 0.008
         },
         {
           "key": "analyst_consensus",
           "label": "애널리스트 컨센서스",
-          "value": 1.0,
+          "value": 0.92,
           "weight": 0.1,
-          "contribution": 0.1
+          "contribution": 0.092
         },
         {
           "key": "institutional_flow",
           "label": "스마트머니 흐름",
-          "value": 0.0,
+          "value": -1.0,
           "weight": 0.1,
-          "contribution": 0.0
+          "contribution": -0.1
         }
       ],
-      "score": 0.077
+      "score": 0.165
     },
-    "explanation": "단기적으로는 옵션 트레이더와 테크니컬 분석가의 하락 전망이 우세하지만, 구조적으로는 펀더멘털 분석가와 매크로 전략가의 상승 요인이 존재합니다. 단기적으로는 과매수 상태로 인한 조정이 예상되나, 장기적으로는 애널리스트의 목표 주가와 시장 불안감 감소가 상승을 지지할 가능성이 있습니다. 따라서 단기 조정 후 장기 추세 재개 가능성이 높습니다."
+    "explanation": "단기적으로는 기술적 지표와 옵션 시장에서의 하방 압력이 강하게 나타나고 있어 조정 가능성이 높습니다. 그러나 장기적으로는 펀더멘털 분석가의 긍정적인 목표 주가와 매크로 지표의 안정성 회복이 상승을 지지하고 있습니다. 따라서 단기 조정 후 장기 추세 재개 가능성이 있습니다."
   },
   "upcoming_events": [
     {
       "type": "FOMC",
       "date": "2026-04-29",
-      "days_until": 5
+      "days_until": 2
     },
     {
       "type": "NFP",
       "date": "2026-05-01",
-      "days_until": 7
+      "days_until": 4
     }
   ],
-  "predicted_at": "2026-04-24T03:50:11.101886+00:00"
+  "predicted_at": "2026-04-27T15:42:01.313360+00:00"
 }

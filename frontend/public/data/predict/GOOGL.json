@@ -1,66 +1,70 @@
 {
   "ticker": "GOOGL",
-  "current_price": 338.89,
-  "sentiment_score": -0.3,
-  "short_float_pct": 1.37,
+  "current_price": 350.61,
+  "sentiment_score": 0.2,
+  "short_float_pct": 1.35,
   "short_change": "N/A",
   "order_flow": {
-    "buy_dominance_pct": 63.5,
+    "buy_dominance_pct": 75.3,
     "obv_trend": "UP",
     "is_accumulation": false
   },
   "news_headlines": [
     {
-      "title": "Meta to cut 8,000 jobs, Microsoft offers buyouts to to staff as AI spending costs hit Big Tech workers",
-      "url": "https://finance.yahoo.com/markets/article/meta-to-cut-8000-jobs-microsoft-offers-buyouts-to-to-staff-as-ai-spending-costs-hit-big-tech-workers-182722919.html"
+      "title": "Tech stocks today: Qualcomm stock soars, Microsoft and OpenAI amend deal, with Big Tech earnings on deck",
+      "url": "https://finance.yahoo.com/sectors/technology/live/tech-stocks-today-nvidia-magnificent-seven-113535737.html"
     },
     {
-      "title": "Oil extends gains, stocks sink as peace talk hopes fade",
-      "url": "https://finance.yahoo.com/markets/commodities/articles/oil-extends-gains-stocks-sink-025127756.html"
+      "title": "Stock Market Today: Dow Firm As Pharma Shines; Google Stock Clears Entry, But Note This (Live Coverage)",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-iran-news-nvidia-stock-nvda/?src=A00220&yptr=yahoo"
     },
     {
-      "title": "3 Overrated  Stocks with Warning Signs",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/3-overrated-stocks-warning-signs-024523737.html"
+      "title": "Google's AI Reckoning: Can Gemini Turn Dominance Into Dollars?",
+      "url": "https://www.investors.com/news/technology/google-stock-artificial-intelligence-ai-models-gemini/?src=A00220&yptr=yahoo"
     },
     {
-      "title": "Why Applied Digital Stock Jumped Today",
-      "url": "https://www.fool.com/investing/2026/04/23/why-applied-digital-stock-jumped-today/"
+      "title": "Google To Increase Anthropic Investment; OpenAI, Microsoft Shake Up Partnership",
+      "url": "https://www.investors.com/news/technology/google-increase-anthropic-investment-cloud-giants-chase-ai-business/?src=A00220&yptr=yahoo"
     },
     {
-      "title": "Review & Preview: Earnings Storm",
-      "url": "https://www.barrons.com/articles/stocks-today-chips-intel-earnings-d007603c?siteid=yhoof2&yptr=yahoo"
+      "title": "Stocks Are Wavering to Kick Off a Busy Week",
+      "url": "https://www.barrons.com/livecoverage/stock-market-news-today-042726/card/stocks-are-wavering-to-kick-off-a-busy-week-Z6d7YhwvcW5h2phTIjME?siteid=yhoof2&yptr=yahoo"
     },
     {
-      "title": "Meta plans 10% layoffs as AI spending soars: source",
-      "url": "https://finance.yahoo.com/sectors/technology/articles/meta-plans-10-layoffs-ai-193633862.html"
+      "title": "Week ahead: Big Tech earnings, Fed decision, and an oil crisis set up Wall Street's biggest test of the year",
+      "url": "https://www.proactiveinvestors.com/companies/news/1091245/week-ahead-big-tech-earnings-fed-decision-and-an-oil-crisis-set-up-wall-street-s-biggest-test-of-the-year-1091245.html"
     },
     {
-      "title": "VeriSign Q1 Earnings Call Highlights",
-      "url": "https://www.marketbeat.com/instant-alerts/verisign-q1-earnings-call-highlights-2026-04-23/?utm_source=yahoofinance&utm_medium=yahoofinance"
+      "title": "Microsoft cuts OpenAI revenue share in a fresh step to loosen their AI alliance",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/microsoft-cuts-openai-revenue-share-143536757.html"
     },
     {
-      "title": "Intel Q1 Earnings Call Highlights",
-      "url": "https://www.marketbeat.com/instant-alerts/intel-q1-earnings-call-highlights-2026-04-23/?utm_source=yahoofinance&utm_medium=yahoofinance"
+      "title": "Apple, Google Crushed California Bill That Helped Smaller Rivals",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/apple-google-crushed-california-bill-143510069.html"
     },
     {
-      "title": "Bret Taylor’s Sierra buys YC-backed AI startup Fragment",
-      "url": "https://finance.yahoo.com/sectors/technology/articles/bret-taylor-sierra-buys-yc-210000299.html"
+      "title": "VIX Fear Rising Toward 20 on Tech Earnings, Capex Risk, War Uncertainty",
+      "url": "https://247wallst.com/investing/2026/04/27/vix-fear-rising-toward-20-on-tech-earnings-capex-risk-war-uncertainty/"
+    },
+    {
+      "title": "Alphabet (GOOGL) Is One of Jim Cramer’s Top Quantum Computing Stocks",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/alphabet-googl-one-jim-cramer-142219680.html"
     }
   ],
   "signals": {
-    "rsi": 66.3,
+    "rsi": 71.9,
     "macd_cross": "BULLISH",
     "ma_trend": "BULLISH",
-    "bb_position": 77,
-    "volume_ratio": 0.87
+    "bb_position": 85,
+    "volume_ratio": 0.65
   },
   "analyst": {
-    "target_mean": null,
-    "target_high": null,
-    "target_low": null,
-    "upside_pct": null,
-    "num_analysts": null,
-    "recommendation": ""
+    "target_mean": 377.29,
+    "target_high": 443.0,
+    "target_low": 185.0,
+    "upside_pct": 7.6,
+    "num_analysts": 55,
+    "recommendation": "strong_buy"
   },
   "insider": {
     "recent": [],
@@ -72,23 +76,23 @@
     "change_pct": null
   },
   "macro": {
-    "vix": 19.31,
-    "vix_20d_change": -23.8,
-    "treasury_10y": 4.32,
-    "treasury_10y_20d_change": -0.1,
-    "dxy": 98.89,
-    "dxy_20d_change": -0.7
+    "vix": 18.8,
+    "vix_20d_change": -39.5,
+    "treasury_10y": 4.34,
+    "treasury_10y_20d_change": -2.3,
+    "dxy": 4.34,
+    "dxy_20d_change": -2.3
   },
   "options": {
-    "pc_ratio": 0.53,
+    "pc_ratio": 0.31,
     "iv_rank": 100,
-    "unusual_activity": 15.0,
-    "unusual_side": "CALL",
-    "data_source": "earnings",
-    "expiry_used": "2026-05-01"
+    "unusual_activity": 50.0,
+    "unusual_side": "PUT",
+    "data_source": "nearest+monthly",
+    "expiry_used": "2026-04-27"
   },
   "earnings": {
-    "next_date": "2026-04-30",
+    "next_date": null,
     "days_until": null,
     "history": []
   },
@@ -103,22 +107,22 @@
     "source": "openinsider"
   },
   "reddit": {
-    "mentions": 12,
-    "dollar_mentions": 0,
+    "mentions": 10,
+    "dollar_mentions": 1,
     "scanned_posts": 300,
-    "latest_title": "GOOGL remains strong,The MOST promising contender to follow NVIDIA to a $5T market cap",
-    "latest_at": "2026-04-23T14:38:06+00:00"
+    "latest_title": "GOOGL Hits $350,The Final Stretch Toward a $5T Valuation",
+    "latest_at": "2026-04-27T14:24:18+00:00"
   },
   "anomaly": {
     "score": 40,
-    "direction": "UP",
+    "direction": null,
     "level": "관심",
     "signals": [
       {
         "name": "거래량 급증 + 횡보",
         "score": 0,
         "direction": null,
-        "detail": "거래량 0.6x, 가격변동 20.6%"
+        "detail": "거래량 0.7x, 가격변동 28.2%"
       },
       {
         "name": "IV 급등",
@@ -129,8 +133,8 @@
       {
         "name": "옵션 이상 거래",
         "score": 20,
-        "direction": "UP",
-        "detail": "평소 대비 15.0x (CALL)"
+        "direction": "DOWN",
+        "detail": "평소 대비 50.0x (PUT)"
       },
       {
         "name": "내부자 방향 전환",
@@ -142,103 +146,112 @@
         "name": "P/C ratio 극단",
         "score": 0,
         "direction": null,
-        "detail": "P/C 0.53"
+        "detail": "P/C 0.31"
       }
     ]
   },
   "prediction": {
     "week1": {
-      "direction": "UP",
-      "confidence": 56.1,
-      "price_low": 339.0,
-      "price_high": 352.56,
-      "price_target": 345.78
+      "direction": "DOWN",
+      "confidence": 70.8,
+      "price_low": 319.32,
+      "price_high": 333.34,
+      "price_target": 326.33
     },
     "week2": {
-      "direction": "UP",
-      "confidence": 55.8,
-      "price_low": 335.22,
-      "price_high": 355.56,
-      "price_target": 345.39
+      "direction": "DOWN",
+      "confidence": 68.4,
+      "price_low": 318.62,
+      "price_high": 339.66,
+      "price_target": 329.14
     },
     "week3": {
-      "direction": "DOWN",
-      "up_probability": 49.2,
-      "range_low": 318.56,
-      "range_high": 359.22
+      "direction": "UP",
+      "up_probability": 58.8,
+      "range_low": 329.57,
+      "range_high": 371.64
     },
     "week4": {
-      "direction": "DOWN",
-      "up_probability": 49.2,
-      "range_low": 311.78,
-      "range_high": 366.0
+      "direction": "UP",
+      "up_probability": 58.8,
+      "range_low": 322.56,
+      "range_high": 378.65
     }
   },
   "debate": {
-    "direction": "UP",
-    "confidence": 85,
-    "verdict": "매수",
-    "summary": "GOOGL은 옵션 수요 증가와 기술적 지표의 긍정적 신호로 상승세를 보이고 있습니다. 시장의 불안감 감소와 금리 안정성은 추가적인 긍정 요소입니다.",
+    "direction": "DOWN",
+    "confidence": 55,
+    "verdict": "관망",
+    "summary": "GOOGL 주식은 기술적 지표와 옵션 시장의 신호에 따라 하락 압력이 있습니다. 매크로 환경은 긍정적이지만, 주식 자체의 하락 요인이 더 강합니다.",
     "stock_bull": [
-      "옵션의 Put/Call 비율이 0.53으로 콜 옵션에 대한 수요가 높음을 나타냅니다.",
-      "RSI(14)가 66.3으로 과매수 영역에 근접, 상승 모멘텀 지속 가능성.",
-      "MACD가 시그널 라인보다 높고 양수, 강한 상승 추세 시사.",
-      "분석가들의 목표 주가가 현재 주가보다 높아 긍정적 전망을 시사합니다.",
-      "기관 투자자들의 보유 비율이 증가하고 있어 긍정적 신호로 해석됩니다."
+      "애널리스트의 평균 목표 주가는 $377.29로 현재 가격 대비 7.6%의 상승 여력이 있습니다."
     ],
-    "stock_bear": [],
+    "stock_bear": [
+      "RSI(14)가 71.9로 과매수 구간에 진입하여 조정 가능성 존재.",
+      "옵션의 Put/Call 비율이 0.31로 콜 옵션에 대한 수요가 높지만, 비정상적인 풋 옵션 거래가 50.0배 증가하여 하락 압력이 존재함을 시사합니다.",
+      "IV 랭크가 100%로 매우 높아, 시장이 큰 변동성을 예상하고 있으며, 이는 하락 가능성을 강화합니다."
+    ],
     "market_bull": [
-      "VIX 지수는 19.31로 20일 동안 23.8% 하락하여 시장의 불안감이 감소하고 있음을 나타냅니다.",
-      "10년물 국채 수익률은 4.32%로 20일 동안 거의 변동이 없으며, 이는 금리 안정성을 시사합니다.",
-      "달러 인덱스는 98.89로 20일 동안 0.7% 하락하여, 달러 약세가 글로벌 리스크 자산에 긍정적 영향을 미칠 수 있습니다."
+      "VIX 지수가 18.83으로 20일 동안 39.4% 하락하여 시장의 불안감이 크게 줄어들었음을 시사합니다.",
+      "10년물 국채 수익률이 4.34%로 20일 동안 2.3% 하락하여 금리 부담이 완화되고 있습니다.",
+      "달러 지수가 98.37로 20일 동안 1.8% 하락하여 글로벌 시장에서의 달러 강세가 약화되고 있습니다."
     ],
     "market_bear": [],
     "bull_points": [
-      "옵션의 Put/Call 비율이 0.53으로 콜 옵션에 대한 수요가 높음을 나타냅니다.",
-      "RSI(14)가 66.3으로 과매수 영역에 근접, 상승 모멘텀 지속 가능성.",
-      "MACD가 시그널 라인보다 높고 양수, 강한 상승 추세 시사.",
-      "분석가들의 목표 주가가 현재 주가보다 높아 긍정적 전망을 시사합니다.",
-      "기관 투자자들의 보유 비율이 증가하고 있어 긍정적 신호로 해석됩니다.",
-      "VIX 지수는 19.31로 20일 동안 23.8% 하락하여 시장의 불안감이 감소하고 있음을 나타냅니다.",
-      "10년물 국채 수익률은 4.32%로 20일 동안 거의 변동이 없으며, 이는 금리 안정성을 시사합니다.",
-      "달러 인덱스는 98.89로 20일 동안 0.7% 하락하여, 달러 약세가 글로벌 리스크 자산에 긍정적 영향을 미칠 수 있습니다."
+      "애널리스트의 평균 목표 주가는 $377.29로 현재 가격 대비 7.6%의 상승 여력이 있습니다.",
+      "VIX 지수가 18.83으로 20일 동안 39.4% 하락하여 시장의 불안감이 크게 줄어들었음을 시사합니다.",
+      "10년물 국채 수익률이 4.34%로 20일 동안 2.3% 하락하여 금리 부담이 완화되고 있습니다.",
+      "달러 지수가 98.37로 20일 동안 1.8% 하락하여 글로벌 시장에서의 달러 강세가 약화되고 있습니다."
     ],
-    "bear_points": [],
+    "bear_points": [
+      "RSI(14)가 71.9로 과매수 구간에 진입하여 조정 가능성 존재.",
+      "옵션의 Put/Call 비율이 0.31로 콜 옵션에 대한 수요가 높지만, 비정상적인 풋 옵션 거래가 50.0배 증가하여 하락 압력이 존재함을 시사합니다.",
+      "IV 랭크가 100%로 매우 높아, 시장이 큰 변동성을 예상하고 있으며, 이는 하락 가능성을 강화합니다."
+    ],
     "weekly_outlook": {
-      "week1": "옵션의 Put/Call 비율이 0.53으로 콜 옵션 수요 증가.",
-      "week2": "IV Rank가 100%로 큰 가격 변동 예상, 상승 압력 지속.",
-      "week3": "10년물 국채 수익률 4.32%로 금리 안정성 시사, 긍정적.",
-      "week4": "VIX 지수 19.31로 20일 동안 23.8% 하락, 시장 불안감 감소."
+      "week1": "[RSI 71.9로 과매수 구간 진입이나 MACD가 시그널 라인보다 높음.]",
+      "week2": "[애널리스트 평균 목표가 $377.29로 상승 여력 있으나 옵션의 Put/Call 비율 0.31로 하락 압력 존재.]",
+      "week3": "[10년물 국채 수익률 4.34%로 금리 부담 완화되나 VIX 지수 18.83로 여전히 불안정함.]",
+      "week4": "[내부자 거래 정보 없음으로 불확실성 존재하나 기관 보유 비율 높아 긍정적 신호.]"
     },
-    "key_news": [],
-    "personas": [
+    "key_news": [
       {
-        "id": "options",
-        "role": "옵션 트레이더",
-        "direction": "UP",
-        "confidence": 85,
-        "argument": "• 옵션의 Put/Call 비율이 0.53으로 콜 옵션에 대한 수요가 높음을 나타냅니다. \n• IV Rank가 100%로 매우 높아, 큰 가격 변동이 예상됩니다. \n• 콜 옵션에서 15.0배의 비정상적인 거래 활동이 관찰되어 상승 압력이 존재합니다."
+        "headline": "Google's AI Reckoning: Can Gemini Turn Dominance Into Dollars?",
+        "summary": "구글의 AI 기술이 수익으로 이어질 수 있는지에 대한 논의는 주가에 큰 영향을 미칠 수 있습니다."
       },
+      {
+        "headline": "Google To Increase Anthropic Investment; OpenAI, Microsoft Shake Up Partnership",
+        "summary": "구글의 앤트로픽 투자 증가는 AI 시장에서의 경쟁력을 강화하며 주가에 긍정적 영향을 줄 수 있습니다."
+      }
+    ],
+    "personas": [
       {
         "id": "technical",
         "role": "테크니컬 분석가",
-        "direction": "UP",
-        "confidence": 75,
-        "argument": "• RSI(14)가 66.3으로 과매수 영역에 근접, 상승 모멘텀 지속 가능성.\n• MACD가 시그널 라인보다 높고 양수, 강한 상승 추세 시사.\n• OBV 상승세와 1주간 매수 우위(63.5%)는 매수 압력 증가를 나타냄."
+        "direction": "DOWN",
+        "confidence": 70,
+        "argument": "• RSI(14)가 71.9로 과매수 구간에 진입하여 조정 가능성 존재.\n• MACD가 시그널 라인보다 높지만, FOMC 발표 D-2로 포지셔닝 구간 진입.\n• 볼륨 비율이 5일 평균 대비 0.65x로 낮아 상승 모멘텀 부족."
       },
       {
         "id": "fundamental",
         "role": "펀더멘털 분석가",
         "direction": "UP",
-        "confidence": 75,
-        "argument": "• 최근 실적 발표는 없지만, 분석가들의 목표 주가가 현재 주가보다 높아 긍정적 전망을 시사합니다.\n• 내부자 거래는 공개되지 않았으나, 기관 투자자들의 보유 비율이 증가하고 있어 긍정적 신호로 해석됩니다.\n• FOMC 발표가 5일 남았으므로, 포지셔닝 구간으로 단기 변동성이 있을 수 있으나, 전반적인 펀더멘털은 긍정적입니다."
+        "confidence": 85,
+        "argument": "• 애널리스트의 평균 목표 주가는 $377.29로 현재 가격 대비 7.6%의 상승 여력이 있습니다. 이는 강한 매수 추천과 일치합니다.\n• 내부자 거래 및 기관 보유에 대한 정보는 없지만, 애널리스트의 강한 매수 의견은 긍정적인 신호로 해석됩니다.\n• FOMC 발표가 D-2로 포지셔닝 구간에 있으며, 이는 단기 변동성을 고려한 포지셔닝 기회로 볼 수 있습니다."
+      },
+      {
+        "id": "options",
+        "role": "옵션 트레이더",
+        "direction": "DOWN",
+        "confidence": 85,
+        "argument": "• 옵션의 Put/Call 비율이 0.31로 콜 옵션에 대한 수요가 높지만, 비정상적인 풋 옵션 거래가 50.0배 증가하여 하락 압력이 존재함을 시사합니다.\n• IV 랭크가 100%로 매우 높아, 시장이 큰 변동성을 예상하고 있으며, 이는 하락 가능성을 강화합니다.\n• FOMC 발표가 D-2로 다가오면서 포지셔닝 구간에 있어 단기적으로 변동성이 확대될 가능성이 있습니다."
       },
       {
         "id": "macro",
         "role": "매크로 전략가",
         "direction": "UP",
         "confidence": 75,
-        "argument": "• VIX 지수는 19.31로 20일 동안 23.8% 하락하여 시장의 불안감이 감소하고 있음을 나타냅니다.\n• 10년물 국채 수익률은 4.32%로 20일 동안 거의 변동이 없으며, 이는 금리 안정성을 시사합니다.\n• 달러 인덱스는 98.89로 20일 동안 0.7% 하락하여, 달러 약세가 글로벌 리스크 자산에 긍정적 영향을 미칠 수 있습니다."
+        "argument": "• VIX 지수가 18.83으로 20일 동안 39.4% 하락하여 시장의 불안감이 크게 줄어들었음을 시사합니다. \n• 10년물 국채 수익률이 4.34%로 20일 동안 2.3% 하락하여 금리 부담이 완화되고 있습니다.\n• 달러 지수가 98.37로 20일 동안 1.8% 하락하여 글로벌 시장에서의 달러 강세가 약화되고 있습니다."
       }
     ]
   },
@@ -249,47 +262,47 @@
     "badge": "혼조 — 되돌림 경계",
     "tone": "mixed",
     "per_week": [
-      "UP",
-      "UP",
       "DOWN",
-      "DOWN"
+      "DOWN",
+      "UP",
+      "UP"
     ],
     "structural_signals": {
       "rows": [
         {
           "key": "weekly_trend",
           "label": "주간 추세",
-          "value": -0.064,
+          "value": 0.82,
           "weight": 0.25,
-          "contribution": -0.016
+          "contribution": 0.205
         },
         {
           "key": "range_position",
           "label": "52주 위치",
-          "value": 0.953,
+          "value": 1.0,
           "weight": -0.15,
-          "contribution": -0.143
+          "contribution": -0.15
         },
         {
           "key": "mid_momentum",
           "label": "중기 모멘텀",
-          "value": 0.554,
+          "value": 0.614,
           "weight": 0.2,
-          "contribution": 0.111
+          "contribution": 0.123
         },
         {
           "key": "macro_regime",
           "label": "매크로 레짐",
-          "value": 0.107,
+          "value": 0.449,
           "weight": 0.2,
-          "contribution": 0.021
+          "contribution": 0.09
         },
         {
           "key": "analyst_consensus",
           "label": "애널리스트 컨센서스",
-          "value": 0.0,
+          "value": 0.253,
           "weight": 0.1,
-          "contribution": 0.0
+          "contribution": 0.025
         },
         {
           "key": "institutional_flow",
@@ -299,21 +312,21 @@
           "contribution": 0.0
         }
       ],
-      "score": -0.027
+      "score": 0.293
     },
-    "explanation": "단기적으로는 옵션 트레이더와 테크니컬 분석가의 긍정적인 신호가 상승을 지지하고 있습니다. 특히, 옵션 시장에서의 콜 옵션 수요와 RSI 지표의 모멘텀은 단기 상승 가능성을 높이고 있습니다. 그러나 구조적으로는 펀더멘털 분석가와 매크로 전략가의 시각이 혼재되어 있어, 단기 반등 후 구조적 약세로 회귀 가능성이 존재합니다."
+    "explanation": "단기적으로는 과매수 상태와 비정상적인 풋 옵션 거래 증가로 인해 하락 압력이 존재하지만, 구조적으로는 애널리스트의 목표 주가와 시장 불안감 감소가 상승을 지지하고 있습니다. 따라서 단기 조정 후 장기 추세 재개 가능성이 높습니다."
   },
   "upcoming_events": [
     {
       "type": "FOMC",
       "date": "2026-04-29",
-      "days_until": 5
+      "days_until": 2
     },
     {
       "type": "NFP",
       "date": "2026-05-01",
-      "days_until": 7
+      "days_until": 4
     }
   ],
-  "predicted_at": "2026-04-24T03:50:55.649177+00:00"
+  "predicted_at": "2026-04-27T15:41:58.943019+00:00"
 }

@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-24T03:53:56.880806+00:00",
+  "generated_at": "2026-04-27T15:49:06.892494+00:00",
   "ticker_count": 11,
-  "miss_ticker_count": 7,
+  "miss_ticker_count": 10,
   "tickers": [
-    "AAPL",
-    "AMZN",
     "COST",
-    "GOOGL",
-    "AVGO",
-    "NVDA",
-    "TSLA",
     "META",
-    "NFLX",
+    "AAPL",
+    "TSLA",
+    "GOOGL",
+    "NVDA",
+    "AVGO",
+    "AMZN",
+    "MSFT",
     "KO",
-    "MSFT"
+    "NFLX"
   ]
 }

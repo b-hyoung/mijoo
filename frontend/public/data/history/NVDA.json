@@ -2,30 +2,12 @@
   "ticker": "NVDA",
   "history": [
     {
-      "date": "2026-03-12",
-      "close": 183.14,
-      "volume": 155762700,
-      "buy_volume": 155762700,
-      "sell_volume": 0,
-      "obv": 155762700.0,
-      "is_accumulation": false
-    },
-    {
-      "date": "2026-03-13",
-      "close": 180.25,
-      "volume": 160988400,
-      "buy_volume": 0,
-      "sell_volume": 160988400,
-      "obv": -5225700.0,
-      "is_accumulation": false
-    },
-    {
       "date": "2026-03-16",
       "close": 183.22,
       "volume": 217307400,
       "buy_volume": 217307400,
       "sell_volume": 0,
-      "obv": 212081700.0,
+      "obv": 217307400.0,
       "is_accumulation": false
     },
     {
@@ -34,7 +16,7 @@
       "volume": 182497800,
       "buy_volume": 0,
       "sell_volume": 182497800,
-      "obv": 29583900.0,
+      "obv": 34809600.0,
       "is_accumulation": false
     },
     {
@@ -43,7 +25,7 @@
       "volume": 156683100,
       "buy_volume": 0,
       "sell_volume": 156683100,
-      "obv": -127099200.0,
+      "obv": -121873500.0,
       "is_accumulation": false
     },
     {
@@ -52,7 +34,7 @@
       "volume": 170968500,
       "buy_volume": 0,
       "sell_volume": 170968500,
-      "obv": -298067700.0,
+      "obv": -292842000.0,
       "is_accumulation": false
     },
     {
@@ -61,7 +43,7 @@
       "volume": 241323500,
       "buy_volume": 0,
       "sell_volume": 241323500,
-      "obv": -539391200.0,
+      "obv": -534165500.0,
       "is_accumulation": false
     },
     {
@@ -70,7 +52,7 @@
       "volume": 182836300,
       "buy_volume": 182836300,
       "sell_volume": 0,
-      "obv": -356554900.0,
+      "obv": -351329200.0,
       "is_accumulation": false
     },
     {
@@ -79,7 +61,7 @@
       "volume": 147667800,
       "buy_volume": 0,
       "sell_volume": 147667800,
-      "obv": -504222700.0,
+      "obv": -498997000.0,
       "is_accumulation": false
     },
     {
@@ -88,7 +70,7 @@
       "volume": 162602100,
       "buy_volume": 162602100,
       "sell_volume": 0,
-      "obv": -341620600.0,
+      "obv": -336394900.0,
       "is_accumulation": false
     },
     {
@@ -97,7 +79,7 @@
       "volume": 186152200,
       "buy_volume": 0,
       "sell_volume": 186152200,
-      "obv": -527772800.0,
+      "obv": -522547100.0,
       "is_accumulation": false
     },
     {
@@ -106,7 +88,7 @@
       "volume": 196212700,
       "buy_volume": 0,
       "sell_volume": 196212700,
-      "obv": -723985500.0,
+      "obv": -718759800.0,
       "is_accumulation": false
     },
     {
@@ -115,7 +97,7 @@
       "volume": 185627000,
       "buy_volume": 0,
       "sell_volume": 185627000,
-      "obv": -909612500.0,
+      "obv": -904386800.0,
       "is_accumulation": false
     },
     {
@@ -124,7 +106,7 @@
       "volume": 226181300,
       "buy_volume": 226181300,
       "sell_volume": 0,
-      "obv": -683431200.0,
+      "obv": -678205500.0,
       "is_accumulation": false
     },
     {
@@ -133,7 +115,7 @@
       "volume": 168132000,
       "buy_volume": 168132000,
       "sell_volume": 0,
-      "obv": -515299200.0,
+      "obv": -510073500.0,
       "is_accumulation": false
     },
     {
@@ -142,7 +124,7 @@
       "volume": 143143200,
       "buy_volume": 143143200,
       "sell_volume": 0,
-      "obv": -372156000.0,
+      "obv": -366930300.0,
       "is_accumulation": false
     },
     {
@@ -151,7 +133,7 @@
       "volume": 107564300,
       "buy_volume": 107564300,
       "sell_volume": 0,
-      "obv": -264591700.0,
+      "obv": -259366000.0,
       "is_accumulation": false
     },
     {
@@ -160,7 +142,7 @@
       "volume": 132534900,
       "buy_volume": 132534900,
       "sell_volume": 0,
-      "obv": -132056800.0,
+      "obv": -126831100.0,
       "is_accumulation": false
     },
     {
@@ -169,7 +151,7 @@
       "volume": 147732700,
       "buy_volume": 147732700,
       "sell_volume": 0,
-      "obv": 15675900.0,
+      "obv": 20901600.0,
       "is_accumulation": false
     },
     {
@@ -178,7 +160,7 @@
       "volume": 116428500,
       "buy_volume": 116428500,
       "sell_volume": 0,
-      "obv": 132104400.0,
+      "obv": 137330100.0,
       "is_accumulation": false
     },
     {
@@ -187,7 +169,7 @@
       "volume": 160459500,
       "buy_volume": 160459500,
       "sell_volume": 0,
-      "obv": 292563900.0,
+      "obv": 297789600.0,
       "is_accumulation": false
     },
     {
@@ -196,7 +178,7 @@
       "volume": 133648200,
       "buy_volume": 133648200,
       "sell_volume": 0,
-      "obv": 426212100.0,
+      "obv": 431437800.0,
       "is_accumulation": false
     },
     {
@@ -205,7 +187,7 @@
       "volume": 161307000,
       "buy_volume": 161307000,
       "sell_volume": 0,
-      "obv": 587519100.0,
+      "obv": 592744800.0,
       "is_accumulation": false
     },
     {
@@ -214,7 +196,7 @@
       "volume": 185338400,
       "buy_volume": 185338400,
       "sell_volume": 0,
-      "obv": 772857500.0,
+      "obv": 778083200.0,
       "is_accumulation": false
     },
     {
@@ -223,7 +205,7 @@
       "volume": 134012900,
       "buy_volume": 0,
       "sell_volume": 134012900,
-      "obv": 638844600.0,
+      "obv": 644070300.0,
       "is_accumulation": false
     },
     {
@@ -232,7 +214,7 @@
       "volume": 160324400,
       "buy_volume": 160324400,
       "sell_volume": 0,
-      "obv": 799169000.0,
+      "obv": 804394700.0,
       "is_accumulation": false
     },
     {
@@ -241,7 +223,7 @@
       "volume": 119381400,
       "buy_volume": 119381400,
       "sell_volume": 0,
-      "obv": 918550400.0,
+      "obv": 923776100.0,
       "is_accumulation": false
     },
     {
@@ -250,7 +232,7 @@
       "volume": 107945300,
       "buy_volume": 0,
       "sell_volume": 107945300,
-      "obv": 810605100.0,
+      "obv": 815830800.0,
       "is_accumulation": false
     },
     {
@@ -259,16 +241,34 @@
       "volume": 107501000,
       "buy_volume": 107501000,
       "sell_volume": 0,
-      "obv": 918106100.0,
+      "obv": 923331800.0,
       "is_accumulation": false
     },
     {
       "date": "2026-04-23",
       "close": 199.64,
-      "volume": 108937228,
+      "volume": 113561800,
       "buy_volume": 0,
-      "sell_volume": 108937228,
-      "obv": 809168872.0,
+      "sell_volume": 113561800,
+      "obv": 809770000.0,
+      "is_accumulation": false
+    },
+    {
+      "date": "2026-04-24",
+      "close": 208.27,
+      "volume": 213780100,
+      "buy_volume": 213780100,
+      "sell_volume": 0,
+      "obv": 1023550100.0,
+      "is_accumulation": false
+    },
+    {
+      "date": "2026-04-27",
+      "close": 210.75,
+      "volume": 70448444,
+      "buy_volume": 70448444,
+      "sell_volume": 0,
+      "obv": 1093998544.0,
       "is_accumulation": false
     }
   ]

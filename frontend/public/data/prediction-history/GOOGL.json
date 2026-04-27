@@ -2,9 +2,51 @@
   "ticker": "GOOGL",
   "history": [
     {
+      "id": 565,
+      "predicted_at": "2026-04-27T15:41:58.943019+00:00",
+      "age_hours": 0.1,
+      "current_price_at_prediction": 350.61,
+      "verdict": "관망",
+      "direction": "DOWN",
+      "confidence": 55,
+      "summary": "GOOGL 주식은 기술적 지표와 옵션 시장의 신호에 따라 하락 압력이 있습니다. 매크로 환경은 긍정적이지만, 주식 자체의 하락 요인이 더 강합니다.",
+      "week1": {
+        "direction": "DOWN",
+        "confidence": 70.8,
+        "price_low": 319.32,
+        "price_high": 333.34,
+        "price_target": 326.33
+      },
+      "week2": {
+        "direction": "DOWN",
+        "confidence": 68.4,
+        "price_low": 318.62,
+        "price_high": 339.66,
+        "price_target": 329.14
+      },
+      "week3": {
+        "direction": "UP",
+        "up_probability": 58.8,
+        "range_low": 329.57,
+        "range_high": 371.64
+      },
+      "week4": {
+        "direction": "UP",
+        "up_probability": 58.8,
+        "range_low": 322.56,
+        "range_high": 378.65
+      },
+      "weekly_outlook": {
+        "week1": "[RSI 71.9로 과매수 구간 진입이나 MACD가 시그널 라인보다 높음.]",
+        "week2": "[애널리스트 평균 목표가 $377.29로 상승 여력 있으나 옵션의 Put/Call 비율 0.31로 하락 압력 존재.]",
+        "week3": "[10년물 국채 수익률 4.34%로 금리 부담 완화되나 VIX 지수 18.83로 여전히 불안정함.]",
+        "week4": "[내부자 거래 정보 없음으로 불확실성 존재하나 기관 보유 비율 높아 긍정적 신호.]"
+      }
+    },
+    {
       "id": 555,
       "predicted_at": "2026-04-24T03:50:55.649177+00:00",
-      "age_hours": 0.0,
+      "age_hours": 84.0,
       "current_price_at_prediction": 338.89,
       "verdict": "매수",
       "direction": "UP",
@@ -46,7 +88,7 @@
     {
       "id": 535,
       "predicted_at": "2026-04-13T14:55:03.869411+00:00",
-      "age_hours": 253.0,
+      "age_hours": 336.9,
       "current_price_at_prediction": 318.35,
       "verdict": "관망",
       "direction": "UP",
@@ -90,7 +132,7 @@
     {
       "id": 513,
       "predicted_at": "2026-04-09T06:41:46.718797+00:00",
-      "age_hours": 357.2,
+      "age_hours": 441.1,
       "current_price_at_prediction": 305.46,
       "verdict": "관망",
       "direction": "UP",
@@ -134,7 +176,7 @@
     {
       "id": 512,
       "predicted_at": "2026-04-09T06:41:44.540156+00:00",
-      "age_hours": 357.2,
+      "age_hours": 441.1,
       "current_price_at_prediction": 305.46,
       "verdict": "관망",
       "direction": "UP",

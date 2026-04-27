@@ -2,9 +2,51 @@
   "ticker": "TSLA",
   "history": [
     {
+      "id": 564,
+      "predicted_at": "2026-04-27T15:41:57.733767+00:00",
+      "age_hours": 0.1,
+      "current_price_at_prediction": 366.99,
+      "verdict": "매수",
+      "direction": "UP",
+      "confidence": 69,
+      "summary": "TSLA는 옵션 거래와 펀더멘털 측면에서 긍정적인 신호가 많습니다. 시장의 불안감도 감소하여 상승 가능성이 높습니다.",
+      "week1": {
+        "direction": "UP",
+        "confidence": 55.7,
+        "price_low": 366.67,
+        "price_high": 381.35,
+        "price_target": 374.01
+      },
+      "week2": {
+        "direction": "UP",
+        "confidence": 80.5,
+        "price_low": 393.32,
+        "price_high": 415.33,
+        "price_target": 404.32
+      },
+      "week3": {
+        "direction": "DOWN",
+        "up_probability": 43.1,
+        "range_low": 344.97,
+        "range_high": 389.01
+      },
+      "week4": {
+        "direction": "DOWN",
+        "up_probability": 43.1,
+        "range_low": 337.63,
+        "range_high": 396.35
+      },
+      "weekly_outlook": {
+        "week1": "콜 옵션 거래량이 50.0배로 급증하여 상승 기대감이 커짐.",
+        "week2": "IV Rank가 82%로 높아 큰 가격 변동이 예상됨.",
+        "week3": "애널리스트 평균 목표 주가가 14.0% 상승 여력을 보여줌.",
+        "week4": "VIX 지수가 18.83으로 39.4% 하락하여 시장 불안감 감소."
+      }
+    },
+    {
       "id": 557,
       "predicted_at": "2026-04-24T03:51:43.646592+00:00",
-      "age_hours": 0.0,
+      "age_hours": 84.0,
       "current_price_at_prediction": 373.72,
       "verdict": "매수",
       "direction": "UP",
@@ -46,7 +88,7 @@
     {
       "id": 533,
       "predicted_at": "2026-04-13T14:55:02.317604+00:00",
-      "age_hours": 253.0,
+      "age_hours": 336.9,
       "current_price_at_prediction": 352.26,
       "verdict": "관망",
       "direction": "DOWN",
@@ -90,7 +132,7 @@
     {
       "id": 517,
       "predicted_at": "2026-04-09T06:42:43.712095+00:00",
-      "age_hours": 357.2,
+      "age_hours": 441.1,
       "current_price_at_prediction": 346.65,
       "verdict": "관망",
       "direction": "DOWN",
@@ -134,7 +176,7 @@
     {
       "id": 516,
       "predicted_at": "2026-04-09T06:42:38.979407+00:00",
-      "age_hours": 357.2,
+      "age_hours": 441.1,
       "current_price_at_prediction": 346.65,
       "verdict": "관망",
       "direction": "DOWN",

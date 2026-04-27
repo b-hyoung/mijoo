@@ -1,94 +1,174 @@
 {
   "ticker": "AVGO",
-  "current_price": 419.94,
-  "sentiment_score": 0.8,
-  "short_float_pct": 1.15,
+  "current_price": 417.33,
+  "sentiment_score": 0.6,
+  "short_float_pct": 1.18,
   "short_change": "N/A",
   "order_flow": {
-    "buy_dominance_pct": 78.0,
+    "buy_dominance_pct": 87.5,
     "obv_trend": "UP",
     "is_accumulation": false
   },
   "news_headlines": [
     {
-      "title": "Semiconductor stocks like Nvidia and Micron are on a remarkable streak",
-      "url": "https://finance.yahoo.com/news/semiconductor-stocks-like-nvidia-and-micron-are-on-a-remarkable-streak-150827239.html"
+      "title": "Google, Meta, Microsoft, Amazon, Apple earnings: What to expect",
+      "url": "https://finance.yahoo.com/video/google-meta-microsoft-amazon-apple-earnings-what-to-expect-151248213.html"
     },
     {
-      "title": "Investors Rotating Out of Tech Are Making a Mistake. This AI Growth Stock's Revenue Just Hit a Record.",
-      "url": "https://www.fool.com/investing/2026/04/23/investors-rotating-out-of-tech-are-making-a-mistak/"
+      "title": "Will Nvidia's explosive rally end soon?",
+      "url": "https://finance.yahoo.com/news/will-nvidias-explosive-rally-end-soon-133429771.html"
     },
     {
-      "title": "Only 2 Stocks Driving Explosive Earnings Growth in 2026 - NVDA & AVGO",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/only-2-stocks-driving-explosive-190000378.html"
+      "title": "Forget Spaceships—Here’s how SpaceX Became the most Valuable Telecom Company in the World",
+      "url": "https://www.barrons.com/articles/spacex-ipo-telecom-aerospace-biggest-710acb41?siteid=yhoof2&yptr=yahoo"
     },
     {
-      "title": "Will 8th-Generation TPUs Move the Needle for Google Stock?",
-      "url": "https://www.barchart.com/story/news/1483201/will-8th-generation-tpus-move-the-needle-for-google-stock"
+      "title": "TSMC vs. Lam Research: Which AI Infrastructure Stock Has an Edge?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/tsmc-vs-lam-research-ai-134700357.html"
     },
     {
-      "title": "Broadcom Stock Is Trading at New All-Time Highs. Should You Buy Shares Here?",
-      "url": "https://www.barchart.com/story/news/1480937/broadcom-stock-is-trading-at-new-all-time-highs-should-you-buy-shares-here"
+      "title": "Zacks.com featured highlights include NVIDIA and Broadcom",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/zacks-com-featured-highlights-nvidia-131900066.html"
     },
     {
-      "title": "Apple Is Getting a New Chief Hardware Officer. What Does That Mean for AAPL Stock?",
-      "url": "https://www.barchart.com/story/news/1479086/apple-is-getting-a-new-chief-hardware-officer-what-does-that-mean-for-aapl-stock"
+      "title": "3 Top-Ranked AI Semiconductor Behemoths to Tap the Space's Rally",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/3-top-ranked-ai-semiconductor-130500271.html"
     },
     {
-      "title": "Marvell’s AI Story Just Got Stronger With Google — But Is it Too Late to Buy?",
-      "url": "https://247wallst.com/investing/2026/04/23/marvells-ai-story-just-got-stronger-with-google-but-is-it-too-late-to-buy/"
+      "title": "Zacks Industry Outlook Highlights Broadcom, Applied Materials and Credo Technology",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/zacks-industry-outlook-highlights-broadcom-130300705.html"
     },
     {
-      "title": "Hedge Fund Takes New Position in Chinese Data Center Stock, According to Latest SEC Filing",
-      "url": "https://www.fool.com/coverage/filings/2026/04/23/hedge-fund-takes-new-position-in-chinese-data-center-stock-according-to-latest-sec-filing/"
+      "title": "Here's How Much You'd Have If You Invested $1000 in Broadcom Inc. a Decade Ago",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/heres-much-youd-invested-1000-123004600.html"
     },
     {
-      "title": "Broadcom (AVGO) and Meta Announce Multi-Year AI Infrastructure Partnership",
-      "url": "https://finance.yahoo.com/sectors/technology/articles/broadcom-avgo-meta-announce-multi-133355191.html"
+      "title": "NVIDIA Reclaims $5 Trillion Market Cap Crown: ETFs in Focus",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-reclaims-5-trillion-market-120000189.html"
+    },
+    {
+      "title": "Is Marvell Stock a Buy After Alphabet and Nvidia Deals?",
+      "url": "https://www.fool.com/investing/2026/04/27/marvell-stock-buy-after-alphabet-nvidia-deal/"
     }
   ],
   "signals": {
-    "rsi": 77.2,
+    "rsi": 73.7,
     "macd_cross": "BULLISH",
     "ma_trend": "BULLISH",
-    "bb_position": 86,
-    "volume_ratio": 1.0
+    "bb_position": 78,
+    "volume_ratio": 0.37
   },
   "analyst": {
     "target_mean": 475.49,
     "target_high": 630.0,
     "target_low": 360.0,
-    "upside_pct": 13.2,
+    "upside_pct": 13.9,
     "num_analysts": 42,
     "recommendation": "strong_buy"
   },
   "insider": {
-    "recent": [],
-    "net_shares_90d": 0
+    "recent": [
+      {
+        "date": "2026-04-21",
+        "insider": "SAMUELI HENRY",
+        "title": "Director",
+        "type": "기타",
+        "shares": 864,
+        "value": 0
+      },
+      {
+        "date": "2026-04-20",
+        "insider": "DELLY GAYLA J",
+        "title": "Director",
+        "type": "기타",
+        "shares": 864,
+        "value": 0
+      },
+      {
+        "date": "2026-04-20",
+        "insider": "HAO KENNETH Y",
+        "title": "Director",
+        "type": "기타",
+        "shares": 864,
+        "value": 0
+      },
+      {
+        "date": "2026-04-20",
+        "insider": "YOU HARRY L",
+        "title": "Director",
+        "type": "기타",
+        "shares": 864,
+        "value": 0
+      },
+      {
+        "date": "2026-04-20",
+        "insider": "BRYANT DIANE M",
+        "title": "Director",
+        "type": "기타",
+        "shares": 864,
+        "value": 0
+      }
+    ],
+    "net_shares_90d": -324282
   },
   "institutional": {
-    "top_holders": [],
-    "total_pct": null,
-    "change_pct": null
+    "top_holders": [
+      {
+        "name": "Vanguard Group Inc",
+        "pct_held": 10.2,
+        "shares": 482707302,
+        "change_pct": 0.82,
+        "date_reported": "2025-12-31"
+      },
+      {
+        "name": "Blackrock Inc.",
+        "pct_held": 8.02,
+        "shares": 379894948,
+        "change_pct": 0.52,
+        "date_reported": "2025-12-31"
+      },
+      {
+        "name": "State Street Corporation",
+        "pct_held": 4.01,
+        "shares": 190084351,
+        "change_pct": 2.72,
+        "date_reported": "2025-12-31"
+      },
+      {
+        "name": "Capital International Investors",
+        "pct_held": 3.0,
+        "shares": 141864077,
+        "change_pct": -3.15,
+        "date_reported": "2025-12-31"
+      },
+      {
+        "name": "Capital World Investors",
+        "pct_held": 2.6,
+        "shares": 123257172,
+        "change_pct": -9.09,
+        "date_reported": "2025-12-31"
+      }
+    ],
+    "total_pct": null
   },
   "macro": {
-    "vix": 19.31,
-    "vix_20d_change": -23.8,
-    "treasury_10y": 4.32,
-    "treasury_10y_20d_change": -0.1,
-    "dxy": 98.89,
-    "dxy_20d_change": -0.7
+    "vix": 18.8,
+    "vix_20d_change": -39.5,
+    "treasury_10y": 18.8,
+    "treasury_10y_20d_change": -39.5,
+    "dxy": 4.34,
+    "dxy_20d_change": -2.3
   },
   "options": {
-    "pc_ratio": 0.94,
-    "iv_rank": 100,
-    "unusual_activity": 50.0,
-    "unusual_side": "PUT",
+    "pc_ratio": 1.14,
+    "iv_rank": 80,
+    "unusual_activity": 11.5,
+    "unusual_side": "CALL",
     "data_source": "nearest+monthly",
-    "expiry_used": "2026-04-24"
+    "expiry_used": "2026-04-27"
   },
   "earnings": {
-    "next_date": "2026-06-04",
+    "next_date": null,
     "days_until": null,
     "history": []
   },
@@ -103,160 +183,153 @@
     "source": "openinsider"
   },
   "reddit": {
-    "mentions": 2,
+    "mentions": 0,
     "dollar_mentions": 0,
     "scanned_posts": 300,
-    "latest_title": "My chip portfolio goes 🚀. My technical analysis was 'computer need chip, chip go brrr' 🖥️💸",
-    "latest_at": "2026-04-23T08:06:56+00:00"
+    "latest_title": null,
+    "latest_at": null
   },
   "anomaly": {
-    "score": 40,
-    "direction": null,
-    "level": "관심",
+    "score": 30,
+    "direction": "UP",
+    "level": "정상",
     "signals": [
       {
         "name": "거래량 급증 + 횡보",
         "score": 0,
         "direction": null,
-        "detail": "거래량 0.8x, 가격변동 35.7%"
+        "detail": "거래량 0.9x, 가격변동 42.2%"
       },
       {
         "name": "IV 급등",
-        "score": 20,
-        "direction": "UP",
-        "detail": "IV rank 100%"
+        "score": 10,
+        "direction": "DOWN",
+        "detail": "IV rank 80%"
       },
       {
         "name": "옵션 이상 거래",
         "score": 20,
-        "direction": "DOWN",
-        "detail": "평소 대비 50.0x (PUT)"
+        "direction": "UP",
+        "detail": "평소 대비 11.5x (CALL)"
       },
       {
         "name": "내부자 방향 전환",
         "score": 0,
         "direction": null,
-        "detail": "거래 부족"
+        "detail": "순-324,282주"
       },
       {
         "name": "P/C ratio 극단",
         "score": 0,
         "direction": null,
-        "detail": "P/C 0.94"
+        "detail": "P/C 1.14"
       }
     ]
   },
   "prediction": {
     "week1": {
       "direction": "DOWN",
-      "confidence": 86.8,
-      "price_low": 360.02,
-      "price_high": 376.82,
-      "price_target": 368.42
+      "confidence": 82.8,
+      "price_low": 363.32,
+      "price_high": 380.01,
+      "price_target": 371.66
     },
     "week2": {
       "direction": "DOWN",
       "confidence": 95,
-      "price_low": 338.39,
-      "price_high": 363.59,
-      "price_target": 350.99
+      "price_low": 338.63,
+      "price_high": 363.67,
+      "price_target": 351.15
     },
     "week3": {
       "direction": "UP",
-      "up_probability": 59.3,
-      "range_low": 394.74,
-      "range_high": 445.14
+      "up_probability": 61.0,
+      "range_low": 392.29,
+      "range_high": 442.37
     },
     "week4": {
       "direction": "UP",
-      "up_probability": 59.3,
-      "range_low": 386.34,
-      "range_high": 453.54
+      "up_probability": 61.0,
+      "range_low": 383.94,
+      "range_high": 450.72
     }
   },
   "debate": {
-    "direction": "DOWN",
-    "confidence": 55,
+    "direction": "UP",
+    "confidence": 62,
     "verdict": "관망",
-    "summary": "AVGO는 기술적 지표와 옵션 거래에서 하락 압력을 받고 있습니다. 시장의 불안감은 줄어들고 있으나, 단기 변동성 확대 가능성이 존재합니다.",
+    "summary": "AVGO에 대한 분석가들의 의견은 대체로 긍정적입니다. 옵션 활동과 펀더멘털 지표가 상승을 지지하고 있으며, 매크로 환경도 우호적입니다.",
     "stock_bull": [
-      "애널리스트 목표 주가 평균 $475.49로 현재 주가 대비 13.2% 상승 여력이 있음.",
-      "Broadcom은 Meta와의 AI 인프라 파트너십을 발표하여 장기적인 성장 가능성을 높이고 있음.",
-      "기관 투자자들의 매수 우위가 78%로 나타나며, 긍정적인 시각을 반영하고 있음."
+      "콜 옵션의 비정상적 활동이 11.5배로, 강한 매수 관심을 나타냅니다.",
+      "애널리스트 목표 주가 평균이 $475.49로 현재 주가 대비 13.9%의 상승 여력이 있습니다.",
+      "기관 투자자들의 포지셔닝이 강력한 매수 추천과 일치합니다."
     ],
     "stock_bear": [
-      "RSI(14)가 77.2로 과매수 구간에 진입하여 조정 가능성 있음.",
-      "MACD가 시그널 라인보다 높지만, 과열된 상태로 조정 위험이 존재.",
-      "옵션의 Put/Call 비율이 0.94로 비교적 균형 잡혀 있지만, PUT 옵션에서 50.0배의 이상 거래가 발생하여 하락 압력을 시사함.",
-      "IV Rank가 100%로 매우 높아, 향후 큰 가격 변동이 예상되며, 이는 하락 방향으로의 움직임을 강화할 수 있음."
+      "RSI(14)가 73.7로 과매수 구간에 진입하여 조정 가능성이 높습니다.",
+      "거래량이 5일 평균 대비 0.37배로 낮아 상승 지속에 대한 확신이 부족합니다."
     ],
     "market_bull": [
-      "VIX 지수는 19.31로 20일 동안 23.8% 하락하여 시장의 불안감이 감소하고 있음.",
-      "10년물 국채 수익률은 4.32%로 20일 동안 거의 변동이 없으며, 이는 금리 안정성을 시사함.",
-      "달러 인덱스는 98.89로 20일 동안 0.7% 하락하여, 달러 약세가 글로벌 리스크 자산에 긍정적 영향을 미칠 수 있음."
+      "VIX 지수가 18.83으로 20일 동안 39.4% 하락하여 시장의 불안감이 크게 줄어들었습니다.",
+      "10년물 국채 수익률이 4.34%로 20일 동안 2.3% 하락하여 금리 부담이 완화되고 있습니다.",
+      "달러 지수가 98.37로 20일 동안 1.8% 하락하여 글로벌 시장에서의 달러 강세가 약화되고 있습니다."
     ],
-    "market_bear": [
-      "FOMC 발표와 NFP 발표가 가까워 단기 변동성 확대 가능성 있음."
-    ],
+    "market_bear": [],
     "bull_points": [
-      "애널리스트 목표 주가 평균 $475.49로 현재 주가 대비 13.2% 상승 여력이 있음.",
-      "Broadcom은 Meta와의 AI 인프라 파트너십을 발표하여 장기적인 성장 가능성을 높이고 있음.",
-      "기관 투자자들의 매수 우위가 78%로 나타나며, 긍정적인 시각을 반영하고 있음.",
-      "VIX 지수는 19.31로 20일 동안 23.8% 하락하여 시장의 불안감이 감소하고 있음.",
-      "10년물 국채 수익률은 4.32%로 20일 동안 거의 변동이 없으며, 이는 금리 안정성을 시사함.",
-      "달러 인덱스는 98.89로 20일 동안 0.7% 하락하여, 달러 약세가 글로벌 리스크 자산에 긍정적 영향을 미칠 수 있음."
+      "콜 옵션의 비정상적 활동이 11.5배로, 강한 매수 관심을 나타냅니다.",
+      "애널리스트 목표 주가 평균이 $475.49로 현재 주가 대비 13.9%의 상승 여력이 있습니다.",
+      "기관 투자자들의 포지셔닝이 강력한 매수 추천과 일치합니다.",
+      "VIX 지수가 18.83으로 20일 동안 39.4% 하락하여 시장의 불안감이 크게 줄어들었습니다.",
+      "10년물 국채 수익률이 4.34%로 20일 동안 2.3% 하락하여 금리 부담이 완화되고 있습니다.",
+      "달러 지수가 98.37로 20일 동안 1.8% 하락하여 글로벌 시장에서의 달러 강세가 약화되고 있습니다."
     ],
     "bear_points": [
-      "RSI(14)가 77.2로 과매수 구간에 진입하여 조정 가능성 있음.",
-      "MACD가 시그널 라인보다 높지만, 과열된 상태로 조정 위험이 존재.",
-      "옵션의 Put/Call 비율이 0.94로 비교적 균형 잡혀 있지만, PUT 옵션에서 50.0배의 이상 거래가 발생하여 하락 압력을 시사함.",
-      "IV Rank가 100%로 매우 높아, 향후 큰 가격 변동이 예상되며, 이는 하락 방향으로의 움직임을 강화할 수 있음.",
-      "FOMC 발표와 NFP 발표가 가까워 단기 변동성 확대 가능성 있음."
+      "RSI(14)가 73.7로 과매수 구간에 진입하여 조정 가능성이 높습니다.",
+      "거래량이 5일 평균 대비 0.37배로 낮아 상승 지속에 대한 확신이 부족합니다."
     ],
     "weekly_outlook": {
-      "week1": "[RSI 77.2로 과매수 구간 진입이나 MACD가 시그널 라인보다 높음.]",
-      "week2": "[기관 투자자 매수 비율 78%이나 FOMC 발표로 단기 변동성 확대 가능성 있음.]",
-      "week3": "[애널리스트 목표가 $475.49로 상승 여력 13.2%이나 옵션의 Put/Call 비율 0.94로 하락 압력 시사.]",
-      "week4": "[VIX 지수 19.31로 불안감 감소하나 IV Rank 100%로 큰 가격 변동 예상.]"
+      "week1": "[RSI 73.7 과매수 구간 진입이나 MACD 0.5로 변동성 확대 예상.] vs [거래량 5일 평균 대비 0.37배로 상승 지속 확신 부족.]",
+      "week2": "[콜 옵션 비정상적 활동 11.5배로 강한 매수 관심 나타남.] vs [최근 뉴스에서 AVGO에 대한 부정적 보도 증가, 투자자 신뢰 하락.]",
+      "week3": "[애널리스트 목표 주가 평균 $475.49로 13.9% 상승 여력 존재.] vs [내부자 거래 순매도 -324,282주로 부정적 신호.]",
+      "week4": "[VIX 지수 18.83로 39.4% 하락, 시장 불안감 감소.] vs [RSI 73.7로 조정 가능성 높아 리스크 증가.]"
     },
     "key_news": [
       {
-        "headline": "Only 2 Stocks Driving Explosive Earnings Growth in 2026 - NVDA & AVGO",
-        "summary": "AVGO는 2026년 폭발적인 수익 성장의 주역으로 평가받아 주가에 긍정적 영향을 미칠 수 있다."
+        "headline": "Zacks.com featured highlights include NVIDIA and Broadcom",
+        "summary": "Zacks에서 브로드컴을 포함한 주요 기업을 강조하며, AI 반도체 시장의 성장 가능성을 시사합니다."
       },
       {
-        "headline": "Broadcom (AVGO) and Meta Announce Multi-Year AI Infrastructure Partnership",
-        "summary": "메타와의 AI 인프라 파트너십은 AVGO의 기술력과 시장 경쟁력을 강화시켜 주가 상승에 기여할 것이다."
+        "headline": "3 Top-Ranked AI Semiconductor Behemoths to Tap the Space's Rally",
+        "summary": "AI 반도체 분야에서 브로드컴이 상위 기업으로 언급되어, 투자자들의 관심을 끌고 주가에 긍정적인 영향을 미칠 수 있습니다."
       }
     ],
     "personas": [
+      {
+        "id": "options",
+        "role": "옵션 트레이더",
+        "direction": "UP",
+        "confidence": 70,
+        "argument": "• 콜 옵션의 비정상적 활동이 11.5배로, 강한 매수 관심을 나타냅니다.\n• IV 랭크가 80%로 높아, 큰 가격 변동이 예상됩니다.\n• FOMC 발표 D-2로, 포지셔닝 구간으로 볼 수 있습니다."
+      },
       {
         "id": "technical",
         "role": "테크니컬 분석가",
         "direction": "DOWN",
         "confidence": 85,
-        "argument": "• RSI(14)가 77.2로 과매수 구간에 진입하여 조정 가능성 있음.\n• MACD가 시그널 라인보다 높지만, 과열된 상태로 조정 위험이 존재.\n• FOMC 발표와 NFP 발표가 가까워 단기 변동성 확대 가능성 있음."
+        "argument": "• RSI(14)가 73.7로 과매수 구간에 진입하여 조정 가능성이 높습니다.\n• MACD가 시그널 라인보다 높지만, FOMC 발표를 앞두고 포지셔닝 구간으로 변동성 확대가 예상됩니다.\n• 거래량이 5일 평균 대비 0.37배로 낮아 상승 지속에 대한 확신이 부족합니다."
       },
       {
         "id": "fundamental",
         "role": "펀더멘털 분석가",
         "direction": "UP",
-        "confidence": 85,
-        "argument": "• 애널리스트 목표 주가 평균 $475.49로 현재 주가 대비 13.2% 상승 여력이 있으며, 강력 매수 추천을 받고 있습니다.\n• Broadcom은 Meta와의 AI 인프라 파트너십을 발표하며, 장기적인 성장 가능성을 높이고 있습니다.\n• 기관 투자자들의 매수 우위가 78%로 나타나며, 기관의 긍정적인 시각을 반영하고 있습니다."
-      },
-      {
-        "id": "options",
-        "role": "옵션 트레이더",
-        "direction": "DOWN",
-        "confidence": 85,
-        "argument": "• 옵션의 Put/Call 비율이 0.94로 비교적 균형 잡혀 있지만, PUT 옵션에서 50.0배의 이상 거래가 발생하여 하락 압력을 시사합니다.\n• IV Rank가 100%로 매우 높아, 향후 큰 가격 변동이 예상되며, 이는 하락 방향으로의 움직임을 강화할 수 있습니다.\n• FOMC 발표가 D-5로 포지셔닝 구간에 있으며, 단기 변동성 확대 가능성이 있어 하락 시나리오에 대한 대비가 필요합니다."
+        "confidence": 75,
+        "argument": "• 애널리스트 목표 주가 평균이 $475.49로 현재 주가 대비 13.9%의 상승 여력이 있으며, 42명의 애널리스트가 STRONG BUY를 추천하고 있습니다.\n• 최근 90일 동안 내부자 거래는 순매도 -324,282주로 부정적이지만, 이는 전체 주식 수에 비해 큰 비중이 아닙니다.\n• 기관 투자자들의 포지셔닝이 강력한 매수 추천과 일치하며, FOMC 발표가 2일 남아 있어 포지셔닝 구간으로 볼 수 있습니다."
       },
       {
         "id": "macro",
         "role": "매크로 전략가",
         "direction": "UP",
         "confidence": 75,
-        "argument": "• VIX 지수는 19.31로 20일 동안 23.8% 하락하여 시장의 불안감이 감소하고 있음을 나타냅니다.\n• 10년물 국채 수익률은 4.32%로 20일 동안 거의 변동이 없으며, 이는 금리 안정성을 시사합니다.\n• 달러 인덱스는 98.89로 20일 동안 0.7% 하락하여, 달러 약세가 글로벌 리스크 자산에 긍정적 영향을 미칠 수 있습니다."
+        "argument": "• VIX 지수가 18.83으로 20일 동안 39.4% 하락하여 시장의 불안감이 크게 줄어들었음을 시사합니다. \n• 10년물 국채 수익률이 4.34%로 20일 동안 2.3% 하락하여 금리 부담이 완화되고 있습니다.\n• 달러 지수가 98.37로 20일 동안 1.8% 하락하여 글로벌 시장에서의 달러 강세가 약화되고 있습니다."
       }
     ]
   },
@@ -284,54 +357,54 @@
         {
           "key": "range_position",
           "label": "52주 위치",
-          "value": 0.978,
+          "value": 0.953,
           "weight": -0.15,
-          "contribution": -0.147
+          "contribution": -0.143
         },
         {
           "key": "mid_momentum",
           "label": "중기 모멘텀",
-          "value": 0.712,
+          "value": 0.76,
           "weight": 0.2,
-          "contribution": 0.142
+          "contribution": 0.152
         },
         {
           "key": "macro_regime",
           "label": "매크로 레짐",
-          "value": 0.107,
+          "value": 0.629,
           "weight": 0.2,
-          "contribution": 0.021
+          "contribution": 0.126
         },
         {
           "key": "analyst_consensus",
           "label": "애널리스트 컨센서스",
-          "value": 0.44,
+          "value": 0.463,
           "weight": 0.1,
-          "contribution": 0.044
+          "contribution": 0.046
         },
         {
           "key": "institutional_flow",
           "label": "스마트머니 흐름",
-          "value": 0.0,
+          "value": -0.649,
           "weight": 0.1,
-          "contribution": 0.0
+          "contribution": -0.065
         }
       ],
-      "score": 0.311
+      "score": 0.366
     },
-    "explanation": "단기적으로는 기술적 지표와 옵션 거래 패턴이 하락을 시사하지만, 구조적으로는 펀더멘털과 매크로 지표가 상승을 지지하고 있습니다. 단기적으로 과매수 상태로 인한 조정이 예상되나, 장기적으로는 애널리스트의 긍정적 평가와 시장의 안정성이 상승 추세를 뒷받침할 가능성이 높습니다. 따라서 단기 조정 후 장기 추세 재개 가능성이 있습니다."
+    "explanation": "단기적으로는 과매수 상태로 인한 조정 가능성이 있지만, 구조적으로는 시장의 불안감 감소와 애널리스트들의 긍정적 전망이 상승을 지지하고 있습니다. 따라서 단기 조정 후 장기 추세 재개 가능성이 높습니다."
   },
   "upcoming_events": [
     {
       "type": "FOMC",
       "date": "2026-04-29",
-      "days_until": 5
+      "days_until": 2
     },
     {
       "type": "NFP",
       "date": "2026-05-01",
-      "days_until": 7
+      "days_until": 4
     }
   ],
-  "predicted_at": "2026-04-24T03:52:06.707724+00:00"
+  "predicted_at": "2026-04-27T15:42:00.216900+00:00"
 }

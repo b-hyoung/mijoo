@@ -1,15 +1,15 @@
 {
   "tickers": [
-    "AAPL",
-    "AMZN",
     "COST",
-    "GOOGL",
-    "AVGO",
-    "NVDA",
-    "TSLA",
     "META",
-    "NFLX",
+    "AAPL",
+    "TSLA",
+    "GOOGL",
+    "NVDA",
+    "AVGO",
+    "AMZN",
+    "MSFT",
     "KO",
-    "MSFT"
+    "NFLX"
   ]
 }

@@ -1,66 +1,70 @@
 {
   "ticker": "AAPL",
-  "current_price": 273.43,
-  "sentiment_score": -0.4,
-  "short_float_pct": 0.86,
+  "current_price": 267.42,
+  "sentiment_score": 0.2,
+  "short_float_pct": 0.92,
   "short_change": "N/A",
   "order_flow": {
-    "buy_dominance_pct": 57.5,
+    "buy_dominance_pct": 59.9,
     "obv_trend": "UP",
     "is_accumulation": false
   },
   "news_headlines": [
     {
-      "title": "CEO turnover is near record highs, and more experienced execs are making for the exits",
-      "url": "https://finance.yahoo.com/markets/article/ceo-turnover-is-near-record-highs-and-more-experienced-execs-are-making-for-the-exits-100000505.html"
+      "title": "Why Fox Business Network's Charles Payne has owned Apple stock for more than 30 years",
+      "url": "https://finance.yahoo.com/news/why-fox-business-networks-charles-payne-has-owned-apple-stock-for-more-than-30-years-153647855.html"
     },
     {
-      "title": "Where is Microsoft’s headquarters? Inside the tech giant’s corporate campus",
-      "url": "https://www.thestreet.com/investing/stocks/microsoft-headquarters"
+      "title": "Google, Meta, Microsoft, Amazon, Apple earnings: What to expect",
+      "url": "https://finance.yahoo.com/video/google-meta-microsoft-amazon-apple-earnings-what-to-expect-151248213.html"
     },
     {
-      "title": "Review & Preview: Earnings Storm",
-      "url": "https://www.barrons.com/articles/stocks-today-chips-intel-earnings-d007603c?siteid=yhoof2&yptr=yahoo"
+      "title": "Stocks' strong April gains come with 1 potential downside",
+      "url": "https://finance.yahoo.com/news/stocks-strong-april-gains-come-with-1-potential-downside-122514320.html"
     },
     {
-      "title": "VeriSign Q1 Earnings Call Highlights",
-      "url": "https://www.marketbeat.com/instant-alerts/verisign-q1-earnings-call-highlights-2026-04-23/?utm_source=yahoofinance&utm_medium=yahoofinance"
+      "title": "Stock Market Today: Dow Firm As Pharma Shines; Google Stock Clears Entry, But Note This (Live Coverage)",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-iran-news-nvidia-stock-nvda/?src=A00220&yptr=yahoo"
     },
     {
-      "title": "Should You Sell Apple Stock Before September 1?",
-      "url": "https://www.barchart.com/story/news/1486710/should-you-sell-apple-stock-before-september-1"
+      "title": "Stocks Are Wavering to Kick Off a Busy Week",
+      "url": "https://www.barrons.com/livecoverage/stock-market-news-today-042726/card/stocks-are-wavering-to-kick-off-a-busy-week-Z6d7YhwvcW5h2phTIjME?siteid=yhoof2&yptr=yahoo"
     },
     {
-      "title": "AI brings Foxconn a chance to cut its reliance on Apple",
-      "url": "https://finance.yahoo.com/sectors/technology/articles/ai-brings-foxconn-chance-cut-210007424.html"
+      "title": "Week ahead: Big Tech earnings, Fed decision, and an oil crisis set up Wall Street's biggest test of the year",
+      "url": "https://www.proactiveinvestors.com/companies/news/1091245/week-ahead-big-tech-earnings-fed-decision-and-an-oil-crisis-set-up-wall-street-s-biggest-test-of-the-year-1091245.html"
     },
     {
-      "title": "Nasdaq Slides. Earnings Fail to Save the Day.",
-      "url": "https://www.barrons.com/livecoverage/stock-market-news-today-042326/card/nasdaq-slides-earnings-fail-to-save-the-day--Ec48AtfXwFCi29vuP4Qx?siteid=yhoof2&yptr=yahoo"
+      "title": "Apple Is a Loser From a New OpenAI Phone. This Stock Is a Potential Winner.",
+      "url": "https://www.barrons.com/articles/openai-phone-qualcomm-stock-price-apple-1fb479e9?siteid=yhoof2&yptr=yahoo"
     },
     {
-      "title": "Jim Cramer Makes Interesting Remarks About Adobe (ADBE)",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-makes-interesting-remarks-193655414.html"
+      "title": "Intel Stock Rally Rages On. What UBS Says It Underestimated.",
+      "url": "https://www.barrons.com/articles/intel-stock-price-ubs-analyst-target-increase-27f2dfb8?siteid=yhoof2&yptr=yahoo"
     },
     {
-      "title": "Jim Cramer Was Shocked By Apple (AAPL) CEO’s Departure",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-shocked-apple-aapl-193448517.html"
+      "title": "Apple, Google Crushed California Bill That Helped Smaller Rivals",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/apple-google-crushed-california-bill-143510069.html"
+    },
+    {
+      "title": "VIX Fear Rising Toward 20 on Tech Earnings, Capex Risk, War Uncertainty",
+      "url": "https://247wallst.com/investing/2026/04/27/vix-fear-rising-toward-20-on-tech-earnings-capex-risk-war-uncertainty/"
     }
   ],
   "signals": {
-    "rsi": 62.9,
+    "rsi": 55.0,
     "macd_cross": "BULLISH",
     "ma_trend": "BULLISH",
-    "bb_position": 92,
-    "volume_ratio": 0.74
+    "bb_position": 67,
+    "volume_ratio": 0.39
   },
   "analyst": {
-    "target_mean": 297.71,
-    "target_high": 350.0,
-    "target_low": 215.0,
-    "upside_pct": 8.9,
-    "num_analysts": 40,
-    "recommendation": "buy"
+    "target_mean": null,
+    "target_high": null,
+    "target_low": null,
+    "upside_pct": null,
+    "num_analysts": null,
+    "recommendation": ""
   },
   "insider": {
     "recent": [],
@@ -72,23 +76,23 @@
     "change_pct": null
   },
   "macro": {
-    "vix": 19.31,
-    "vix_20d_change": -23.8,
-    "treasury_10y": 4.32,
-    "treasury_10y_20d_change": -0.1,
-    "dxy": 98.89,
-    "dxy_20d_change": -0.7
+    "vix": 4.34,
+    "vix_20d_change": -2.3,
+    "treasury_10y": 18.8,
+    "treasury_10y_20d_change": -39.5,
+    "dxy": 98.37,
+    "dxy_20d_change": -1.8
   },
   "options": {
-    "pc_ratio": 0.6,
-    "iv_rank": 100,
-    "unusual_activity": 4.3,
-    "unusual_side": "PUT",
-    "data_source": "earnings",
-    "expiry_used": "2026-05-01"
+    "pc_ratio": null,
+    "iv_rank": null,
+    "unusual_activity": null,
+    "unusual_side": null,
+    "data_source": "none",
+    "expiry_used": null
   },
   "earnings": {
-    "next_date": "2026-05-01",
+    "next_date": null,
     "days_until": null,
     "history": []
   },
@@ -103,34 +107,34 @@
     "source": "openinsider"
   },
   "reddit": {
-    "mentions": 3,
+    "mentions": 6,
     "dollar_mentions": 0,
     "scanned_posts": 300,
-    "latest_title": "A Turning Point for Apple or Just Business as Usual?",
-    "latest_at": "2026-04-23T18:19:24+00:00"
+    "latest_title": "Why the Bitcoin Market is a Ticking Time Bomb for the Most Spectacular Crash in History",
+    "latest_at": "2026-04-26T11:36:24+00:00"
   },
   "anomaly": {
-    "score": 20,
-    "direction": "UP",
+    "score": 0,
+    "direction": null,
     "level": "정상",
     "signals": [
       {
         "name": "거래량 급증 + 횡보",
         "score": 0,
         "direction": null,
-        "detail": "거래량 1.0x, 가격변동 8.1%"
+        "detail": "거래량 0.9x, 가격변동 8.4%"
       },
       {
         "name": "IV 급등",
-        "score": 20,
-        "direction": "UP",
-        "detail": "IV rank 100%"
+        "score": 0,
+        "direction": null,
+        "detail": "옵션 데이터 없음"
       },
       {
         "name": "옵션 이상 거래",
         "score": 0,
         "direction": null,
-        "detail": "4.3x"
+        "detail": "감지 안 됨"
       },
       {
         "name": "내부자 방향 전환",
@@ -142,165 +146,167 @@
         "name": "P/C ratio 극단",
         "score": 0,
         "direction": null,
-        "detail": "P/C 0.60"
+        "detail": "데이터 없음"
       }
     ]
   },
   "prediction": {
     "week1": {
-      "direction": "DOWN",
-      "confidence": 52.5,
-      "price_low": 265.65,
-      "price_high": 276.59,
-      "price_target": 271.12
+      "direction": "UP",
+      "confidence": 50.8,
+      "price_low": 262.77,
+      "price_high": 273.46,
+      "price_target": 268.12
     },
     "week2": {
       "direction": "DOWN",
-      "confidence": 56.0,
-      "price_low": 259.79,
-      "price_high": 276.2,
-      "price_target": 267.99
+      "confidence": 53.9,
+      "price_low": 255.9,
+      "price_high": 271.94,
+      "price_target": 263.92
     },
     "week3": {
-      "direction": "DOWN",
-      "up_probability": 49.2,
-      "range_low": 257.02,
-      "range_high": 289.84
+      "direction": "UP",
+      "up_probability": 54.9,
+      "range_low": 251.37,
+      "range_high": 283.47
     },
     "week4": {
-      "direction": "DOWN",
-      "up_probability": 49.2,
-      "range_low": 251.56,
-      "range_high": 295.3
+      "direction": "UP",
+      "up_probability": 54.9,
+      "range_low": 246.03,
+      "range_high": 288.81
     }
   },
   "debate": {
-    "direction": "UP",
-    "confidence": 63,
+    "direction": "DOWN",
+    "confidence": 53,
     "verdict": "관망",
-    "summary": "AAPL 주식은 기술적 지표와 펀더멘털 분석에서 긍정적인 신호를 보이며 상승할 가능성이 높습니다. 시장의 전반적인 안정성과 긍정적인 전망도 상승을 지지합니다.",
-    "stock_bull": [
-      "애널리스트 평균 목표가 $297.71로 현재 가격 대비 8.9% 상승 여력이 있습니다.",
-      "애널리스트 40명의 추천이 '매수'로, 시장의 긍정적인 전망을 반영합니다.",
-      "RSI(14)가 62.9로 과매수 구간에 진입하지 않았으며 상승 여력이 있습니다.",
-      "MACD가 시그널 라인을 상회하며 상승 모멘텀을 나타내고 있습니다.",
-      "주가는 MA5와 MA20 위에 위치하고 있으며, 볼린저 밴드 상단에 근접하여 추가 상승 가능성을 시사합니다."
-    ],
+    "summary": "AAPL 주식은 기술적, 펀더멘털 분석에서 하락 신호가 강하게 나타나고 있습니다. 시장의 변동성 확대 가능성에도 불구하고, 내부자 매도와 기관 보유 비율 감소가 주가 하락 압력으로 작용할 수 있습니다.",
+    "stock_bull": [],
     "stock_bear": [
-      "옵션 시장에서 푸트 옵션의 비정상적인 활동이 4.3배로 나타나 하락 압력이 존재함을 시사합니다.",
-      "IV Rank가 100%로 매우 높아 큰 변동성이 예상되며, 이는 하락 리스크를 증가시킬 수 있습니다."
+      "RSI가 중립 영역에 위치해 있으며 강한 매수 신호가 아님",
+      "MACD가 시그널 라인 위에 있지만, 최근 볼륨이 낮아 상승 모멘텀이 부족",
+      "애널리스트 목표 주가가 현재 주가보다 낮음",
+      "기관 보유 비율 감소",
+      "내부자 거래에서 매도 우위 관찰"
     ],
     "market_bull": [
-      "VIX 지수는 19.31로 20일 동안 23.8% 하락하여 시장의 불안감이 감소하고 있음을 나타냅니다.",
-      "10년물 국채 수익률은 4.32%로 20일 동안 거의 변동이 없으며, 이는 금리 안정성을 시사합니다.",
-      "달러 인덱스는 98.89로 20일 동안 0.7% 하락하여, 달러 약세가 글로벌 리스크 자산에 긍정적 영향을 미칠 수 있습니다."
+      "VIX 지수가 하락하여 시장의 불안감이 줄어듦",
+      "10년물 국채 수익률 하락으로 금리 부담 완화",
+      "달러 지수 하락으로 글로벌 시장에서의 달러 강세 약화"
     ],
-    "market_bear": [],
+    "market_bear": [
+      "FOMC 발표와 NFP 발표로 인한 단기 변동성 확대 가능성"
+    ],
     "bull_points": [
-      "애널리스트 평균 목표가 $297.71로 현재 가격 대비 8.9% 상승 여력이 있습니다.",
-      "애널리스트 40명의 추천이 '매수'로, 시장의 긍정적인 전망을 반영합니다.",
-      "RSI(14)가 62.9로 과매수 구간에 진입하지 않았으며 상승 여력이 있습니다.",
-      "MACD가 시그널 라인을 상회하며 상승 모멘텀을 나타내고 있습니다.",
-      "주가는 MA5와 MA20 위에 위치하고 있으며, 볼린저 밴드 상단에 근접하여 추가 상승 가능성을 시사합니다.",
-      "VIX 지수는 19.31로 20일 동안 23.8% 하락하여 시장의 불안감이 감소하고 있음을 나타냅니다.",
-      "10년물 국채 수익률은 4.32%로 20일 동안 거의 변동이 없으며, 이는 금리 안정성을 시사합니다.",
-      "달러 인덱스는 98.89로 20일 동안 0.7% 하락하여, 달러 약세가 글로벌 리스크 자산에 긍정적 영향을 미칠 수 있습니다."
+      "VIX 지수가 하락하여 시장의 불안감이 줄어듦",
+      "10년물 국채 수익률 하락으로 금리 부담 완화",
+      "달러 지수 하락으로 글로벌 시장에서의 달러 강세 약화"
     ],
     "bear_points": [
-      "옵션 시장에서 푸트 옵션의 비정상적인 활동이 4.3배로 나타나 하락 압력이 존재함을 시사합니다.",
-      "IV Rank가 100%로 매우 높아 큰 변동성이 예상되며, 이는 하락 리스크를 증가시킬 수 있습니다."
+      "RSI가 중립 영역에 위치해 있으며 강한 매수 신호가 아님",
+      "MACD가 시그널 라인 위에 있지만, 최근 볼륨이 낮아 상승 모멘텀이 부족",
+      "애널리스트 목표 주가가 현재 주가보다 낮음",
+      "기관 보유 비율 감소",
+      "내부자 거래에서 매도 우위 관찰",
+      "FOMC 발표와 NFP 발표로 인한 단기 변동성 확대 가능성"
     ],
     "weekly_outlook": {
-      "week1": "RSI 62.9로 과매수 구간에 접근하나 MACD가 시그널 라인 아래로 하락세 지속 중.",
-      "week2": "애널리스트 40명 중 30명이 '매수' 추천하나 푸트/콜 비율 0.6으로 하락 압력 존재.",
-      "week3": "애널리스트 평균 목표가 $297.71로 상승 여력 있으나 IV Rank 100%로 변동성 증가 우려.",
-      "week4": "기관 투자자 보유 비율 높으나 FOMC 발표 D-5로 단기 변동성 확대 가능성."
+      "week1": "[RSI 55로 중립이나 MACD 시그널 라인 위에 위치함] vs [최근 볼륨이 평균 대비 0.39배로 낮아 상승 모멘텀 부족]",
+      "week2": "[VIX 18.83으로 39.4% 하락하여 불안감 감소] vs [FOMC 발표 D-2로 시장 방향성에 영향 가능성]",
+      "week3": "[10년물 국채 수익률 4.34%로 2.3% 하락하여 금리 부담 완화] vs [기관 보유 비율 감소로 주가 하락 압력 가능성]",
+      "week4": "[달러 지수 98.37로 1.8% 하락하여 글로벌 시장 안정] vs [내부자 매도 우위로 주가 하락 예상 가능성]"
     },
     "key_news": [
       {
-        "headline": "Jim Cramer Was Shocked By Apple (AAPL) CEO’s Departure",
-        "summary": "애플 CEO의 퇴임은 경영 불확실성을 초래해 주가에 부정적 영향을 미칠 수 있습니다."
+        "headline": "Apple Is a Loser From a New OpenAI Phone. This Stock Is a Potential Winner.",
+        "summary": "OpenAI의 새로운 전화기 출시로 애플의 경쟁력이 약화될 수 있어 주가에 부정적 영향을 미칠 수 있다."
+      },
+      {
+        "headline": "Apple, Google Crushed California Bill That Helped Smaller Rivals",
+        "summary": "애플과 구글이 소규모 경쟁사를 지원하는 법안을 저지하여 시장 지배력을 강화, 주가에 긍정적 영향을 미칠 수 있다."
       }
     ],
     "personas": [
       {
-        "id": "fundamental",
-        "role": "펀더멘털 분석가",
-        "direction": "UP",
-        "confidence": 75,
-        "argument": "• 애널리스트 평균 목표가 $297.71로 현재 가격 대비 8.9% 상승 여력이 있습니다. \n• 애널리스트 40명의 추천이 '매수'로, 시장의 긍정적인 전망을 반영합니다.\n• 기관 투자자들의 보유 비율이 높고, 최근 1주간 매수 우세가 57.5%로 나타나고 있습니다."
+        "id": "options",
+        "role": "옵션 트레이더",
+        "direction": "DOWN",
+        "confidence": 50,
+        "argument": "• 옵션 데이터가 제공되지 않아 방향성 분석에 어려움이 있습니다. \n• FOMC 발표가 D-2로 포지셔닝 구간에 해당하며, 시장의 방향성에 영향을 미칠 수 있습니다.\n• NFP 발표가 D-4로 단기 변동성 확대 가능성이 존재합니다."
       },
       {
         "id": "technical",
         "role": "테크니컬 분석가",
-        "direction": "UP",
-        "confidence": 75,
-        "argument": "• RSI(14)가 62.9로 과매수 구간에 진입하지 않았으며 상승 여력이 있습니다.\n• MACD가 시그널 라인을 상회하며 상승 모멘텀을 나타내고 있습니다.\n• 주가는 MA5와 MA20 위에 위치하고 있으며, 볼린저 밴드 상단에 근접하여 추가 상승 가능성을 시사합니다."
+        "direction": "DOWN",
+        "confidence": 70,
+        "argument": "• RSI가 55로 중립 영역에 위치해 있으며 강한 매수 신호는 아닙니다.\n• MACD가 시그널 라인 위에 있지만, 최근 볼륨이 평균 대비 0.39배로 낮아 상승 모멘텀이 부족합니다.\n• FOMC와 NFP 발표가 예정되어 있어 단기 변동성 확대 가능성이 존재합니다."
       },
       {
-        "id": "options",
-        "role": "옵션 트레이더",
+        "id": "fundamental",
+        "role": "펀더멘털 분석가",
         "direction": "DOWN",
-        "confidence": 80,
-        "argument": "• 옵션 시장에서 푸트/콜 비율이 0.6으로 콜 옵션이 우세하지만, 푸트 옵션의 비정상적인 활동이 4.3배로 나타나 하락 압력이 존재함을 시사합니다. \n• IV Rank가 100%로 매우 높아 큰 변동성이 예상되며, 이는 하락 리스크를 증가시킬 수 있습니다.\n• FOMC 발표가 D-5로 포지셔닝 구간에 있어 단기 변동성 확대 가능성이 높습니다."
+        "confidence": 70,
+        "argument": "• 애널리스트 목표 주가가 현재 주가보다 낮으며, 최근 2주 내 FOMC 발표와 NFP 발표가 예정되어 있어 단기 변동성이 확대될 가능성이 있습니다. \n• 기관 보유 비율이 감소하고 있으며, 이는 주가 하락 압력으로 작용할 수 있습니다.\n• 내부자 거래에서 매도 우위가 관찰되어 내부자들이 주가 하락을 예상하고 있을 가능성이 있습니다."
       },
       {
         "id": "macro",
         "role": "매크로 전략가",
         "direction": "UP",
         "confidence": 75,
-        "argument": "• VIX 지수는 19.31로 20일 동안 23.8% 하락하여 시장의 불안감이 감소하고 있음을 나타냅니다.\n• 10년물 국채 수익률은 4.32%로 20일 동안 거의 변동이 없으며, 이는 금리 안정성을 시사합니다.\n• 달러 인덱스는 98.89로 20일 동안 0.7% 하락하여, 달러 약세가 글로벌 리스크 자산에 긍정적 영향을 미칠 수 있습니다."
+        "argument": "• VIX 지수가 18.83으로 20일 동안 39.4% 하락하여 시장의 불안감이 크게 줄어들었음을 시사합니다. \n• 10년물 국채 수익률이 4.34%로 20일 동안 2.3% 하락하여 금리 부담이 완화되고 있습니다.\n• 달러 지수가 98.37로 20일 동안 1.8% 하락하여 글로벌 시장에서의 달러 강세가 약화되고 있습니다."
       }
     ]
   },
   "confluence": {
-    "aligned_count": 4,
+    "aligned_count": 3,
     "total": 4,
-    "majority_direction": "DOWN",
-    "badge": "강한 확증",
-    "tone": "strong",
+    "majority_direction": "UP",
+    "badge": "대체로 일치",
+    "tone": "moderate",
     "per_week": [
+      "UP",
       "DOWN",
-      "DOWN",
-      "DOWN",
-      "DOWN"
+      "UP",
+      "UP"
     ],
     "structural_signals": {
       "rows": [
         {
           "key": "weekly_trend",
           "label": "주간 추세",
-          "value": -0.031,
+          "value": 0.267,
           "weight": 0.25,
-          "contribution": -0.008
+          "contribution": 0.067
         },
         {
           "key": "range_position",
           "label": "52주 위치",
-          "value": 0.726,
+          "value": 0.594,
           "weight": -0.15,
-          "contribution": -0.109
+          "contribution": -0.089
         },
         {
           "key": "mid_momentum",
           "label": "중기 모멘텀",
-          "value": 0.186,
+          "value": 0.068,
           "weight": 0.2,
-          "contribution": 0.037
+          "contribution": 0.014
         },
         {
           "key": "macro_regime",
           "label": "매크로 레짐",
-          "value": 0.107,
+          "value": 0.867,
           "weight": 0.2,
-          "contribution": 0.021
+          "contribution": 0.173
         },
         {
           "key": "analyst_consensus",
           "label": "애널리스트 컨센서스",
-          "value": 0.297,
+          "value": 0.0,
           "weight": 0.1,
-          "contribution": 0.03
+          "contribution": 0.0
         },
         {
           "key": "institutional_flow",
@@ -310,21 +316,21 @@
           "contribution": 0.0
         }
       ],
-      "score": -0.028
+      "score": 0.165
     },
-    "explanation": "애널리스트와 매크로 전략가의 긍정적인 전망은 AAPL의 펀더멘털과 시장 심리의 개선을 반영하고 있습니다. 특히, 애널리스트의 목표가와 VIX 지수의 하락은 주식의 상승 가능성을 지지합니다. 반면, 옵션 시장의 푸트 옵션 활동은 단기적인 하락 압력을 시사하지만, 전반적인 시장 심리와 펀더멘털의 긍정적인 요소가 이를 상쇄할 수 있습니다."
+    "explanation": "단기적으로는 매크로 전략가의 분석에 따라 시장의 불안감 감소가 주가 상승을 지원할 수 있습니다. 그러나 펀더멘털 분석가의 의견에 따르면 애널리스트 목표 주가가 현재 주가보다 낮고, 중요한 경제 지표 발표가 예정되어 있어 단기 변동성이 커질 수 있습니다. 이러한 요인들이 결합되어 단기 상승 후 구조적 요인에 의해 다시 하락할 가능성이 있습니다."
   },
   "upcoming_events": [
     {
       "type": "FOMC",
       "date": "2026-04-29",
-      "days_until": 5
+      "days_until": 2
     },
     {
       "type": "NFP",
       "date": "2026-05-01",
-      "days_until": 7
+      "days_until": 4
     }
   ],
-  "predicted_at": "2026-04-24T03:49:14.360636+00:00"
+  "predicted_at": "2026-04-27T15:42:03.214561+00:00"
 }
